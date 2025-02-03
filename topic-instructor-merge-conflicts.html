@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Merge Conflicts Instructor Notes</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="GitKit">
+<meta property="book:author" content="Grant Braught">
+<meta property="book:author" content="Lori Postner">
+<meta property="book:author" content="Darci Burdge">
+<meta property="book:author" content="Ruth Lamprecht">
+<meta property="book:author" content="Stoney Jackson">
+<meta property="book:author" content="Karl R. Wurst">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.5.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.82032a8574f6ce75.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6a985cbf816db5c7.css">
+<style>
+#topic-quick-start-2-3 { counter-set: topic-quick-start-2-3 0; }
+#topic-quick-start-2-3 > li::marker { content: ""counter(topic-quick-start-2-3,decimal)"."; }
+#topic-quick-start-2-3 > li { counter-increment: topic-quick-start-2-3; }
+#topic-adopting-gitkit-2-1 { counter-set: topic-adopting-gitkit-2-1 0; }
+#topic-adopting-gitkit-2-1 > li::marker { content: ""counter(topic-adopting-gitkit-2-1,decimal)"."; }
+#topic-adopting-gitkit-2-1 > li { counter-increment: topic-adopting-gitkit-2-1; }
+#topic-adopt-gitkit-text-3-1 { counter-set: topic-adopt-gitkit-text-3-1 0; }
+#topic-adopt-gitkit-text-3-1 > li::marker { content: ""counter(topic-adopt-gitkit-text-3-1,decimal)"."; }
+#topic-adopt-gitkit-text-3-1 > li { counter-increment: topic-adopt-gitkit-text-3-1; }
+#topic-do-the-gitkit-2-1 { counter-set: topic-do-the-gitkit-2-1 0; }
+#topic-do-the-gitkit-2-1 > li::marker { content: ""counter(topic-do-the-gitkit-2-1,decimal)"."; }
+#topic-do-the-gitkit-2-1 > li { counter-increment: topic-do-the-gitkit-2-1; }
+#topic-do-the-gitkit-2-1-2-1-2 { counter-set: topic-do-the-gitkit-2-1-2-1-2 0; }
+#topic-do-the-gitkit-2-1-2-1-2 > li::marker { content: "("counter(topic-do-the-gitkit-2-1-2-1-2,lower-alpha)")"; }
+#topic-do-the-gitkit-2-1-2-1-2 > li { counter-increment: topic-do-the-gitkit-2-1-2-1-2; }
+#topic-gitkit-deploy-4-1 { counter-set: topic-gitkit-deploy-4-1 0; }
+#topic-gitkit-deploy-4-1 > li::marker { content: ""counter(topic-gitkit-deploy-4-1,decimal)"."; }
+#topic-gitkit-deploy-4-1 > li { counter-increment: topic-gitkit-deploy-4-1; }
+#topic-gitkit-deploy-4-1-5-1-1 { counter-set: topic-gitkit-deploy-4-1-5-1-1 0; }
+#topic-gitkit-deploy-4-1-5-1-1 > li::marker { content: "("counter(topic-gitkit-deploy-4-1-5-1-1,lower-alpha)")"; }
+#topic-gitkit-deploy-4-1-5-1-1 > li { counter-increment: topic-gitkit-deploy-4-1-5-1-1; }
+#topic-instructor-communities-2-2-1 { counter-set: topic-instructor-communities-2-2-1 0; }
+#topic-instructor-communities-2-2-1 > li::marker { content: ""counter(topic-instructor-communities-2-2-1,decimal)"."; }
+#topic-instructor-communities-2-2-1 > li { counter-increment: topic-instructor-communities-2-2-1; }
+#topic-communities-todo-2-1 { counter-set: topic-communities-todo-2-1 0; }
+#topic-communities-todo-2-1 > li::marker { content: ""counter(topic-communities-todo-2-1,decimal)"."; }
+#topic-communities-todo-2-1 > li { counter-increment: topic-communities-todo-2-1; }
+#topic-instructor-upstreaming-2-2-1 { counter-set: topic-instructor-upstreaming-2-2-1 0; }
+#topic-instructor-upstreaming-2-2-1 > li::marker { content: ""counter(topic-instructor-upstreaming-2-2-1,decimal)"."; }
+#topic-instructor-upstreaming-2-2-1 > li { counter-increment: topic-instructor-upstreaming-2-2-1; }
+#topic-upstreaming-todo-2-1 { counter-set: topic-upstreaming-todo-2-1 0; }
+#topic-upstreaming-todo-2-1 > li::marker { content: ""counter(topic-upstreaming-todo-2-1,decimal)"."; }
+#topic-upstreaming-todo-2-1 > li { counter-increment: topic-upstreaming-todo-2-1; }
+#topic-instructor-synchronizing-2-2-1 { counter-set: topic-instructor-synchronizing-2-2-1 0; }
+#topic-instructor-synchronizing-2-2-1 > li::marker { content: ""counter(topic-instructor-synchronizing-2-2-1,decimal)"."; }
+#topic-instructor-synchronizing-2-2-1 > li { counter-increment: topic-instructor-synchronizing-2-2-1; }
+#topic-synchronizing-slide-notes-2-1 { counter-set: topic-synchronizing-slide-notes-2-1 0; }
+#topic-synchronizing-slide-notes-2-1 > li::marker { content: ""counter(topic-synchronizing-slide-notes-2-1,decimal)"."; }
+#topic-synchronizing-slide-notes-2-1 > li { counter-increment: topic-synchronizing-slide-notes-2-1; }
+#topic-synchronizing-todo-2 { counter-set: topic-synchronizing-todo-2 0; }
+#topic-synchronizing-todo-2 > li::marker { content: ""counter(topic-synchronizing-todo-2,decimal)"."; }
+#topic-synchronizing-todo-2 > li { counter-increment: topic-synchronizing-todo-2; }
+#topic-instructor-merge-conflicts-2-3-1 { counter-set: topic-instructor-merge-conflicts-2-3-1 0; }
+#topic-instructor-merge-conflicts-2-3-1 > li::marker { content: ""counter(topic-instructor-merge-conflicts-2-3-1,decimal)"."; }
+#topic-instructor-merge-conflicts-2-3-1 > li { counter-increment: topic-instructor-merge-conflicts-2-3-1; }
+#topic-merge-conflicts-todo-2-1 { counter-set: topic-merge-conflicts-todo-2-1 0; }
+#topic-merge-conflicts-todo-2-1 > li::marker { content: ""counter(topic-merge-conflicts-todo-2-1,decimal)"."; }
+#topic-merge-conflicts-todo-2-1 > li { counter-increment: topic-merge-conflicts-todo-2-1; }
+#topic-appendix-a-staying-synchronized-4-2 { counter-set: topic-appendix-a-staying-synchronized-4-2 0; }
+#topic-appendix-a-staying-synchronized-4-2 > li::marker { content: ""counter(topic-appendix-a-staying-synchronized-4-2,decimal)"."; }
+#topic-appendix-a-staying-synchronized-4-2 > li { counter-increment: topic-appendix-a-staying-synchronized-4-2; }
+#ex-merge-main-into-feature-3-2-2-2-1-1 { counter-set: ex-merge-main-into-feature-3-2-2-2-1-1 0; }
+#ex-merge-main-into-feature-3-2-2-2-1-1 > li::marker { content: ""counter(ex-merge-main-into-feature-3-2-2-2-1-1,decimal)""; }
+#ex-merge-main-into-feature-3-2-2-2-1-1 > li { counter-increment: ex-merge-main-into-feature-3-2-2-2-1-1; }
+#ex-pull-request-upstream-5-2-2-2-1-1 { counter-set: ex-pull-request-upstream-5-2-2-2-1-1 0; }
+#ex-pull-request-upstream-5-2-2-2-1-1 > li::marker { content: ""counter(ex-pull-request-upstream-5-2-2-2-1-1,decimal)""; }
+#ex-pull-request-upstream-5-2-2-2-1-1 > li { counter-increment: ex-pull-request-upstream-5-2-2-2-1-1; }
+</style>
+</head>
+<body id="gitkitlinux" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="the-gitkit-book.html"><span class="title">GitKit:</span> <span class="subtitle">Learn git and GitHub in Context</span></a></h1>
+<p class="byline">Grant Braught, Lori Postner, Darci Burdge, Ruth Lamprecht, Stoney Jackson, Karl R. Wurst</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="topic-instructor-synchronizing.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="topic-instructor-guide.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="topic-communities-and-collaboration.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="topic-instructor-guide.html" class="internal"><span class="codenumber">1</span> <span class="title">Instructor Guide</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-instructor-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Instructor Guide Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-quick-start" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Quick Start</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-adopting-gitkit" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Adopting and Using the GitKit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-delivering-gitkit" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Delivering GitKit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-gitkit-content" class="internal"><span class="codenumber">1.1.4</span> <span class="title">GitKit Content</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-instructor-intro.html#topic-gitkit-development-environments" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Student Development Environments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-kitty-virtual-assistant" class="internal"><span class="codenumber">1.1.5.1</span> <span class="title">The Kit-tty Virtual Assistant</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-community-automations" class="internal"><span class="codenumber">1.1.5.2</span> <span class="title">Community Automations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-gitkit-farmdata2" class="internal"><span class="codenumber">1.1.6</span> <span class="title">The FarmData2 Project</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-adopt-gitkit-text" class="internal"><span class="codenumber">1.1.7</span> <span class="title">Creating a Runestone Course using the GitKit Text</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-do-the-gitkit" class="internal"><span class="codenumber">1.1.8</span> <span class="title">Doing the GitKit Yourself</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-gitkit-deploy" class="internal"><span class="codenumber">1.1.9</span> <span class="title">Deploying the GitKit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-instructor-materials" class="internal"><span class="codenumber">1.1.10</span> <span class="title">Instructor Materials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-intro.html#topic-gitkit-contributing" class="internal"><span class="codenumber">1.1.11</span> <span class="title">Contributing to GitKit</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-instructor-communities.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Communities and Collaboration Instructor Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-communities.html#topic-communities-slide-notes" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Slide Notes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-communities.html#topic-communities-todo" class="internal"><span class="codenumber">1.2.2</span> <span class="title">To-Do List</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-communities.html#topic-communities-exercise-notes" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Exercise Notes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-instructor-upstreaming.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Working Locally and Upstreaming Changes Instructor Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-upstreaming.html#topic-upstreaming-slide-notes" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Slide Notes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-upstreaming.html#topic-upstreaming-todo" class="internal"><span class="codenumber">1.3.2</span> <span class="title">To-Do List</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-upstreaming.html#topic-upstreaming-exercise-notes" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Exercise Notes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-instructor-synchronizing.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Staying Synchronized Instructor Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-synchronizing.html#topic-synchronizing-slide-notes" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Slide Notes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-synchronizing.html#topic-synchronizing-todo" class="internal"><span class="codenumber">1.4.2</span> <span class="title">To-Do List</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-synchronizing.html#topic-synchronizing-exercise-notes" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercise Notes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="topic-instructor-merge-conflicts.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Merge Conflicts Instructor Notes</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-merge-conflicts.html#topic-merge-conflicts-slide-notes" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Slide Notes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-merge-conflicts.html#topic-merge-conflicts-todo" class="internal"><span class="codenumber">1.5.2</span> <span class="title">To-Do List</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-instructor-merge-conflicts.html#topic-merge-conflicts-exercise-notes" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Exercise Notes</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="topic-communities-and-collaboration.html" class="internal"><span class="codenumber">2</span> <span class="title">Communities and Collaboration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="topic-gitkit-pre-survey.html" class="internal"><span class="codenumber">2.1</span> <span class="title">GitKit Pre-Survey</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-foss-communities.html" class="internal"><span class="codenumber">2.2</span> <span class="title">FOSS Communities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-foss-communities.html#topic-foss-communities-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">FOSS Community Principles</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-foss-communities.html#topic-foss-communities-3-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-foss-communities.html#topic-foss-communities-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">FOSS Community Roles</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-foss-communities.html#topic-foss-communities-4-3" class="internal"><span class="codenumber">2.2.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-github-set-up.html" class="internal"><span class="codenumber">2.3</span> <span class="title">GitHub Set Up</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-github-set-up.html#topic-github-account" class="internal"><span class="codenumber">2.3.1</span> <span class="title">GitHub Account</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-github-set-up.html#topic-github-account-2" class="internal"><span class="codenumber">2.3.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-github-set-up.html#topic-github-pat" class="internal"><span class="codenumber">2.3.2</span> <span class="title">GitHub Personal Access Token</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-github-set-up.html#topic-github-pat-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-github-set-up.html#topic-github-set-up-5" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Setting the GitHub Codespaces Timeout</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-github-set-up.html#topic-github-set-up-5-3" class="internal"><span class="codenumber">2.3.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-the-issue-tracker.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Issue Tracker</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-the-issue-tracker.html#topic-the-issue-tracker-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Exploring the Issue Tracker</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-the-issue-tracker.html#topic-the-issue-tracker-3-2" class="internal"><span class="codenumber">2.4.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-the-issue-tracker.html#topic-the-issue-tracker-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Claiming an Issue</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-the-issue-tracker.html#topic-the-issue-tracker-4-3" class="internal"><span class="codenumber">2.4.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-basic-foss-workflow.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Basic FOSS Workflow Concepts</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-basic-foss-workflow.html#topic-basic-foss-workflow-3" class="internal"><span class="codenumber">2.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-forking-the-upstream.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Forking the Upstream Repository</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-forking-the-upstream.html#topic-forking-the-upstream-3" class="internal"><span class="codenumber">2.6</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-development-environment.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Your Development Environment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-development-environment.html#topic-create-devenv" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Creating the Development Environment</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-development-environment.html#topic-create-devenv-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-development-environment.html#topic-development-environment-4" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Stopping the Development Environment</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-development-environment.html#topic-development-environment-4-3" class="internal"><span class="codenumber">2.7.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-development-environment.html#topic-restarting-dev-env" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Re-starting the Development Environment</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-development-environment.html#topic-restarting-dev-env-3" class="internal"><span class="codenumber">2.7.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-development-environment.html#topic-git-client" class="internal"><span class="codenumber">2.7.4</span> <span class="title">The Git Client</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-development-environment.html#topic-git-client-3" class="internal"><span class="codenumber">2.7.4</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-development-environment.html#topic-git-configuration" class="internal"><span class="codenumber">2.7.5</span> <span class="title">Configuring the Git Client</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-development-environment.html#topic-git-configuration-3" class="internal"><span class="codenumber">2.7.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-cloning-your-origin.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Cloning Your Origin</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-cloning-url" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Clone URL</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-cloning-url-3" class="internal"><span class="codenumber">2.8.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-git-clone" class="internal"><span class="codenumber">2.8.2</span> <span class="title"><code class="code-inline tex2jax_ignore">git clone</code></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-git-clone-7" class="internal"><span class="codenumber">2.8.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-explore-clone-linux" class="internal"><span class="codenumber">2.8.3</span> <span class="title">Exploring Your Cloned Repository In Your Development Environment</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-explore-clone-linux-3" class="internal"><span class="codenumber">2.8.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-git-remote" class="internal"><span class="codenumber">2.8.4</span> <span class="title"><code class="code-inline tex2jax_ignore">git remote</code></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-git-remote-5" class="internal"><span class="codenumber">2.8.4</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-open-repo-folder" class="internal"><span class="codenumber">2.8.5</span> <span class="title">Opening the GitKit-FarmData2 Repository Folder</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-open-repo-folder-4" class="internal"><span class="codenumber">2.8.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-extra-practice-communities.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Extra Practice</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-extra-practice-communities.html#topic-extra-practice-communities-3" class="internal"><span class="codenumber">2.9</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-git-commands-summary-communities.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Git Command Summary</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-git-commands-summary-communities.html#topic-git-commands-summary-communities-3" class="internal"><span class="codenumber">2.10</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="topic-gitkit-feedback-communities.html" class="internal"><span class="codenumber">2.11</span> <span class="title">GitKit Feedback</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="topic-upstreaming-changes.html" class="internal"><span class="codenumber">3</span> <span class="title">Working Locally and Upstreaming Changes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-exploring-your-local-repository.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Exploring Your Local Repository</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-exploring-your-local-repository.html#subsec-restarting-development-environment" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Restarting the Development Environment</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-exploring-your-local-repository.html#subsec-restarting-development-environment-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-exploring-your-local-repository.html#subsec-git-log-command" class="internal"><span class="codenumber">3.1.2</span> <span class="title"><code class="code-inline tex2jax_ignore">git log</code></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-exploring-your-local-repository.html#subsec-git-log-command-3" class="internal"><span class="codenumber">3.1.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-exploring-your-local-repository.html#subsec-understanding-git-log-output" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Reviewing the <code class="code-inline tex2jax_ignore">git log</code> Output</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-exploring-your-local-repository.html#subsec-understanding-git-log-output-3" class="internal"><span class="codenumber">3.1.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-exploring-your-local-repository.html#subsec-git-status-command" class="internal"><span class="codenumber">3.1.4</span> <span class="title"><code class="code-inline tex2jax_ignore">git status</code></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-exploring-your-local-repository.html#subsec-git-status-command-3" class="internal"><span class="codenumber">3.1.4</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-creating-a-feature-branch.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Creating a Feature Branch</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-creating-a-feature-branch.html#topic-creating-a-feature-branch-3" class="internal"><span class="codenumber">3.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-switching-branches.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Switching Branches</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-switching-branches.html#topic-switching-branches-3" class="internal"><span class="codenumber">3.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-editing-local-files.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Editing Local Files</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-editing-local-files.html#topic-editing-local-files-3" class="internal"><span class="codenumber">3.4</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-staging-changes.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Staging Changes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-staging-changes.html#topic-staging-changes-4" class="internal"><span class="codenumber">3.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-committing-to-your-local-repository.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Committing to Your Local Repository</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-committing-to-your-local-repository.html#topic-committing-to-your-local-repository-4" class="internal"><span class="codenumber">3.6</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-pushing-a-branch-to-your-origin.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Pushing a Branch to Your Origin</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-pushing-a-branch-to-your-origin.html#topic-pushing-a-branch-to-your-origin-3" class="internal"><span class="codenumber">3.7</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-creating-a-pull-request.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Creating a Pull Request</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-creating-a-pull-request.html#topic-creating-a-pull-request-3" class="internal"><span class="codenumber">3.8</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-git-command-summary-upstreaming.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Git Command Summary</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-git-command-summary-upstreaming.html#topic-git-command-summary-upstreaming-3" class="internal"><span class="codenumber">3.9</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="topic-gitkit-feedback-upstreaming.html" class="internal"><span class="codenumber">3.10</span> <span class="title">GitKit Feedback</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="topic-staying-synchronized.html" class="internal"><span class="codenumber">4</span> <span class="title">Staying Synchronized with the Upstream</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-understanding-changes-to-the-upstream-repository.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Understanding Changes to the Upstream Repository</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-understanding-changes-to-the-upstream-repository.html#topic-understanding-changes-to-the-upstream-repository-3" class="internal"><span class="codenumber">4.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-overview-of-synchronizing-with-the-upstream-repository.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Overview of Synchronizing with the Upstream Repository</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-overview-of-synchronizing-with-the-upstream-repository.html#topic-overview-of-synchronizing-with-the-upstream-repository-5" class="internal"><span class="codenumber">4.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Creating and Verifying the Upstream Remote</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html#subsec-restarting-dev_environment" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Restarting the Development Environment</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html#subsec-restarting-dev_environment-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html#subsec-setting-upstream-1a" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Understanding Upstream</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html#subsec-setting-upstream-1a-3" class="internal"><span class="codenumber">4.3.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html#subsec-setting-upstream-1b" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Finding Upstream</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html#subsec-setting-upstream-1b-3" class="internal"><span class="codenumber">4.3.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html#subsec-setting-upstream-2" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Setting your Upstream Remote</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-verifying-the-upstream-remote.html#subsec-setting-upstream-2-3" class="internal"><span class="codenumber">4.3.4</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-pulling-the-upstream-main-branch.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Pulling the Upstream <code class="code-inline tex2jax_ignore">main</code> Branch</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-pulling-the-upstream-main-branch.html#topic-pulling-the-upstream-main-branch-2" class="internal"><span class="codenumber">4.4</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-pushing-main-to-your-origin.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Pushing <code class="code-inline tex2jax_ignore">main</code> to Your Origin</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-pushing-main-to-your-origin.html#topic-pushing-main-to-your-origin-2" class="internal"><span class="codenumber">4.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-deleting-a-feature-branch.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Deleting a Feature Branch</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-deleting-a-feature-branch.html#topic-deleting-a-feature-branch-3" class="internal"><span class="codenumber">4.6</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-git-command-summary-synching.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Git Command Summary</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-git-command-summary-synching.html#topic-git-command-summary-synching-3" class="internal"><span class="codenumber">4.7</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-lets-do-it-again.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Let’s Do it Again</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-lets-do-it-again.html#topic-lets-do-it-again-3" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Overview of Fixing an Issue</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-lets-do-it-again.html#topic-lets-do-it-again-3-2" class="internal"><span class="codenumber">4.8.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-lets-do-it-again.html#topic-lets-do-it-again-4" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Claim Round 2 Issue</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-lets-do-it-again.html#topic-lets-do-it-again-4-2" class="internal"><span class="codenumber">4.8.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-lets-do-it-again.html#topic-lets-do-it-again-5" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Fix the Issue</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-lets-do-it-again.html#topic-lets-do-it-again-5-2" class="internal"><span class="codenumber">4.8.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-lets-do-it-again.html#topic-lets-do-it-again-6" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Upstream the Changes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-lets-do-it-again.html#topic-lets-do-it-again-6-2" class="internal"><span class="codenumber">4.8.4</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="topic-gitkit-feedback-synching.html" class="internal"><span class="codenumber">4.9</span> <span class="title">GitKit Feedback</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="topic-appendix-a-staying-synchronized.html" class="internal"><span class="codenumber">4.10</span> <span class="title">Appendix A</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="topic-merge-conflicts.html" class="internal"><span class="codenumber">5</span> <span class="title">Handling Merge Conflicts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-understanding-merge-conflicts.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Understanding Merge Conflicts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-understanding-merge-conflicts.html#topic-merge-example-1" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Merge Example 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-understanding-merge-conflicts.html#topic-merge-example-1-3" class="internal"><span class="codenumber">5.1.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-understanding-merge-conflicts.html#topic-merge-example-2" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Merge Example 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-understanding-merge-conflicts.html#topic-merge-example-2-3" class="internal"><span class="codenumber">5.1.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-confirming-the-merge-conflict.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Confirming the Merge Conflict</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-confirming-the-merge-conflict.html#topic-confirming-the-merge-conflict-3" class="internal"><span class="codenumber">5.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-synchronizing-with-the-upstream-repository.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Synchronizing with the Upstream Repository</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-synchronizing-with-the-upstream-repository.html#topic-synchronizing-with-the-upstream-repository-3" class="internal"><span class="codenumber">5.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-merging-the-main-branch-into-a-feature-branch.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Merging the main Branch into a Feature Branch</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-merging-the-main-branch-into-a-feature-branch.html#topic-branch-vocabulary" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Branch Vocabulary</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-merging-the-main-branch-into-a-feature-branch.html#topic-branch-vocabulary-3" class="internal"><span class="codenumber">5.4.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-merging-the-main-branch-into-a-feature-branch.html#topic-git-merge-command" class="internal"><span class="codenumber">5.4.2</span> <span class="title">The <code class="code-inline tex2jax_ignore">git merge</code> Command.</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-merging-the-main-branch-into-a-feature-branch.html#topic-git-merge-command-3" class="internal"><span class="codenumber">5.4.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-resolving-a-merge-conflict.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Resolving a Merge Conflict</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-resolving-a-merge-conflict.html#topic-merge-conflict-information" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Raw Merge Conflict Information</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-resolving-a-merge-conflict.html#topic-merge-conflict-information-3" class="internal"><span class="codenumber">5.5.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-resolving-a-merge-conflict.html#topic-resolving-the-conflict" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Resolving the Merge Conflict</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-resolving-a-merge-conflict.html#topic-resolving-the-conflict-3" class="internal"><span class="codenumber">5.5.2</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-resolving-a-merge-conflict.html#topic-committing-merged-changes" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Committing the Merged Changes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-resolving-a-merge-conflict.html#topic-committing-merged-changes-2" class="internal"><span class="codenumber">5.5.3</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-updating-your-pull-request.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Updating Your Pull Request</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-updating-your-pull-request.html#topic-updating-your-pull-request-3" class="internal"><span class="codenumber">5.6</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-extra-practice-merging.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Extra Practice</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-extra-practice-merging.html#topic-extra-practice-merging-3" class="internal"><span class="codenumber">5.7</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-git-command-summary-merging.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Git Command Summary</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-git-command-summary-merging.html#topic-git-command-summary-merging-3" class="internal"><span class="codenumber">5.8</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="topic-gitkit-feedback-merging.html" class="internal"><span class="codenumber">5.9</span> <span class="title">GitKit Feedback</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="topic-gitkit-post-survey.html" class="internal"><span class="codenumber">5.10</span> <span class="title">GitKit Post-Survey</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-appendix-a-merge-conflicts.html" class="internal"><span class="codenumber">5.11</span> <span class="title">Appendix A</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-appendix-a-merge-conflicts.html#topic-appendix-a-merge-conflicts-3" class="internal"><span class="codenumber">5.11</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="topic-instructor-merge-conflicts"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.5</span><span class="space"> </span><span class="title">Merge Conflicts Instructor Notes</span>
+</h2>
+<section class="introduction" id="topic-instructor-merge-conflicts-2"><div class="para" id="topic-instructor-merge-conflicts-2-1">At the start of this chapter students will have made pull requests for the "Round 2" issues. Initially GitHub will report that these PRs can be merged automatically. However, the instructor will begin this topic by introducing changes to the upstream main that create merge conflicts with the fixes to each of the "Round 2" issues.  Students will then observe that their PRs go from being able to be merged automatically to containing conflicts.</div>
+<div class="para" id="topic-instructor-merge-conflicts-2-2">This chapter then focuses on the resolution of merge conflicts.  The concepts of merge commits, common ancestors, best common ancestor, and non-conflicting and conflicting changes are introduced. The topic then covers the process of merging main into a feature branch, git’s raw conflict information and the use of graphical merge tool.  The hands-on activity concludes with the students having resolved the merge conflict in their "Round 2" pull request.  Note that these PRs are never merged into the upstream as part of the GitKit activities.</div>
+<div class="para logical" id="topic-instructor-merge-conflicts-2-3">
+<div class="para">The exercises in this chapter have the students perform the following major tasks:</div>
+<ol class="decimal" id="topic-instructor-merge-conflicts-2-3-1">
+<li id="topic-instructor-merge-conflicts-2-3-1-1"><div class="para" id="topic-instructor-merge-conflicts-2-3-1-1-1">Synchronize their main branches with the upstream main branch, which will bring in the changes that conflict with their "Round 2" fixes.</div></li>
+<li id="topic-instructor-merge-conflicts-2-3-1-2"><div class="para" id="topic-instructor-merge-conflicts-2-3-1-2-1">Merge the main branch into their feature branch, which will create the merge conflict.</div></li>
+<li id="topic-instructor-merge-conflicts-2-3-1-3"><div class="para" id="topic-instructor-merge-conflicts-2-3-1-3-1">Examine the raw merge conflict information.</div></li>
+<li id="topic-instructor-merge-conflicts-2-3-1-4"><div class="para" id="topic-instructor-merge-conflicts-2-3-1-4-1">Use the VS Code merge tool to resolve the conflict.</div></li>
+<li id="topic-instructor-merge-conflicts-2-3-1-5"><div class="para" id="topic-instructor-merge-conflicts-2-3-1-5-1">Commit the merged result to their feature branch.</div></li>
+<li id="topic-instructor-merge-conflicts-2-3-1-6"><div class="para" id="topic-instructor-merge-conflicts-2-3-1-6-1">Push the feature branch to update their pull request.</div></li>
+</ol>
+</div></section><section class="subsection" id="topic-merge-conflicts-slide-notes"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="space"> </span><span class="title">Slide Notes</span>
+</h3>
+<div class="para logical" id="topic-merge-conflicts-slide-notes-2"><ul class="disc" id="topic-merge-conflicts-slide-notes-2-1">
+<li id="topic-merge-conflicts-slide-notes-2-1-1">
+<span class="heading"><span class="title">Slide 2.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-1-2">Another opportunity is taken to review of the steps involved in the forking workflow.  Students typically have a good handle on these steps and how they are ordered when using the forking workflow to upstream changes.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-2">
+<span class="heading"><span class="title">Slides 3-4.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-2-2">The instructor may merge a provided branch that creates conflicts with the "Round 2" issues (See: <a href="topic-instructor-merge-conflicts.html#topic-merge-conflicts-todo" class="internal" title="Subsection 1.5.2: To-Do List">Subsection 1.5.2</a>) either before or during class.  Merging the conflicts during class is the preferred option if time permits.  This allows the instructor to show a few student "Round 2" PRs and that indicate that they can currently be merged automatically.  Then merge the PR with the conflicts and look at the PR’s again to show that they now contain conflicts. Slide 4 can be used to illustrate how the conflicts have arisen.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-3">
+<span class="heading"><span class="title">Slide 5.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-3-2">Introduces the <dfn class="terminology">merge</dfn> operation and <dfn class="terminology">merge commits</dfn>.  At this point, a merge with no conflicts (i.e. like the "Round 1" PRs) is illustrated. This is shown from the project maintainer perspective with the feature branch from a PR being merged into the upstream main branch.  Later this will be reversed when students are merging their copy of the upstream main branch into their feature branch to resolve conflicts (see Slides 19-23).</div>
+<div class="para" id="topic-merge-conflicts-slide-notes-2-1-3-3">Merge commits are shown in the diagram as a colored dot with a ring around them. A merge commit for non-conflicting changes are shown with a white ring around them.  The ring is added to indicate that the meta information about the commit is different than what was contained in the feature branch.  This also records, in the project history, the fact that the changes were merged into main.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-4">
+<span class="heading"><span class="title">Slides 9-12.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-4-2">Uses a text based example to introduce the concepts of <dfn class="terminology">common ancestors</dfn> and <dfn class="terminology">best common ancestor</dfn>, and then uses those to identify <dfn class="terminology">conflicting changes</dfn> and <dfn class="terminology">non-conflicting changes</dfn>.  One way to identify these changes is first to compare the feature branch to the best common ancestor and highlight all changes in the feature branch.  Then repeat, but compare the main branch to the best common ancestor and highlight all differences in the main branch.  Then any lines that are highlighted in both the feature branch and the main branch are conflicting changes. All other highlighted lines are non-conflicting changes.</div>
+<div class="para" id="topic-merge-conflicts-slide-notes-2-1-4-3">Note that in these examples the identification of conflicting changes is simplified to be <em class="emphasis">line based</em>.  That is, if a change is found, the entire line is marked as containing a change.  Similarly, if a line is changed in both the feature branch and the main branch, the entire line is marked as a conflict.  The algorithm used by git is more complex than this simplified approach, but the concept is sufficiently the same for the purposes of these activities.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-5">
+<span class="heading"><span class="title">Slides 13-16.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-5-2">These slides contain some additional practice exercises for identifying non-conflicting and conflicting changes, and merging the results.  These activities can be done and discussed in small groups during class if time permits.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-6">
+<span class="heading"><span class="title">Slide 17.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-6-2">Establishes the basis for how developers (i.e. the students) will resolve merge conflicts.  While a maintainer could resolve the conflict, more typically the developer who submitted the PR will be expected to resolve any conflicts in their PR.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-7">
+<span class="heading"><span class="title">Slide 18.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-7-2">The way that a developer will resolve a merge conflicts is to pull the (conflicting) changes to the upstream main to their local repository. They then merge the main branch into their feature branch. They then push their updated feature branch to their origin, which automatically updates the PR for that branch.  Because the PR has been updated the maintainers are now able to review not only the proposed changes but also the way that the merge conflicts were resolved.</div>
+<div class="para" id="topic-merge-conflicts-slide-notes-2-1-7-3">Note that this is backwards from what was done earlier. In <a href="topic-staying-synchronized.html" class="internal" title="Chapter 4: Staying Synchronized with the Upstream">Chapter 4</a> the maintainer was merging the feature branch into the main branch. Here the developer is merging the main branch into their feature branch. The rule that developers "only commit to feature branches" can be used as a grounding for why developers do the merge in this direction.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-8">
+<span class="heading"><span class="title">Slide 19.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-8-2">Illustrates in more detail the merge of both non-conflicting and conflicting changes from the main branch into the feature branch. Here the merge commit contains a colored ring instead of a white ring (as it did earlier). The colored ring indicates that the merge commit blends the changes that were contained in its two parent commits.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-9">
+<span class="heading"><span class="title">Slide 20.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-9-2">Shows the raw merge conflict information that is produced by git when a merge creates a conflict.  This information can be edited manually in any text editor.  However, it is often difficult to identify exactly what changes exist.  This is good motivation for the use of a <dfn class="terminology">graphical merge tool</dfn> that makes it easier to see what changes have been made and where the conflicts exist.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-10">
+<span class="heading"><span class="title">Slides 21-23.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-10-2">Shows the graphical merge tool that is built into VS Code. The exercises guide the students through use this tool to resolve the conflicts in their PRs for their "Round 2" issues.</div>
+</li>
+<li id="topic-merge-conflicts-slide-notes-2-1-11">
+<span class="heading"><span class="title">Slide 24-25.</span></span><div class="para" id="topic-merge-conflicts-slide-notes-2-1-11-2">Here for review and reference and not much time needs to be spent on these slides.  The final slide collects into one diagram everything that is a part of the forking workflow.  It has a lot going on, but by this point students should be able to make sense of each of the actions that are illustrated.</div>
+</li>
+</ul></div></section><section class="subsection" id="topic-merge-conflicts-todo"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="space"> </span><span class="title">To-Do List</span>
+</h3>
+<div class="para logical" id="topic-merge-conflicts-todo-2"><ol class="decimal" id="topic-merge-conflicts-todo-2-1">
+<li id="topic-merge-conflicts-todo-2-1-1"><div class="para" id="topic-merge-conflicts-todo-2-1-1-1">If time permits, monitor the "Round 2" tickets in the issue tracker. There are only 4 "Round 2" issues and thus there will need to be multiple students working on each.  If a student uses the the comment from <a href="topic-foss-communities.html" class="internal" title="Section 2.2: FOSS Communities">Section 2.2</a>, and they are the first to do so, the issue will be assigned to them automatically. The instructor can manually assign the issue to all other students that comment on it.</div></li>
+<li id="topic-merge-conflicts-todo-2-1-2"><div class="para" id="topic-merge-conflicts-todo-2-1-2-1">Create, but do not merge, a pull request for the addRound2Conflicts branch in the upstream. When merged this branch will create a conflict with each of the changes requested in a "Round2" issue.  Thus, this PR should not be merged until after the students have synchronized with the upstream main at the start of this chapter.  If it is merged before they synchronize, then they will begin the fix for their "Round 2" issue with the (conflicting) changes already in place, and thus their fix will not generate the expected merge conflict. If students find themselves in this situation, there are instructions in the chapter guide them through a process that will create a conflict for them.</div></li>
+<li id="topic-merge-conflicts-todo-2-1-3"><div class="para" id="topic-merge-conflicts-todo-2-1-3-1">Just before class, or during class merge the PR for the addRound2Conflicts branch. It has been effective to do the merge of the PR for the addRound2Conflicts branch live in class.</div></li>
+</ol></div></section><section class="subsection" id="topic-merge-conflicts-exercise-notes"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="space"> </span><span class="title">Exercise Notes</span>
+</h3>
+<div class="para logical" id="topic-merge-conflicts-exercise-notes-2"><ul class="disc" id="topic-merge-conflicts-exercise-notes-2-1">
+<li id="topic-merge-conflicts-exercise-notes-2-1-1">
+<em class="emphasis"><div class="para" id="topic-merge-conflicts-exercise-notes-2-1-1-1-1">
+<code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex-merge-conflicts-practice-2-e" missing or not unique]</code>- <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex-merge-conflicts-practice-2-f" missing or not unique]</code>
+</div></em><div class="para" id="topic-merge-conflicts-exercise-notes-2-1-1-2">In this exercise there are no conflicting changes and the merge would be able to be completed automatically.  However, if all of the non-conflicting changes are merged into the result the program will not produce the correct result.  The point being that automatic merges can check for structural conflicts, but not logical or semantic conflicts and thus caution should be used when performing merges.</div>
+</li>
+<li id="topic-merge-conflicts-exercise-notes-2-1-2">
+<em class="emphasis"><div class="para" id="topic-merge-conflicts-exercise-notes-2-1-2-1-1"><a href="topic-confirming-the-merge-conflict.html#ex-no-automatic-merge-on-github" class="xref" data-knowl="./knowl/xref/ex-no-automatic-merge-on-github.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 5.2.2">Exercise 5.2.2</a></div></em><div class="para" id="topic-merge-conflicts-exercise-notes-2-1-2-2">Inevitably some students will be behind on their work and will complete their sync with upstream main after you have merged the PR for the addRound2Conflicts branch.  In these cases, their pull requests will not create a conflict to be resolved.  These students should follow the instructions given in <a href="topic-appendix-a-merge-conflicts.html" class="internal" title="Section 5.11: Appendix A">Section 5.11</a>.  These directions have them pull the mergeConflictPractice branch and create a pull request for it.  That PR will then contain conflicts with the changes in the addRound2Conflicts branch that was merged into main.  They will then complete the activity using the mergeConflictPractice branch as it it were their feature branch. Students not in this situation, but who would like additional practice can also pull and use the mergeConflictPractice branch at the end of the activity.</div>
+</li>
+<li id="topic-merge-conflicts-exercise-notes-2-1-3">
+<em class="emphasis"><div class="para" id="topic-merge-conflicts-exercise-notes-2-1-3-1-1">
+<code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex-launch-mergetool" missing or not unique]</code>.</div></em><div class="para" id="topic-merge-conflicts-exercise-notes-2-1-3-2">By default, VS Code does not display the best common ancestor in its merge tool. The steps given in these questions has the students change the VS Code configuration such that it includes the best common ancestor.</div>
+</li>
+<li id="topic-merge-conflicts-exercise-notes-2-1-4">
+<em class="emphasis"><div class="para" id="topic-merge-conflicts-exercise-notes-2-1-4-1-1">
+<a href="topic-extra-practice-merging.html#ex-extra-practice-merging-fetch-repo" class="xref" data-knowl="./knowl/xref/ex-extra-practice-merging-fetch-repo.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 5.7.2">Exercise 5.7.2</a>.</div></em><div class="para" id="topic-merge-conflicts-exercise-notes-2-1-4-2">If the student did not need to use the merge-conflict-practice branch in <a href="topic-confirming-the-merge-conflict.html#ex-no-automatic-merge-on-github" class="xref" data-knowl="./knowl/xref/ex-no-automatic-merge-on-github.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 5.2.2">Exercise 5.2.2</a>, then they can use it at this point for additional practice with resolving merge conflicts.</div>
+</li>
+</ul></div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="topic-instructor-synchronizing.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="topic-communities-and-collaboration.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
