@@ -19,13 +19,13 @@ var ptx_lunr_docs = [
   "body": " In addition to the authors many others have helped in the production of the GitKit in various ways, including conversations, guidance, critiques and providing feedback from pilot uses in their courses. These following individuals have provided substantial help in one or more of these ways:  Michael Caines  Heidi Ellis  Greg Hislop  Clif Kussmaul  Emily Lovell  Cam Macdonell    The authors have been active in the Teaching Open Source community. Many of the resources on their Learning Resources page have informed the exercises in the GitKit.  This work was supported under National Science Foundation Grants DUE-2012966 , DUE-2013069 , DUE-2012979 , DUE-2012999 , and DUE-2012990 . Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NSF.  "
 },
 {
-  "id": "front-colophon",
+  "id": "frontmatter-5",
   "level": "1",
-  "url": "front-colophon.html",
+  "url": "frontmatter-5.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": ""
+  "body": "  "
 },
 {
   "id": "topic-instructor-intro",
