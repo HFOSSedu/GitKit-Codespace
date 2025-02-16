@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.6';
+eBookConfig.runestone_version = '7.5.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.82032a8574f6ce75.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6a985cbf816db5c7.css">
+<script src="_static/prefix-runtime.d7db380f34a0a67e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.e0c6d4592e23c667.css">
 <style>
 #topic-quick-start-2-3 { counter-set: topic-quick-start-2-3 0; }
 #topic-quick-start-2-3 > li::marker { content: ""counter(topic-quick-start-2-3,decimal)"."; }
@@ -357,15 +357,15 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-git-clone-4" class="internal"><span class="codenumber">2.8.2</span> <span class="title"></span></a></div></li></ul>
 </li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-explore-clone-linux" class="internal"><span class="codenumber">2.8.3</span> <span class="title">Exploring Your Cloned Repository In Your Development Environment</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-explore-clone-linux-3" class="internal"><span class="codenumber">2.8.3</span> <span class="title"></span></a></div></li></ul>
+<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-explore-clone" class="internal"><span class="codenumber">2.8.3</span> <span class="title">Exploring Your Cloned Repository In Your Development Environment</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-explore-clone-3" class="internal"><span class="codenumber">2.8.3</span> <span class="title"></span></a></div></li></ul>
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-git-remote" class="internal"><span class="codenumber">2.8.4</span> <span class="title"><code class="code-inline tex2jax_ignore">git remote</code></span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-git-remote-5" class="internal"><span class="codenumber">2.8.4</span> <span class="title"></span></a></div></li></ul>
 </li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-open-repo-folder" class="internal"><span class="codenumber">2.8.5</span> <span class="title">Opening the GitKit-FarmData2 Repository Folder</span></a></div>
+<div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-open-repo-folder" class="internal"><span class="codenumber">2.8.5</span> <span class="title">Opening the GitKit FarmData2 Repository Folder</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="topic-cloning-your-origin.html#topic-open-repo-folder-4" class="internal"><span class="codenumber">2.8.5</span> <span class="title"></span></a></div></li></ul>
 </li>
 </ul>
@@ -649,31 +649,31 @@ eBookConfig.enable_chatcodes =  false;
 <li data-component="feedback" id="rs-ex-branch-diff-b_opt_d"><div class="para" id="ex-branch-diff-b-2-4-2-1">It is possible that someone else created a branch in their local repository and pushed it to their origin. You have a different origin repository so you would not see it.</div></li>
 </ul></div></div>
 <div class="solutions"><details id="ex-branch-diff-b-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-branch-diff-b-3-1">All the work you have done in this chapter is on your local machine. What should be appearing in your local repository that is not in the origin repository?</div></div></details></div></article></article><div class="para" id="topic-pushing-a-branch-to-your-origin-3-6"><dfn class="terminology">Pushing your Feature Branch:</dfn></div>
-<article class="exercise exercise-like" id="ex-push-branch-linux"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-ex-push-branch-linux" data-multipleanswers="true">
-<div class="para" id="ex-push-branch-linux-1-1">The <code class="code-inline tex2jax_ignore">git push &lt;remote&gt; &lt;branch&gt;</code> command will push the specified branch of your local repository to the specified remote repository (i.e. on GitHub).</div> <div class="para" id="ex-push-branch-linux-1-2">You will need to push your <em class="emphasis">feature branch</em> from your local repository to your <em class="emphasis">origin repository</em> on GitHub. You have given your remote repository the name <code class="code-inline tex2jax_ignore">origin</code> which you can use instead of the full URL. For example, <code class="code-inline tex2jax_ignore">git push origin &lt;branch&gt;</code> and the name of your branch where you committed your change. Type the command now.</div> <div class="para" id="ex-push-branch-linux-1-3">The output should not contain any error messages. If you see error messages, make sure you spelled your branch name correctly and your command is in the proper format and does not include &lt; &gt;. The last few lines should also give you some indication that your push was successful. Look at the last two lines of output produced.</div>
-<li data-component="answer" id="rs-ex-push-branch-linux_opt_a" data-correct=""><div class="para" id="ex-push-branch-linux-2-1-1-1">The second to last line is the URL of the origin repository.</div></li>
-<li data-component="feedback" id="rs-ex-push-branch-linux_opt_a"><div class="para" id="ex-push-branch-linux-2-1-2-1">Correct!</div></li>
-<li data-component="answer" id="rs-ex-push-branch-linux_opt_b" data-correct=""><div class="para" id="ex-push-branch-linux-2-2-1-1">The last line provides the name of the branch in the local repository that was <em class="emphasis">pushed</em> to the origin repository.</div></li>
-<li data-component="feedback" id="rs-ex-push-branch-linux_opt_b"><div class="para" id="ex-push-branch-linux-2-2-2-1">Correct!</div></li>
-<li data-component="answer" id="rs-ex-push-branch-linux_opt_c"><div class="para" id="ex-push-branch-linux-2-3-1-1">The second to last line is the URL of your local repository.</div></li>
-<li data-component="feedback" id="rs-ex-push-branch-linux_opt_c"><div class="para" id="ex-push-branch-linux-2-3-2-1">Your local repository does not have a URL, it is on your local machine.</div></li>
-<li data-component="answer" id="rs-ex-push-branch-linux_opt_d"><div class="para" id="ex-push-branch-linux-2-4-1-1">The last line provides the URL of the branch in the local repository that was <em class="emphasis">pushed</em> to the origin repository.</div></li>
-<li data-component="feedback" id="rs-ex-push-branch-linux_opt_d"><div class="para" id="ex-push-branch-linux-2-4-2-1">This shows the name of the branch, not a URL.</div></li>
+<article class="exercise exercise-like" id="ex-push-branch"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-ex-push-branch" data-multipleanswers="true">
+<div class="para" id="ex-push-branch-1-1">The <code class="code-inline tex2jax_ignore">git push &lt;remote&gt; &lt;branch&gt;</code> command will push the specified branch of your local repository to the specified remote repository (i.e. on GitHub).</div> <div class="para" id="ex-push-branch-1-2">You will need to push your <em class="emphasis">feature branch</em> from your local repository to your <em class="emphasis">origin repository</em> on GitHub. You have given your remote repository the name <code class="code-inline tex2jax_ignore">origin</code> which you can use instead of the full URL. For example, <code class="code-inline tex2jax_ignore">git push origin &lt;branch&gt;</code> and the name of your branch where you committed your change. Type the command now.</div> <div class="para" id="ex-push-branch-1-3">The output should not contain any error messages. If you see error messages, make sure you spelled your branch name correctly and your command is in the proper format and does not include &lt; &gt;. The last few lines should also give you some indication that your push was successful. Look at the last two lines of output produced.</div>
+<li data-component="answer" id="rs-ex-push-branch_opt_a" data-correct=""><div class="para" id="ex-push-branch-2-1-1-1">The second to last line is the URL of the origin repository.</div></li>
+<li data-component="feedback" id="rs-ex-push-branch_opt_a"><div class="para" id="ex-push-branch-2-1-2-1">Correct!</div></li>
+<li data-component="answer" id="rs-ex-push-branch_opt_b" data-correct=""><div class="para" id="ex-push-branch-2-2-1-1">The last line provides the name of the branch in the local repository that was <em class="emphasis">pushed</em> to the origin repository.</div></li>
+<li data-component="feedback" id="rs-ex-push-branch_opt_b"><div class="para" id="ex-push-branch-2-2-2-1">Correct!</div></li>
+<li data-component="answer" id="rs-ex-push-branch_opt_c"><div class="para" id="ex-push-branch-2-3-1-1">The second to last line is the URL of your local repository.</div></li>
+<li data-component="feedback" id="rs-ex-push-branch_opt_c"><div class="para" id="ex-push-branch-2-3-2-1">Your local repository does not have a URL, it is on your local machine.</div></li>
+<li data-component="answer" id="rs-ex-push-branch_opt_d"><div class="para" id="ex-push-branch-2-4-1-1">The last line provides the URL of the branch in the local repository that was <em class="emphasis">pushed</em> to the origin repository.</div></li>
+<li data-component="feedback" id="rs-ex-push-branch_opt_d"><div class="para" id="ex-push-branch-2-4-2-1">This shows the name of the branch, not a URL.</div></li>
 </ul></div></div>
-<div class="solutions"><details id="ex-push-branch-linux-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-push-branch-linux-3-1">There are several lines of output that mention deltas. Ignore these. Make sure you are looking at the last two lines - the first of which begin with <em class="emphasis">To</em> and the second of which begins with a hexademical code.</div></div></details></div></article><article class="exercise exercise-like" id="ex-push-error-linux"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-ex-push-error-linux" data-multipleanswers="true">
-<div class="para" id="ex-push-error-linux-1-1">Visit your origin repository on GitHub and check that the branch was pushed. You may have to reload the page.</div> <div class="para" id="ex-push-error-linux-1-2">How can you tell your branch was pushed?</div>
-<li data-component="answer" id="rs-ex-push-error-linux_opt_a" data-correct=""><div class="para" id="ex-push-error-linux-2-1-1-1">The number next to the <em class="emphasis">Branches</em> link is now 2.</div></li>
-<li data-component="feedback" id="rs-ex-push-error-linux_opt_a"><div class="para" id="ex-push-error-linux-2-1-2-1">Correct! The number of branches should have increased.</div></li>
-<li data-component="answer" id="rs-ex-push-error-linux_opt_b" data-correct=""><div class="para" id="ex-push-error-linux-2-2-1-1">When I click on <em class="emphasis">Branches</em> my branch is now listed in addition to <code class="code-inline tex2jax_ignore">main</code>.</div></li>
-<li data-component="feedback" id="rs-ex-push-error-linux_opt_b"><div class="para" id="ex-push-error-linux-2-2-2-1">Correct! You should be able to see both branches on this page.</div></li>
-<li data-component="answer" id="rs-ex-push-error-linux_opt_c"><div class="para" id="ex-push-error-linux-2-3-1-1">The number of issues has increased.</div></li>
-<li data-component="feedback" id="rs-ex-push-error-linux_opt_c"><div class="para" id="ex-push-error-linux-2-3-2-1">Pushing a branch will not create an issues.</div></li>
-<li data-component="answer" id="rs-ex-push-error-linux_opt_d"><div class="para" id="ex-push-error-linux-2-4-1-1">The number of pull requests has increased.</div></li>
-<li data-component="feedback" id="rs-ex-push-error-linux_opt_d"><div class="para" id="ex-push-error-linux-2-4-2-1">Pushing a branch will not create a pull request.</div></li>
+<div class="solutions"><details id="ex-push-branch-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-push-branch-3-1">There are several lines of output that mention deltas. Ignore these. Make sure you are looking at the last two lines - the first of which begin with <em class="emphasis">To</em> and the second of which begins with a hexademical code.</div></div></details></div></article><article class="exercise exercise-like" id="ex-push-error"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-ex-push-error" data-multipleanswers="true">
+<div class="para" id="ex-push-error-1-1">Visit your origin repository on GitHub and check that the branch was pushed. You may have to reload the page.</div> <div class="para" id="ex-push-error-1-2">How can you tell your branch was pushed?</div>
+<li data-component="answer" id="rs-ex-push-error_opt_a" data-correct=""><div class="para" id="ex-push-error-2-1-1-1">The number next to the <em class="emphasis">Branches</em> link is now 2.</div></li>
+<li data-component="feedback" id="rs-ex-push-error_opt_a"><div class="para" id="ex-push-error-2-1-2-1">Correct! The number of branches should have increased.</div></li>
+<li data-component="answer" id="rs-ex-push-error_opt_b" data-correct=""><div class="para" id="ex-push-error-2-2-1-1">When I click on <em class="emphasis">Branches</em> my branch is now listed in addition to <code class="code-inline tex2jax_ignore">main</code>.</div></li>
+<li data-component="feedback" id="rs-ex-push-error_opt_b"><div class="para" id="ex-push-error-2-2-2-1">Correct! You should be able to see both branches on this page.</div></li>
+<li data-component="answer" id="rs-ex-push-error_opt_c"><div class="para" id="ex-push-error-2-3-1-1">The number of issues has increased.</div></li>
+<li data-component="feedback" id="rs-ex-push-error_opt_c"><div class="para" id="ex-push-error-2-3-2-1">Pushing a branch will not create an issues.</div></li>
+<li data-component="answer" id="rs-ex-push-error_opt_d"><div class="para" id="ex-push-error-2-4-1-1">The number of pull requests has increased.</div></li>
+<li data-component="feedback" id="rs-ex-push-error_opt_d"><div class="para" id="ex-push-error-2-4-2-1">Pushing a branch will not create a pull request.</div></li>
 </ul></div></div>
-<div class="solutions"><details id="ex-push-error-linux-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-push-error-linux-3-1">There are multiple ways you can tell that your branch has been pushed by looking at the <em class="emphasis">origin repository</em> on GitHub.</div></div></details></div></article></section></section></div>
+<div class="solutions"><details id="ex-push-error-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-push-error-3-1">There are multiple ways you can tell that your branch has been pushed by looking at the <em class="emphasis">origin repository</em> on GitHub.</div></div></details></div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="topic-committing-to-your-local-repository.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="topic-creating-a-pull-request.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
