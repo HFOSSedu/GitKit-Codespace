@@ -2,7 +2,7 @@
 
 This repository contains the pretext source for the GitKit Runestone texts.  
 
-If you are interested in using the GitKit Text please see the Instructor Guide in the text on Runestone by using one of the following link: [GitKit](https://runestone.academy/ns/books/published/gitkitlinux/the-gitkit-book.html?mode=browsing)
+If you are interested in using the GitKit Text please see the Instructor Guide in the text on Runestone by using one of the following link: [GitKit](https://runestone.academy/ns/books/published/gitkit2ed/the-gitkit-book.html?mode=browsing)
 
 ## Licensing
 
