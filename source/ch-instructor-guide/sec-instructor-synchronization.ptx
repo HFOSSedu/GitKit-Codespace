@@ -142,7 +142,7 @@
             Note
           </title>
           <p>
-            This set of materials may be a little short for a 75-minute class period. The remaining class time can be used to help students who had difficulties creating a PR, who's PR's cannot be merged automatically or are missing the "Closes" or "Fixes" lines.
+            This set of materials may be a little short for a 75-minute class period. The remaining class time can be used to help students who had difficulties creating a PR, whose PR's cannot be merged automatically or are missing the "Closes" or "Fixes" lines.
           </p>
         </li>
       </ol>
@@ -193,15 +193,12 @@
         </li>
         <li>
           <em>
-            <p component="vscode-kit-client">
-              <xref ref="ex-setting-upstream-b-vscode" />
-            </p>
-            <p component="linux-kit-client">
-              <xref ref="ex-setting-upstream-e-linux" />
+            <p>
+              <xref ref="ex-setting-upstream-remote" />
             </p>
           </em>
           <p>
-            It is a good idea to check here that the student's upstream remote points to the correct GitKit-FarmData2 repository.  The Kit-tty should have caught this error and directed students on the correct way to set the upstream remote. However, some students have still managed to set their upstream to point to their origin or to the live FarmData2 repository.
+            It is a good idea to check here that the student's upstream remote points to the correct GitKit FarmData2 repository.  The Kit-tty should have caught this error and directed students on the correct way to set the upstream remote. However, some students have still managed to set their upstream to point to their origin or to the live FarmData2 repository.
           </p>
         </li>
         <li>
@@ -217,7 +214,7 @@
         <li>
           <em>
             <p>
-              <xref ref="ex-fixing-issue-ordering" /> - <xref ref="ex-pull-request-info" />.
+              <xref ref="ex-fixing-issue-ordering" /> - <xref ref="ex-pull-request-info-b" />.
             </p>
           </em>
           <p>
