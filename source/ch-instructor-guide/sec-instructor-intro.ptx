@@ -638,7 +638,7 @@
 						<ul>
 							<li>
 								<p>
-									[ <url href="https://github.com/HFOSSedu/GitKit-Text/tree/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx?raw=true">Slides</url> |
+									[ <url href="https://github.com/HFOSSedu/GitKit-Codespace/tree/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx?raw=true">Slides</url> |
 									<xref ref="topic-communities-slide-notes" text="custom">Slide Notes</xref> |
 									<xref ref="topic-communities-todo" text="custom">To-Do</xref> |
 									<xref ref="topic-communities-exercise-notes" text="custom">Exercise Notes</xref>
@@ -654,7 +654,7 @@
 						<ul>
 							<li>
 								<p>
-									[ <url href="https://github.com/HFOSSedu/GitKit-Text/tree/main/materials/slides/Ch3-WorkingLocallyAndUpstreaming.pptx?raw=true">Slides</url> |
+									[ <url href="https://github.com/HFOSSedu/GitKit-Codespace/tree/main/materials/slides/Ch3-WorkingLocallyAndUpstreaming.pptx?raw=true">Slides</url> |
 									<xref ref="topic-upstreaming-slide-notes" text="custom">Slide Notes</xref> |
 									<xref ref="topic-upstreaming-todo" text="custom">To-Do</xref> |
 									<xref ref="topic-upstreaming-exercise-notes" text="custom">Exercise Notes</xref>
@@ -670,7 +670,7 @@
 						<ul>
 							<li>
 								<p>
-									[ <url href="https://github.com/HFOSSedu/GitKit-Text/tree/main/materials/slides/Ch4-StayingSynchronized.pptx?raw=true">Slides</url> |
+									[ <url href="https://github.com/HFOSSedu/GitKit-Codespace/tree/main/materials/slides/Ch4-StayingSynchronized.pptx?raw=true">Slides</url> |
 									<xref ref="topic-synchronizing-slide-notes" text="custom">Slide Notes</xref> |
 									<xref ref="topic-synchronizing-todo" text="custom">To-Do</xref> |
 									<xref ref="topic-synchronizing-exercise-notes" text="custom">Exercise Notes</xref>
@@ -686,7 +686,7 @@
 						<ul>
 							<li>
 								<p>
-									[ <url href="https://github.com/HFOSSedu/GitKit-Text/tree/main/materials/slides/Ch5-MergeConflicts.pptx?raw=true">Slides</url> |
+									[ <url href="https://github.com/HFOSSedu/GitKit-Codespace/tree/main/materials/slides/Ch5-MergeConflicts.pptx?raw=true">Slides</url> |
 									<xref ref="topic-merge-conflicts-slide-notes" text="custom">Slide Notes</xref> |
 									<xref ref="topic-merge-conflicts-todo" text="custom">To-Do</xref> |
 									<xref ref="topic-merge-conflicts-exercise-notes" text="custom">Exercise Notes</xref>
@@ -713,7 +713,7 @@
 		</p>
 
 		<p>
-			Errors, typos or suggestions for the textbook can be submitted using the <url href="https://github.com/HFOSSedu/GitKit-Text/issues">GitKit-Text Issue Tracker</url>. 
+			Errors, typos or suggestions for the textbook can be submitted using the <url href="https://github.com/HFOSSedu/GitKit-Codespace/issues">GitKit-Text Issue Tracker</url>. 
 		</p>
 
 		<p>
