@@ -6,6 +6,6 @@
     <target name="print" format="pdf" publication="publication.ptx"/>
 
     <!-- This is the target that is built on runestone -->
-    <target name="runestone" format="html" publication="publication-runestone.ptx" output-dir="published/gitkit" />
+    <target name="runestone" format="html" publication="publication-runestone.ptx" output-dir="published/gitkit2ed" />
   </targets>
 </project>
