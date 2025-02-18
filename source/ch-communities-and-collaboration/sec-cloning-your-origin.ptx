@@ -652,7 +652,7 @@
       Choose <c>File > Open Folder...</c>
     </p>
     <p>
-      Select the folder containing your clone of the <c>GitKit FarmData2</c> and click <c>OK</c>.
+      Select the folder containing your clone of the <c>GitKit FarmData2</c> repository and click <c>OK</c>.
     </p>
     <p>
       You will see <c>Setting up your Codespace</c>, and then your terminal will show a message from the <term>Kit-tty</term>.
@@ -663,7 +663,7 @@
   <exercise xml:id="ex-kit-tty" label="ex-kit-tty">
   <statement>
     <p>
-      The the output in <xref ref="ex-open-repo-folder" /> should contain a message from the <term>Kit-tty</term>.
+      The output in <xref ref="ex-open-repo-folder" /> should contain a message from the <term>Kit-tty</term>.
       What is the <term>Kit-tty</term>?
     </p>
   </statement>

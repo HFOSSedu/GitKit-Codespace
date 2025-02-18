@@ -15,7 +15,7 @@
       To work on your issue you will need to setup a <term>development environment</term>.  The development environment is where you will create your <term>clone</term> of the repository, where you will edit files, and where you will use Git commands to add your changes to your clone and <term>push</term> those changes to your <term>origin</term>.  
     </p>
     <p>
-      Many FOSS contributors will setup the development environment on their personal machines. However, because student machines vary greatly the GitKit provides a browser based development environment that you will access using your web browser. This development environment is guaranteed to be the same for everyone that uses it.  It includes a code editor, development tools, and a few features designed specifically to help you stay on track when completing the GitKit's hands-on exercises.
+      Many FOSS contributors will setup the development environment on their personal machines. However, because student machines vary greatly the GitKit provides a browser-based development environment that you will access using your web browser. This development environment is guaranteed to be the same for everyone that uses it.  It includes a code editor, development tools, and a few features designed specifically to help you stay on track when completing the GitKit's hands-on exercises.
     </p>
     <p>
       In this section you will create a new development environment, learn how to stop and restart the development environment, and do some necessary configuration of Git. 
