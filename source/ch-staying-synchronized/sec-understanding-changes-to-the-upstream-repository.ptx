@@ -7,7 +7,7 @@
     <p>
       If the upstream maintainers decide that the changes in your PR (pull request) are good for the project, they will merge them into the upstream <c>main</c> branch.
       That way they become a part of the main project, and everyone can benefit from your work.
-      In class your instructor played the role of a maintainer and demonstrated how the changes contained in pull requests are merged into the upstream. <xref ref="fig-changes-merged-into-upstream" /> shows the upstream with several new changes merged into it's <c>main</c> branch.
+      In class your instructor played the role of a maintainer and demonstrated how the changes contained in pull requests are merged into the upstream. <xref ref="fig-changes-merged-into-upstream" /> shows the upstream with several new changes merged into its <c>main</c> branch.
     </p>
   </introduction>
 

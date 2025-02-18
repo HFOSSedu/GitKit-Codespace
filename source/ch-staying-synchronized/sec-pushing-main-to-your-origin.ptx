@@ -7,7 +7,7 @@
     <title />
     <introduction>
       <p>
-        Your local <c>main</c> branch is now in synch with the upstream <c>main</c> branch. However, the updates that you pulled into your local <c>main</c> branch are not yet in your origin repository. The exercises in this section will guide you the process of getting them there.
+        Your local <c>main</c> branch is now in synch with the upstream <c>main</c> branch. However, the updates that you pulled into your local <c>main</c> branch are not yet in your origin repository. The exercises in this section will guide you through the process of getting them there.
       </p>
     </introduction>
 

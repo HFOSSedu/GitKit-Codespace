@@ -59,13 +59,13 @@
         <li>
           <title>Slide 2</title>
           <p>
-            Reviews the main git / GitHub concepts and vocabulary from Topic 1.  The terms <term>upstream repository</term>, <term>origin repository</term>, <term>local repository</term>, <term>local</term>, <term>remote</term>, <term>fork</term>, and <term>clone</term> should be reviewed so that they begin to be part of the student's working vocabulary.
+            Reviews the main git/GitHub concepts and vocabulary from Chapter 2.  The terms <term>upstream repository</term>, <term>origin repository</term>, <term>local repository</term>, <term>local</term>, <term>remote</term>, <term>fork</term>, and <term>clone</term> should be reviewed so that they begin to be part of the student's working vocabulary.
           </p>
         </li>
         <li>
           <title>Slide 3</title>
           <p>
-            Reviews the simplified workflow introduced in the previous topic.  It should be re-emphasized that this is a simplified view and that this topic is about "un-simplifying" this view by filling in the details.  The figure on this slide, shows a situation where a contributor has made changes to their local repository that they want to upstream.
+            Reviews the simplified workflow introduced in the previous chapter.  It should be re-emphasized that this is a simplified view and that this chapter is about "un-simplifying" this view by filling in the details.  The figure on this slide, shows a situation where a contributor has made changes to their local repository that they want to upstream.
           </p>
         </li>
         <li>
@@ -79,7 +79,7 @@
         <li>
           <title>Slide 5</title>
           <p>
-            The rule that they should "only commit to feature branches" is introduced here. Rather than attempting to provide a full explanation of the technical reasons for not committing to the main branch, this rule is based on the following rationale. Any time new work is started it should begin from the definitive version of the project.  This definitive version is contained in the upstream <code>main</code> branch. Now recall, from the first topic, that only the project maintainers have the permissions necessary to change the upstream <code>main</code> branch.  Thus, keeping your copies of the <code>main</code> branch identical to the upstream (i.e. by not committing to it) allows you to start your work from the definitive version. This explanation often elicits the question of what happens when the maintainers change the upstream <code>main</code> branch? That question can be put off, as how to keep in synch with the upstream is the focus of the next topic.
+            The rule that they should "only commit to feature branches" is introduced here. Rather than attempting to provide a full explanation of the technical reasons for not committing to the main branch, this rule is based on the following rationale. Any time new work is started it should begin from the definitive version of the project.  This definitive version is contained in the upstream <code>main</code> branch. Now recall, from Chapter 2, that only the project maintainers have the permissions necessary to change the upstream <code>main</code> branch.  Thus, keeping your copies of the <code>main</code> branch identical to the upstream (i.e. by not committing to it) allows you to start your work from the definitive version. This explanation often elicits the question of what happens when the maintainers change the upstream <code>main</code> branch? That question can be put off, as how to keep in synch with the upstream is the focus of the next chapter.
           </p>
         </li>
         <li>
@@ -107,7 +107,7 @@
           </p>
         </li>    
         <li>
-          <title>Slide 13-14</title>
+          <title>Slides 13-14</title>
           <p>
             The diagrams here complete a full cycle of the forking workflow by illustrating the feature branch being pushed to GitHub and a pull request being made to the upstream repository.  A point of emphasis here should be that pushing the branch to GitHub is necessary to make the changes that it contains available to the maintainers of the upstream.  This can be used as another point at which to draw distinction between version control (git) and repository hosting (GitHub).  Specifically, pull requests are a repository hosting feature created to facilitate collaboration by allowing many contributors to work on changes and submit them to the upstream for consideration.
           </p>
