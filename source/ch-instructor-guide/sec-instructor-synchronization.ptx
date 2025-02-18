@@ -45,13 +45,13 @@
     xml:id="topic-synchronizing-slide-notes">
     <title>Slide Notes</title>
     <p>
-      <ol>
+      <ul>
         <li>
           <title>
             Slides 2-3
           </title>
           <p>
-            A review of the elements of the forking workflow introduced and practiced in <xref ref="topic-foss-communities"/> and <xref ref="topic-upstreaming-changes"/>.  Steps 3-9 on slide 3 are repeated for each contribution (e.g. bug fix, new feature). The feature branch should be pushed to the origin and the pull request made sooner rather than later, because it makes the changes available to the project maintainers for review and discussion as they are developed.  Some projects will even suggest creating a PR prior to making any changes. Once the PR is created, steps 5-8 can then be repeated for each "nameable unit of work" (i.e. each commit) that is involved in completing the contribution.
+            A review of the elements of the forking workflow introduced and practiced in <xref ref="topic-basic-foss-workflow"/> and <xref ref="topic-upstreaming-changes"/>.  Steps 3-9 on slide 3 are repeated for each contribution (e.g. bug fix, new feature). The feature branch should be pushed to the origin and the pull request made sooner rather than later, because it makes the changes available to the project maintainers for review and discussion as they are developed.  Some projects will even suggest creating a PR prior to making any changes. Once the PR is created, steps 5-8 can then be repeated for each "nameable unit of work" (i.e. each commit) that is involved in completing the contribution.
           </p>
         </li>
         <li>
@@ -145,7 +145,7 @@
             This set of materials may be a little short for a 75-minute class period. The remaining class time can be used to help students who had difficulties creating a PR, whose PR's cannot be merged automatically or are missing the "Closes" or "Fixes" lines.
           </p>
         </li>
-      </ol>
+      </ul>
     </p>
   </subsection>
 
@@ -204,21 +204,21 @@
         <li>
           <em>
             <p>
-              <xref ref="ex-claim-issue-b" />
+              <xref ref="topic-lets-do-it-again" />.
             </p>
           </em>
           <p>
-            After synchronizing with the upstream, the students go on to find a "Round2" ticket in the issue tracker. There are only 4 "Round2" issues, so multiple students will be working on each one.  This question requests that they comment on the issue they want to work on but should spread themselves across the available "Round 2" issues.  If you like you can manually assign each "Round2" issue to all students who commented on it, though this is not necessary.
+            These questions in this section ask the student to use the forking workflow to create a fix for the "Round 2" ticket on which they chose to work. GitHub will indicate that the PRs created by each student for their "Round 2" issue can be merged automatically.  This is because even though multiple students are working on each "Round 2" issue, none of them will have been merged into the upstream <code>main</code> at this point. When introducing <xref ref="topic-resolving-a-merge-conflict" /> the instructor will merge a branch that creates conflicts with all of the student "Round2" PRs.
           </p>
         </li>
         <li>
           <em>
             <p>
-              <xref ref="ex-fixing-issue-ordering" /> - <xref ref="ex-pull-request-info-b" />.
+              <xref ref="ex-claim-issue-b" />
             </p>
           </em>
           <p>
-            These questions ask the student to use the forking workflow to create a fix for the "Round 2" ticket on which they chose to work. GitHub will indicate that the PRs created by each student for their "Round 2" issue can be merged automatically.  This is because even though multiple students are working on each "Round 2" issue, none of them will have been merged into the upstream <code>main</code> at this point. When introducing <xref ref="topic-resolving-a-merge-conflict" /> the instructor will merge a branch that creates conflicts with all of the student "Round2" PRs.
+            After synchronizing with the upstream, the students go on to find a "Round2" ticket in the issue tracker. There are only 4 "Round2" issues, so multiple students will be working on each one.  This question requests that they comment on the issue they want to work on but should spread themselves across the available "Round 2" issues.  If you like you can manually assign each "Round2" issue to all students who commented on it, though this is not necessary.
           </p>
         </li>
       </ul>

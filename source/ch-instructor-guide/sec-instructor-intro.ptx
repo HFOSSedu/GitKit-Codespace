@@ -159,7 +159,7 @@
 				</li>
 				<li>
 					<p>
-						Students complete the hands-on activities contained in each chapters of this text as 2-3 hours of homework or during assigned lab periods.
+						Students complete the hands-on activities contained in each chapter of this text as 2-3 hours of homework or during assigned lab periods.
 					</p>
 				</li>
 			</ul> 
@@ -301,7 +301,7 @@
 			</p>
 
 			<p>
-				<alert>Note:</alert> If you are familiar with GitHub Codespaces, you will find that the interface familiar.  However, the KitClient works slightly differently than a standard Codespace. In particular, when students open the KitClient no repository will be opened. Instead they are given a blank development environment into which they <c>git clone</c> the repository they will be using for the GitKit.  This make explicit the important concept of a clone, which Codespaces hide.
+				<alert>Note:</alert> If you are familiar with GitHub Codespaces, you will find that the interface familiar.  However, the KitClient works slightly differently than a standard Codespace. In particular, when students open the KitClient no repository will be opened. Instead they are given a blank development environment into which they <c>git clone</c> the repository they will be using for the GitKit.  This makes explicit the important concept of a clone, which Codespaces hide.
 			</p>
 		</introduction>
 
@@ -398,7 +398,7 @@
 						<term>gitkit</term> base course into your course. 
 					</p>
 					<p>
-						The course pack includes a <term>reading assignment</term> and a <term>problem assignment</term> for each of the chapter of the GitKit text (except <xref ref="topic-instructor-guide" text="type-global-title" />). The provided reading assignment for each chapter includes all sections of the chapter and is auto-graded based on student interaction with each of he chapter's sections. The provided problem assignment for each chapter includes every interactive exercise in the chapter. Exercises are auto-graded graded using <term>% Correct</term> and the students <term>last answer</term>. 
+						The course pack includes a <term>reading assignment</term> and a <term>problem assignment</term> for each of the chapters of the GitKit text (except <xref ref="topic-instructor-guide" text="type-global-title" />). The provided reading assignment for each chapter includes all sections of the chapter and is auto-graded based on student interaction with each of the chapter's sections. The provided problem assignment for each chapter includes every interactive exercise in the chapter. Exercises are auto-graded graded using <term>% Correct</term> and the students <term>last answer</term>. 
 					</p>
 					<p>
 						If you adopt the course pack you can modify the sections and questions that are included in the assignments, how they are graded and also add your own questions. See the <url href="https://guide.runestone.academy/working-with-assignments-chap.html">Working with Assignments</url> section of the <url href="https://guide.runestone.academy/InstructorGuide-3.html">Using eBooks with Runestone Academy</url> guide for more details.
@@ -566,6 +566,9 @@
 								<p>
 									The name of the repository.  We recommend "GitKit-FarmData2".
 								</p>
+                                <p>  
+						            Note: If you will need multiple repositories, each deployed repository must have a unique name.  We recommend appending suffixes to "GitKit-FarmData2" for example "GitKit-FarmData2-group1", "GitKit-FarmData2-group2", etc.
+					            </p>
 							</li>
 							<li>
 								<p>
@@ -717,7 +720,7 @@
 		</p>
 
 		<p>
-			Active work on the deployer and the KitClient takes place in the <url href="https://github.com/HFOSSedu">HFOSSedu Github Organization</url>. Work on HFOSS Kits more generally occurs in <url href="https://gitlab.com/hfossedu/kits">Kits section</url> of the <url href="https://gitlab.com/hfossedu/kits">HFOSSedu GitLab Organization</url>.
+			Active work on the deployer and the KitClient takes place in the <url href="https://github.com/HFOSSedu">HFOSSedu Github Organization</url>. Work on HFOSS Kits more generally occurs in <url href="https://gitlab.com/hfossedu/kits">Kits section</url> of the <url href="https://gitlab.com/hfossedu/kits">HFOSSedu GitLab group</url>.
 		</p>
 	</subsection>
 </section>

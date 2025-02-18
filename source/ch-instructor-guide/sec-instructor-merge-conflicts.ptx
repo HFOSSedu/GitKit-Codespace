@@ -140,12 +140,12 @@
             Slide 21
           </title>
           <p>
-            Shows the basic graphical merge tool that is built into VS Code. The exercises guide the students through use this tool to resolve the conflicts in their PRs for their "Round 2" issues.
+            Shows the basic graphical merge tool that is built into VS Code. The exercises guide the students through the use of this tool to resolve the conflicts in their PRs for their "Round 2" issues.
           </p>
         </li>
         <li>
           <title>
-            Slide2 22-24
+            Slides 22-24
           </title>
           <p>
             These slides are hidden by default.  They show a more advanced graphical merge tool  that is also built into VS Code. The exercises do not use this merge tool, but some instructors may wish to show or demonstrate it.
@@ -153,7 +153,7 @@
         </li>
         <li>
           <title>
-            Slide 25-26
+            Slides 25-26
           </title>
           <p>
             Here for review and reference and not much time needs to be spent on these slides.  The final slide collects into one diagram everything that is a part of the forking workflow.  It has a lot going on, but by this point students should be able to make sense of each of the actions that are illustrated.
@@ -170,7 +170,7 @@
       <ol>
         <li>
           <p>
-            If time permits, monitor the "Round 2" tickets in the issue tracker. There are only 4 "Round 2" issues and thus there will need to be multiple students working on each.  If a student uses the the comment from <xref ref="topic-foss-communities" />, and they are the first to do so, the issue will be assigned to them automatically. The instructor can manually assign the issue to all other students that comment on it.
+            If time permits, monitor the "Round 2" tickets in the issue tracker. There are only 4 "Round 2" issues and thus there will need to be multiple students working on each.  If a student uses the the comment from <xref ref="topic-claiming-an-issue" />, and they are the first to do so, the issue will be assigned to them automatically. The instructor can manually assign the issue to all other students that comment on it.
           </p>
         </li>
         <li>
@@ -195,7 +195,7 @@
         <li>
           <em>
             <p>
-              <xref ref="ex-merge-conflict-2-computation" />- <xref ref="ex-merge-conflicts-auto-always-ok" />
+              <xref ref="topic-merge-example-2" />
             </p>
           </em>
           <p>
