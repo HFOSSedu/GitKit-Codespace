@@ -177,7 +177,7 @@
           <choice correct="yes">
             <statement>
               <p>
-                A non-conflicting change occurs when a part of the code changes in both the feature branch and the <c>main</c> branch.
+                A conflicting change occurs when a part of the code changes in both the feature branch and the <c>main</c> branch.
               </p>
             </statement>
             <feedback>
