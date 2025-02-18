@@ -49,7 +49,7 @@
           </p>
         </statement>
       </task>
-      <task>
+      <task xml:id="ex-extra-practice-list-branches" label="ex-extra-practice-list-branches">
         <statement>
           <p>
             Run the <c>git branch -a</c> command in the terminal to list all of the branches known to your local repository.
