@@ -101,6 +101,61 @@
       </p>
 
     </introduction>
+  <statement>
+    <p>
+      Which of the following describes your current status?
+    </p>
+  </statement>
+  <choices randomize="yes">
+  <choice correct="yes">
+  <statement>
+    <p>
+      I have created my PAT and it saved somewhere safe for later use.
+    </p>
+  </statement>
+  <feedback>
+    <p>
+      Correct!
+    </p>
+  </feedback>
+  </choice>
+  <choice>
+  <statement>
+    <p>
+      I did not read the above instructions.
+    </p>
+  </statement>
+  <feedback>
+    <p>
+      Please go back and read the instructions as you will need the PAT for later exercises.
+    </p>
+  </feedback>
+  </choice>
+  <choice>
+  <statement>
+    <p>
+      I have not created a PAT.
+    </p>
+  </statement>
+  <feedback>
+    <p>
+      Create a PAT as you will need it for later exercises.
+    </p>
+  </feedback>
+  </choice>
+    <choice>
+  <statement>
+    <p>
+      What do I need to do again?
+    </p>
+  </statement>
+  <feedback>
+    <p>
+      Please go back and read the instructions as you will need the PAT for later exercises.
+    </p>
+  </feedback>
+  </choice>
+  </choices>
   </exercise>
 
   <exercise xml:id="ex-github-pat" label="ex-github-pat">
