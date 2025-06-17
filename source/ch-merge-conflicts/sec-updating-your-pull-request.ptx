@@ -52,7 +52,7 @@
           <condition string=".*">
             <feedback>
               <p>
-                Review the <c>git push</c> command in <xref ref="topic-pushing-a-branch-to-your-origin" />. 
+                Review the <c>git push</c> command in <xref ref="topic-pushing-a-branch-to-your-origin" text="type-global-title"/>. 
               </p>
             </feedback>
           </condition>
@@ -60,7 +60,7 @@
       </setup>
       <hint>
         <p>
-          <xref ref="topic-pushing-a-branch-to-your-origin" /> introduced the command for pushing a feature branch to your origin.
+          <xref ref="topic-pushing-a-branch-to-your-origin" text="type-global-title"/> introduced the command for pushing a feature branch to your origin.
         </p>
       </hint>
     </exercise>
@@ -235,7 +235,7 @@
                 Uh oh! Something didn't work.  Let's try to fix it.
                  <ol marker="1">
                     <li>Run the command <c>git revert --hard HEAD~1</c></li>
-                    <li>Go back to <xref ref="topic-git-merge-command" />, merge <c>main</c> into your feature branch and try again to resolve the conflict.</li>
+                    <li>Go back to <xref ref="topic-git-merge-command" text="type-global-title"/>, merge <c>main</c> into your feature branch and try again to resolve the conflict.</li>
                   </ol>
               </p>
             </feedback>
