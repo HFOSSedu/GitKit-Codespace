@@ -414,7 +414,10 @@
     <task xml:id="ex-understanding-project-history-d" label="ex-understanding-project-history-d">
       <statement>
         <p>
-          What is the purpose of the most recent commit by Elad Sheskin (username: shes-dev)?
+          What is the purpose of the most recent commit by Elad Sheskin?
+        </p>
+        <p>
+          (You may need to use <c>git log</c> again to show more commits than you did in <xref ref="ex-understanding-project-history-new-aa" />)
         </p>
       </statement>
 
