@@ -1,721 +1,727 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="topic-cloning-your-origin" xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Cloning Your Origin</title>
+    <title>Cloning Your Origin</title>
 
-  <introduction>
+    <introduction>
+        <p>
+            The next step in the basic FOSS workflow is to ensure that you have a <term>clone</term> of your <term>origin</term> repository in your development environment as shown in <xref ref="fig-basic-workflow-clone" />.
+            Having a clone of your origin in your development environment will allow you to edit the files to fix the issue that you have been assigned and add those changes to the repository.
+        </p>
+
+        <p>
+            <figure xml:id="fig-basic-workflow-clone" >
+                <caption> Cloning your origin repository from your GitHub space to your development environment. </caption>
+                <image source="images/ch-communities-and-collaboration/basic-workflow-clone.png" width="75%">
+                    <description>
+                        Creating a clone of your origin repository creates a copy of it in your development environment.
+                        This copy is your local copy.
+                    </description>
+                </image>
+            </figure>
+        </p>
+    </introduction>
+
+
+    <subsection  xml:id="topic-cloning-url" xmlns:xi="http://www.w3.org/2001/XInclude" >
+        <title>Clone URL</title>
+
+        <p>
+            In order to clone a repository into your development environment you will need the <term>clone URL</term> for that repository.
+            The steps in this section will help you find the clone URL for your origin repository.
+        </p>
+
+        <exercises>
+        <title />
+        <exercise xml:id="ex-find-clone-url-a" label="ex-find-clone-url-a">
+            <statement>
+                <p>
+                    Visit the GitHub page for your origin repository.
+                </p>
+            </statement>
+
+            <hint>
+                <p>
+                    You can find the URl of your origin (i.e.
+                    your fork of the GitKit FarmData2 upstream) in your answer to <xref ref="ex-fork-url" />.
+                </p>
+            </hint>
+        </exercise>
+
+        <exercise xml:id="ex-find-clone-url-b" label="ex-find-clone-url-b">
+            <statement>
+                <p>
+                    Find and click the green "Code" button.
+                    <image source="images/ch-communities-and-collaboration/codeButton.png" width="10%">
+                    <description>
+                        The green "Code" button in GitHub.
+                    </description>
+                </image>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="ex-find-clone-url-c" label="ex-find-clone-url-c">
+        <statement>
+            <p>
+                Open the "Local" and "HTTPS" tabs as shown here: <image source="images/ch-communities-and-collaboration/gitHubCloneURL.png" width="50%">
+                <description>
+                    The GitHub dialog showing the clone URL.
+                </description>
+            </image>
+            The URL in the "Clone using the web URL" box is the clone URL that you will need to clone your origin repository.
+        </p>
+    </statement>
+</exercise>
+
+<exercise xml:id="ex-clone-url" label="ex-clone-url">
+    <statement>
+        <p>
+            Copy and paste the clone URL that you will use to clone your origin as your answer to this exercise.
+        </p>
+
+        <p>
+            <var width="55" />
+        </p>
+    </statement>
+    <setup> <var> <condition string="^https://github\.com/(?!(FarmData2|DickinsonCollege)).+/.+\.git$">
+    <feedback>
+        <p>
+            Thank you.
+        </p>
+    </feedback>
+    </condition> <condition string="^https://github\.com/DickinsonCollege/.+\.git">
+
+    <feedback>
+        <p>
+            It looks like you might be trying to use the upstream repository instead of your origin.
+        </p>
+    </feedback>
+    </condition> <condition string="^https://github\.com/FarmData2/.+\.git">
+
+    <feedback>
+        <p>
+            It looks like you might be trying to use the upstream repository instead of your origin.
+        </p>
+    </feedback>
+    </condition> <condition string=".*">
+
+    <feedback>
+        <p>
+            The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.
+        </p>
+    </feedback>
+    </condition> </var> </setup>
+
+    <hint>
+        <p>
+            Be sure you are using your GitHub origin repository (see <xref ref="ex-fork-url" />).
+            This clone URL should contain your GitHub username and end in <c>.git</c>.
+        </p>
+    </hint>
+</exercise>
+</exercises>
+</subsection>
+
+
+<subsection  xml:id="topic-git-clone" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <title><c>git clone</c></title>
+
     <p>
-      The next step in the basic FOSS workflow is to ensure that you have a <term>clone</term> of your <term>origin</term> repository in your development environment as shown in <xref ref="fig-basic-workflow-clone" />.
-      Having a clone of your origin in your development environment will allow you to edit the files to fix the issue that you have been assigned and add those changes to the repository.
+        The <c>git clone</c> command will make a copy of your fork on GitHub and make the Local Copy on your computer (in your development environment).
+        Refer to <xref ref="fig-basic-workflow-clone">Figure</xref>.
     </p>
 
     <p>
-      <figure xml:id="fig-basic-workflow-clone" >
-        <caption> Cloning your origin repository from your GitHub space to your development environment. </caption>
-        <image source="images/ch-communities-and-collaboration/basic-workflow-clone.png" width="75%">
-          <description>
-            Creating a clone of your origin repository creates a copy of it in your development environment.
-            This copy is your local copy.
-          </description>
-        </image>
-      </figure>
-    </p>
-  </introduction>
-
-
-  <subsection  xml:id="topic-cloning-url" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <title>Clone URL</title>
-
-    <p>
-      In order to clone a repository into your development environment you will need the <term>clone URL</term> for that repository.
-      The steps in this section will help you find the clone URL for your origin repository.
+        Now that you have the clone URL for your origin repository, use the steps in this section to clone your origin into your development environment.
     </p>
 
     <exercises>
     <title />
-    <exercise xml:id="ex-find-clone-url-a" label="ex-find-clone-url-a">
-      <statement>
-        <p>
-          Visit the GitHub page for your origin repository.
-        </p>
-      </statement>
-
-      <hint>
-        <p>
-          You can find the URl of your origin (i.e.
-          your fork of the GitKit FarmData2 upstream) in your answer to <xref ref="ex-fork-url" />.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise xml:id="ex-find-clone-url-b" label="ex-find-clone-url-b">
-      <statement>
-        <p>
-          Find and click the green "Code" button.
-          <image source="images/ch-communities-and-collaboration/codeButton.png" width="10%">
-            <description>
-              The green "Code" button in GitHub.
-            </description>
-          </image>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise xml:id="ex-find-clone-url-c" label="ex-find-clone-url-c">
-      <statement>
-        <p>
-          Open the "Local" and "HTTPS" tabs as shown here: <image source="images/ch-communities-and-collaboration/gitHubCloneURL.png" width="50%">
-          <description>
-            The GitHub dialog showing the clone URL.
-          </description>
-          </image>
-          The URL in the "Clone using the web URL" box is the clone URL that you will need to clone your origin repository.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise xml:id="ex-clone-url" label="ex-clone-url">
-      <statement>
-        <p>
-          Copy and paste the clone URL that you will use to clone your origin as your answer to this exercise.
-        </p>
-
-        <p>
-          <var width="55" />
-        </p>
-      </statement>
-      <setup> <var> <condition string="^https://github\.com/(?!(FarmData2|DickinsonCollege)).+/.+\.git$">
-      <feedback>
-        <p>
-          Thank you.
-        </p>
-      </feedback>
-      </condition> <condition string="^https://github\.com/DickinsonCollege/.+\.git">
-
-      <feedback>
-        <p>
-          It looks like you might be trying to use the upstream repository instead of your origin.
-        </p>
-      </feedback>
-      </condition> <condition string="^https://github\.com/FarmData2/.+\.git">
-
-      <feedback>
-        <p>
-          It looks like you might be trying to use the upstream repository instead of your origin.
-        </p>
-      </feedback>
-      </condition> <condition string=".*">
-
-      <feedback>
-        <p>
-          The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.
-        </p>
-      </feedback>
-      </condition> </var> </setup>
-
-      <hint>
-        <p>
-          Be sure you are using your GitHub origin repository (see <xref ref="ex-fork-url" />).
-          This clone URL should contain your GitHub username and end in <c>.git</c>.
-        </p>
-      </hint>
-    </exercise>
-  </exercises>
-  </subsection>
-
-
-  <subsection  xml:id="topic-git-clone" xmlns:xi="http://www.w3.org/2001/XInclude" >
-
-  <title><c>git clone</c></title>
-
-  <p>
-  The <c>git clone</c> command will make a copy of your fork on GitHub and make the Local Copy on your computer (in your development environment).
-  Refer to <xref ref="fig-basic-workflow-clone">Figure</xref>.
-</p>
-
-<p>
-  Now that you have the clone URL for your origin repository, use the steps in this section to clone your origin into your development environment.
-</p>
-
-<exercises>
-<title />
-  
-<exercise xml:id="ex-clone-origin" label="ex-clone-origin">
-  <statement>
-    <p>
-      The <c>git clone &lt;URL&gt;</c> command is used to clone your origin repository into your development environment.
-    </p>
-    <p>
-      Give a command that will clone your origin into your development environment.
-    </p>
-    <p>
-      <var width="65" />
-    </p>
-  </statement>
-  <setup> 
-    <var> 
-      <condition string="^git clone https://github\.com/(?!(FarmData2|DickinsonCollege)).+/.+\.git$">
-        <feedback>
-          <p>
-            Thank you.
-          </p>
-        </feedback>
-      </condition> 
-      <condition string="^git clone https://github\.com/(DickinsonCollege|FarmData2)/.+\.git">
-        <feedback>
-          <p>
-            It looks like you might be trying to clone the upstream repository instead of your origin.
-          </p>
-        </feedback>
-      </condition>
-      <condition string=".*">
-        <feedback>
-          <p>
-            Be sure to replace the URL with the clone URL you found in <xref ref="ex-clone-url" />. The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.  
-          </p>
-        </feedback>
-      </condition> 
-    </var> 
-  </setup>
-</exercise>
-<exercise xml:id="ex-clone-origin-a" label="ex-clone-origin-a">
-  <p>
-    Execute your command from <xref ref="ex-clone-origin" /> in your terminal.
-  </p>
-</exercise>
-
-<exercise xml:id="ex-clone-origin-b" label="ex-clone-origin-b">
-          <statement>
+    <exercise xml:id="ex-clone-origin" label="ex-clone-origin">
+        <statement>
             <p>
-              Which of the following appear in the output from entering the command from <xref ref="ex-clone-origin-a" />?
+                The <c>git clone &lt;URL&gt;</c> command is used to clone your origin repository into your development environment.
+                For example, if your clone URL is https://github.com/janed/test.git the command would be <c>git clone https://github.com/janed/test.git</c>
             </p>
-          </statement>
+
+            <p>
+                Give a command that will clone your origin into your development environment.
+            </p>
+
+            <p>
+                <var width="65" />
+            </p>
+        </statement>
+        <setup> <var> <condition string="^git clone https://github\.com/(?!(FarmData2|DickinsonCollege)).+/.+\.git$">
+        <feedback>
+            <p>
+                Thank you.
+            </p>
+        </feedback>
+        </condition> <condition string="^git clone https://github\.com/(DickinsonCollege|FarmData2)/.+\.git">
+
+        <feedback>
+            <p>
+                It looks like you might be trying to clone the upstream repository instead of your origin.
+            </p>
+        </feedback>
+        </condition> <condition string=".*">
+
+        <feedback>
+            <p>
+                Be sure to replace the URL with the clone URL you found in <xref ref="ex-clone-url" />.
+                The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.
+            </p>
+        </feedback>
+        </condition> </var> </setup>
+    </exercise>
+
+    <exercise xml:id="ex-clone-origin-a" label="ex-clone-origin-a">
+        <p>
+            Execute your command from <xref ref="ex-clone-origin" /> in your terminal.
+        </p>
+    </exercise>
+
+    <exercise xml:id="ex-clone-origin-b" label="ex-clone-origin-b">
+        <statement>
+            <p>
+                Which of the following appear in the output from entering the command from <xref ref="ex-clone-origin-a" />?
+            </p>
+        </statement>
 
 
         <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              Cloning into
-            </statement>
-          </choice>
+            <choice correct="yes">
+                <statement>
+                    Cloning into
+                </statement>
+            </choice>
 
-          <choice correct="no">
-            <statement>
-              Sending objects
-            </statement>
-          </choice>
+            <choice correct="no">
+                <statement>
+                    Sending objects
+                </statement>
+            </choice>
 
-          <choice correct="no">
-            <statement>
-              Deleting objects
-            </statement>
-          </choice>
+            <choice correct="no">
+                <statement>
+                    Deleting objects
+                </statement>
+            </choice>
 
-          <choice correct="yes">
-            <statement>
-              Resolving deltas
-            </statement>
-          </choice>
+            <choice correct="yes">
+                <statement>
+                    Resolving deltas
+                </statement>
+            </choice>
 
-          <choice correct="yes">
-            <statement>
-              Counting objects
-            </statement>
-          </choice>
+            <choice correct="yes">
+                <statement>
+                    Counting objects
+                </statement>
+            </choice>
 
-          <choice correct="no">
-            <statement>
-              local:
-            </statement>
-          </choice>
+            <choice correct="no">
+                <statement>
+                    local:
+                </statement>
+            </choice>
         </choices>
 
         <hint>
-          <p>
-            Look at the output in your terminal.
-          </p>
-        </hint>
-</exercise>
-
-<exercise xml:id="ex-clone-origin-c" label="ex-clone-origin-c">
-          <statement>
             <p>
-              Which line of output from entering the command from <xref ref="ex-clone-origin-a" /> indicates the directory into which the repository was cloned?
+                Look at the output in your terminal.
             </p>
-          </statement>
+        </hint>
+    </exercise>
+
+    <exercise xml:id="ex-clone-origin-c" label="ex-clone-origin-c">
+        <statement>
+            <p>
+                Which line of output from entering the command from <xref ref="ex-clone-origin-a" /> indicates the directory into which the repository was cloned?
+            </p>
+        </statement>
 
 
         <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              Cloning into
-            </statement>
-          </choice>
+            <choice correct="yes">
+                <statement>
+                    Cloning into
+                </statement>
+            </choice>
 
-          <choice correct="no">
-            <statement>
-              remote: Enumerating objects
-            </statement>
-          </choice>
+            <choice correct="no">
+                <statement>
+                    remote: Enumerating objects
+                </statement>
+            </choice>
 
-          <choice correct="no">
-            <statement>
-              remote: Counting objects
-            </statement>
-          </choice>
+            <choice correct="no">
+                <statement>
+                    remote: Counting objects
+                </statement>
+            </choice>
 
-          <choice correct="no">
-            <statement>
-              remote: Total
-            </statement>
-          </choice>
+            <choice correct="no">
+                <statement>
+                    remote: Total
+                </statement>
+            </choice>
 
-          <choice correct="no">
-            <statement>
-              Receiving objects
-            </statement>
-          </choice>
+            <choice correct="no">
+                <statement>
+                    Receiving objects
+                </statement>
+            </choice>
 
-          <choice correct="no">
-            <statement>
-              Resolving deltas
-            </statement>
-          </choice>
+            <choice correct="no">
+                <statement>
+                    Resolving deltas
+                </statement>
+            </choice>
         </choices>
 
-  <hint>
-    <p>
-      Look for a line in the output that begins with "Cloning into".
-    </p>
-  </hint>
-</exercise>
+        <hint>
+            <p>
+                Look for a line in the output that begins with "Cloning into".
+            </p>
+        </hint>
+    </exercise>
 
-<exercise xml:id="ex-clone-origin-d" label="ex-clone-origin-d">
-  <statement>
-    <p>
-      Use the <c>ls</c> command to confirm that the directory you identified in <xref ref="ex-clone-origin-c" /> now exists.
-    </p>
+    <exercise xml:id="ex-clone-origin-d" label="ex-clone-origin-d">
+        <statement>
+            <p>
+                Use the <c>ls</c> command to confirm that the directory you identified in <xref ref="ex-clone-origin-c" /> now exists.
+            </p>
 
-    <p>
-      If it it does not, check the output in <xref ref="ex-clone-origin-b" /> for error messages and try <xref ref="ex-clone-origin-a" /> again.
-    </p>
-  </statement>
-</exercise>
-</exercises>
+            <p>
+                If it it does not, check the output in <xref ref="ex-clone-origin-b" /> for error messages and try <xref ref="ex-clone-origin-a" /> again.
+            </p>
+        </statement>
+    </exercise>
+    </exercises>
 </subsection>
+
 
 <subsection xml:id="topic-explore-clone">
-  <title>Exploring Your Cloned Repository In Your Development Environment</title>
-  
+    <title>Exploring Your Cloned Repository In Your Development Environment</title>
+
     <p>
-      In this section you will briefly explore the GitKit FarmData2 repository that you have cloned into your development environment.
+        In this section you will briefly explore the GitKit FarmData2 repository that you have cloned into your development environment.
     </p>
 
-<exercises>
-<title />
-<exercise xml:id="ex-explore-clone-a" label="ex-explore-clone-a">
-  <statement>
-      <p>
-        Use the <c>cd</c> command in the Terminal to change into the directory containing your clone of the GitKit FarmData2 repository.
-      </p>
-
-      <p>
-        See <xref ref="ex-clone-origin-c" /> for the name of the directory.
-      </p>
-  </statement>
-</exercise>
-
-  <exercise xml:id="ex-explore-clone-b" label="ex-explore-clone-b">
-    <statement>
-      <p>
-        Use the <c>ls -a</c> command to display the names of all of the files and directories in your clone of the GitKit FarmData2 repository.
-      </p>
-
-      <p>
-        Compare these files and directories to those in your origin repository on GitHub.
-      </p>
-      <p>
-        Check all files and directories that do not appear both locally and on GitHub.
-      </p>
-    </statement>
-       <choices randomize="yes">
-      <choice correct="yes">
+    <exercises>
+    <title />
+    <exercise xml:id="ex-explore-clone-a" label="ex-explore-clone-a">
         <statement>
-          <p>
-            <c>.</c>
-          </p>
-        </statement>
-      </choice>
+            <p>
+                Use the <c>cd</c> command in the Terminal to change into the directory containing your clone of the GitKit FarmData2 repository.
+            </p>
 
-      <choice correct="yes">
-        <statement>
-          <p>
-            <c>..</c>
-          </p>
+            <p>
+                See <xref ref="ex-clone-origin-c" /> for the name of the directory.
+            </p>
         </statement>
-      </choice>
+    </exercise>
 
-      <choice correct="yes">
+    <exercise xml:id="ex-explore-clone-b" label="ex-explore-clone-b">
         <statement>
-          <p>
-            <c>.git</c>
-          </p>
-        </statement>
-      </choice>
+            <p>
+                Use the <c>ls -a</c> command to display the names of all of the files and directories in your clone of the GitKit FarmData2 repository.
+            </p>
 
-      <choice>
-        <statement>
-          <p>
-            <c>README.md</c>
-          </p>
-        </statement>
-      </choice>
+            <p>
+                Compare these files and directories to those in your origin repository on GitHub.
+            </p>
 
-      <choice>
-        <statement>
-          <p>
-            <c>.kit</c>
-          </p>
+            <p>
+                Check all files and directories that do not appear both locally and on GitHub.
+            </p>
         </statement>
-      </choice>
+
+
+        <choices randomize="yes">
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <c>.</c>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <c>..</c>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <c>.git</c>
+                    </p>
+                </statement>
+            </choice>
+
             <choice>
-        <statement>
-          <p>
-            <c>.vscode</c>
-          </p>
-        </statement>
-      </choice>
-    </choices>
-</exercise>
+                <statement>
+                    <p>
+                        <c>README.md</c>
+                    </p>
+                </statement>
+            </choice>
 
-</exercises>
+            <choice>
+                <statement>
+                    <p>
+                        <c>.kit</c>
+                    </p>
+                </statement>
+            </choice>
 
+            <choice>
+                <statement>
+                    <p>
+                        <c>.vscode</c>
+                    </p>
+                </statement>
+            </choice>
+        </choices>
+    </exercise>
+    </exercises>
 </subsection>
-
-
-
 
 
 <subsection xml:id="topic-git-remote">
-  <title><c>git remote</c></title>
+    <title><c>git remote</c></title>
 
-  <p>
-    In this section you will see that your clone keeps track of the location of your origin repository.
-    It does this using a piece of information called a <term>remote</term>, which Git uses to store the URLs of remote repositories in the cloud (e.g.
-    on GitHub).
-  </p>
+    <p>
+        In this section you will see that your clone keeps track of the location of your origin repository.
+        It does this using a piece of information called a <term>remote</term>, which Git uses to store the URLs of remote repositories in the cloud (e.g.
+        on GitHub).
+    </p>
 
-  <p>
-    The command <c>git remote</c> on its own will show you the <em>names</em> of the remotes that git knows about, but not their URLS.
-  </p>
+    <p>
+        The command <c>git remote</c> on its own will show you the <em>names</em> of the remotes that git knows about, but not their URLS.
+    </p>
 
-  <p>
-    If you want to have git display the URLs of the remotes as well, you will need to add the <c>-v</c> or <c>--verbose</c> flag: <c>git remote -v</c>
-  </p>
+    <p>
+        If you want to have git display the URLs of the remotes as well, you will need to add the <c>-v</c> or <c>--verbose</c> flag: <c>git remote -v</c>
+    </p>
 
-<exercises>
-  <title />
-<exercise xml:id="ex-check-remotes-a" label="ex-check-remotes-a">
-    <statement>
-      <p>
-       Which command will show you the URL(s) of the remote(s) that git knows about?
-      </p>
-      </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
+    <exercises>
+    <title />
+    <exercise xml:id="ex-check-remotes-a" label="ex-check-remotes-a">
         <statement>
-          <p>
-            <c>git remote -v</c>
-          </p>
+            <p>
+                Which command will show you the URL(s) of the remote(s) that git knows about?
+            </p>
         </statement>
-      </choice>
 
-      <choice>
-        <statement>
-          <p>
-            <c>git remote</c>
-          </p>
-        </statement>
-      </choice>
 
-      <choice>
-        <statement>
-          <p>
-            <c>git remote -url</c>
-          </p>
-        </statement>
-      </choice>
+        <choices randomize="yes">
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <c>git remote -v</c>
+                    </p>
+                </statement>
+            </choice>
 
-      <choice>
-        <statement>
-          <p>
-            <c>git url</c>
-          </p>
-        </statement>
-      </choice>
-    </choices>
+            <choice>
+                <statement>
+                    <p>
+                        <c>git remote</c>
+                    </p>
+                </statement>
+            </choice>
 
-    <hint>
-      <p>
-        You are asking <c>git remote</c> to give you more information.
-      </p>
-    </hint>
-  </exercise>
+            <choice>
+                <statement>
+                    <p>
+                        <c>git remote -url</c>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        <c>git url</c>
+                    </p>
+                </statement>
+            </choice>
+        </choices>
+
+        <hint>
+            <p>
+                You are asking <c>git remote</c> to give you more information.
+            </p>
+        </hint>
+    </exercise>
 
     <exercise xml:id="ex-check-remotes-b" label="ex-check-remotes-b">
-    <statement>
-      <p>
-        Execute the command <c>git remote -v</c> in your terminal. How can you tell from that output that your clone knows about your origin?
-      </p>
-    </statement>
-
-    <choices randomize="yes">
-      <choice correct="yes">
         <statement>
-          <p>
-            The "origin" lines have a URL with your GitHub username in them.
-          </p>
+            <p>
+                Execute the command <c>git remote -v</c> in your terminal.
+                How can you tell from that output that your clone knows about your origin?
+            </p>
         </statement>
-      </choice>
 
-      <choice>
+
+        <choices randomize="yes">
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The "origin" lines have a URL with your GitHub username in them.
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        There are lines that say "origin".
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The "origin" lines have a URL that points to GitHub.
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        It is not possible to tell from the output.
+                    </p>
+                </statement>
+            </choice>
+        </choices>
+
+        <hint>
+            <p>
+                Look closely at the "origin" URLs.
+            </p>
+        </hint>
+    </exercise>
+
+    <exercise xml:id="ex-check-remotes-c" label="ex-check-remotes-c">
         <statement>
-          <p>
-            There are lines that say "origin".
-          </p>
+            <p>
+                How is the origin remote that you see in the output of the <xref ref="ex-check-remotes-b" /> command represented in <xref ref="fig-basic-workflow-clone" />?
+            </p>
         </statement>
-      </choice>
-
-      <choice>
-        <statement>
-          <p>
-            The "origin" lines have a URL that points to GitHub.
-          </p>
-        </statement>
-      </choice>
-
-      <choice>
-        <statement>
-          <p>
-            It is not possible to tell from the output.
-          </p>
-        </statement>
-      </choice>
-    </choices>
-
-    <hint>
-      <p>
-        Look closely at the "origin" URLs.
-      </p>
-    </hint>
-  </exercise>
-
-  <exercise xml:id="ex-check-remotes-c" label="ex-check-remotes-c">
-    <statement>
-      <p>
-        How is the origin remote that you see in the output of the <xref ref="ex-check-remotes-b" /> command represented in <xref ref="fig-basic-workflow-clone" />?
-      </p>
-    </statement>
 
 
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>
-            The orange dotted arrow from the clone to the origin repository.
-          </p>
-        </statement>
-      </choice>
+        <choices randomize="yes">
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The orange dotted arrow from the clone to the origin repository.
+                    </p>
+                </statement>
+            </choice>
 
-      <choice>
-        <statement>
-          <p>
-            The orange dotted arrow from the origin to the upstream repository.
-          </p>
-        </statement>
-      </choice>
+            <choice>
+                <statement>
+                    <p>
+                        The orange dotted arrow from the origin to the upstream repository.
+                    </p>
+                </statement>
+            </choice>
 
-      <choice>
-        <statement>
-          <p>
-            The orange dotted arrow from the clone to the upstream repository.
-          </p>
-        </statement>
-      </choice>
+            <choice>
+                <statement>
+                    <p>
+                        The orange dotted arrow from the clone to the upstream repository.
+                    </p>
+                </statement>
+            </choice>
 
-      <choice>
-        <statement>
-          <p>
-            The blue "Clone" arrow from the origin to the cloned repository.
-          </p>
-        </statement>
-      </choice>
+            <choice>
+                <statement>
+                    <p>
+                        The blue "Clone" arrow from the origin to the cloned repository.
+                    </p>
+                </statement>
+            </choice>
 
-      <choice>
-        <statement>
-          <p>
-            The origin remote is not represented in the figure.
-          </p>
-        </statement>
-      </choice>
-    </choices>
+            <choice>
+                <statement>
+                    <p>
+                        The origin remote is not represented in the figure.
+                    </p>
+                </statement>
+            </choice>
+        </choices>
 
-    <hint>
-      <p>
-        Which arrow would represent the clone knowing the location of the origin?
-      </p>
-    </hint>
-  </exercise>
+        <hint>
+            <p>
+                Which arrow would represent the clone knowing the location of the origin?
+            </p>
+        </hint>
+    </exercise>
 
     <exercise xml:id="ex-check-remotes-d" label="ex-check-remotes-d">
-    <statement>
-      <p>
-        Which step of the basic FOSS workflow requires that your clone know the location of your origin repository?
-      </p>
-    </statement>
-
-
-    <choices randomize="yes">
-      <choice>
         <statement>
-          <p>
-            Pull request
-          </p>
+            <p>
+                Which step of the basic FOSS workflow requires that your clone know the location of your origin repository?
+            </p>
         </statement>
-      </choice>
 
-      <choice>
-        <statement>
-          <p>
-            Fork
-          </p>
-        </statement>
-      </choice>
 
-      <choice>
-        <statement>
-          <p>
-            Clone
-          </p>
-        </statement>
-      </choice>
+        <choices randomize="yes">
+            <choice>
+                <statement>
+                    <p>
+                        Pull request
+                    </p>
+                </statement>
+            </choice>
 
-      <choice>
-        <statement>
-          <p>
-            Edit
-          </p>
-        </statement>
-      </choice>
+            <choice>
+                <statement>
+                    <p>
+                        Fork
+                    </p>
+                </statement>
+            </choice>
 
-      <choice correct="yes">
-        <statement>
-          <p>
-            Push
-          </p>
-        </statement>
-      </choice>
-    </choices>
+            <choice>
+                <statement>
+                    <p>
+                        Clone
+                    </p>
+                </statement>
+            </choice>
 
-    <hint>
-      <p>
-        Think about which step of the basic FOSS workflow will need to send information from the clone back to the origin.
-      </p>
-    </hint>
-  </exercise>
-  </exercises>
-  </subsection>
+            <choice>
+                <statement>
+                    <p>
+                        Edit
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        Push
+                    </p>
+                </statement>
+            </choice>
+        </choices>
+
+        <hint>
+            <p>
+                Think about which step of the basic FOSS workflow will need to send information from the clone back to the origin.
+            </p>
+        </hint>
+    </exercise>
+    </exercises>
+</subsection>
+
 
 <subsection xml:id="topic-open-repo-folder">
-  <title>Opening the GitKit FarmData2 Repository Folder</title>
-  
-  <p>
-    You cloned your fork of the GitKit FarmData2 upstream repository into a folder in your development environment with the command in <xref ref="ex-clone-origin-a" />.
-  </p>
+    <title>Opening the GitKit FarmData2 Repository Folder</title>
 
-  <p>
-    But, you need to reopen your development environment in that folder to take advantage of all of the features that the KitClient provides for you.
-  </p>
+    <p>
+        You cloned your fork of the GitKit FarmData2 upstream repository into a folder in your development environment with the command in <xref ref="ex-clone-origin-a" />.
+    </p>
 
-  <exercises>
-  <title />
+    <p>
+        But, you need to reopen your development environment in that folder to take advantage of all of the features that the KitClient provides for you.
+    </p>
 
-  <exercise xml:id="ex-open-repo-folder" label="ex-open-repo-folder">
-  <statement>
-    <p>
-      Open your clone of the GitKit FarmData2 repository.
-    </p>
-    <p>
-      You can do this by going to the "hamburger" (&#8801;) menu in the upper left of your development environment window.
-    </p>
-    <p>
-      Choose <c>File > Open Folder...</c>
-    </p>
-    <p>
-      Select the folder containing your clone of the <c>GitKit FarmData2</c> repository and click <c>OK</c>.
-    </p>
-    <p>
-      You will see <c>Setting up your Codespace</c>, and then your terminal will show a message from the <term>Kit-tty</term>.
-    </p>
-  </statement>
-  </exercise>
-
-  <exercise xml:id="ex-kit-tty" label="ex-kit-tty">
-  <statement>
-    <p>
-      The output in <xref ref="ex-open-repo-folder" /> should contain a message from the <term>Kit-tty</term>.
-      What is the <term>Kit-tty</term>?
-    </p>
-  </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
+    <exercises>
+    <title />
+    <exercise xml:id="ex-open-repo-folder" label="ex-open-repo-folder">
         <statement>
-          <p>
-            Your personal virtual assistant.
-          </p>
-        </statement>
-      </choice>
+            <p>
+                Open your clone of the GitKit FarmData2 repository.
+            </p>
 
-      <choice>
-        <statement>
-          <p>
-            A terminal.
-          </p>
-        </statement>
-      </choice>
+            <p>
+                You can do this by going to the "hamburger" (&#8801;) menu in the upper left of your development environment window.
+            </p>
 
-      <choice>
-        <statement>
-          <p>
-            A teletypewriter.
-          </p>
-        </statement>
-      </choice>
+            <p>
+                Choose <c>File > Open Folder...</c>
+            </p>
 
-      <choice>
-        <statement>
-          <p>
-            A pet kitten.
-          </p>
+            <p>
+                Select the folder containing your clone of the <c>GitKit FarmData2</c> repository and click <c>OK</c>.
+            </p>
+
+            <p>
+                You will see <c>Setting up your Codespace</c>, and then your terminal will show a message from the <term>Kit-tty</term>.
+            </p>
         </statement>
-      </choice>
-    </choices>
-  <hint>
+    </exercise>
+
+    <exercise xml:id="ex-kit-tty" label="ex-kit-tty">
+        <statement>
+            <p>
+                The output in <xref ref="ex-open-repo-folder" /> should contain a message from the <term>Kit-tty</term>.
+                What is the <term>Kit-tty</term>?
+            </p>
+        </statement>
+
+
+        <choices randomize="yes">
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        Your personal virtual assistant.
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        A terminal.
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        A teletypewriter.
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        A pet kitten.
+                    </p>
+                </statement>
+            </choice>
+        </choices>
+
+        <hint>
+            <p>
+                The "Kit-tty" introduces itself using the line "😺💻 Meow, Kit-tty here!" Read the description of the "Kit-tty" that follows this line.
+            </p>
+        </hint>
+    </exercise>
+    </exercises>
+
     <p>
-      The "Kit-tty" introduces itself using the line "😺💻 Meow, Kit-tty here!" Read the description of the "Kit-tty" that follows this line.
+        Be sure to keep your eyes open for messages from the Kit-tty as you work on the GitKit exercises.
+        The Kit-tty will help you to stay on track and may save you a lot of time by preventing you from going down an incorrect path.
     </p>
-  </hint>
-</exercise>
-</exercises>
-
-<p>
-  Be sure to keep your eyes open for messages from the Kit-tty as you work on the GitKit exercises.
-  The Kit-tty will help you to stay on track and may save you a lot of time by preventing you from going down an incorrect path.
-</p>
-
 </subsection>
-<!---
-
-
--->
+<!--- -->
 </section>

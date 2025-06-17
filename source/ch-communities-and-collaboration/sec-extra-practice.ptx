@@ -166,36 +166,72 @@
             <statement>
               <c>origin</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
             </statement>
+
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
           </choice>
 
           <choice correct="no">
             <statement>
               <c>origin</c> followed by the URL in <xref ref="table-foss-projects" />
              </statement>
+                         
+            <feedback>
+              <p>
+                X
+              </p>
+            </feedback>
           </choice>
 
           <choice correct="no">
             <statement>
               <c>upstream</c> followed by the URL in <xref ref="table-foss-projects" />
             </statement>
+                                     
+            <feedback>
+              <p>
+                X
+              </p>
+            </feedback>
           </choice>
 
           <choice correct="no">
             <statement>
               <c>upstream</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
             </statement>
+                                     
+            <feedback>
+              <p>
+                X
+              </p>
+            </feedback>
           </choice>
 
          <choice correct="no">
             <statement>
               <c>fork</c> followed by the URL in <xref ref="table-foss-projects" />
             </statement>
+                                     
+            <feedback>
+              <p>
+                X
+              </p>
+            </feedback>
           </choice>
 
           <choice correct="no">
             <statement>
               <c>fork</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
             </statement>
+                                     
+            <feedback>
+              <p>
+                X
+              </p>
+            </feedback>
           </choice>
           </choices>
   <hint>

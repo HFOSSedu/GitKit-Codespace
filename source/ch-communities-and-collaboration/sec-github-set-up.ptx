@@ -12,10 +12,11 @@
   </introduction>
 
 
-<subsection xml:id="topic-github-account">
+  <subsection xml:id="topic-github-account">
     <title>GitHub Account</title>
 
-    <exercises><title />
+    <exercises>
+    <title />
     <exercise xml:id="ex-create-github-account" label="ex-create-github-account">
       <statement>
         <p>
@@ -44,15 +45,15 @@
           Thank you.
         </p>
       </feedback>
-      </condition>
-      <condition string="https://github\.com/yourUsername">
+      </condition> <condition string="https://github\.com/yourUsername">
+
       <feedback>
         <p>
-          Looks like you are using the example given.  Be sure to give the URL of your actual GitHub profile.
+          Looks like you are using the example given.
+          Be sure to give the URL of your actual GitHub profile.
         </p>
       </feedback>
-      </condition>  
-      <condition string=".*">
+      </condition> <condition string=".*">
 
       <feedback>
         <p>
@@ -64,119 +65,174 @@
     </exercises>
   </subsection>
 
+
   <subsection xml:id="topic-github-pat">
     <title>GitHub Personal Access Token</title>
-    <p>
-    When starting your development environment for the first time (in <xref ref="topic-development-environment"/>) you will be asked to enter a <term>Personal Access Token (PAT)</term> from GitHub.
-    </p>
-    <p>
-    A PAT is like a password but has some security benefits.
-    In particular, you can have multiple different PATs.
-    Each one can have different limits on what can be done with it and each one can be revoked individually without affecting the others.
-  </p>
 
-<exercises><title />
-  <exercise xml:id="ex-getting-pat" label="ex-getting-pat">
-    <introduction>
-      <p>
-        Follow GitHub's instructions for creating a classic personal access token. 
-        Be sure to select Tokens (classic) - you will need to do this twice - and to 
-        choose "repo" for the "scopes and permissions": <url href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic" visual="docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic">Creating a Personal Access Token (classic)</url>.
-      </p>
+    <p>
+      When starting your development environment for the first time (in <xref ref="topic-development-environment"/>) you will be asked to enter a <term>Personal Access Token (PAT)</term> from GitHub.
+    </p>
 
-      <p>
-        Be sure to copy and paste your PAT somewhere safe – maybe e-mail it to yourself.
-        You will not be able to retrieve it again after you leave the page.
-      </p>
+    <p>
+      A PAT is like a password but has some security benefits.
+      In particular, you can have multiple different PATs.
+      Each one can have different limits on what can be done with it and each one can be revoked individually without affecting the others.
+    </p>
 
-    </introduction>
-  </exercise>
-
-  <exercise xml:id="ex-github-pat" label="ex-github-pat">
-  <statement>
-    <p>
-      What are the first 4 characters of your GitHub PAT?
-    </p>
-  </statement>
-  <choices randomize="yes">
-  <choice>
-  <statement>
-    <p>
-      gpat
-    </p>
-  </statement>
-  <feedback>
-    <p>
-      Check again. You may need to re-create your PAT.
-    </p>
-  </feedback>
-  </choice>
-  <choice correct="yes">
-  <statement>
-    <p>
-      ghp_
-    </p>
-  </statement>
-  <feedback>
-    <p>
-      Correct!
-    </p>
-  </feedback>
-  </choice>
-  <choice>
-  <statement>
-    <p>
-      gith
-    </p>
-  </statement>
-  <feedback>
-    <p>
-      You have created a fine-grained token. Create a new token and be sure to select "classic" both times.
-    </p>
-  </feedback>
-  </choice>
-  </choices>
-</exercise>
-</exercises>
-
-  </subsection>
-<subsection>
-    <title>Setting the GitHub Codespaces Timeout</title>
-    <introduction>
-      <p>
-        The GitKit development environment runs in GitHub Codespaces.  GitHub provides you with approximately 60 hours per month of free Codespaces use. By default the GitKit development environment will timeout after 30 minutes of inactivity. It is recommended that you reduce this timeout to 15 minutes to avoid accidentally consuming your allotted free usage.
-      </p>
-    </introduction>
     <exercises>
-      <title />
-      <exercise
-        xml:id="ex-codespace-timeout-setting"
-        label="ex-codespace-timeout-setting">
-        <introduction>
+    <title />
+    <exercise xml:id="ex-getting-pat" label="ex-getting-pat">
+      <introduction>
+        <p>
+          Follow GitHub's instructions for creating a classic personal access token.
+          Be sure to select Tokens (classic) - you will need to do this twice - and to choose "repo" for the "scopes and permissions": <url href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic" visual="docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic">Creating a Personal Access Token (classic)</url>.
+        </p>
+
+        <p>
+          Be sure to copy and paste your PAT somewhere safe – maybe e-mail it to yourself.
+          You will not be able to retrieve it again after you leave the page.
+        </p>
+      </introduction>
+
+
+      <task xml:id="ex-checking-pat" label="ex-checking-pat">
+        <statement>
           <p>
-            Use the following steps to adjust the timeout for your Codespaces, including the GitKit developent environment.
+            I have created my PAT and it saved somewhere safe for later use.
           </p>
-        </introduction>
-        <task 
-          xml:id="ex-open-codespace-settings"
-          label="ex-open-codespace-settings">
-          <statement>
-            <p>
-              Open your GitHub Codespaces settings by visiting <url href="https://github.com/settings/codespaces" />.
-            </p>
-          </statement>
-        </task>
-        <task 
-          xml:id="ex-adjust-codespace-timeout"
-          label="ex-adjust-codespace-timeout">
-          <statement>
-            <p>
-              Scroll down to the section labeled "Default idle timeout", adjust the timeout to 15 minutes, and click "Save".
-            </p>
-          </statement>
-        </task>
-      </exercise>
+        </statement>
+
+
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                True.
+              </p>
+            </statement>
+
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice>
+
+          <choice>
+            <statement>
+              <p>
+                False.
+              </p>
+            </statement>
+
+            <feedback>
+              <p>
+                You will need the PAT for later tasks so it is important that you have created and saved it.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </task>
+
+
+      <task xml:id="ex-github-pat" label="ex-github-pat">
+        <statement>
+          <p>
+            What are the first 4 characters of your GitHub PAT?
+          </p>
+        </statement>
+
+
+        <choices randomize="yes">
+          <choice>
+            <statement>
+              <p>
+                gpat
+              </p>
+            </statement>
+
+            <feedback>
+              <p>
+                Check again.
+                You may need to re-create your PAT.
+              </p>
+            </feedback>
+          </choice>
+
+          <choice correct="yes">
+            <statement>
+              <p>
+                ghp_
+              </p>
+            </statement>
+
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice>
+
+          <choice>
+            <statement>
+              <p>
+                gith
+              </p>
+            </statement>
+
+            <feedback>
+              <p>
+                You have created a fine-grained token.
+                Create a new token and be sure to select "classic" both times.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </task>
+    </exercise>
     </exercises>
   </subsection>
 
+
+  <subsection>
+    <title>Setting the GitHub Codespaces Timeout</title>
+
+    <introduction>
+      <p>
+        The GitKit development environment runs in GitHub Codespaces.
+        GitHub provides you with approximately 60 hours per month of free Codespaces use.
+        By default the GitKit development environment will timeout after 30 minutes of inactivity.
+        It is recommended that you reduce this timeout to 15 minutes to avoid accidentally consuming your allotted free usage.
+      </p>
+    </introduction>
+
+    <exercises>
+    <title />
+    <exercise xml:id="ex-codespace-timeout-setting" label="ex-codespace-timeout-setting">
+      <introduction>
+        <p>
+          Use the following steps to adjust the timeout for your Codespaces, including the GitKit developent environment.
+        </p>
+      </introduction>
+
+
+      <task xml:id="ex-open-codespace-settings" label="ex-open-codespace-settings">
+        <statement>
+          <p>
+            Open your GitHub Codespaces settings by visiting <url href="https://github.com/settings/codespaces" />.
+          </p>
+        </statement>
+      </task>
+
+
+      <task xml:id="ex-adjust-codespace-timeout" label="ex-adjust-codespace-timeout">
+        <statement>
+          <p>
+            Scroll down to the section labeled "Default idle timeout", adjust the timeout to 15 minutes, and click "Save".
+          </p>
+        </statement>
+      </task>
+    </exercise>
+    </exercises>
+  </subsection>
 </section>

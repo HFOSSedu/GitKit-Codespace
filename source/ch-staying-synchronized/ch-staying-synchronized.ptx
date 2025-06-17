@@ -17,6 +17,10 @@
       This is something that developers do regularly to ensure that when they create a new feature branch their changes are built on the most up to date version of the project.
       Once you have synchronized your repositories you will repeat the process of upstreaming your changes by finding an issue in the issue tracker, creating a feature branch, fixing the issue and making a pull request (PR).
     </p>
+
+    <p>
+      Click here to download the <a href="https://github.com/HFOSSedu/GitKit-Codespace/blob/main/materials/slides/Ch4-StayingSynchronized.pptx">slides for this chapter.</a>
+    </p>
   </introduction>
   <!-- include sections -->
   <xi:include href="sec-understanding-changes-to-the-upstream-repository.ptx" />
