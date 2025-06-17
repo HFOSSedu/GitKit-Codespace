@@ -17,6 +17,10 @@
     <p>
       These exercises build on those from the previous chapter by having you apply the forking workflow to fix the issue that you claimed and then upstream your changes by making a pull request.
     </p>
+
+    <p>
+      Click here to download the <a href="https://github.com/HFOSSedu/GitKit-Codespace/blob/main/materials/slides/Ch3-WorkingLocallyAndUpstreaming.pptx">slides for this chapter.</a>
+    </p>
   </introduction>
   <!-- include sections -->
   <xi:include href="sec-exploring-your-local-repository.ptx" />
