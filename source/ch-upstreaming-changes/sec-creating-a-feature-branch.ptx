@@ -33,7 +33,7 @@
         The <c>git branch &lt;name&gt;</c> command creates a new branch with the given <em>name</em>.
         When creating a branch, you should give it a short but descriptive name (e.g.
         <em>fixTypoInReadme</em>).
-        Note: <em>name</em> may not have spaces, so you can use - (dashes) or CammelCaseText to divide words in your branch names.
+        Note: <em>name</em> may not have spaces, so you can use - (dashes) or CamelCaseText to divide words in your branch names.
         Remember not to include the &lt; &gt; when writing your own command.
       </p>
     </introduction>
@@ -42,7 +42,7 @@
     <task xml:id="ex-creating-a-branch-a" label="ex-creating-a-branch-a">
       <statement>
         <p>
-          If you want to create a new feature branch named <em>fixTypoInName</em>, which command should you use?
+          If you want to create a new feature branch named <em>fixTypoInReadme</em>, which command should you use?
         </p>
       </statement>
 
@@ -51,7 +51,7 @@
         <choice correct="yes">
           <statement>
             <p>
-              <c>git branch fixTypoInName</c>
+              <c>git branch fixTypoInReadme</c>
             </p>
           </statement>
 
@@ -65,7 +65,7 @@
         <choice>
           <statement>
             <p>
-              <c>git branch &lt;fixTypoInName&gt;</c>
+              <c>git branch &lt;fixTypoInReadme&gt;</c>
             </p>
           </statement>
 
@@ -79,7 +79,7 @@
         <choice>
           <statement>
             <p>
-              <c>branch fixTypoInName</c>
+              <c>branch fixTypoInReadme</c>
             </p>
           </statement>
 
@@ -93,7 +93,7 @@
         <choice>
           <statement>
             <p>
-              <c>git fixTypoInName</c>
+              <c>git fixTypoInReadme</c>
             </p>
           </statement>
 
@@ -205,8 +205,11 @@
       <statement>
         <p>
           Type <c>git branch</c> and look at the output produced.
-          Which of the following do you see listed?
+          Assuming the branch you created was named <em>fixTypoInReadme</em>,
+          which of the following do you see listed? 
         </p>
+
+          
       </statement>
 
 
@@ -214,7 +217,7 @@
         <choice correct="yes">
           <statement>
             <p>
-              <c>main</c>
+              <c>* main</c>
             </p>
           </statement>
 
@@ -228,7 +231,7 @@
         <choice correct="yes">
           <statement>
             <p>
-              <c>name</c> which is the name of your feature branch
+              <c>fixTypoInReadme</c>
             </p>
           </statement>
 
@@ -256,7 +259,7 @@
         <choice>
           <statement>
             <p>
-              <c>&lt;name&gt;</c> which is the name of your feature branch
+              <c>&lt;fixTypoInReadme&gt;</c>
             </p>
           </statement>
 
