@@ -49,7 +49,7 @@
 
     <introduction>
       <p>
-        A <term>remote</term> is a repository that is stored on GitHub, or another repository hosting sited.
+        A <term>remote</term> is a repository that is stored on GitHub, or another repository hosting site.
       </p> 
       <p>
         A <term>Git remote</term> is the URL of a <term>remote</term> and an associated name (e.g. origin, upstream). Git uses Git remotes to locate remote repositories.  Though it can be confusing, the <term>remote</term> is also commonly used as a synonym for <term>Git remote</term>.
