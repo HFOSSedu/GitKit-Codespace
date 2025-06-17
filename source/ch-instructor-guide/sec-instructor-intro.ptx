@@ -293,9 +293,12 @@
 					</caption>
 					<image source="images/ch-instructor-guide/codespace-kitclient.png"
 					width="75%">
-					<description>
-						Screenshot showing the KitClient development environment running in GitHub Codespaces.
-					</description>
+						<shortdescription>
+							Screenshot showing the KitClient development environment running in GitHub Codespaces.
+						</shortdescription>
+						<description>
+							Screenshot showing the KitClient development environment running in GitHub Codespaces, with the Kit-TTY welcome message in the terminal.
+						</description>
 					</image>
               	</figure>
 			</p>
@@ -551,9 +554,9 @@
 							</caption>
 							<image source="images/ch-instructor-guide/deployer-kitscript.png"
 							width="75%">
-								<description>
+								<shortdescription>
 									Screenshot showing the deployer prompting for the new repository name.
-								</description>
+								</shortdescription>
 							</image>
 						</figure>
 					</p>
@@ -598,9 +601,9 @@
 							</caption>
 							<image source="images/ch-instructor-guide/deployer-done.png"
 							width="90%">
-								<description>
+								<shortdescription>
 									Screenshot of the deployer showing the URL of the deployed GitKit FarmData2 repository.
-								</description>
+								</shortdescription>
 							</image>
 						</figure>
 					</p>
