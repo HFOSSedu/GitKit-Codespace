@@ -32,7 +32,7 @@
       <p>
         The <c>git branch &lt;name&gt;</c> command creates a new branch with the given <em>name</em>.
         When creating a branch, you should give it a short but descriptive name (e.g.
-        <em>FixTypoInReadme</em>).
+        <em>fixTypoInReadme</em>).
         Note: <em>name</em> may not have spaces, so you can use - (dashes) or CammelCaseText to divide words in your branch names.
         Remember not to include the &lt; &gt; when writing your own command.
       </p>

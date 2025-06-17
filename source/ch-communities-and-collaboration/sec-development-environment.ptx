@@ -413,7 +413,7 @@
             <statement>
                 <p>
                     The <c>git config --global user.name "&lt;name&gt;"</c> command sets the name that Git will associate with your changes.
-                    Throughout this book, <c>&lt; &gt;</c> will be used to indicate a part of a git command that you must enter.
+                    Throughout this book, &lt; &gt; will be used to indicate a part of a git command that you must enter.
                     For example, if you want your name to appear as Jane D.
                     the command would be <c>git config --global user.name "Jane D."</c>.
                 </p>
