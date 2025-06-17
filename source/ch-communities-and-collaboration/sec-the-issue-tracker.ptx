@@ -15,9 +15,9 @@
       <figure xml:id="fig-issue-tracker" label="fig-issue-tracker" >
         <caption> The GitKit FarmData2 issue tracker in GitHub. </caption>
         <image source="images/ch-communities-and-collaboration/issueTracker.png">
-          <description>
+          <shortdescription>
             The GitHub issue tracker displaying issues from the GitKit FarmData2 repository.
-          </description>
+          </shortdescription>
         </image>
       </figure>
     </p>
