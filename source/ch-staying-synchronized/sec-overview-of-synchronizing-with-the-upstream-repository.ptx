@@ -5,7 +5,7 @@
 
   <introduction>
     <p>
-      As you saw in <xref ref="topic-understanding-changes-to-the-upstream-repository" />, as changes from pull requests (yours and others) are merged into upstream <c>main</c>, the <c>main</c> branches in your local and origin repos will get <em>out of synch with the upstream</em>.
+      As you saw in <xref ref="topic-understanding-changes-to-the-upstream-repository" text="type-global-title"/>, as changes from pull requests (yours and others) are merged into upstream <c>main</c>, the <c>main</c> branches in your local and origin repos will get <em>out of synch with the upstream</em>.
     </p>
   </introduction>
 
