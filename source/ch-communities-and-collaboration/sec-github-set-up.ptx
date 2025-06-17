@@ -79,25 +79,14 @@
   <exercise xml:id="ex-getting-pat" label="ex-getting-pat">
     <introduction>
       <p>
-        Follow GitHub's instructions for creating a (classic) personal access token: <url href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic" visual="docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic">Creating a Personal Access Token (classic)</url>.
+        Follow GitHub's instructions for creating a classic personal access token. 
+        Be sure to select Tokens (classic) - you will need to do this twice - and to 
+        choose "repo" for the "scopes and permissions": <url href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic" visual="docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic">Creating a Personal Access Token (classic)</url>.
       </p>
 
       <p>
-        When doing so be sure to:
-        <ul>
-          <li>
-            <p>
-              Choose “repo” for the “scopes and permissions.”
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Be sure to copy and paste your PAT somewhere safe – maybe e-mail it to yourself.
-              You will not be able to retrieve it again after you leave the page.
-            </p>
-          </li>
-        </ul>
+        Be sure to copy and paste your PAT somewhere safe – maybe e-mail it to yourself.
+        You will not be able to retrieve it again after you leave the page.
       </p>
 
     </introduction>
@@ -118,6 +107,7 @@
   </statement>
   <feedback>
     <p>
+      Check again. You may need to re-create your PAT.
     </p>
   </feedback>
   </choice>
@@ -129,19 +119,19 @@
   </statement>
   <feedback>
     <p>
-      All GitHub PATs begin with ghp_
+      Correct!
     </p>
   </feedback>
   </choice>
   <choice>
   <statement>
     <p>
-      PAT_
+      gith
     </p>
   </statement>
   <feedback>
     <p>
-      
+      You have created a fine-grained token. Create a new token and be sure to select "classic" both times.
     </p>
   </feedback>
   </choice>
