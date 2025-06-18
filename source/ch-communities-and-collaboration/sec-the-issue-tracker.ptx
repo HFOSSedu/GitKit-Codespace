@@ -425,7 +425,7 @@
       <task xml:id="ex-claim-an-issue-b" label="ex-claim-an-issue-b">
         <statement>
           <p>
-            Comment on the issue that you chose using the <xref ref="topic-issue-claim-message" text="type-global-title">message above</xref> to claim it.
+            Comment on the issue that you chose using the <xref ref="topic-issue-claim-message" text="custom">message above</xref> to claim it.
           </p>
         </statement>
 
@@ -434,7 +434,7 @@
             Click on the issue title to open the issue and use the "Add a comment" box at the bottom of the page. 
           </p>
           <p>
-            Remember you must type <xref ref="topic-issue-claim-message" text="type-global-title">the message</xref> exactly as shown.
+            Remember you must type <xref ref="topic-issue-claim-message" text="custom">the message</xref> exactly as shown.
           </p>
         </hint>
       </task>
@@ -451,7 +451,7 @@
           <p>
             If you did not receive a response, wait a few minutes and reload the issue tracker page again.
             Sometimes it takes a few minutes for your comment to be noticed and the issue to be assigned.
-            If you still do not receive a response check that you typed <xref ref="topic-issue-claim-message" text="type-global-title">the message</xref> correctly.
+            If you still do not receive a response check that you typed <xref ref="topic-issue-claim-message" text="custom">the message</xref> correctly.
           </p>
 
           <p>
