@@ -21,8 +21,13 @@
     <figure xml:id="fig-pushing-feature-branch" >
       <caption> Push Feature Branch to Origin. </caption>
       <image source="images/ch-upstreaming-changes/pushing-feature-branch.png" width="75%">
-        <description>
+        <shortdescription>
           Cloud image of the feature branch to be merged into your origin repository.
+        </shortdescription>
+        <description>
+          <p>Diagram showing that the result of the push is that the local feature
+            branch is now on the remote (origin) repository.
+          </p>
         </description>
       </image>
     </figure>

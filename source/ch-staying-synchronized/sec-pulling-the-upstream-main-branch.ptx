@@ -18,8 +18,13 @@
         <figure xml:id="fig-changes-merged-into-upstream-pull" >
           <caption> Pulling changes from upstream <c>main</c> branch into the local <c>main</c> branch. </caption>
           <image source="images/ch-staying-synchronized/changes-merged-into-upstream-pull.png" width="75%">
-            <description>
+            <shortdescription>
               Cloud image illustrating changes being pulled into the local <c>main</c> branch from the upstream <c>main</c> branch.
+            </shortdescription>
+            <description>
+              <p>Diagram showing that a pull from the upstream main branch has updated the local main branch.
+                Now both repositories (upsteam and local) have the same sequence of commits.
+              </p>
             </description>
           </image>
         </figure>

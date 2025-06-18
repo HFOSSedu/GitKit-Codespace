@@ -33,11 +33,14 @@
           When the development environment is ready you will see the message "Kit development environment is ready for use." and your browser window will look similar to the following: 
           
           <image source="images/shared-images/DevEnv-Kitty-Ready.png" width="75%">
-            <description>
-              The GitKit Development Environment.
-              The development environment is ready when you see the "Kit development environment is ready for use" message.
-            </description>
-            </image>
+          <shortdescription>
+            Image of the GitKit Development Environment showing the ready for use message.
+          </shortdescription>
+          <description>
+            The GitKit Development Environment.
+            The development environment is ready when you see the "Kit development environment is ready for use" message.
+          </description>
+        </image>
         </p>
       </exercise>
     </exercises>

@@ -17,8 +17,12 @@
       <figure xml:id="fig-create-feature-branch">
         <caption> Create Feature Branch. </caption>
         <image source="images/ch-upstreaming-changes/create-feature-branch.png" width="75%">
+          <shortdescription>
+            Cloud image of origin, upstream, and local branches, with a new local branch.
+          </shortdescription>
           <description>
-            Cloud image of origin, upstream, and local branches.
+            <p>The new local branch is created from the active local branch. The new branch is not made active.
+            </p>
           </description>
         </image>
       </figure>

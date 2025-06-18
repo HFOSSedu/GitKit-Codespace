@@ -18,8 +18,13 @@
       <figure xml:id="fig-deleting-feature-branch" >
         <caption> Deleting Feature Branches. </caption>
         <image source="images/ch-staying-synchronized/deleting-feature-branch.png" width="75%">
-          <description>
+          <shortdescription>
             Cloud image showing that the feature branch was deleted.
+          </shortdescription>
+          <description>
+            <p>Diagram showing that there is no longer a local feature branch,
+              and there is no longer a remote feature branch on origin.
+            </p>
           </description>
         </image>
       </figure>

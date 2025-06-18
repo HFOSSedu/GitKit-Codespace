@@ -19,7 +19,9 @@
           A basic FOSS workflow.  
         </caption>
         <image source="images/ch-communities-and-collaboration/basic-foss-workflow.png" width="75%">
-          <description>Forking the main project repo creates your remote copy in your GitHub spacey.  Cloning your remote copy creates your local copy in your local development environment. Changes that you make to your local copy can be contributed to the main project by pushing them to your remote copy and creating a pull request.
+          <shortdescription>Diagram showing the relationships between the main repo, your remote copy, and your local copy.
+          </shortdescription>
+          <description>Forking the main project repo creates your remote copy in your GitHub space.  Cloning your remote copy creates your local copy in your local development environment. Changes that you make to your local copy can be contributed to the main project by pushing them to your remote copy and creating a pull request.
           </description>
         </image>
       </figure>

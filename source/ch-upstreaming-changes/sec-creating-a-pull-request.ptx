@@ -20,8 +20,13 @@
     <figure xml:id="fig-pull-request" >
       <caption> Making a Pull Request. </caption>
       <image source="images/ch-upstreaming-changes/pull-request.png" width="75%">
-        <description>
+        <shortdescription>
           Cloud image of the state of the repository when making a pull request.
+        </shortdescription>
+        <description>
+          <p>A pull request informs the upstream repository which branch in your fork (origin)
+            repository contains the changes you would like merged into the upstream.
+          </p>
         </description>
       </image>
     </figure>
@@ -46,9 +51,9 @@
 
         <p>
           <image source="images/ch-upstreaming-changes/compare-pull-request.png" width="30%">
-            <description>
+            <shortdescription>
               GitHub compare and pull request button image.
-            </description>
+            </shortdescription>
           </image>
         </p>
 
@@ -68,8 +73,14 @@
 
         <p>
           <image source="images/ch-upstreaming-changes/repository-branch-bar.png" width="100%">
-            <description>
+            <shortdescription>
               Image of the GitHub bar showing the repository and branch for the pull request.
+            </shortdescription>
+            <description>
+              <p>The bar shows the base repository and base branch on the left, the head repository and feature branch on the right.
+                In the middle there is a left-facing arrow indicating that the changes in the head repository and feature branch will
+                be merged into the base repository and base branch.
+              </p>
             </description>
           </image>
         </p>
@@ -204,9 +215,9 @@
 
         <p>
           <image source="images/ch-upstreaming-changes/create-pull-request.png" width="50%">
-            <description>
+            <shortdescription>
               GitHub create pull request button image.
-            </description>
+            </shortdescription>
           </image>
         </p>
       </statement>
@@ -221,9 +232,9 @@
 
       <p>
         <image source="images/ch-upstreaming-changes/pull-requests-tab.png" width="30%">
-          <description>
+          <shortdescription>
             GitHub pull requests tab image.
-          </description>
+          </shortdescription>
         </image>
       </p>
 
@@ -267,9 +278,9 @@
 
       <p>
         <image source="images/ch-upstreaming-changes/files-changed-tab.png" width="30%">
-          <description>
-            GitHub pull requests tab image.
-          </description>
+          <shortdescription>
+            GitHub files changed tab image.
+          </shortdescription>
         </image>
       </p>
 

@@ -14,8 +14,12 @@
     <figure xml:id="fig-committing-changes">
       <caption> Committing changes. </caption>
       <image source="images/ch-upstreaming-changes/committing-changes.png" width="75%">
+        <shortdescription>
+          Diagram showing committing local changes.
+        </shortdescription>
         <description>
-          Committing Changes.
+          <p>Local file changes that have been staged are committed to the active branch.
+          </p>
         </description>
       </image>
     </figure>

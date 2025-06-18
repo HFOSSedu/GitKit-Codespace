@@ -17,8 +17,13 @@
     <figure xml:id="fig-staging-changes">
       <caption> Staging changes. </caption>
       <image source="images/ch-upstreaming-changes/staging-changes.png" width="75%">
-        <description>
+        <shortdescription>
           Staging Changes.
+        </shortdescription>
+        <description>
+          <p>Diagram showing that the git stage command results in change to the local
+            files being represented in the staging area in preparation for being committed.
+          </p>
         </description>
       </image>
     </figure>
