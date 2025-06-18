@@ -295,7 +295,7 @@
 
           <feedback>
             <p>
-              Correct! The most recent commit is always shown first in the list.
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -355,7 +355,7 @@
 
           <feedback>
             <p>
-              Correct! Bates2001 authored a commit on October 11, 2021.
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -429,7 +429,7 @@
 
           <feedback>
             <p>
-              Correct! shes-dev made this commit on October 5, 2021.
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -533,7 +533,7 @@
 
           <feedback>
             <p>
-              Correct! The first line specifies the current branch.
+              Correct!
             </p>
           </feedback>
         </choice>
