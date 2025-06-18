@@ -181,7 +181,7 @@
                          
             <feedback>
               <p>
-                X
+                There are no named URLs in the table.
               </p>
             </feedback>
           </choice>
@@ -193,7 +193,7 @@
                                      
             <feedback>
               <p>
-                X
+                There is no URL associated with "upstream".
               </p>
             </feedback>
           </choice>
@@ -205,7 +205,7 @@
                                      
             <feedback>
               <p>
-                X
+                There is no URL associated with "upstream".
               </p>
             </feedback>
           </choice>
@@ -217,7 +217,7 @@
                                      
             <feedback>
               <p>
-                X
+                There is no URL associated with "fork".
               </p>
             </feedback>
           </choice>
@@ -229,7 +229,7 @@
                                      
             <feedback>
               <p>
-                X
+                There is no URL associated with "fork".
               </p>
             </feedback>
           </choice>
