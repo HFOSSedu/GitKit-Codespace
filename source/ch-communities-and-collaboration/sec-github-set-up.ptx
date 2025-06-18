@@ -70,7 +70,7 @@
         <title>GitHub Personal Access Token</title>
 
         <p>
-            When starting your development environment for the first time (in <xref ref="topic-development-environment"/>) you will be asked to enter a <term>Personal Access Token (PAT)</term> from GitHub.
+            When starting your development environment for the first time (in <xref ref="topic-development-environment" text="type-global-title"/>) you will be asked to enter a <term>Personal Access Token (PAT)</term> from GitHub.
         </p>
 
         <p>
