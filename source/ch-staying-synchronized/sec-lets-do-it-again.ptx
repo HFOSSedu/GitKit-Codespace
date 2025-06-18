@@ -112,7 +112,7 @@
             </statement>
             <feedback>
               <p>
-                Correct.
+                Correct!
               </p>
             </feedback>
           </choice>
@@ -314,7 +314,7 @@
               </statement>
               <feedback>
                 <p>
-                  Correct. This branch name has enough context to describe what the branch does without being excessively long.
+                  Correct!
                 </p>
               </feedback>
             </choice>
@@ -357,7 +357,7 @@
               </statement>
               <feedback>
                 <p>
-                  Correct. This commit message briefly but completing describes the change made.
+                  Correct!
                 </p>
               </feedback>
             </choice>
@@ -475,7 +475,7 @@
               </statement>
               <feedback>
                 <p>
-                  Correct. While your PR changes the same lines of the <c>README.md</c> file as the other PRs, none of those PRs have been merged into the upstream <c>main</c>.  Thus, your PR will not contain any conflicts with the upstream <c>main</c> branch.
+                  Correct! While your PR changes the same lines of the <c>README.md</c> file as the other PRs, none of those PRs have been merged into the upstream <c>main</c>.  Thus, your PR will not contain any conflicts with the upstream <c>main</c> branch.
                 </p>
               </feedback>
             </choice>
@@ -553,7 +553,7 @@
               </statement>
               <feedback>
                 <p>
-                  Correct. A PR for the Round2 issue you were working on has been merged into the upstream <c>main</c>. Your PR contained changes that changed the same lines of the <c>README.md</c> file as the merged PR. Thus, your PR will have conflicts with the upstream <c>main</c> branch and will not be able to be merged automatically.
+                  Correct! A PR for the Round2 issue you were working on has been merged into the upstream <c>main</c>. Your PR contained changes that changed the same lines of the <c>README.md</c> file as the merged PR. Thus, your PR will have conflicts with the upstream <c>main</c> branch and will not be able to be merged automatically.
                 </p>
               </feedback>
             </choice>

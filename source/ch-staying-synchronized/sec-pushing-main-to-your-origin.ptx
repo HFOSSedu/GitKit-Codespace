@@ -28,7 +28,7 @@
       <setup> <var> <condition string="^git push origin main$">
       <feedback>
         <p>
-          Thank you.
+          Correct!
         </p>
       </feedback>
       </condition> <condition string=".*">
@@ -75,6 +75,7 @@
                 The URL of your origin on GitHub.
               </p>
             </statement>
+
           </choice>
           <choice correct="yes">
             <statement>
@@ -82,6 +83,7 @@
                 The name of the branch that you pushed to GitHub.
               </p>
             </statement>
+
           </choice>
           <choice>
             <statement>
@@ -89,6 +91,7 @@
                 The URL of the upstream repository on GitHub.
               </p>
             </statement>
+
           </choice>
           <choice>
             <statement>
@@ -96,6 +99,7 @@
                 A list of all the files changed in the local repository.
               </p>
             </statement>
+
           </choice>
           <choice>
             <statement>
@@ -103,6 +107,7 @@
                 A list of all the branches in the local repository.
               </p>
             </statement>
+
           </choice>
         </choices>
         <hint>

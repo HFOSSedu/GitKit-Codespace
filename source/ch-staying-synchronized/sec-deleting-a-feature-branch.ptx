@@ -105,6 +105,7 @@
                   <c>main</c> an * next to it.
                 </p>
               </statement>
+
             </choice>
             <choice correct="yes">
               <statement>
@@ -112,6 +113,7 @@
                   <c>main</c> appears in green.
                 </p>
               </statement>
+
             </choice>
             <choice>
               <statement>
