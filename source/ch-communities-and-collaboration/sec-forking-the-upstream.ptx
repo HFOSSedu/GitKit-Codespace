@@ -8,7 +8,7 @@
 
   <introduction>
     <p>
-      In <xref ref="topic-basic-foss-workflow" /> you saw how FOSS communities can use a basic workflow to collaborate. In this section you will begin to gain hands-on experience with that workflow. <xref ref="fig-basic-workflow-fork"/> illustrates first step in the workflow. In this step you will <term>fork</term> the main project repository, which creates a copy of it into your own GitHub space.
+      In <xref ref="topic-basic-foss-workflow" text="type-global-title"/> you saw how FOSS communities can use a basic workflow to collaborate. In this section you will begin to gain hands-on experience with that workflow. <xref ref="fig-basic-workflow-fork"/> illustrates first step in the workflow. In this step you will <term>fork</term> the main project repository, which creates a copy of it into your own GitHub space.
     </p>
   
     <p>
