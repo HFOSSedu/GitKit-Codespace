@@ -69,7 +69,7 @@
             <p>
                 Open the "Local" and "HTTPS" tabs as shown here: <image source="images/ch-communities-and-collaboration/gitHubCloneURL.png" width="50%">
                 <shortdescription>
-                    The GitHub dialog showing the clone URL.
+                    The GitHub dialog showing the local HTTPS clone URL.
                 </shortdescription>
             </image>
             The URL in the "Clone using the web URL" box is the clone URL that you will need to clone your origin repository.

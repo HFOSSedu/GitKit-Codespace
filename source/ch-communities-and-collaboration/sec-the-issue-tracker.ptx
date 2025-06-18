@@ -127,9 +127,9 @@
           <choice correct="yes">
             <statement>
               <image source="images/ch-communities-and-collaboration/documentation-tag.png">
-                <description>
-                  Documentation
-                </description>
+                <shortdescription>
+                  Image of the Documentation label.
+                </shortdescription>
               </image>
             </statement>
           </choice>
@@ -137,9 +137,9 @@
           <choice correct="yes">
             <statement>
               <image source="images/ch-communities-and-collaboration/round1-tag.png">
-                <description>
-                  Round1
-                </description>
+                <shortdescription>
+                  Image of the Round1 label.
+                </shortdescription>
               </image>
             </statement>
           </choice>
@@ -147,9 +147,9 @@
           <choice correct="yes">
             <statement>
               <image source="images/ch-communities-and-collaboration/enhancement-tag.png">
-                <description>
-                  Enhancement
-                </description>
+                <shortdescription>
+                  Image of the Enhancement label.
+                </shortdescription>
               </image>
             </statement>
           </choice>
@@ -157,9 +157,9 @@
           <choice correct="no">
             <statement>
               <image source="images/ch-communities-and-collaboration/typos-tag.png">
-                <description>
-                  Typos
-                </description>
+                <shortdescription>
+                  Image of the Typos label.
+                </shortdescription>
               </image>
             </statement>
           </choice>
@@ -167,9 +167,9 @@
           <choice correct="no">
             <statement>
               <image source="images/ch-communities-and-collaboration/bug-tag.png">
-                <description>
-                  Bug
-                </description>
+                <shortdescription>
+                  Image of the Bug label.
+                </shortdescription>
               </image>
             </statement>
           </choice>
@@ -177,9 +177,9 @@
           <choice correct="no">
             <statement>
               <image source="images/ch-communities-and-collaboration/uiux-tag.png">
-                <description>
-                  UI/UX
-                </description>
+                <shortdescription>
+                  Image of the UI/UX label.
+                </shortdescription>
               </image>
             </statement>
           </choice>

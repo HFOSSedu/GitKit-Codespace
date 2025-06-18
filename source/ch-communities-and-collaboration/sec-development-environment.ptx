@@ -145,6 +145,10 @@
                             <shortdescription>
                                 The GitKit Development Environment with the "Kit development environment is ready for use" message.
                             </shortdescription>
+                            <description>
+                                The GitKit Development Environment.
+                                The development environment is ready when you see the "Kit development environment is ready for use" message.
+                            </description>
                         </image>
                     </figure>
                 </statement>
