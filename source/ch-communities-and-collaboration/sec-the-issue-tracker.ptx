@@ -158,11 +158,6 @@
               </image>
             </statement>
 
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="yes">
@@ -174,11 +169,6 @@
               </image>
             </statement>
 
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="yes">
@@ -190,11 +180,6 @@
               </image>
             </statement>
 
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="no">
@@ -206,11 +191,6 @@
               </image>
             </statement>
 
-            <feedback>
-              <p>
-                Be sure you are looking at issue #8.
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="no">
@@ -222,11 +202,6 @@
               </image>
             </statement>
 
-            <feedback>
-              <p>
-                Be sure you are looking at issue #8.
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="no">
@@ -238,11 +213,6 @@
               </image>
             </statement>
 
-            <feedback>
-              <p>
-                Be sure you are looking at issue #8.
-              </p>
-            </feedback>
           </choice>
         </choices>
 
@@ -333,11 +303,6 @@
               Newest
             </statement>
 
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="yes">
@@ -345,11 +310,6 @@
               Oldest
             </statement>
 
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="yes">
@@ -357,11 +317,6 @@
               Most recently updated
             </statement>
 
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="yes">
@@ -369,11 +324,6 @@
               Has the greatest number of comments
             </statement>
 
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="no">
@@ -381,11 +331,6 @@
               Most difficult
             </statement>
 
-            <feedback>
-              <p>
-                Not an option for how to order.
-              </p>
-            </feedback>
           </choice>
 
           <choice correct="no">
@@ -393,11 +338,6 @@
               Highest priority
             </statement>
 
-            <feedback>
-              <p>
-                Not an option for how to order.
-              </p>
-            </feedback>
           </choice>
 
         </choices>
@@ -636,11 +576,6 @@
             </p>
           </statement>
 
-          <feedback>
-            <p>
-              Assigning issues can help prevent people from duplicating work.
-            </p>
-          </feedback>
         </choice>
 
         <choice>
@@ -650,11 +585,6 @@
             </p>
           </statement>
 
-          <feedback>
-            <p>
-              Holding onto an issue that is not being worked on may prevent someone else from working on it.
-            </p>
-          </feedback>
         </choice>
 
         <choice correct="yes">
@@ -664,11 +594,6 @@
             </p>
           </statement>
 
-          <feedback>
-            <p>
-              Assigning issues could work like creating a ToDo list for core project contributors.
-            </p>
-          </feedback>
         </choice>
       </choices>
 
