@@ -30,7 +30,7 @@
   <exercise xml:id="ex-switching-branches" label="ex-switching-branches">
     <introduction>
       <p>
-        As you saw in <xref ref="topic-creating-a-feature-branch"/>, the <c>git branch &lt;name&gt;</c> command creates a branch (among other uses), but it does not change your active branch.
+        As you saw in <xref ref="topic-creating-a-feature-branch" text="type-global-title"/>, the <c>git branch &lt;name&gt;</c> command creates a branch (among other uses), but it does not change your active branch.
         The <c>git switch &lt;name&gt;</c> command switches (i.e.
         changes) the active branch.
       </p>

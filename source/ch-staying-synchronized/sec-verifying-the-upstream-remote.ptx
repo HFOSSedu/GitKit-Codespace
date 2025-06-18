@@ -345,7 +345,7 @@
 
     <introduction>
       <p>
-        As you saw in <xref ref="topic-understanding-remotes" /> your local repository contains an upstream remote that points to the upstream being used for your course.  This upstream was set automatically by the development environment when you opened your local repository.     
+        As you saw in <xref ref="topic-understanding-remotes" text="type-global-title"/> your local repository contains an upstream remote that points to the upstream being used for your course.  This upstream was set automatically by the development environment when you opened your local repository.     
       </p>
       <p>
         Not all development environments are able to automatically set the upstream remote when you open your local repository.  The exercises in this section will walk you through how you can manually set the upstream remote if you need to.
