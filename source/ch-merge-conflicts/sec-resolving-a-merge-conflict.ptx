@@ -1,595 +1,602 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section
-  xml:id="topic-resolving-a-merge-conflict"
-  xmlns:xi="http://www.w3.org/2001/XInclude"
-  >
-  <title>Resolving a Merge Conflict</title>
+<section xml:id="topic-resolving-a-merge-conflict" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <title>Resolving a Merge Conflict</title>
 
-  <introduction>
-    <p>
-      <xref ref="fig-resolving-merge-conflict" /> shows the <c>main</c> branch has committed changes that conflict with what the local branch wants to commit.
-    </p>    
-    <p>
-      <figure xml:id="fig-resolving-merge-conflict" >
-        <caption> Resolving a Merge Conflict </caption>
-        <image source="images/ch-merge-conflicts/resolving-merge-conflict.png" width="75%">
-          <description>
-            Image illustrating changes merged into the upstream that conflict with a local branch.
-          </description>
-        </image>
-      </figure>
-    </p>
-    <p>
-      This section will walk you through the process of resolving the merge conflict. In <xref ref="topic-merging-the-main-branch-into-a-feature-branch" text="type-global-title" /> you merged the <c>main</c> branch into your feature branch. This created a merge conflict. In this section you will edit the raw merge conflict information to resolve the conflict and then you will stage and commit the merged changes.
-    </p>
-  </introduction>
-
-  <subsection 
-    xml:id="topic-merge-conflict-information"
-    label="topic-merge-conflict-information">
-    <title>Raw Merge Conflict Information</title>
     <introduction>
-      <p>
-        After completing <xref ref="topic-merging-the-main-branch-into-a-feature-branch" /> the <c>README.md</c> file should be open in your editor and the raw merge conflict information should be displayed.
-      </p>
-      <p>
-        If you are not seeing the <c>README.md</c> file open it from the EXPLORER pane.  If you are not seeing the merge conflict information, scroll through the <c>README.md</c> file to the location where you made your change. The raw merge conflict information should appear there.  If it does not, return to <xref ref="topic-merging-the-main-branch-into-a-feature-branch" /> and try to correct the issue.
-      </p>
-    </introduction>
-
-    <exercises>
-      <title />
-
-      <exercise xml:id="ex-raw-merge-information" label="ex-raw-merge-information">
-        <introduction>
-          <p>
-            The editor window for the <c>README.md</c> file displays the <term>raw conflict information</term> that has resulted from the merge.  The following tasks ask you some question about this information.
-          </p>
-        </introduction>
-        <task 
-          xml:id="ex-raw-merge-content"
-          label="ex-raw-merge-content">
-          <statement>
-            <p>
-              Match the terms below to the descriptions based upon what is displayed in the editor.
-            </p>
-          </statement>
-          <matches> 
-            <match>
-              <premise>Feature branch contents</premise> 
-              <response>
-                Appears with a green highlight at the top of the conflict information.
-              </response> 
-            </match> 
-            <match>
-              <premise>Best common ancestor</premise> 
-              <response>
-                Appears with a gray highlight in the middle of the conflict information.
-              </response> 
-            </match> 
-            <match>
-              <premise><c>main</c> branch contents</premise> 
-              <response>
-                Appears with a blue highlight at the bottom of the conflict information.
-              </response> 
-            </match> 
-          </matches>
-        </task>
-        <task 
-          xml:id="ex-raw-merge-dividers"
-          label="ex-raw-merge-dividers">
-          <statement>
-            <p>
-              Match the terms below to the descriptions based upon what is displayed in the editor.
-            </p>
-          </statement>
-          <matches> 
-            <match>
-              <premise>
-                Left Chevrons <c>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</c>
-              </premise> 
-              <response>
-                Indicate the start of the merge conflict information.
-              </response> 
-            </match> 
-            <match>
-              <premise>
-                Vertical Bars <c>|||||||</c>
-              </premise> 
-              <response>
-                Separate the feature branch content from the best common ancestor.
-              </response> 
-            </match> 
-            <match>
-              <premise>Equal Signs <c>=======</c></premise> 
-              <response>
-                Separate the best common ancestor from the <c>main</c> branch content.
-              </response> 
-            </match> 
-            <match>
-              <premise>
-                Right Chevrons <c>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</c>
-              </premise> 
-              <response>
-                Indicate the end of the merge conflict information.
-              </response> 
-            </match> 
-          </matches>
-        </task>
-      </exercise>
-    </exercises>
-  </subsection>
-
-  <subsection 
-    xml:id="topic-resolving-the-conflict"
-    label="topic-resolving-the-conflict">
-    <title>Resolving the Merge Conflict</title>
-    <introduction>
-      <p>
-        Recall that the merge conflict that you are seeing arose because your feature branch and the upstream <c>main</c> branch contain changes to the same part of the file.  In this situation, Git is not able to automatically decide which changes to keep or how to combine the changes.  This decision must be made by a developer, in this case... by you!
-      </p>
-      <p>
-        It is possible to resolve merge conflicts by editing the raw merge information, including removing the chevrons and dividers.  However, most development environments, including the one you are using, provide special tools to help with the resolution of merge conflicts.
-      </p>
-      <p>
-        The <term>basic merge tool</term> in your development environment provides four options to assist with resolving merge conflicts. These options appear in the editor just above the merge conflict information as shown in <xref ref="fig-basic-merge-conflict-tool" />.
-      </p>
-      <p>
-        <figure xml:id="fig-basic-merge-conflict-tool" >
-          <caption> The basic merge tool options. </caption>
-          <image source="images/ch-merge-conflicts/basic-merge-tool-options.png" width="100%">
-            <description>
-              Image illustrating the basic merge tool options of "Accept Current Change", "Accept Incoming Change", "Accept Both Changes", "Compare Changes".
-            </description>
-          </image>
-        </figure>
-      </p>
-    </introduction>
-    <exercises>
-      <title />
-      <exercise 
-        xml:id="ex-merge-tool-options"
-        label="ex-merge-tool-options">
-        <statement>
-          <p>
-            Match the option you would choose to perform each of the indicated operations.
-          </p>
-        </statement>
-        <matches> 
-          <match>
-            <premise>
-              Accept Current Change
-            </premise> 
-            <response>
-              Accept the changes in your feature branch.
-            </response> 
-          </match>
-          <match>
-            <premise>
-              Accept Incoming Change
-            </premise> 
-            <response>
-              Accept the changes in the <c>main</c> branch.
-            </response> 
-          </match>
-        </matches>
-        <hint>
-          <p>
-            Compare the terms used in the merge tool options to the information displayed in the first and last lines of the merge conflict information.
-          </p>
-        </hint>
-      </exercise>
-
-      <exercise 
-        xml:id="ex-accept-current-change"
-        label="ex-accept-current-change">
-        <statement>
-          <p>
-            Click the option that will accept the changes in your feature branch.
-          </p>
-          <p>
-            Choose the description below that best describes What happens?
-          </p>
-        </statement>
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              <p>
-                Only the changes from the feature branch remain.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                Only the changes from the <c>main</c> branch remain.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Check the editor contents after you click "Accept Current Change".
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                The changes from the <c>main</c> branch and the chevrons remain.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Check the editor contents after you click "Accept Current Change".
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                The changes from the feature branch and the chevrons remain.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Check the editor contents after you click "Accept Current Change".
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-        <hint>
-          <p>
-            Click "Accept Current Change" and check the editor contents.
-          </p>
-        </hint>
-      </exercise>
-    </exercises>
-
-    <conclusion>
-      <p>
-        If you would like to try out the other merge options you can undo your changes by opening the Hamburger menu (☰), clicking on "Edit" and choosing "Undo".
-      </p>
-      <p>
-        This basic merge tool is helpful for resolving small uncomplicated merge conflicts. Most development environments also provide more advanced merge tools for working with more complex conflicts.  The use of those tools is beyond the goals of this chapter.
-      </p>
-    </conclusion>
-  </subsection>
-
-  <subsection 
-    xml:id="topic-committing-merged-changes" 
-    label="topic-committing-merged-changes">
-    <title>Committing the Merged Changes</title>
-    <exercises>
-      <title />
-      <introduction>
         <p>
-          At this point you have resolved the merge conflict, but the resulting changes have not been committed to your feature branch. In this section you will commit those changes to your feature branch.
+            <xref ref="fig-resolving-merge-conflict" /> shows the <c>main</c> branch has committed changes that conflict with what the local branch wants to commit.
         </p>
-      </introduction>
-      <exercise 
-        xml:id="ex-merged-git-status"
-        label="ex-merged-git-status">
+
+        <p>
+            <figure xml:id="fig-resolving-merge-conflict" >
+                <caption> Resolving a Merge Conflict </caption>
+                <image source="images/ch-merge-conflicts/resolving-merge-conflict.png" width="75%">
+                    <description>
+                        Image illustrating changes merged into the upstream that conflict with a local branch.
+                    </description>
+                </image>
+            </figure>
+        </p>
+
+        <p>
+            This section will walk you through the process of resolving the merge conflict.
+            In <xref ref="topic-merging-the-main-branch-into-a-feature-branch" text="type-global-title" /> you merged the <c>main</c> branch into your feature branch.
+            This created a merge conflict.
+            In this section you will edit the raw merge conflict information to resolve the conflict and then you will stage and commit the merged changes.
+        </p>
+    </introduction>
+
+
+    <subsection xml:id="topic-merge-conflict-information" label="topic-merge-conflict-information">
+        <title>Raw Merge Conflict Information</title>
+
         <introduction>
-          <p>
-            Run the <c>git status</c> command in the terminal and use its output to answer the following questions.
-          </p>
+            <p>
+                After completing <xref ref="topic-merging-the-main-branch-into-a-feature-branch" text="type-global-title" /> the <c>README.md</c> file should be open in your editor and the raw merge conflict information should be displayed.
+            </p>
+
+            <p>
+                If you are not seeing the <c>README.md</c> file open it from the EXPLORER pane.
+                If you are not seeing the merge conflict information, scroll through the <c>README.md</c> file to the location where you made your change.
+                The raw merge conflict information should appear there.
+                If it does not, return to <xref ref="topic-merging-the-main-branch-into-a-feature-branch" text="type-global-title" /> and try to correct the issue.
+            </p>
         </introduction>
-        <task 
-          xml:id="ex-merged-status-unmerged-paths"
-          label="ex-merged-status-unmerged-paths">
-          <statement>
-            <p>
-              Which of the following appear in the output of the <c>git status</c> command and indicate that your merged changes have not yet been committed to your feature branch?
-            </p>
-          </statement>
-          <choices randomize="yes">
-            <choice correct="yes">
-              <statement>
-                <p>
-                  You have unmerged paths.
-                </p>
-              </statement>
-              <feedback>
-                <p>
-                  Correct.
-                </p>
-              </feedback>
-            </choice>
-            <choice correct="yes">
-              <statement>
-                <p>
-                  both modified:   README.md
-                </p>
-              </statement>
-              <feedback>
-                <p>
-                  Correct.
-                </p>
-              </feedback>
-            </choice>
-            <choice correct="yes">
-              <statement>
-                <p>
-                  no changes added to commit
-                </p>
-              </statement>
-              <feedback>
-                <p>
-                  Correct.
-                </p>
-              </feedback>
-            </choice>
-            <choice>
-              <statement>
-                <p>
-                  All conflicts fixed
-                </p>
-              </statement>
-              <feedback>
-                <p>
-                  Check the output again.
-                </p>
-              </feedback>
-            </choice>
-            <choice>
-              <statement>
-                <p>
-                  Your branch is behind 'origin'
-                </p>
-              </statement>
-              <feedback>
-                <p>
-                  Check the output again.
-                </p>
-              </feedback>
-            </choice>
-          </choices>
-          <hint>
-            <p>
-              Run the <c>git status</c> command and read the output carefully.
-            </p>
-          </hint>
-        </task>
 
-        <task 
-          xml:id="ex-merged-status-abort"
-          label="ex-merged-status-abort">
-          <statement>
-            <p>
-              Imagine that after you completed the merge you realize that you didn't merge the changes the way you had intended.  Which Git command could you use to undo your merge?
-            </p>
-          </statement>
-          <choices randomize="yes">
-            <choice correct="yes">
-              <statement>
+        <exercises>
+        <title />
+        <exercise xml:id="ex-raw-merge-information" label="ex-raw-merge-information">
+            <introduction>
                 <p>
-                  <c>git merge --abort</c>
+                    The editor window for the <c>README.md</c> file displays the <term>raw conflict information</term> that has resulted from the merge.
+                    The following tasks ask you some question about this information.
                 </p>
-              </statement>
-              <feedback>
-                <p>
-                  Correct.
-                </p>
-              </feedback>
-            </choice>
-            <choice>
-              <statement>
-                <p>
-                  <c>git merge --undo</c>
-                </p>
-              </statement>
-              <feedback>
-                <p>
-                  Close. Check the output again.
-                </p>
-              </feedback>
-            </choice>
-            <choice>
-              <statement>
-                <p>
-                  <c>git undo merge</c>
-                </p>
-              </statement>
-              <feedback>
-                <p>
-                  Check the output again.
-                </p>
-              </feedback>
-            </choice>
-            <choice>
-              <statement>
-                <p>
-                  <c>git merge revert</c>
-                </p>
-              </statement>
-              <feedback>
-                <p>
-                  Check the output again.
-                </p>
-              </feedback>
-            </choice>
-          </choices>
-          <hint>
-            <p>
-              Run the <c>git status</c> command and read the output carefully.
-            </p>
-          </hint>
-        </task>
-      </exercise>
+            </introduction>
 
-      <p>
-        Feel free to try out the <c>git merge --abort</c> command.  After you run it, the raw merge conflict information will reappear in the <c>README.md</c> file.  Be sure to re-merge the changes from your feature branch before moving on.
-      </p>
 
-      <exercise 
-        xml:id="ex-stage-and-merge-changes-cmds" 
-        label="ex-stage-and-merge-changes-cmds">
-        <statement>
-          <p>
-            From <xref ref="ex-merged-status-unmerged-paths" /> you can see that you now have uncommitted changes. Those changes are the changes you made when resolving the merge conflict.  The next step is to commit your changes.
-          </p>
-          <p>
-            Choose and order the commands that you would use to commit your changes to your local repository. Note: Not all commands will be used.
-          </p>
-        </statement>
-        <blocks randomize="yes"> 
-          <block>
-            <p>
-              <cline>git stage README.md</cline>
-            </p>
-          </block> 
-          <block>
-            <p>
-              <cline>git commit -m "&lt;message&gt;"</cline>
-            </p>
-          </block>
-          <block correct="no">
-            <p>
-              <cline>git push origin &lt;branch&gt;</cline>
-            </p>
-          </block>
-          <block correct="no">
-            <p>
-              <cline>git switch main</cline>
-            </p>
-          </block>
-        </blocks>
-        <hint>
-          <p>
-            See <xref ref="topic-staging-changes" /> and <xref ref="topic-committing-to-your-local-repository" /> for a review.
-          </p>
-        </hint>      
-      </exercise>
+            <task xml:id="ex-raw-merge-content" label="ex-raw-merge-content">
+                <statement>
+                    <p>
+                        Match the terms below to the descriptions based upon what is displayed in the editor.
+                    </p>
+                </statement>
 
-      <exercise 
-        xml:id="ex-stage-merged-changes"
-        label="ex-stage-merged-changes">
-        <statement>
-          <p>
-            Run the first command from <xref ref="ex-stage-and-merge-changes-cmds" /> in the terminal.  Then run the <c>git status</c> command and examine its output.
-          </p>
-          <p>
-            What does <c>git status</c> tell you to do to conclude the merge?
-          </p>
-        </statement>
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              <p>
-                use "git commit" to conclude merge
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct. You already knew that, but its good to know that <c>git status</c> provides helpful tips. Use it often!
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                use "git pull" to conclude merge
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                <c>git pull</c> performs a different function and will not conclude the merge.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                use "git push" to conclude merge
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                <c>git push</c> performs a different function and will not conclude the merge.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                use "git restore" to conclude merge
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                <c>git restore</c> performs a different function and will not conclude the merge.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-        <hint>
-          <p>
-            Run the <c>git status</c> command and read the output carefully.
-          </p>
-        </hint>
-      </exercise>
+                <matches> <match> <premise>Feature branch contents</premise> <response> Appears with a green highlight at the top of the conflict information. </response> </match> <match> <premise>Best common ancestor</premise> <response> Appears with a gray highlight in the middle of the conflict information. </response> </match> <match> <premise><c>main</c> branch contents</premise> <response> Appears with a blue highlight at the bottom of the conflict information. </response> </match> </matches>
+            </task>
 
-      <exercise 
-        xml:id="ex-commit-merged-changes"
-        label="ex-commit-merged-changes">
-        <statement>
-          <p>
-            Run the second command from <xref ref="ex-stage-and-merge-changes-cmds" /> in the terminal.  Be sure to replace the <c>&lt;message&gt;</c> placeholder with a meaningful commit message. Then use <c>git status</c> and examine the output.
-          </p>
-          <p>
-            What does <c>git status</c> tell you that indicates that your changes have been committed?
-          </p>
-        </statement>
-        <choices randomize="yes">
-          <choice correct="yes">
+
+            <task xml:id="ex-raw-merge-dividers" label="ex-raw-merge-dividers">
+                <statement>
+                    <p>
+                        Match the terms below to the descriptions based upon what is displayed in the editor.
+                    </p>
+                </statement>
+
+                <matches> <match> <premise> Left Chevrons <c>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</c> </premise> <response> Indicate the start of the merge conflict information. </response> </match> <match> <premise> Vertical Bars <c>|||||||</c> </premise> <response> Separate the feature branch content from the best common ancestor. </response> </match> <match> <premise>Equal Signs <c>=======</c></premise> <response> Separate the best common ancestor from the <c>main</c> branch content. </response> </match> <match> <premise> Right Chevrons <c>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</c> </premise> <response> Indicate the end of the merge conflict information. </response> </match> </matches>
+            </task>
+        </exercise>
+        </exercises>
+    </subsection>
+
+
+    <subsection xml:id="topic-resolving-the-conflict" label="topic-resolving-the-conflict">
+        <title>Resolving the Merge Conflict</title>
+
+        <introduction>
+            <p>
+                Recall that the merge conflict that you are seeing arose because your feature branch and the upstream <c>main</c> branch contain changes to the same part of the file.
+                In this situation, Git is not able to automatically decide which changes to keep or how to combine the changes.
+                This decision must be made by a developer, in this case...
+                by you!
+            </p>
+
+            <p>
+                It is possible to resolve merge conflicts by editing the raw merge information, including removing the chevrons and dividers.
+                However, most development environments, including the one you are using, provide special tools to help with the resolution of merge conflicts.
+            </p>
+
+            <p>
+                The <term>basic merge tool</term> in your development environment provides four options to assist with resolving merge conflicts.
+                These options appear in the editor just above the merge conflict information as shown in <xref ref="fig-basic-merge-conflict-tool" />.
+            </p>
+
+            <p>
+                <figure xml:id="fig-basic-merge-conflict-tool" >
+                    <caption> The basic merge tool options. </caption>
+                    <image source="images/ch-merge-conflicts/basic-merge-tool-options.png" width="100%">
+                        <description>
+                            Image illustrating the basic merge tool options of "Accept Current Change", "Accept Incoming Change", "Accept Both Changes", "Compare Changes".
+                        </description>
+                    </image>
+                </figure>
+            </p>
+        </introduction>
+
+        <exercises>
+        <title />
+        <exercise xml:id="ex-merge-tool-options" label="ex-merge-tool-options">
             <statement>
-              <p>
-                nothing to commit, working tree clean
-              </p>
+                <p>
+                    Match the option you would choose to perform each of the indicated operations.
+                </p>
             </statement>
-            <feedback>
-              <p>
-                Correct.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
+
+            <matches> <match> <premise> Accept Current Change </premise> <response> Accept the changes in your feature branch. </response> </match> <match> <premise> Accept Incoming Change </premise> <response> Accept the changes in the <c>main</c> branch. </response> </match> </matches>
+            <hint>
+                <p>
+                    Compare the terms used in the merge tool options to the information displayed in the first and last lines of the merge conflict information.
+                </p>
+            </hint>
+        </exercise>
+
+        <exercise xml:id="ex-accept-current-change" label="ex-accept-current-change">
             <statement>
-              <p>
-                merge complete
-              </p>
+                <p>
+                    Click the option that will accept the changes in your feature branch.
+                </p>
+
+                <p>
+                    Choose the description below that best describes What happens?
+                </p>
             </statement>
-            <feedback>
-              <p>
-                True, but that's not the message that is displayed.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
+
+
+            <choices randomize="yes">
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            Only the changes from the feature branch remain.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Correct.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Only the changes from the <c>main</c> branch remain.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Check the editor contents after you click "Accept Current Change".
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            The changes from the <c>main</c> branch and the chevrons remain.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Check the editor contents after you click "Accept Current Change".
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            The changes from the feature branch and the chevrons remain.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Check the editor contents after you click "Accept Current Change".
+                        </p>
+                    </feedback>
+                </choice>
+            </choices>
+
+            <hint>
+                <p>
+                    Click "Accept Current Change" and check the editor contents.
+                </p>
+            </hint>
+        </exercise>
+        </exercises>
+
+        <conclusion>
+            <p>
+                If you would like to try out the other merge options you can undo your changes by opening the Hamburger menu (☰), clicking on "Edit" and choosing "Undo".
+            </p>
+
+            <p>
+                This basic merge tool is helpful for resolving small uncomplicated merge conflicts.
+                Most development environments also provide more advanced merge tools for working with more complex conflicts.
+                The use of those tools is beyond the goals of this chapter.
+            </p>
+        </conclusion>
+    </subsection>
+
+
+    <subsection xml:id="topic-committing-merged-changes" label="topic-committing-merged-changes">
+        <title>Committing the Merged Changes</title>
+
+        <exercises>
+        <title />
+        <introduction>
+            <p>
+                At this point you have resolved the merge conflict, but the resulting changes have not been committed to your feature branch.
+                In this section you will commit those changes to your feature branch.
+            </p>
+        </introduction>
+
+        <exercise xml:id="ex-merged-git-status" label="ex-merged-git-status">
+            <introduction>
+                <p>
+                    Run the <c>git status</c> command in the terminal and use its output to answer the following questions.
+                </p>
+            </introduction>
+
+
+            <task xml:id="ex-merged-status-unmerged-paths" label="ex-merged-status-unmerged-paths">
+                <statement>
+                    <p>
+                        Which of the following appear in the output of the <c>git status</c> command and indicate that your merged changes have not yet been committed to your feature branch?
+                    </p>
+                </statement>
+
+
+                <choices randomize="yes">
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                You have unmerged paths.
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Correct.
+                            </p>
+                        </feedback>
+                    </choice>
+
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                both modified:   README.md
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Correct.
+                            </p>
+                        </feedback>
+                    </choice>
+
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                no changes added to commit
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Correct.
+                            </p>
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <p>
+                                All conflicts fixed
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Check the output again.
+                            </p>
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <p>
+                                Your branch is behind 'origin'
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Check the output again.
+                            </p>
+                        </feedback>
+                    </choice>
+                </choices>
+
+                <hint>
+                    <p>
+                        Run the <c>git status</c> command and read the output carefully.
+                    </p>
+                </hint>
+            </task>
+
+
+            <task xml:id="ex-merged-status-abort" label="ex-merged-status-abort">
+                <statement>
+                    <p>
+                        Imagine that after you completed the merge you realize that you didn't merge the changes the way you had intended.
+                        Which Git command could you use to undo your merge?
+                    </p>
+                </statement>
+
+
+                <choices randomize="yes">
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <c>git merge --abort</c>
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Correct.
+                            </p>
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <p>
+                                <c>git merge --undo</c>
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Close.
+                                Check the output again.
+                            </p>
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <p>
+                                <c>git undo merge</c>
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Check the output again.
+                            </p>
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <p>
+                                <c>git merge revert</c>
+                            </p>
+                        </statement>
+
+                        <feedback>
+                            <p>
+                                Check the output again.
+                            </p>
+                        </feedback>
+                    </choice>
+                </choices>
+
+                <hint>
+                    <p>
+                        Run the <c>git status</c> command and read the output carefully.
+                    </p>
+                </hint>
+            </task>
+        </exercise>
+
+        <p>
+            Feel free to try out the <c>git merge --abort</c> command.
+            After you run it, the raw merge conflict information will reappear in the <c>README.md</c> file.
+            Be sure to re-merge the changes from your feature branch before moving on.
+        </p>
+
+        <exercise xml:id="ex-stage-and-merge-changes-cmds" label="ex-stage-and-merge-changes-cmds">
             <statement>
-              <p>
-               changes successfully merged
-              </p>
+                <p>
+                    From <xref ref="ex-merged-status-unmerged-paths" /> you can see that you now have uncommitted changes.
+                    Those changes are the changes you made when resolving the merge conflict.
+                    The next step is to commit your changes.
+                </p>
+
+                <p>
+                    Choose and order the commands that you would use to commit your changes to your local repository.
+                    Note: Not all commands will be used.
+                </p>
             </statement>
-            <feedback>
-              <p>
-                True, but that's not the message that is displayed
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-        <hint>
-          <p>
-            Run the <c>git status</c> command and read the output carefully.
-          </p>
-        </hint>
-      </exercise>
-      
-    </exercises>
-  </subsection>
+            <blocks randomize="yes"> <block>
+            <p>
+                <cline>git stage README.md</cline>
+            </p>
+            </block> <block>
+
+            <p>
+                <cline>git commit -m "&lt;message&gt;"</cline>
+            </p>
+            </block> <block correct="no">
+
+            <p>
+                <cline>git push origin &lt;branch&gt;</cline>
+            </p>
+            </block> <block correct="no">
+
+            <p>
+                <cline>git switch main</cline>
+            </p>
+            </block> </blocks>
+
+            <hint>
+                <p>
+                    See <xref ref="topic-staging-changes" text="type-global-title" /> and <xref ref="topic-committing-to-your-local-repository" text="type-global-title"/> for a review.
+                </p>
+            </hint>
+        </exercise>
+
+        <exercise xml:id="ex-stage-merged-changes" label="ex-stage-merged-changes">
+            <statement>
+                <p>
+                    Run the first command from <xref ref="ex-stage-and-merge-changes-cmds" /> in the terminal.
+                    Then run the <c>git status</c> command and examine its output.
+                </p>
+
+                <p>
+                    What does <c>git status</c> tell you to do to conclude the merge?
+                </p>
+            </statement>
+
+
+            <choices randomize="yes">
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            use "git commit" to conclude merge
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Correct.
+                            You already knew that, but its good to know that <c>git status</c> provides helpful tips.
+                            Use it often!
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            use "git pull" to conclude merge
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            <c>git pull</c> performs a different function and will not conclude the merge.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            use "git push" to conclude merge
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            <c>git push</c> performs a different function and will not conclude the merge.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            use "git restore" to conclude merge
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            <c>git restore</c> performs a different function and will not conclude the merge.
+                        </p>
+                    </feedback>
+                </choice>
+            </choices>
+
+            <hint>
+                <p>
+                    Run the <c>git status</c> command and read the output carefully.
+                </p>
+            </hint>
+        </exercise>
+
+        <exercise xml:id="ex-commit-merged-changes" label="ex-commit-merged-changes">
+            <statement>
+                <p>
+                    Run the second command from <xref ref="ex-stage-and-merge-changes-cmds" /> in the terminal.
+                    Be sure to replace the <c>&lt;message&gt;</c> placeholder with a meaningful commit message.
+                    Then use <c>git status</c> and examine the output.
+                </p>
+
+                <p>
+                    What does <c>git status</c> tell you that indicates that your changes have been committed?
+                </p>
+            </statement>
+
+
+            <choices randomize="yes">
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            nothing to commit, working tree clean
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Correct.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            merge complete
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            True, but that's not the message that is displayed.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            changes successfully merged
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            True, but that's not the message that is displayed
+                        </p>
+                    </feedback>
+                </choice>
+            </choices>
+
+            <hint>
+                <p>
+                    Run the <c>git status</c> command and read the output carefully.
+                </p>
+            </hint>
+        </exercise>
+        </exercises>
+    </subsection>
 </section>

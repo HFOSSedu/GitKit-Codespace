@@ -300,7 +300,7 @@
                 Being ahead means that your origin <c>main</c> branch contains changes that are not in the upstream <c>main</c> branch. However, right now your origin <c>main</c> should be behind the upstream <c>main</c> branch.
               </p>
               <p>
-                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" /> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" />, return to this exercise.
+                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/>, return to this exercise.
               </p>
             </feedback>
           </choice>
@@ -316,7 +316,7 @@
                 However, Right now your origin <c>main</c> should be behind the upstream <c>main</c> branch.
               </p>
               <p>
-                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" /> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" />, return to this exercise.
+                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/>, return to this exercise.
               </p>
             </feedback>
           </choice>

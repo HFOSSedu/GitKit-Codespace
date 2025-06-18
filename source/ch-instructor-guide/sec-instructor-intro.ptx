@@ -16,13 +16,12 @@
 		</p>
   </introduction>
 
-
 	<subsection 
 		xml:id="topic-quick-start">
 		<title>Quick Start</title>
 
 		<p>
-			This <em>quick start</em> guide provides a very brief outline of the steps necessary to use the GitKit in a course. It is intended to be sufficient for instructors who have used the GitKit previously and just need a reminder of the necessary steps. <xref ref="topic-adopting-gitkit" /> provides a more detailed guide to adopting the GitKit for use in a course.
+			This <em>quick start</em> guide provides a very brief outline of the steps necessary to use the GitKit in a course. It is intended to be sufficient for instructors who have used the GitKit previously and just need a reminder of the necessary steps. <xref ref="topic-adopting-gitkit" text="type-global-title"/> provides a more detailed guide to adopting the GitKit for use in a course.
 
 			<ol>
 				<li>
@@ -67,17 +66,17 @@
 				</li>
 				<li>
 					<p>
-						Review the chapters, slides and instructor notes in <xref ref="topic-instructor-materials" />, and create assignments as appropriate for your course.
+						Review the chapters, slides and instructor notes in <xref ref="topic-instructor-materials" text="type-global-title"/>, and create assignments as appropriate for your course.
 					</p>
 				</li>
 				<li>
 					<p>
-						Review and merge student Pull Requests into the upstream just before or during the class that covers <xref ref="topic-staying-synchronized" />.
+						Review and merge student Pull Requests into the upstream just before or during the class that covers <xref ref="topic-staying-synchronized" text="type-global-title"/>.
 					</p>
 				</li>
 				<li>
 					<p>
-						Merge the <c>addRound2Conflicts</c> branch into the upstream just before or during the class that covers <xref ref="topic-merge-conflicts" />.
+						Merge the <c>addRound2Conflicts</c> branch into the upstream just before or during the class that covers <xref ref="topic-merge-conflicts" text="type-global-title"/>.
 					</p>
 				</li>
 			</ol>
@@ -114,7 +113,7 @@
 				</li>
 				<li>
 					<p>
-						Consider doing the GitKit for yourself as described in <xref ref="topic-do-the-gitkit" />. This is by far the best way to prepare to deliver the GitKit to a class.
+						Consider doing the GitKit for yourself as described in <xref ref="topic-do-the-gitkit" text="type-global-title" />. This is by far the best way to prepare to deliver the GitKit to a class.
 					</p>
 				</li>
 				<li>
@@ -146,7 +145,7 @@
 		<title>Delivering GitKit</title>
 		
 		<p>
-			The GitKit content is broken into 4 chapters (See <xref ref="topic-gitkit-content" />). Each chapter of the text contains the set of hands-on exercises to be completed by the students. <em>These exercises are not intended to stand alone.</em>  Each requires some prior introduction to the concepts and terminology that they use. A separate set of slides are provided for each topic that instructors can use or adapt to introduce the necessary concepts and terminology before students complete each set of hands-on exercises.
+			The GitKit content is broken into 4 chapters (See <xref ref="topic-gitkit-content" text="type-global-title"/>). Each chapter of the text contains the set of hands-on exercises to be completed by the students. <em>These exercises are not intended to stand alone.</em>  Each requires some prior introduction to the concepts and terminology that they use. A separate set of slides are provided for each topic that instructors can use or adapt to introduce the necessary concepts and terminology before students complete each set of hands-on exercises.
 		</p>
 
 		<p>
@@ -281,7 +280,7 @@
 		<title>Student Development Environments</title>
 		<introduction>
 			<p>
-				The GitKit provides a cloud based development environment that students use to complete the hands-on GitKit activities. This development environment, which we call a <term>KitClient</term>, runs on GitHub Codespaces. It provides all of the tools and configuration necessary to complete the activities.  The development environment also includes the Kit-tty Virtual Assistant (See <xref ref="topic-kitty-virtual-assistant" /> and a set of automations that simulate aspects of an open source project community (See <xref ref="topic-community-automations" />). 
+				The GitKit provides a cloud based development environment that students use to complete the hands-on GitKit activities. This development environment, which we call a <term>KitClient</term>, runs on GitHub Codespaces. It provides all of the tools and configuration necessary to complete the activities.  The development environment also includes the Kit-tty Virtual Assistant (See <xref ref="topic-kitty-virtual-assistant" text="type-global-title"/> and a set of automations that simulate aspects of an open source project community (See <xref ref="topic-community-automations" text="type-global-title"/>). 
 			</p>
 
 			<p>
@@ -413,16 +412,16 @@
 						<ul>
 							<li>
 								<p>
-									<xref ref="topic-gitkit-pre-survey" /> and <xref ref="topic-gitkit-post-survey" /> are a pre/post survey pair. These surveys aim to help the authors better understand the impact and effectiveness of the GitKit.
+									<xref ref="topic-gitkit-pre-survey" text="type-global-title"/> and <xref ref="topic-gitkit-post-survey" text="type-global-title"/> are a pre/post survey pair. These surveys aim to help the authors better understand the impact and effectiveness of the GitKit.
 								</p>
 
 								<p>
-									<xref ref="topic-gitkit-pre-survey" /> also allows students to consent to providing the GitKit authors with their responses to all of the GitKit exercises. If you would like to provide the GitKit authors with exercise responses from students in your course who consented please contact Dr. Braught (braught@dickinson.edu) Professor of Computer Science at Dickinson College for additional information.
+									<xref ref="topic-gitkit-pre-survey" text="type-global-title"/> also allows students to consent to providing the GitKit authors with their responses to all of the GitKit exercises. If you would like to provide the GitKit authors with exercise responses from students in your course who consented please contact Dr. Braught (braught@dickinson.edu) Professor of Computer Science at Dickinson College for additional information.
 								</p>
 							</li>
 							<li>
 								<p>
-									<xref ref="topic-gitkit-feedback-communities" />, <xref ref="topic-gitkit-feedback-upstreaming" />, <xref ref="topic-gitkit-feedback-synching" />, and <xref ref="topic-gitkit-feedback-merging" /> ask for feedback on each of the individual chapters and will be used to help improve future versions of the GitKit.
+									<xref ref="topic-gitkit-feedback-communities" text="type-global-title"/>, <xref ref="topic-gitkit-feedback-upstreaming" text="type-global-title"/>, <xref ref="topic-gitkit-feedback-synching" text="type-global-title"/>, and <xref ref="topic-gitkit-feedback-merging" text="type-global-title"/> ask for feedback on each of the individual chapters and will be used to help improve future versions of the GitKit.
 								</p>
 							</li>
 						</ul>
@@ -496,7 +495,7 @@
 			To use the GitKit the instructor for the course must deploy one or more instances of it. Deploying an instance of the GitKit creates a repository that students use as the upstream repository for the hands-on activities.
 		</p>
 		<p>
-			The repository that is created contains the code, documentation and history from the FarmData2 project (see <xref ref="topic-gitkit-farmdata2" />) and has an issue tracker that is populated with the tickets that are used in the GitKit activities. This repository is also configured to interact with the KitClient to install the Kit-tty virtual assistant (see <xref ref="topic-kitty-virtual-assistant" />) and to provide simulated community automations (see <xref ref="topic-community-automations" />).
+			The repository that is created contains the code, documentation and history from the FarmData2 project (see <xref ref="topic-gitkit-farmdata2" text="type-global-title"/>) and has an issue tracker that is populated with the tickets that are used in the GitKit activities. This repository is also configured to interact with the KitClient to install the Kit-tty virtual assistant (see <xref ref="topic-kitty-virtual-assistant" text="type-global-title"/>) and to provide simulated community automations (see <xref ref="topic-community-automations" text="type-global-title"/>).
 		</p>
 
 		<p>
@@ -504,53 +503,14 @@
 			<ol>
 				<li>
 					<p>
-						Identify the GitHub space where you would like to deploy the GitKit FarmData2 repository. The GitHub space can be your GitHub account or a GitHub organization that you have created for your course and for which you have write permission.
-					</p>
-				</li>
-				<li>
-					<p>
-						Visit GitHub using this link to create a <url href="https://github.com/settings/tokens/new">New personal access token (classic)</url> with:
-						<ul>
-							<li>
-								<p>
-									All "repo" permissions.
-								</p>
-							</li>
-							<li>
-								<p>
-									"workflow" permission.
-								</p>
-							</li>
-							<li>
-								<p>
-									"read:org" permission under "admin:org".
-								</p>
-							</li>
-						</ul>
-					</p>
-				</li>
-				<li>
-					<p>
-						Be sure to copy your access token.
-					</p>
-				</li>
-				<li>
-					<p>
-						Click this link to <url href="https://codespaces.new/HFOSSedu/GitKit-Deployer-Codespaces?quickstart=1"> deploy the GitKit FarmData2 repository </url>.
-					</p>
-				</li>
-				<li>
-					<p>
 						Click the green "Create new codespace" button.
-					</p>
-				</li>
-				<li>
-					<p>
-						Creating the codespace requires a few minutes.  When it is complete  will see the prompt in <xref ref="fig-deployer-kitscript" />.
+						It takes a few minutes to create the codespace you'll use to deploy the GitKit.
+						You are ready to continue when the prompt looks similar to <xref ref="fig-deployer-kitscript" />.
+						You may need to resize of your terminal to see all of what's shown below.
 
 						<figure xml:id="fig-deployer-kitscript">
 							<caption>
-								The deployer prompting for the new repository name.
+								The deployer running and ready for input.
 							</caption>
 							<image source="images/ch-instructor-guide/deployer-kitscript.png"
 							width="75%">
@@ -567,7 +527,12 @@
 						<ol>
 							<li>
 								<p>
-									The name of the repository.  We recommend "GitKit-FarmData2".
+									The OWNER for the new repository on GitHub. The OWNER can be your GitHub account or a GitHub organization that you have created for your course and for which you have write permission.
+								</p>
+							</li>
+							<li>
+								<p>
+									The NAME of the repository.  We recommend "GitKit-FarmData2".
 								</p>
                                 <p>  
 						            Note: If you will need multiple repositories, each deployed repository must have a unique name.  We recommend appending suffixes to "GitKit-FarmData2" for example "GitKit-FarmData2-group1", "GitKit-FarmData2-group2", etc.
@@ -575,12 +540,13 @@
 							</li>
 							<li>
 								<p>
-									The GitHub username or the name of a GitHub organization to which you have write permission as the location to deploy the upstream repository.
+									A personal access token (PAT), which the deployer will help you create.
 								</p>
-							</li>
-							<li>
 								<p>
-									The personal access token that you created.
+									Note: To paste try CTRL+V (CMD+V on Mac). If that doesn't work try CTRL+SHIFT+V (CMD+SHIFT+V).
+									You'll know if it works because you will be prompted by Codespace to allow the operation.
+									Be sure to allow it. Once you have allowed the operation, it has succeeded.
+									Your PAT will not be echoed in the terminal. Just press enter to continue.
 								</p>
 							</li>
 						</ol>
@@ -614,7 +580,8 @@
 				</li>
 				<li>
 					<p>
-						Note that each deployed GitKit can support up to 32 students. If you have more than 32 students, you will need to repeat steps 4-7 to create additional deploys.
+						Note that each deployed GitKit can support up to 32 students. If you have more than 32 students, you will need to rerun the deployer.
+						The deployer provides instructions for rerunning the deployer without starting a new Codespace. Alternatively, you can repeat the steps above.
 					</p>
 					<p>  
 						Each deployed repository must have a unique name.  We recommend appending suffixes to "GitKit-FarmData2" for example "GitKit-FarmData2-group1", "GitKit-FarmData2-group2", etc.

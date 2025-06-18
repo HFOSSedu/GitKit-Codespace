@@ -23,7 +23,7 @@
     </p>
 
     <p>
-      The changes that your instructor merged were specifically designed to create a conflict with the change that you made when you fixed your Round2 issue. Thus, the pull request you made in <xref ref="topic-lets-do-it-again" /> now contains a conflicting change and therefore cannot be merged automatically.
+      The changes that your instructor merged were specifically designed to create a conflict with the change that you made when you fixed your Round2 issue. Thus, the pull request you made in <xref ref="topic-lets-do-it-again" text="type-global-title"/> now contains a conflicting change and therefore cannot be merged automatically.
     </p>
 
     <p>
@@ -243,7 +243,7 @@
             </statement>
             <feedback>
               <p>
-                <term>IMPORTANT:</term> You should be seeing that your pull request cannot be merged automatically. <term>Follow the instructions in <xref ref="topic-appendix-a-merge-conflicts"/> to fix this problem.</term>
+                <term>IMPORTANT:</term> You should be seeing that your pull request cannot be merged automatically. <term>Follow the instructions in <xref ref="topic-appendix-a-merge-conflicts" text="type-global-title"/> to fix this problem.</term>
               </p>
               <p>
                 When your pull request cannot be merged automatically, return to this question and continue. See your instructor if you cannot resolve this problem.

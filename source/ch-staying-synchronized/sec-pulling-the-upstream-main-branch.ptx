@@ -99,7 +99,7 @@
         </choices>
         <hint>
           <p>
-            Refer to <xref ref="subsec-git-status-command"/>.
+            Refer to <xref ref="subsec-git-status-command" text="type-global-title"/>.
           </p>
         </hint>
       </task>
@@ -163,7 +163,7 @@
         </choices>
         <hint>
           <p>
-            Refer back to the section in the previous chapter on switching branches <xref ref="topic-switching-branches"/>
+            Refer back to the section in the previous chapter on switching branches <xref ref="topic-switching-branches" text="type-global-title"/>
           </p>
         </hint>
       </task>
