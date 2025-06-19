@@ -117,7 +117,7 @@
     </exercise>
 
     <p>
-      At this point you should think of the <c>merge-conflict-practice</c> branch as a feature branch that you created from your <c>main</c> and then made some changes that resulted in conflicts with the upstream <c>main</c> branch. Thinking of the <c>merge-conflict-practice</c> branch this way leaves you at the point where you are trying to merge the modified upstream <c>main</c> into your feature branch as you did in <xref ref="topic-git-merge-command" />).
+      At this point you should think of the <c>merge-conflict-practice</c> branch as a feature branch that you created from your <c>main</c> and then made some changes that resulted in conflicts with the upstream <c>main</c> branch. Thinking of the <c>merge-conflict-practice</c> branch this way leaves you at the point where you are trying to merge the modified upstream <c>main</c> into your feature branch as you did in <xref ref="topic-git-merge-command" text="type-global-title"/>).
     </p>
 
     <exercise xml:id="ex-extra-practice-merging-active-branch" label="ex-extra-practice-merging-active-branch">
@@ -150,7 +150,7 @@
       </blocks>
       <hint>
         <p>
-          Review <xref ref="topic-git-merge-command" /> for how to merge <c>main</c> into a feature branch.
+          Review <xref ref="topic-git-merge-command" text="type-global-title"/> for how to merge <c>main</c> into a feature branch.
         </p>
       </hint>
     </exercise>
@@ -373,7 +373,7 @@
       </setup>
       <hint>
         <p>
-          Review sections <xref ref="topic-resolving-a-merge-conflict" /> and <xref ref="topic-updating-your-pull-request" />.
+          Review sections <xref ref="topic-resolving-a-merge-conflict" text="type-global-title"/> and <xref ref="topic-updating-your-pull-request" text="type-global-title"/>.
         </p>
       </hint>
     </exercise>

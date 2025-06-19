@@ -6,7 +6,7 @@
   <introduction>
     <p>
       When you set out to make changes to the project you will do so by working on a feature branch.
-      The exercises in this section will walk you through the process of creating a feature branch on which you will fix the issue that you claimed in <xref ref="topic-the-issue-tracker text="type-global-title"" />.
+      The exercises in this section will walk you through the process of creating a feature branch on which you will fix the issue that you claimed in <xref ref="topic-the-issue-tracker" text="type-global-title" />.
     </p>
 
     <p>
