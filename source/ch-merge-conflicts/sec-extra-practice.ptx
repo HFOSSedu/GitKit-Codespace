@@ -27,9 +27,14 @@
         </p>
 
         <image source="images/shared-images/DevEnv-Kitty-Ready.png" width="75%">
+          <shortdescription>
+            Image of the GitKit Development Environment showing the ready for use message.
+          </shortdescription>
           <description>
-            The GitKit Development Environment.  The development environment is ready when you see the "Kit development environment is ready for use" message.
-          </description>
+            The GitKit Development Environment.
+            The development environment is ready when you see the "Kit development environment is ready for use" message.
+        </description>
+
         </image>
       </statement>
     </exercise>

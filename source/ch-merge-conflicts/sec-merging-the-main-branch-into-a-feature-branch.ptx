@@ -25,8 +25,13 @@
         <figure xml:id="fig-merge-main-into-feature">
           <caption> Merging the <c>main</c> branch into a feature branch. </caption>
           <image source="images/ch-merge-conflicts/merge-main-into-feature.png" width="75%">
-            <description>
+            <shortdescription>
               Illustration of the <c>main</c> branch being merged into a feature branch.
+            </shortdescription>
+            <description>
+              <p>Diagram showing the commits on the main branch and the feature branch,
+                and the merge commit when those branches were merged.
+              </p>
             </description>
           </image>
         </figure>
