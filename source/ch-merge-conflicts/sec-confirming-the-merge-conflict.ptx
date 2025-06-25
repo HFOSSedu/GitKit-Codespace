@@ -63,7 +63,7 @@
             </statement>
               <feedback>
                 <p>
-                  Correct.
+                  Correct!
                 </p>
               </feedback>
           </choice>
@@ -281,7 +281,7 @@
             </statement>
             <feedback>
               <p>
-                Excellent.  Everything is as it should be.  Please continue to the next exercise.
+                Correct!  Everything is as it should be.  Please continue to the next exercise.
               </p>
             </feedback>
           </choice>
@@ -298,6 +298,11 @@
             </feedback>
           </choice>
         </choices>
+        <hint>
+          <p>
+            If you don't see a message make sure you completed your pull request. If you have questions, please ask your instructor to verify your merge request has been created properly.
+          </p>
+        </hint>
       </task>
     </exercise>
 
