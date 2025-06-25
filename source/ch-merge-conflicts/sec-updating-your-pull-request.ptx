@@ -207,9 +207,15 @@
           <choice correct="yes">
             <statement>
               <image source="images/ch-merge-conflicts/github-pr-no-conflict.png" width="90%">
-                <description>
+                <shortdescription>
                   <p>
                     GitHub message indicating that merging can be performed automatically.
+                  </p>
+                </shortdescription>
+                <description>
+                  <p>Image of a dialog with a green checkmark and the message
+                    "This branch has no conflicts with the base branch.
+                    Merging can be performed automatically."
                   </p>
                 </description>
               </image>
@@ -223,9 +229,16 @@
           <choice>
             <statement>
                 <image source="images/ch-merge-conflicts/github-pr-conflict.png" width="90%">
-                <description>
+                <shortdescription>
                   <p>
                     GitHub message indicating that there are merge conflicts that must be resolved.
+                  </p>
+                </shortdescription>
+                <description>
+                  <p>Image of a dialog with a exclamation point inside a triangle
+                     and the message
+                    "This branch has conflicts that must be resolved.
+                    Use the web editor or the command line to resolve conflicts."
                   </p>
                 </description>
               </image>

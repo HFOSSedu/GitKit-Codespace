@@ -17,8 +17,14 @@
       <figure xml:id="fig-switch-to-feature-branch">
         <caption> Switch to Feature Branch. </caption>
         <image source="images/ch-upstreaming-changes/switch-to-feature-branch.png" width="75%">
-          <description>
+          <shortdescription>
             Cloud image of origin, upstream, and local branches (including new feature branch).
+          </shortdescription>
+          <description>
+            <p>Diagram showing that the result of the git switch command is that the feature
+              branch is now the active branch. The state of the local files is the same as the
+              last commit in the main branch and there is no new commit yet on the feature branch.
+            </p>
           </description>
         </image>
       </figure>

@@ -21,9 +21,15 @@
       <figure xml:id="fig-changes-merged-into-upstream" >
         <caption> Changes Merged into Upstream. </caption>
         <image source="images/ch-staying-synchronized/changes-merged-into-upstream.png" width="75%">
-          <description>
+          <shortdescription>
             Cloud image showing some changes merged into the upstream <c>main</c> branch.
-          </description>
+          </shortdescription>
+        <description>
+          <p>Diagram showing that merging the pull request has updated the upstream main branch with the commits
+            in the remote (origin) feature branch. The main branches in both the origin and local repositories
+            are unchanged. The feature branches in both origin and local are still there.
+          </p>
+        </description>
         </image>
       </figure>
     </p>

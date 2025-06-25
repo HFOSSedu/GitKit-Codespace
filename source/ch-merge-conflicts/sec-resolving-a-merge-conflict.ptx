@@ -12,8 +12,14 @@
             <figure xml:id="fig-resolving-merge-conflict" >
                 <caption> Resolving a Merge Conflict </caption>
                 <image source="images/ch-merge-conflicts/resolving-merge-conflict.png" width="75%">
-                    <description>
+                    <shortdescription>
                         Image illustrating changes merged into the upstream that conflict with a local branch.
+                    </shortdescription>
+                    <description>
+                        <p>Diagram showing that resolving the merge conflict will require editing the local files in the
+                            feature branch to resolve the conflict, staging the changes, and committing
+                            those changes to the feature branch.
+                        </p>
                     </description>
                 </image>
             </figure>
@@ -105,8 +111,15 @@
                 <figure xml:id="fig-basic-merge-conflict-tool" >
                     <caption> The basic merge tool options. </caption>
                     <image source="images/ch-merge-conflicts/basic-merge-tool-options.png" width="100%">
+                        <shortdescription>
+                            Image illustrating the basic merge tool header with options.
+                        </shortdescription>
                         <description>
-                            Image illustrating the basic merge tool options of "Accept Current Change", "Accept Incoming Change", "Accept Both Changes", "Compare Changes".
+                            <p>The basic merge tool header shows
+                                "&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD (Current Change)" with the clickable options
+                                "Accept Current Change", "Accept Incoming Change", "Accept Both Changes",
+                                "Compare Changes" above the header.
+                            </p>
                         </description>
                     </image>
                 </figure>

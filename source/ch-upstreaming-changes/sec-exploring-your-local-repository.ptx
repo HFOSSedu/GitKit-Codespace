@@ -24,8 +24,14 @@
       <figure xml:id="fig-fork-and-clone-local">
         <caption> Fork, Clone and Local Files. </caption>
         <image source="images/ch-upstreaming-changes/fork_clone_local_files.png" width="75%">
-          <description>
+          <shortdescription>
             Cloud image of fork, clone, and local files.
+          </shortdescription>
+          <description>
+            <p>Diagram showing that the main branch in the upstream, fork, local repositories
+              all have the same sequence of commits. The local main branch is active and the
+              local files match the most recent commit on the main branch.
+            </p>
           </description>
         </image>
       </figure>
@@ -47,10 +53,14 @@
       <p>
         Click here to <url href="https://codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1" visual="codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1">open your development environment</url>.
         Please be patient as this can take a few minutes.
-        When the development environment is ready you will see the message "Kit development environment is ready for use." and your browser window will look similar to the following: <image source="images/shared-images/DevEnv-Kitty-Ready.png" width="75%">
-        <description>
-          The GitKit Development Environment.
-          The development environment is ready when you see the "Kit development environment is ready for use" message.
+        When the development environment is ready you will see the message "Kit development environment is ready for use." and your browser window will look similar to the following: 
+        <image source="images/shared-images/DevEnv-Kitty-Ready.png" width="75%">
+          <shortdescription>
+            Image of the GitKit Development Environment showing the ready for use message.
+          </shortdescription>
+          <description>
+            The GitKit Development Environment.
+            The development environment is ready when you see the "Kit development environment is ready for use" message.
         </description>
       </image>
     </p>

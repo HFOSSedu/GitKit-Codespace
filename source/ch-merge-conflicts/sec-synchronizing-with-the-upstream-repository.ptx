@@ -18,8 +18,17 @@
             <figure xml:id="fig-synching-upstream-changes-with-conflict" >
                 <caption> Synchronizing with the upstream. </caption>
                 <image source="images/ch-merge-conflicts/synching-with-upstream-with-conflict.png" width="75%">
-                    <description>
+                    <shortdescription>
                         Using <c>pull</c> and <c>push</c> to synchronize the local and origin <c>main</c> branches with the upstream <c>main</c> branch.
+                    </shortdescription>
+                    <description>
+                        <p>Diagram showing the upstream repository main branch incorporating
+                            the changes from having merged another fork's pull request.
+                            To synchronize, the owner of the local repository has pulled the
+                            changes in upstream main into the local main, and then pushed the
+                            local main to origin main, so that all three repositories contain
+                            the same sequence of commits in their respective main branch.
+                        </p>
                     </description>
                 </image>
             </figure>
@@ -48,9 +57,14 @@
             </p>
 
             <image source="images/shared-images/DevEnv-Kitty-Ready.png" width="75%">
+                <shortdescription>
+                    Image of the GitKit Development Environment showing the ready for use message.
+                </shortdescription>
                 <description>
+                    <p>
                     The GitKit Development Environment.
                     The development environment is ready when you see the "Kit development environment is ready for use" message.
+                    </p>
                 </description>
             </image>
         </statement>
