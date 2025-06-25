@@ -394,7 +394,7 @@
       <statement>
         <p>
           Examine the GitKit FarmData2 issue tracker.
-          How can you tell which issue have already been assigned?
+          How can you tell which issues have already been assigned?
         </p>
       </statement>
 
@@ -404,30 +404,60 @@
           <statement>
             The avatar of the assigned user appears to the right of the issue title.
           </statement>
+
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="no">
           <statement>
             The issue no longer appears in the issue tracker.
           </statement>
+                    
+          <feedback>
+            <p>
+              A list of issues should appear. Be sure you are looking at the issue tracker for FarmData2.
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="no">
           <statement>
-            The username of assigned user appears next to the issue title.
+            The username of the assigned user appears next to the issue title.
           </statement>
+                    
+          <feedback>
+            <p>
+              The username does not appear next to the title.
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="no">
           <statement>
             The issue is moved to a separate list of assigned issues.
           </statement>
+                    
+          <feedback>
+            <p>
+              There is no separate list. Make sure there are no filters set.
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="no">
           <statement>
             The issue tracker does not show any indication that an issue has been assigned.
           </statement>
+                    
+          <feedback>
+            <p>
+              Make sure you are looking to the right of the title.
+            </p>
+          </feedback>
         </choice>
       </choices>
 

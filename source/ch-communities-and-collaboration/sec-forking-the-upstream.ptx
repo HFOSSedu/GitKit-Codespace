@@ -345,7 +345,7 @@
         </choices>
         <hint>
           <p>
-            Think about which step of the basic FOSS workflow needs to send information back to the main project.
+            Think about which step of the basic FOSS workflow needs to send information back to the upstream repository.
           </p>
         </hint>
       </task>

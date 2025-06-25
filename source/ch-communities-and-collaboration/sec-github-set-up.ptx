@@ -188,6 +188,11 @@
             </feedback>
           </choice>
         </choices>
+        <hint>
+          <p>
+            Be sure you selected "classic" token both times when prompted. If necessary create a new PAT.
+          </p>
+        </hint>
       </task>
     </exercise>
     </exercises>
