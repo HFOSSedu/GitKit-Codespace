@@ -171,11 +171,6 @@
           </p>
         </statement>
 
-        <feedback>
-          <p>
-            The first part of the first line is not the file name, take another look at the output.
-          </p>
-        </feedback>
       </choice>
 
       <choice correct="yes">
@@ -185,11 +180,6 @@
           </p>
         </statement>
 
-        <feedback>
-          <p>
-            The first part of the first line is the feature branch name.
-          </p>
-        </feedback>
       </choice>
 
       <choice correct="yes">
@@ -199,11 +189,6 @@
           </p>
         </statement>
 
-        <feedback>
-          <p>
-            The second part of the first line is the SHA code of the commit.
-          </p>
-        </feedback>
       </choice>
 
       <choice correct="yes">
@@ -213,11 +198,6 @@
           </p>
         </statement>
 
-        <feedback>
-          <p>
-            The last part of the first line is the commit message.
-          </p>
-        </feedback>
       </choice>
 
       <choice correct="yes">
@@ -227,11 +207,6 @@
           </p>
         </statement>
 
-        <feedback>
-          <p>
-            The first part of the second line is the number of files changed.
-          </p>
-        </feedback>
       </choice>
 
       <choice correct="yes">
@@ -241,11 +216,6 @@
           </p>
         </statement>
 
-        <feedback>
-          <p>
-            The second part of the second line is the number of lines inserted.
-          </p>
-        </feedback>
       </choice>
 
        <choice>
@@ -255,11 +225,6 @@
           </p>
         </statement>
 
-        <feedback>
-          <p>
-            The output should not show the individual line changes, rather a summary of the changes.
-          </p>
-        </feedback>
       </choice>
     </choices>
 
@@ -389,6 +354,12 @@
             </p>
           </statement>
 
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
+
         </choice>
 
         <choice>
@@ -397,6 +368,12 @@
               The bottom commit shown is your latest commit.
             </p>
           </statement>
+
+          <feedback>
+            <p>
+              You would have to scroll to see older commits.
+            </p>
+          </feedback>
         </choice>
 
         <choice>
