@@ -698,6 +698,12 @@
             Pull request
           </p>
         </statement>
+
+      <feedback>
+        <p>
+          A pull request facilitates communication between the origin and upstream repositories.
+        </p>
+      </feedback>
       </choice>
 
       <choice>
@@ -706,6 +712,12 @@
             Fork
           </p>
         </statement>
+
+        <feedback>
+          <p>
+            Forking is used to create the origin repository.
+          </p>
+        </feedback>
       </choice>
 
       <choice>
@@ -714,6 +726,12 @@
             Clone
           </p>
         </statement>
+
+        <feedback>
+          <p>
+            This is used to create the clone.
+          </p>
+        </feedback>
       </choice>
 
       <choice>
@@ -722,6 +740,12 @@
             Edit
           </p>
         </statement>
+
+        <feedback>
+          <p>
+            Editing affects only local files.
+          </p>
+        </feedback>
       </choice>
 
       <choice correct="yes">
@@ -730,6 +754,12 @@
             Push
           </p>
         </statement>
+
+        <feedback>
+          <p>
+            Correct!
+          </p>
+        </feedback>
       </choice>
     </choices>
 
@@ -796,6 +826,12 @@
             Your personal virtual assistant.
           </p>
         </statement>
+
+        <feedback>
+          <p>
+            Correct!
+          </p>
+        </feedback>
       </choice>
 
       <choice>
@@ -804,6 +840,12 @@
             A terminal.
           </p>
         </statement>
+
+        <feedback>
+          <p>
+            Kit-tty is not a physical device.
+          </p>
+        </feedback>
       </choice>
 
       <choice>
@@ -812,6 +854,12 @@
             A teletypewriter.
           </p>
         </statement>
+
+        <feedback>
+          <p>
+            Commmunicaiton is not occurring across a phone line.
+          </p>
+        </feedback>
       </choice>
 
       <choice>
@@ -820,6 +868,12 @@
             A pet kitten.
           </p>
         </statement>
+
+        <feedback>
+          <p>
+            Meow! A pet kitten would be nice, but no...
+          </p>
+        </feedback>
       </choice>
     </choices>
 
