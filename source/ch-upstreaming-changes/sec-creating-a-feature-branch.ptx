@@ -169,7 +169,7 @@
           <feedback>
             <p>
               Your branch was not created.
-              Make sure your branch name does not contain spaces and &lt; &gt;
+              Make sure your branch name does not contain spaces and that you did not include &lt; &gt;.
             </p>
           </feedback>
         </choice>
@@ -225,11 +225,11 @@
             </p>
           </statement>
 
-          <feedback>
+          <!--<feedback>
             <p>
               Correct!
             </p>
-          </feedback>
+          </feedback>-->
         </choice>
 
         <choice correct="yes">
@@ -239,11 +239,11 @@
             </p>
           </statement>
 
-          <feedback>
+          <!--<feedback>
             <p>
               Correct!
             </p>
-          </feedback>
+          </feedback>-->
         </choice>
 
         <choice>
@@ -253,11 +253,11 @@
             </p>
           </statement>
 
-          <feedback>
+          <!--<feedback>
             <p>
               <c>git</c> is a command and should not be your branch name
             </p>
-          </feedback>
+          </feedback>-->
         </choice>
 
         <choice>
@@ -267,11 +267,11 @@
             </p>
           </statement>
 
-          <feedback>
+          <!--<feedback>
             <p>
               The branch name should not have &lt; &gt;.
             </p>
-          </feedback>
+          </feedback>-->
         </choice>
       </choices>
 
@@ -300,11 +300,11 @@
             </p>
           </statement>
 
-          <feedback>
+          <!--<feedback>
             <p>
               Correct!
             </p>
-          </feedback>
+          </feedback>-->
         </choice>
 
         <choice correct="yes">
@@ -314,11 +314,11 @@
             </p>
           </statement>
 
-          <feedback>
+          <!--<feedback>
             <p>
               Correct!
             </p>
-          </feedback>
+          </feedback>-->
         </choice>
 
         <choice>
@@ -328,11 +328,11 @@
             </p>
           </statement>
 
-          <feedback>
+          <!--<feedback>
             <p>
               Look at the output provided in the terminal window again.
             </p>
-          </feedback>
+          </feedback>-->
         </choice>
 
         <choice>
@@ -342,11 +342,11 @@
             </p>
           </statement>
 
-          <feedback>
+          <!--<feedback>
             <p>
               Look at the output provided in the terminal window again.
             </p>
-          </feedback>
+          </feedback>-->
         </choice>
       </choices>
 
