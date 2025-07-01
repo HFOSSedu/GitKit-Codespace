@@ -87,8 +87,8 @@
                         </row>
 
                         <row>
-                            <cell>average=count <solidus/>
-                            total</cell>
+                            <cell>average=total <solidus/>
+                            count</cell>
                             <cell>ave=count <solidus/>
                             tot</cell>
                             <cell>ave=tot <solidus/>
@@ -413,8 +413,8 @@
                     </row>
 
                     <row>
-                        <cell><area correct="no">average=count <solidus/>
-                        total</area></cell>
+                        <cell><area correct="no">average=total <solidus/>
+                        count</area></cell>
                         <cell>ave=count <solidus/>
                         tot</cell>
                         <cell><area correct="no">ave=tot <solidus/>
@@ -501,8 +501,8 @@
                     </row>
 
                     <row>
-                        <cell><area correct="yes">average=count <solidus/>
-                        total</area></cell>
+                        <cell><area correct="yes">average=total <solidus/>
+                        count</area></cell>
                         <cell>ave=count <solidus/>
                         tot</cell>
                         <cell><area correct="yes">ave=tot <solidus/>
@@ -613,7 +613,7 @@
                 <p>
                     Use the table below to indicate how the feature branch would be merged into the <c>main</c> branch.
                     Each line that contains a change is shown in boldface.
-                    Click the change the feature branch or the <c>main</c> branch to indicate the version of the line that will appear in the merged result.
+                    Click the boldfaced statements in the feature branch or the <c>main</c> branch to indicate the version of the line that will appear in the merged result.
                     The merged result should include all non-conflicting changes and should resolve the conflicting change.
                     The resulting program must perform the desired computation as identified in <xref ref="ex-merge-conflict-1-computation" />
                 </p>
@@ -681,8 +681,8 @@
                 </row>
 
                 <row>
-                    <cell><area correct="yes"><term>average=count <solidus/>
-                    total</term></area></cell>
+                    <cell><area correct="yes"><term>average=total <solidus/>
+                    count</term></area></cell>
                     <cell>ave=count <solidus/>
                     tot</cell>
                     <cell><area correct="no"><term>ave=tot <solidus/>
