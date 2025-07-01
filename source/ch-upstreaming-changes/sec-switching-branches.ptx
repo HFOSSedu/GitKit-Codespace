@@ -20,10 +20,11 @@
           <shortdescription>
             Cloud image of origin, upstream, and local branches (including new feature branch).
           </shortdescription>
+
           <description>
-            <p>Diagram showing that the result of the git switch command is that the feature
-              branch is now the active branch. The state of the local files is the same as the
-              last commit in the main branch and there is no new commit yet on the feature branch.
+            <p>
+              Diagram showing that the result of the git switch command is that the feature branch is now the active branch.
+              The state of the local files is the same as the last commit in the main branch and there is no new commit yet on the feature branch.
             </p>
           </description>
         </image>
@@ -138,12 +139,13 @@
               <c>git branch</c>
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               Correct!
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice correct="yes">
@@ -152,12 +154,13 @@
               <c>git status</c>
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               Correct!
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice>
@@ -166,12 +169,13 @@
               <c>git log</c>
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               <c>git log</c> will show the commit history, it will not show the active branch
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice>
@@ -180,12 +184,13 @@
               <c>git branch &lt;name&gt;</c>
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               When <c>git branch</c> ends with a <c>name</c> it creates a new branch, it does not show what is active.
             </p>
           </feedback>
+          -->
         </choice>
       </choices>
 
