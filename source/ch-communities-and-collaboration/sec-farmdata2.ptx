@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="topic-farmdata2" xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>The FarmData2 Project</title>
+
+  <introduction>
+    <p>
+      Git and GitHub were designed to support the collaborative work of the FOSS communities that you learned about in class and in <xref text='type-global-title' ref='topic-foss-communities' />.
+      In this section you'll learn a little about the FarmData2 project that GitKit as the basis for the activities you'll be completing as you learn the basics of git and GitHub.
+    </p>
+  </introduction>
+
+  <exercises>
+  <title />
+  <exercise xml:id="ex-gitkit-repo-url" label="ex-gitkit-repo-url">
+    <statement>
+      <p>
+        Your instructor will have created a copy of the FarmData2 project repository for you to use in your course.
+        You will use that copy for all of the activities that you complete in this text.
+      </p>
+
+      <p>
+        Give the full URL of the copy of FarmData2 that you will be using.
+        This URL will be something like <c>https://github.com/someplace/GitKit-FarmData2</c>, where <c>someplace</c> will be specific to your course, and the name <c>GitKit-FarmData2</c> may also have been customized by your instructor.
+      </p>
+
+      <p>
+        <var width="55" />
+      </p>
+    </statement>
+    <setup> <var> <condition string="^https://github\.com/(?!(someplace|DickinsonCollege|FarmData2)).+$">
+    <feedback>
+      <p>
+        Thank you.
+      </p>
+    </feedback>
+    </condition> <condition string=".*">
+
+    <feedback>
+      <p>
+        The URL you have given does not seem to be correct.
+        Check that you have given the full URL that your instructor provided.
+      </p>
+    </feedback>
+    </condition> </var> </setup>
+  </exercise>
+
+  <exercise xml:id="ex-farmdata2-readme" label="ex-farmdata2-readme">
+    <introduction>
+      <p>
+        The repositories for FOSS projects typically contain a file named <c>README.md</c> that provides some basic information about the project and its purpose.
+      </p>
+
+      <p>
+        Find and read the introduction and <em>Description</em> sections of FarmData2's <c>README.md</c> file and then answer the following questions.
+      </p>
+    </introduction>
+
+
+    <task xml:id="ex-farmdata2-mission" label="ex-farmdata2-mission">
+      <statement>
+        <p>
+          Which of the following statements describe the mission of FarmData2?
+        </p>
+      </statement>
+
+      <choices multiple-correct="yes" randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              To help farmers operate their farm
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              To help farmers meet organic certification requirements
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              To automate a farm's irrigation system
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              To increase a farm's sales of organic produce
+            </p>
+          </statement>
+        </choice>
+      </choices>
+
+      <hint>
+        <p>
+          The first sentence of the <c>README.md</c> summarizes FarmData2's mission.
+        </p>
+      </hint>
+    </task>
+
+
+    <task xml:id="ex-farmdata2-farm-type" label="ex-farmdata2-farm-type">
+      <statement>
+        <p>
+          What type of farms does FarmData2 aim to support?
+        </p>
+      </statement>
+
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              Small organic farms
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Large commercial farms
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Review the <em>Description</em> section of the <c>README.md</c>.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Back yard gardens
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Review the <em>Description</em> section of the <c>README.md</c>.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Dairy farms
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Review the <em>Description</em> section of the <c>README.md</c>.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+
+      <hint>
+        <p>
+          Review the <em>Description</em> section of the <c>README.md</c>.
+        </p>
+      </hint>
+    </task>
+
+
+    <task xml:id="ex-farmdata2-type" label="ex-farmdata2-type">
+      <statement>
+        <p>
+          FarmData2 is a:
+        </p>
+      </statement>
+
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              Web application
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Mobile App
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Review the <em>Description</em> section of the <c>README.md</c>.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Game
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Review the <em>Description</em> section of the <c>README.md</c>.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Virtual Reality Simulation
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Review the <em>Description</em> section of the <c>README.md</c>.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+
+      <hint>
+        <p>
+          Review the <em>Description</em> section of the <c>README.md</c>.
+        </p>
+      </hint>
+    </task>
+
+    <task xml:id="ex-farmdata2-operations" label="ex-farmdata2-operations">
+      <statement>
+        <p>
+          For which of the following types of operations does FarmData2 maintain records?
+        </p>
+      </statement>
+
+      <choices multiple-correct="yes" randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              Seeding
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              Transplanting
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              Harvesting
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Drone surveying
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Soil chemistry
+            </p>
+          </statement>
+        </choice>
+      </choices>
+
+      <hint>
+        <p>
+          Review the <em>Description</em> section of the <c>README.md</c>.
+        </p>
+      </hint>
+
+    </task>
+  </exercise>
+  </exercises>
+
+  <p>
+    Note that the GitKit was created from an early version of FarmData2 and thus the code in this repository does not have all of the features described.
+  </p>
+  <p>
+    Current development of FarmData2 is occurring in the <url href='https://github.com/FarmData2'>FarmData2 organization on GitHub</url>.
+  </p>
+</section>

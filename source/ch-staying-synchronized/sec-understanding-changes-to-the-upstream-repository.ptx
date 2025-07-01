@@ -21,9 +21,15 @@
       <figure xml:id="fig-changes-merged-into-upstream" >
         <caption> Changes Merged into Upstream. </caption>
         <image source="images/ch-staying-synchronized/changes-merged-into-upstream.png" width="75%">
-          <description>
+          <shortdescription>
             Cloud image showing some changes merged into the upstream <c>main</c> branch.
-          </description>
+          </shortdescription>
+        <description>
+          <p>Diagram showing that merging the pull request has updated the upstream main branch with the commits
+            in the remote (origin) feature branch. The main branches in both the origin and local repositories
+            are unchanged. The feature branches in both origin and local are still there.
+          </p>
+        </description>
         </image>
       </figure>
     </p>
@@ -294,7 +300,7 @@
                 Being ahead means that your origin <c>main</c> branch contains changes that are not in the upstream <c>main</c> branch. However, right now your origin <c>main</c> should be behind the upstream <c>main</c> branch.
               </p>
               <p>
-                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" /> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" />, return to this exercise.
+                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/>, return to this exercise.
               </p>
             </feedback>
           </choice>
@@ -310,7 +316,7 @@
                 However, Right now your origin <c>main</c> should be behind the upstream <c>main</c> branch.
               </p>
               <p>
-                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" /> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" />, return to this exercise.
+                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/>, return to this exercise.
               </p>
             </feedback>
           </choice>
