@@ -243,7 +243,6 @@
       </p>
     </statement>
 
-
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
@@ -259,36 +258,12 @@
 
       <choice correct="no">
         <statement>
-          remote: Enumerating objects
-        </statement>
-
-        <feedback>
-          <p>
-            This line of output does not contain a folder name.
-          </p>
-        </feedback>
-      </choice>
-
-      <choice correct="no">
-        <statement>
           remote: Counting objects
         </statement>
 
         <feedback>
           <p>
-            This line of output does not contain a folder name.
-          </p>
-        </feedback>
-      </choice>
-
-      <choice correct="no">
-        <statement>
-          remote: Total
-        </statement>
-
-        <feedback>
-          <p>
-            This line of output does not contain a folder name.
+            This line of output does not contain a directory name.
           </p>
         </feedback>
       </choice>
@@ -300,7 +275,7 @@
 
         <feedback>
           <p>
-            This line of output does not contain a folder name.
+            This line of output does not contain a directory name.
           </p>
         </feedback>
       </choice>
@@ -312,7 +287,7 @@
 
         <feedback>
           <p>
-            This line of output does not contain a folder name.
+            This line of output does not contain a directory name.
           </p>
         </feedback>
       </choice>
@@ -320,7 +295,7 @@
 
     <hint>
       <p>
-        Look for a line in the output that indicates a folder names".
+        Look for a line in the output that indicates a directory name.
       </p>
     </hint>
   </exercise>
@@ -496,7 +471,7 @@
 
         <feedback>
           <p>
-            <c>-url</c> is an unknown switch.
+            <c>-url</c> is an unknown option.
           </p>
         </feedback>
       </choice>
@@ -533,7 +508,7 @@
 
 
     <choices randomize="yes">
-      <choice>
+      <choice correct="yes">
         <statement>
           <p>
             The "origin" lines have a URL with your GitHub username in them.
@@ -542,7 +517,7 @@
 
         <feedback>
             <p>
-                The github username is part of a URL.
+                Correct!
             </p>
         </feedback>
       </choice>
@@ -556,11 +531,11 @@
 
         <feedback>
             <p>
-                Yes, but what follows the word "origin"?            </p>
+                Look more carefully at what follows the word "origin".            </p>
         </feedback>
       </choice>
 
-      <choice correct="yes">
+      <choice>
         <statement>
           <p>
             The "origin" lines have a URL that points to GitHub.
@@ -569,7 +544,7 @@
 
         <feedback>
             <p>
-                Correct!
+                The URL should point to a repository in your GitHub account.
             </p>
         </feedback>
       </choice>
@@ -591,7 +566,7 @@
 
     <hint>
       <p>
-        Look closely at the lines that begin with "origin".
+        Look closely at the lines that begin with "origin". Do the URLs point to a repository in your GitHub account?
       </p>
     </hint>
   </exercise>
