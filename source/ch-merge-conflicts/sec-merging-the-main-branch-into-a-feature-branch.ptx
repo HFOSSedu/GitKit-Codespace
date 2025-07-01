@@ -371,12 +371,13 @@
                 The terminal displays a message indicating that there is a "Merge conflict in README.md."
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 Correct.
               </p>
             </feedback>
+            -->
           </choice>
 
           <choice correct="yes">
@@ -385,12 +386,13 @@
                 The <c>README.md</c> file is opened in the editor.
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 Correct.
               </p>
             </feedback>
+            -->
           </choice>
 
           <choice>
@@ -399,12 +401,13 @@
                 The conflict is automatically resolved.
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 The conflict cannot be automatically resolved because there is a conflict.
               </p>
             </feedback>
+            -->
           </choice>
 
           <choice>
@@ -413,12 +416,13 @@
                 The development environment plays a sad song because there is a conflict.
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 That would be fun, but unfortunately not.
               </p>
             </feedback>
+            -->
           </choice>
         </choices>
 
