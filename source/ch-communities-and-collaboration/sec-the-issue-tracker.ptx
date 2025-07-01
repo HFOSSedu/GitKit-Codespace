@@ -15,9 +15,9 @@
       <figure xml:id="fig-issue-tracker" label="fig-issue-tracker" >
         <caption> The GitKit FarmData2 issue tracker in GitHub. </caption>
         <image source="images/ch-communities-and-collaboration/issueTracker.png">
-          <description>
+          <shortdescription>
             The GitHub issue tracker displaying issues from the GitKit FarmData2 repository.
-          </description>
+          </shortdescription>
         </image>
       </figure>
     </p>
@@ -152,9 +152,9 @@
           <choice correct="yes">
             <statement>
               <image source="images/ch-communities-and-collaboration/documentation-tag.png">
-                <description>
-                  Documentation
-                </description>
+                <shortdescription>
+                  Image of the Documentation label.
+                </shortdescription>
               </image>
             </statement>
 
@@ -163,9 +163,9 @@
           <choice correct="yes">
             <statement>
               <image source="images/ch-communities-and-collaboration/round1-tag.png">
-                <description>
-                  Round1
-                </description>
+                <shortdescription>
+                  Image of the Round1 label.
+                </shortdescription>
               </image>
             </statement>
 
@@ -174,9 +174,9 @@
           <choice correct="yes">
             <statement>
               <image source="images/ch-communities-and-collaboration/enhancement-tag.png">
-                <description>
-                  Enhancement
-                </description>
+                <shortdescription>
+                  Image of the Enhancement label.
+                </shortdescription>
               </image>
             </statement>
 
@@ -185,9 +185,9 @@
           <choice correct="no">
             <statement>
               <image source="images/ch-communities-and-collaboration/typos-tag.png">
-                <description>
-                  Typos
-                </description>
+                <shortdescription>
+                  Image of the Typos label.
+                </shortdescription>
               </image>
             </statement>
 
@@ -196,9 +196,9 @@
           <choice correct="no">
             <statement>
               <image source="images/ch-communities-and-collaboration/bug-tag.png">
-                <description>
-                  Bug
-                </description>
+                <shortdescription>
+                  Image of the Bug label.
+                </shortdescription>
               </image>
             </statement>
 
@@ -207,9 +207,9 @@
           <choice correct="no">
             <statement>
               <image source="images/ch-communities-and-collaboration/uiux-tag.png">
-                <description>
-                  UI/UX
-                </description>
+                <shortdescription>
+                  Image of the UI/UX label.
+                </shortdescription>
               </image>
             </statement>
 

@@ -9,19 +9,21 @@
       Having a clone of your origin in your development environment will allow you to edit the files to fix the issue that you have been assigned and add those changes to the repository.
     </p>
 
-    <p>
-      <figure xml:id="fig-basic-workflow-clone" >
-        <caption> Cloning your origin repository from your GitHub space to your development environment. </caption>
-        <image source="images/ch-communities-and-collaboration/basic-workflow-clone.png" width="75%">
-          <description>
-            Creating a clone of your origin repository creates a copy of it in your development environment.
-            This copy is your local copy.
-          </description>
-        </image>
-      </figure>
-    </p>
-  </introduction>
-
+        <p>
+            <figure xml:id="fig-basic-workflow-clone" >
+                <caption> Cloning your origin repository from your GitHub space to your development environment. </caption>
+                <image source="images/ch-communities-and-collaboration/basic-workflow-clone.png" width="75%">
+                    <shortdescription>
+                        Diagram showing cloning of the remote repository.
+                    </shortdescription>
+                    <description>
+                        Creating a clone of your origin repository creates a copy of it in your development environment.
+                        This copy is your local copy.
+                    </description>
+                </image>
+            </figure>
+        </p>
+    </introduction>
 
   <subsection  xml:id="topic-cloning-url" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <title>Clone URL</title>
@@ -48,29 +50,29 @@
       </hint>
     </exercise>
 
-    <exercise xml:id="ex-find-clone-url-b" label="ex-find-clone-url-b">
-      <statement>
-        <p>
-          Find and click the green "Code" button.
-          <image source="images/ch-communities-and-collaboration/codeButton.png" width="10%">
-          <description>
-            The green "Code" button in GitHub.
-          </description>
-        </image>
-      </p>
-    </statement>
-  </exercise>
+        <exercise xml:id="ex-find-clone-url-b" label="ex-find-clone-url-b">
+            <statement>
+                <p>
+                    Find and click the green "Code" button.
+                    <image source="images/ch-communities-and-collaboration/codeButton.png" width="10%">
+                    <shortdescription>
+                        The green "Code" button in GitHub.
+                    </shortdescription>
+                </image>
+            </p>
+        </statement>
+    </exercise>
 
-  <exercise xml:id="ex-find-clone-url-c" label="ex-find-clone-url-c">
-    <statement>
-      <p>
-        Open the "Local" and "HTTPS" tabs as shown here: <image source="images/ch-communities-and-collaboration/gitHubCloneURL.png" width="50%">
-        <description>
-          The GitHub dialog showing the clone URL.
-        </description>
-      </image>
-      The URL in the "Clone using the web URL" box is the clone URL that you will need to clone your origin repository.
-    </p>
+    <exercise xml:id="ex-find-clone-url-c" label="ex-find-clone-url-c">
+        <statement>
+            <p>
+                Open the "Local" and "HTTPS" tabs as shown here: <image source="images/ch-communities-and-collaboration/gitHubCloneURL.png" width="50%">
+                <shortdescription>
+                    The GitHub dialog showing the local HTTPS clone URL.
+                </shortdescription>
+            </image>
+            The URL in the "Clone using the web URL" box is the clone URL that you will need to clone your origin repository.
+        </p>
   </statement>
 </exercise>
 

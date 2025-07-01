@@ -67,7 +67,7 @@
             Slides 3-4
           </title>
           <p>
-            The instructor may merge a provided branch that creates conflicts with the "Round 2" issues (See: <xref ref="topic-merge-conflicts-todo" />) either before or during class.  Merging the conflicts during class is the preferred option if time permits.  This allows the instructor to show a few student "Round 2" PRs and that indicate that they can currently be merged automatically.  Then merge the PR with the conflicts and look at the PR's again to show that they now contain conflicts. Slide 4 can be used to illustrate how the conflicts have arisen.
+            The instructor may merge a provided branch that creates conflicts with the "Round 2" issues (See: <xref ref="topic-merge-conflicts-todo" text="type-global-title"/>) either before or during class.  Merging the conflicts during class is the preferred option if time permits.  This allows the instructor to show a few student "Round 2" PRs and that indicate that they can currently be merged automatically.  Then merge the PR with the conflicts and look at the PR's again to show that they now contain conflicts. Slide 4 can be used to illustrate how the conflicts have arisen.
           </p>
         </li>
         <li>
@@ -116,7 +116,7 @@
             The way that a developer will resolve a merge conflicts is to pull the (conflicting) changes to the upstream <code>main</code> to their local repository. They then merge the <code>main</code> branch into their feature branch. They then push their updated feature branch to their origin, which automatically updates the PR for that branch.  Because the PR has been updated the maintainers are now able to review not only the proposed changes but also the way that the merge conflicts were resolved.
           </p>
           <p>
-            Note that this is backwards from what was done earlier. In <xref ref="topic-staying-synchronized" /> the maintainer was merging the feature branch into the <code>main</code> branch. Here the developer is merging the <code>main</code> branch into their feature branch. The rule that developers "only commit to feature branches" can be used as a grounding for why developers do the merge in this direction.
+            Note that this is backwards from what was done earlier. In <xref ref="topic-staying-synchronized" text="type-global-title"/> the maintainer was merging the feature branch into the <code>main</code> branch. Here the developer is merging the <code>main</code> branch into their feature branch. The rule that developers "only commit to feature branches" can be used as a grounding for why developers do the merge in this direction.
           </p>
         </li>
         <li>
@@ -170,7 +170,7 @@
       <ol>
         <li>
           <p>
-            If time permits, monitor the "Round 2" tickets in the issue tracker. There are only 4 "Round 2" issues and thus there will need to be multiple students working on each.  If a student uses the the comment from <xref ref="topic-claiming-an-issue" />, and they are the first to do so, the issue will be assigned to them automatically. The instructor can manually assign the issue to all other students that comment on it.
+            If time permits, monitor the "Round 2" tickets in the issue tracker. There are only 4 "Round 2" issues and thus there will need to be multiple students working on each.  If a student uses the the comment from <xref ref="topic-claiming-an-issue" text="type-global-title"/>, and they are the first to do so, the issue will be assigned to them automatically. The instructor can manually assign the issue to all other students that comment on it.
           </p>
         </li>
         <li>
@@ -195,7 +195,7 @@
         <li>
           <em>
             <p>
-              <xref ref="topic-merge-example-2" />
+              <xref ref="topic-merge-example-2" text="type-global-title"/>
             </p>
           </em>
           <p>
@@ -212,13 +212,13 @@
             Inevitably some students will be behind on their work and will complete their sync with upstream <code>main</code> after you have merged the PR for the <code>addRound2Conflicts</code> branch.  In these cases, their pull requests will not create a conflict to be resolved.  
           </p>
           <p>
-            These students should follow the instructions given in <xref ref="topic-appendix-a-merge-conflicts" />.  These directions have them pull the <code>mergeConflictPractice</code> branch and create a pull request for it.  That PR will then contain conflicts with the changes in the <code>addRound2Conflicts</code> branch that was merged into <code>main</code>.  They will then complete the activity using the <code>mergeConflictPractice</code> branch as it it were their feature branch. Students not in this situation, but who would like additional practice can also pull and use the <code>mergeConflictPractice</code> branch at the end of the activity.
+            These students should follow the instructions given in <xref ref="topic-appendix-a-merge-conflicts" text="type-global-title" />.  These directions have them pull the <code>mergeConflictPractice</code> branch and create a pull request for it.  That PR will then contain conflicts with the changes in the <code>addRound2Conflicts</code> branch that was merged into <code>main</code>.  They will then complete the activity using the <code>mergeConflictPractice</code> branch as it it were their feature branch. Students not in this situation, but who would like additional practice can also pull and use the <code>mergeConflictPractice</code> branch at the end of the activity.
           </p>
         </li>
         <li>
           <em>
             <p>
-              <xref ref="topic-extra-practice-merging" />.
+              <xref ref="topic-extra-practice-merging" text="type-global-title"/>.
             </p>
           </em>
           <p>

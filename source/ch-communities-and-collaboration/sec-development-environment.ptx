@@ -86,9 +86,9 @@
                     <figure xml:id="fig-devenv-pat-prompt"               label="fig-devenv-pat-prompt">
                         <caption> The GitKit development environment prompting for a GitHub PAT during creation. </caption>
                         <image source="images/ch-communities-and-collaboration/DevEnv-Request-PAT.png" width="75%">
-                            <description>
+                            <shortdescription>
                                 The GitKit Development Environment prompting for a GitHub PAT during creation.
-                            </description>
+                            </shortdescription>
                         </image>
                     </figure>
 
@@ -121,12 +121,12 @@
             <task xml:id="ex-paste-pat" label="ex-paste-pat">
                 <statement>
                     <p>
-                        Paste the PAT that you created in <xref ref="topic-github-pat" /> and press enter.
+                        Paste the PAT that you created in <xref ref="topic-github-pat" text="type-global-title"/> and press enter.
                         Note, for security reasons your PAT is not displayed when it is pasted.
                     </p>
 
                     <p>
-                        If you have lost or did not save your PAT, revisit <xref ref="topic-github-pat" /> and create a new one.
+                        If you have lost or did not save your PAT, revisit <xref ref="topic-github-pat" text="type-global-title"/> and create a new one.
                     </p>
                 </statement>
             </task>
@@ -142,8 +142,12 @@
                     <figure xml:id="fig-devenv-ready-blank"               label="fig-devenv-ready-blank">
                         <caption> The GitKit development environment with the "Kit development environment is ready for use" message. </caption>
                         <image source="images/ch-communities-and-collaboration/DevEnv-Blank-Ready.png" width="75%">
-                            <description>
+                            <shortdescription>
                                 The GitKit Development Environment with the "Kit development environment is ready for use" message.
+                            </shortdescription>
+                            <description>
+                                The GitKit Development Environment.
+                                The development environment is ready when you see the "Kit development environment is ready for use" message.
                             </description>
                         </image>
                     </figure>
@@ -256,6 +260,9 @@
                     <figure xml:id="fig-devenv-blank-ready"               label="fig-devenv-blank-ready">
                         <caption> The GitKit Development Environment. The development environment is ready when you see the "Kit development environment is ready for use" message. </caption>
                         <image source="images/ch-communities-and-collaboration/DevEnv-Blank-Ready.png" width="75%">
+                            <shortdescription>
+                                GitKit Development Environment showing the "Kit development environment is ready for use" message.
+                            </shortdescription>
                             <description>
                                 The GitKit Development Environment.
                                 The development environment is ready when you see the "Kit development environment is ready for use" message.
