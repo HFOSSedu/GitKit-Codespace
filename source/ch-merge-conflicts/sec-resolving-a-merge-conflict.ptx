@@ -270,12 +270,13 @@
                 You have unmerged paths.
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 Correct.
               </p>
             </feedback>
+            -->
           </choice>
 
           <choice correct="yes">
@@ -284,12 +285,13 @@
                 both modified:   README.md
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 Correct.
               </p>
             </feedback>
+            -->
           </choice>
 
           <choice correct="yes">
@@ -298,12 +300,13 @@
                 no changes added to commit
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 Correct.
               </p>
             </feedback>
+            -->
           </choice>
 
           <choice>
@@ -312,12 +315,13 @@
                 All conflicts fixed
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 Check the output again.
               </p>
             </feedback>
+            -->
           </choice>
 
           <choice>
@@ -326,12 +330,13 @@
                 Your branch is behind 'origin'
               </p>
             </statement>
-
+            <!--
             <feedback>
               <p>
                 Check the output again.
               </p>
             </feedback>
+            -->
           </choice>
         </choices>
 
@@ -377,7 +382,8 @@
             <feedback>
               <p>
                 Close.
-                Check the output again. What does the --undo flag do?
+                Check the output again.
+                What does the --undo flag do?
               </p>
             </feedback>
           </choice>
@@ -405,7 +411,8 @@
 
             <feedback>
               <p>
-                In this command revert would be considered a branch name. You want to use a flag instead.
+                In this command revert would be considered a branch name.
+                You want to use a flag instead.
               </p>
             </feedback>
           </choice>
@@ -489,8 +496,7 @@
 
           <feedback>
             <p>
-              Correct!
-              You already knew that, but its good to know that <c>git status</c> provides helpful tips.
+              Correct! You already knew that, but its good to know that <c>git status</c> provides helpful tips.
               Use it often!
             </p>
           </feedback>
