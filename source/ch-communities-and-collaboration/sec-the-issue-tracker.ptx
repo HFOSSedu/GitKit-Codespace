@@ -80,6 +80,12 @@
                 Add Missing "that"
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
           </choice>
 
           <choice>
@@ -88,6 +94,12 @@
                 Seeding Report: Allows Invalid Inputs
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                That is not the correct title.
+              </p>
+            </feedback>
           </choice>
 
           <choice>
@@ -96,6 +108,12 @@
                 Seeding Input: Duplicates appearing in Area Dropdown
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                That is not the correct title.
+              </p>
+            </feedback>
           </choice>
 
           <choice>
@@ -104,6 +122,12 @@
                 Dickinson College Farm Link
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                That is not the correct title.
+              </p>
+            </feedback>
           </choice>
         </choices>
 
@@ -113,6 +137,7 @@
           </p>
         </hint>
       </task>
+
 
       <task xml:id="ex-explore-the-issue-tracker-b" label="ex-explore-the-issue-tracker-b" >
         <statement>
@@ -132,6 +157,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="yes">
@@ -142,6 +168,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="yes">
@@ -152,6 +179,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="no">
@@ -162,6 +190,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="no">
@@ -172,6 +201,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="no">
@@ -182,12 +212,13 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
         </choices>
 
         <hint>
           <p>
-            Be sure you are looking at issue #8.
+            Be sure you are looking at the correct issue tracker and that you are looking at issue #8.
           </p>
         </hint>
       </task>
@@ -206,38 +237,62 @@
             <statement>
               ONBOARDING.md
             </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
           </choice>
 
           <choice correct="no">
             <statement>
               INSTALL.md
             </statement>
+
+            <feedback>
+              <p>
+                Be sure you are looking at issue #11.
+              </p>
+            </feedback>
           </choice>
 
           <choice correct="no">
             <statement>
               CONTRIBUTING.md
             </statement>
+                        
+            <feedback>
+              <p>
+                Be sure you are looking at issue #11.
+              </p>
+            </feedback>
           </choice>
 
           <choice correct="no">
             <statement>
               LICENSE.md
             </statement>
+                        
+            <feedback>
+              <p>
+                Be sure you are looking at issue #11.
+              </p>
+            </feedback>
           </choice>
         </choices>
 
         <hint>
           <p>
-            Be sure you are looking at issue #11.
+            Be sure you are looking at the correct issue traker and that you are looking at issue #11.
           </p>
         </hint>
       </task>
 
+
       <task xml:id="ex-explore-the-issue-tracker-d" label="ex-explore-the-issue-tracker-d" >
         <statement>
           <p>
-            Which of the following indicate an order by which the issues can be sorted?
+            Which of the following indicates an order by which the issues can be sorted?
           </p>
         </statement>
 
@@ -247,76 +302,73 @@
             <statement>
               Newest
             </statement>
+
           </choice>
 
           <choice correct="yes">
             <statement>
               Oldest
             </statement>
+
           </choice>
 
           <choice correct="yes">
             <statement>
-              Recently updated
+              Most recently updated
             </statement>
+
           </choice>
 
           <choice correct="yes">
             <statement>
-              Most commented
+              Has the greatest number of comments
             </statement>
+
           </choice>
 
           <choice correct="no">
             <statement>
               Most difficult
             </statement>
+
           </choice>
 
           <choice correct="no">
             <statement>
               Highest priority
             </statement>
+
           </choice>
+
         </choices>
+
         <hint>
           <p>
-            Find the sort drop-down (which will be headed either "Newest" or "Oldest" depending on how it was last set) in the issue tracker and see what sort by options are available.
+            Find the sort drop-down (which will be headed either "Newest" or "Oldest" depending on how it was last set) in the issue tracker and see what sort by options are available. Answers are not an exact match.
           </p>
-        </hint>  
+        </hint>
       </task>
 
-      <task xml:id="ex-explore-the-issue-tracker-e" label="ex-explore-the-issue-tracker-e" >
-       <statement>
-        <p>
-          Match issue tracker sort orders on the left to a reason for sorting in that order on the right.
-        </p>
-      </statement>
-      <feedback>
-        <p>
-          You can do it! Try again!
-        </p>
-      </feedback>
 
-      <matches>
-        <match>
-          <premise>Created on</premise>
-          <response>Find issues you have not seen before</response>
-        </match>
-        <match>
-          <premise>Last updated</premise>
-          <response>Check if any issues you have been assigned to have had their requirements changed</response>
-        </match>
-        <match>
-          <premise>Total comments</premise>
-          <response>Find which issues are being most actively worked on</response>
-        </match>
-      </matches>
-      <hint>
-        <p>
-          Choose the best match.
-        </p>
-      </hint>
+      <task xml:id="ex-explore-the-issue-tracker-e" label="ex-explore-the-issue-tracker-e" >
+        <statement>
+          <p>
+            Match issue tracker sort orders on the left to a reason for sorting in that order on the right.
+          </p>
+        </statement>
+
+        <feedback>
+          <p>
+            You can do it! Try again!
+          </p>
+        </feedback>
+
+        <matches> <match> <premise>Created on</premise> <response>Find issues you have not seen before</response> </match> <match> <premise>Last updated</premise> <response>Check if any issues you have been assigned to have had their requirements changed</response> </match> <match> <premise>Total comments</premise> <response>Find which issues are being most actively worked on</response> </match> </matches>
+        <hint>
+          <p>
+            Choose the best match.
+          </p>
+        </hint>
       </task>
     </exercise>
     </exercises>
@@ -342,7 +394,7 @@
       <statement>
         <p>
           Examine the GitKit FarmData2 issue tracker.
-          How can you tell which issue have already been assigned?
+          How can you tell which issues have already been assigned?
         </p>
       </statement>
 
@@ -352,30 +404,60 @@
           <statement>
             The avatar of the assigned user appears to the right of the issue title.
           </statement>
+
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="no">
           <statement>
             The issue no longer appears in the issue tracker.
           </statement>
+                    
+          <feedback>
+            <p>
+              A list of issues should appear. Be sure you are looking at the issue tracker for FarmData2.
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="no">
           <statement>
-            The username of assigned user appears next to the issue title.
+            The username of the assigned user appears next to the issue title.
           </statement>
+                    
+          <feedback>
+            <p>
+              The username does not appear next to the title.
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="no">
           <statement>
             The issue is moved to a separate list of assigned issues.
           </statement>
+                    
+          <feedback>
+            <p>
+              There is no separate list. Make sure there are no filters set.
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="no">
           <statement>
             The issue tracker does not show any indication that an issue has been assigned.
           </statement>
+                    
+          <feedback>
+            <p>
+              Make sure you are looking to the right of the title.
+            </p>
+          </feedback>
         </choice>
       </choices>
 
@@ -431,8 +513,9 @@
 
         <hint>
           <p>
-            Click on the issue title to open the issue and use the "Add a comment" box at the bottom of the page. 
+            Click on the issue title to open the issue and use the "Add a comment" box at the bottom of the page.
           </p>
+
           <p>
             Remember you must type <xref ref="topic-issue-claim-message" text="custom">the message</xref> exactly as shown.
           </p>
@@ -478,15 +561,15 @@
           Thank you.
         </p>
       </feedback>
-      </condition> 
-      <condition string="https://github\.com/my-class/GitKit-FarmData2/issues/2">
-        <feedback>
-          <p>
-            Looks like you are trying to use the example above. Be sure to use the URL for your actual issue.
-          </p>
-        </feedback>
-      </condition>
-      <condition string=".*">
+      </condition> <condition string="https://github\.com/my-class/GitKit-FarmData2/issues/2">
+
+      <feedback>
+        <p>
+          Looks like you are trying to use the example above.
+          Be sure to use the URL for your actual issue.
+        </p>
+      </feedback>
+      </condition> <condition string=".*">
 
       <feedback>
         <p>
@@ -496,21 +579,25 @@
       </condition> </var> </setup>
     </exercise>
 
-   <exercise xml:id="ex-why-not-assign-issues" label="ex-why-not-assign-issues">
-     <statement>
+    <exercise xml:id="ex-why-not-assign-issues" label="ex-why-not-assign-issues">
+      <statement>
         <p>
           It is worth noting that different projects will have different processes for claiming and assigning issues, and some projects may not assign issues at all.
           What are some advantages and disadvantages of assigning issues to specific individuals?
         </p>
+
         <p>
           Select each of the statements that describe an advantage of assigning issues.
         </p>
       </statement>
+
       <feedback>
         <p>
           You can do it! Try again!
         </p>
       </feedback>
+
+
       <choices randomize="yes">
         <choice correct="yes">
           <statement>
@@ -518,37 +605,28 @@
               To prevent wasting effort by having two developers work on the same issue.
             </p>
           </statement>
-          <feedback>
-            <p>
-              Assigning issues can help prevent people from duplicating work.
-            </p>
-          </feedback>
+
         </choice>
+
         <choice>
           <statement>
             <p>
               Allow a developer to "hold on" to an issue, even if they are not currently working on it.
             </p>
           </statement>
-          <feedback>
-            <p>
-              Holding onto an issue that is not being worked on may prevent someone else from working on it.
-            </p>
-          </feedback>
+
         </choice>
+
         <choice correct="yes">
           <statement>
             <p>
               To plan in advance who will be working each issue.
             </p>
           </statement>
-          <feedback>
-            <p>
-              Assigning issues could work like creating a ToDo list for core project contributors.
-            </p>
-          </feedback>
+
         </choice>
       </choices>
+
       <hint>
         <p>
           Think about this from both the individual developer's perspective and from the overall project's perspective.
