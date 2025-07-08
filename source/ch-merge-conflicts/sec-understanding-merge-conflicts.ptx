@@ -22,7 +22,7 @@
 
       <p>
         The current <c>main</c> branch contains changes, merged by the maintainers, to fix several bugs that existed in the best common ancestor.
-        The feature branch has been changed to use more descriptive variable names, but has not fixed the bugs.
+        The feature branch has been changed to use more descriptive variable names, but has not fixed all of the bugs.
       </p>
 
       <p>
@@ -579,7 +579,7 @@
 
           <feedback>
             <p>
-              If there are conflicting changes then the feature branch will not be able to be merged automatically.
+              It is possible to tell by comparing the changes between the feature branch and the <c>main</c> branch.
             </p>
           </feedback>
         </choice>
@@ -593,7 +593,7 @@
 
           <feedback>
             <p>
-              Close.
+              You are close.
               What type of changes prevent automatic merges?
             </p>
           </feedback>
