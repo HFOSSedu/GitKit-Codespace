@@ -85,7 +85,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="no">
         <choice correct="yes">
           <statement>
             <p>
@@ -229,7 +229,7 @@
       </statement>
 
 
-      <choices randomize="yes">
+      <choices randomize="no">
         <choice correct="yes">
           <statement>
             <image source="images/ch-merge-conflicts/github-pr-no-conflict.png" width="90%">

@@ -70,11 +70,13 @@
                 <c>main</c>
               </p>
             </statement>
+            <!--
             <feedback>
               <p>
                 Correct.
               </p>
             </feedback>
+          -->
           </choice>
           <choice correct="yes">
             <statement>
@@ -82,11 +84,13 @@
                 <c>remotes/upstream/merge-conflict-practice</c>
               </p>
             </statement>
+            <!--
             <feedback>
               <p>
                 Correct.
               </p>
-            </feedback>    
+            </feedback>   
+          --> 
           </choice>
           <choice>
             <statement>
@@ -94,11 +98,13 @@
                 <c>development</c>
               </p>
             </statement>
+            <!--
             <feedback>
               <p>
                 Are you sure this branch exists?
               </p>
-            </feedback>    
+            </feedback> 
+          -->   
           </choice>
           <choice>
             <statement>
@@ -106,11 +112,13 @@
                 <c>beta</c>
               </p>
             </statement>
+            <!--
             <feedback>
               <p>
                 Are you sure this branch exists?
               </p>
-            </feedback>    
+            </feedback>
+          -->    
           </choice>
         </choices>
       </task>
@@ -188,7 +196,7 @@
             </statement>
             <feedback>
               <p>
-                Correct.
+                Correct!
               </p>
             </feedback>
           </choice>
