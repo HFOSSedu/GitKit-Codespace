@@ -92,13 +92,13 @@
         <choice>
           <statement>
             <p>
-              <c>git switch main</c>
+              <c>git switch</c>
             </p>
           </statement>
 
           <feedback>
             <p>
-              The <c>git switch main</c> command will make <c>main</c> the active branch, not check which branch is active.
+              <c>git switch</c> is not a valid command.
             </p>
           </feedback>
         </choice>
@@ -106,7 +106,7 @@
 
       <hint>
         <p>
-          Refer to <xref ref="subsec-git-status-command"/>.
+          Which command provides information about the current state of the active branch?
         </p>
       </hint>
     </task>
@@ -180,7 +180,7 @@
 
       <hint>
         <p>
-          Refer back to the section in the previous chapter on switching branches <xref ref="topic-switching-branches"/>
+          Refer back to the section in the previous chapter, <xref ref="topic-switching-branches"/>, on switching branches.
         </p>
       </hint>
     </task>
