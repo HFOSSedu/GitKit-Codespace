@@ -26,7 +26,7 @@
       <exercise xml:id="ex-fixing-issue-ordering" label="ex-fixing-issue-ordering">
         <statement>
           <p>
-            The steps you carried out in <xref ref="topic-upstreaming-changes" /> are listed below in a jumbled-up order, drag them to the right to arrange them the proper order.
+            The steps you carried out in <xref ref="topic-upstreaming-changes" text="type-global-title"/> are listed below in a jumbled-up order, drag them to the right to arrange them the proper order.
           </p>
         </statement>
         <blocks randomize="yes"> 
@@ -265,7 +265,7 @@
           </matches>
           <hint>
             <p>
-              The command reference that you created in <xref ref="topic-git-command-summary-upstreaming"/> may come in handy here.
+              The command reference that you created in <xref ref="topic-git-command-summary-upstreaming" text="type-global-title" /> may come in handy here.
             </p>
           </hint>
         </task>

@@ -104,8 +104,12 @@
     <figure xml:id="fig-edit-local-files-on-feature-branch">
       <caption> Editing Local Files on a Feature Branch. </caption>
       <image source="images/ch-upstreaming-changes/edit-local-files-on-feature-branch.png" width="75%">
-        <description>
+        <shortdescription>
           Editing local files on a feature branch.
+        </shortdescription>
+        <description>
+          <p>Diagram showing that the feature branch is the active branch while editing local files.
+          </p>
         </description>
       </image>
     </figure>

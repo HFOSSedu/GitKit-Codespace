@@ -18,14 +18,57 @@
       <p>
         The current <c>main</c> branch contains changes, merged by the maintainers, to fix several bugs that existed in the best common ancestor. The feature branch has been changed to use more descriptive variable names, but has not fixed the bugs.
       </p>
+
       <p>
         <figure xml:id="fig-merge-conflicts-1">
           <caption> Example merge conflicts with Best Common Ancestor. </caption>
-          <image source="images/ch-merge-conflicts/merge-conflicts-1.png" width="100%">
-            <description>
-              Three panels of code (feature branch, best common ancestor, main branch)
-            </description>
-          </image>
+        <tabular top="minor" bottom="minor" left="minor" right="minor">
+          <row header="yes">
+            <cell>Feature Branch</cell>
+            <cell>Best Common Ancestor</cell>
+            <cell><c>main</c> Branch</cell>
+          </row>
+          <row bottom="none" >
+            <cell>total=0</cell>
+            <cell>tot=0</cell>
+            <cell>tot=0</cell>
+          </row>
+          <row bottom="none" >
+            <cell>count=0</cell>
+            <cell>count=0</cell>
+            <cell>count=0</cell>
+          </row>
+          <row bottom="none" >
+            <cell>read n</cell>
+            <cell>read n</cell>
+            <cell>read n</cell>
+          </row>
+          <row bottom="none" >
+            <cell>while count &gt; n:</cell>
+            <cell>while count &gt; n:</cell>
+            <cell>while count &lt; n:</cell>
+          </row>
+          <row bottom="none" >
+            <cell><nbsp/><nbsp/><nbsp/>read m</cell>
+            <cell><nbsp/><nbsp/><nbsp/>read m</cell>
+            <cell><nbsp/><nbsp/><nbsp/>read m</cell>
+          </row>
+          <row bottom="none" >
+            <cell><nbsp/><nbsp/><nbsp/>total=total+m</cell>
+            <cell><nbsp/><nbsp/><nbsp/>tot=tot+m</cell>
+            <cell><nbsp/><nbsp/><nbsp/>tot=tot+m</cell>
+          </row>
+          <row bottom="none" >
+            <cell><nbsp/><nbsp/><nbsp/>count--</cell>
+            <cell><nbsp/><nbsp/><nbsp/>count--</cell>
+            <cell><nbsp/><nbsp/><nbsp/>count++</cell>
+          </row>
+          <row>
+            <cell>average=count <solidus/> total</cell>
+            <cell>ave=count <solidus/> tot</cell>
+            <cell>ave=tot <solidus/> count</cell>
+          </row>
+        </tabular>
         </figure>
       </p>
     </introduction>
@@ -500,11 +543,39 @@
       <p>
         <figure xml:id="fig-merge-conflicts-2" >
           <caption> Example merge conflicts with Best Common Ancestor. </caption>
-          <image source="images/ch-merge-conflicts/merge-conflicts-2.png" width="100%">
-            <description>
-              Three panels of code (feature branch, best common ancestor, main branch)
-            </description>
-          </image>
+
+          <tabular top="minor" bottom="minor" left="minor" right="minor">
+            <row header="yes">
+              <cell>Feature Branch</cell>
+              <cell>Best Common Ancestor</cell>
+              <cell><c>main</c> Branch</cell>
+            </row>
+            <row bottom="none">
+              <cell><area correct="no">r=15</area></cell>
+              <cell>r=15</cell>
+              <cell><area correct="no">r=15</area></cell>
+            </row>
+            <row bottom="none">
+              <cell><area correct="yes">pi = 3.1415927</area></cell>
+              <cell>pi = 3.14</cell>
+              <cell><area correct="no">pi = 3.14</area></cell>
+            </row>
+            <row bottom="none">
+              <cell><area correct="yes">rsq = r**2</area></cell>
+              <cell>rsq = r*2</cell>
+              <cell><area correct="no">rsq = r*2</area></cell>
+            </row>
+            <row bottom="none">
+              <cell><area correct="no">a = pi*rsq</area></cell>
+              <cell>a = pi*rsq</cell>
+              <cell><area correct="yes">area = pi*(rsq/2)**2</area></cell>
+            </row>
+            <row>
+              <cell><area correct="no">print a</area></cell>
+              <cell>print a</cell>
+              <cell><area correct="yes">print area</area></cell>
+            </row>
+          </tabular>
         </figure>
       </p>
     </introduction>

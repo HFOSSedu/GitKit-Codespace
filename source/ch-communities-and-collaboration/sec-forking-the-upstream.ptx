@@ -8,7 +8,7 @@
 
   <introduction>
     <p>
-      In <xref ref="topic-basic-foss-workflow" /> you saw how FOSS communities can use a basic workflow to collaborate. In this section you will begin to gain hands-on experience with that workflow. <xref ref="fig-basic-workflow-fork"/> illustrates first step in the workflow. In this step you will <term>fork</term> the main project repository, which creates a copy of it into your own GitHub space.
+      In <xref ref="topic-basic-foss-workflow" text="type-global-title"/> you saw how FOSS communities can use a basic workflow to collaborate. In this section you will begin to gain hands-on experience with that workflow. <xref ref="fig-basic-workflow-fork"/> illustrates first step in the workflow. In this step you will <term>fork</term> the main project repository, which creates a copy of it into your own GitHub space.
     </p>
   
     <p>
@@ -19,6 +19,8 @@
           Forking the main project repository.
         </caption>
         <image source="images/ch-communities-and-collaboration/basic-workflow-fork.png" width="75%">
+          <shortdescription>Diagram showing the relationship between the main project repo and your remote copy.
+          </shortdescription>
           <description>Creating a fork of the main project repo creates a copy of it in your own GitHub space. This copy is your remote copy.
           </description>
         </image>
@@ -117,7 +119,7 @@
             Find the "Fork" button on the upstream repository page.
               <image source="images/ch-communities-and-collaboration/fork-button.png" width="25%">
                 <description>
-                    The fork button.
+                    The GitHub fork button.
                 </description>
               </image>
           </p>
@@ -226,6 +228,12 @@
                 forked from
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
           </choice>
           <choice>
             <statement>
@@ -233,6 +241,12 @@
                 The Octokitty (GitHub) logo
               </p>
             </statement>
+                        
+            <feedback>
+              <p>
+                The text is next to the link to the upstream repository.
+              </p>
+            </feedback>
           </choice>
           <choice>
             <statement>
@@ -240,6 +254,12 @@
                 Fork your own copy of (in the Fork drop-down)
               </p>
             </statement>
+                        
+            <feedback>
+              <p>
+                The text is next to the link to the upstream repository.
+              </p>
+            </feedback>
           </choice>
         </choices>
         <hint>
@@ -265,6 +285,12 @@
                 Pull request
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
           </choice>
           <choice>
             <statement>
@@ -272,6 +298,12 @@
                 Fork
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                When forking you need to specify the location of your remote copy.
+              </p>
+              </feedback>
           </choice>
           <choice>
             <statement>
@@ -279,6 +311,12 @@
                 Clone
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Cloning requires you to specify only your remote repository.
+              </p>
+              </feedback>
           </choice>
           <choice>
             <statement>
@@ -286,6 +324,12 @@
                 Edit
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Editing affects only the local repository.
+              </p>
+              </feedback>
           </choice>
           <choice>
             <statement>
@@ -293,11 +337,17 @@
                 Push
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Pushing requires access to only one remote repository.
+              </p>
+              </feedback>
           </choice>
         </choices>
         <hint>
           <p>
-            Think about which step of the basic FOSS workflow needs to send information back to the main project.
+            Think about which step of the basic FOSS workflow needs to send information back to the upstream repository.
           </p>
         </hint>
       </task>

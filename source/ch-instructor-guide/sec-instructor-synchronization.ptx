@@ -34,7 +34,7 @@
         </li>
         <li>
           <p>
-            Make changes for their "Round 2" issue and upstream them using the forking workflow from <xref ref="topic-upstreaming-changes"/>.
+            Make changes for their "Round 2" issue and upstream them using the forking workflow from <xref ref="topic-upstreaming-changes" text="type-global-title"/>.
           </p>
         </li>
       </ol>
@@ -51,7 +51,7 @@
             Slides 2-3
           </title>
           <p>
-            A review of the elements of the forking workflow introduced and practiced in <xref ref="topic-basic-foss-workflow"/> and <xref ref="topic-upstreaming-changes"/>.  Steps 3-9 on slide 3 are repeated for each contribution (e.g. bug fix, new feature). The feature branch should be pushed to the origin and the pull request made sooner rather than later, because it makes the changes available to the project maintainers for review and discussion as they are developed.  Some projects will even suggest creating a PR prior to making any changes. Once the PR is created, steps 5-8 can then be repeated for each "nameable unit of work" (i.e. each commit) that is involved in completing the contribution.
+            A review of the elements of the forking workflow introduced and practiced in <xref ref="topic-basic-foss-workflow" text="type-global-title"/> and <xref ref="topic-upstreaming-changes" text="type-global-title"/>.  Steps 3-9 on slide 3 are repeated for each contribution (e.g. bug fix, new feature). The feature branch should be pushed to the origin and the pull request made sooner rather than later, because it makes the changes available to the project maintainers for review and discussion as they are developed.  Some projects will even suggest creating a PR prior to making any changes. Once the PR is created, steps 5-8 can then be repeated for each "nameable unit of work" (i.e. each commit) that is involved in completing the contribution.
           </p>
         </li>
         <li>
@@ -59,7 +59,7 @@
             Slide 4
           </title>
           <p>
-            This diagram shows the state at the start of this chapter.  The students have made pull requests for their "Round 1" issues, but those PRs will not have been merged yet. At this point, the instructor can model the actions of a project maintainer and merge a few of these PR's (see: <xref ref="topic-synchronizing-todo" />).
+            This diagram shows the state at the start of this chapter.  The students have made pull requests for their "Round 1" issues, but those PRs will not have been merged yet. At this point, the instructor can model the actions of a project maintainer and merge a few of these PR's (see: <xref ref="topic-synchronizing-todo" text="type-global-title"/>).
           </p>
           <p>
             In addition to merging a few PRs it is worth also discussing other actions that a maintainer might take at this point, including:
@@ -155,7 +155,7 @@
     <ol>
       <li>
         <p>
-          If time permits, review the students "Round 1 pull requests as they are submitted and comment on any PRs that are missing a description or a "Closes"/"Fixes" line.  Occasionally, a student will also make a PR for an issue that has not been assigned to them, commenting that they should request that the issue be assigned to them as described in <xref ref="topic-foss-communities"/>.
+          If time permits, review the students "Round 1 pull requests as they are submitted and comment on any PRs that are missing a description or a "Closes"/"Fixes" line.  Occasionally, a student will also make a PR for an issue that has not been assigned to them, commenting that they should request that the issue be assigned to them as described in <xref ref="topic-foss-communities" text="type-global-title"/>.
         </p>
       </li>
       <li>
@@ -165,12 +165,12 @@
       </li>
       <li>
         <p>
-          Demonstrate the activity of a project maintainer by merging a few of the student "Round 1" pull requests. Merging all of the PRs in a class with more than a few students becomes tedious and it is sufficient to do just a few live.  The remaining PRs can then be merged after introducing <xref ref="topic-staying-synchronized"/>.
+          Demonstrate the activity of a project maintainer by merging a few of the student "Round 1" pull requests. Merging all of the PRs in a class with more than a few students becomes tedious and it is sufficient to do just a few live.  The remaining PRs can then be merged after introducing <xref ref="topic-staying-synchronized" text="type-global-title"/>.
         </p>
       </li>
       <li>
         <p>
-          Follow up after introducing <xref ref="topic-staying-synchronized"/> with any students who have not yet made a "Round 1" PR.
+          Follow up after introducing <xref ref="topic-staying-synchronized" text="type-global-title"/> with any students who have not yet made a "Round 1" PR.
         </p>
       </li>
     </ol>
@@ -188,7 +188,7 @@
             </p>
           </em>
           <p>
-            If a student begins the GitKit activities late they may make their fork and clone after the "Round 1" issues have been merged. This will result in their origin <code>main</code> branch not being <term>behind</term> the upstream <code>main</code> branch.  The directions in <xref ref="topic-appendix-a-staying-synchronized"/> of the activity have them reset the <code>HEAD</code> of their <code>main</code> branch to the commit before any "Round 1" issues were merged. Once they force push this change to their origin they will then see that their <code>main</code> branch is behind the upstream <code>main</code> as expected.
+            If a student begins the GitKit activities late they may make their fork and clone after the "Round 1" issues have been merged. This will result in their origin <code>main</code> branch not being <term>behind</term> the upstream <code>main</code> branch.  The directions in <xref ref="topic-appendix-a-staying-synchronized" text="type-global-title"/> of the activity have them reset the <code>HEAD</code> of their <code>main</code> branch to the commit before any "Round 1" issues were merged. Once they force push this change to their origin they will then see that their <code>main</code> branch is behind the upstream <code>main</code> as expected.
           </p>
         </li>
         <li>
@@ -204,11 +204,11 @@
         <li>
           <em>
             <p>
-              <xref ref="topic-lets-do-it-again" />.
+              <xref ref="topic-lets-do-it-again" text="type-global-title"/>.
             </p>
           </em>
           <p>
-            These questions in this section ask the student to use the forking workflow to create a fix for the "Round 2" ticket on which they chose to work. GitHub will indicate that the PRs created by each student for their "Round 2" issue can be merged automatically.  This is because even though multiple students are working on each "Round 2" issue, none of them will have been merged into the upstream <code>main</code> at this point. When introducing <xref ref="topic-resolving-a-merge-conflict" /> the instructor will merge a branch that creates conflicts with all of the student "Round2" PRs.
+            These questions in this section ask the student to use the forking workflow to create a fix for the "Round 2" ticket on which they chose to work. GitHub will indicate that the PRs created by each student for their "Round 2" issue can be merged automatically.  This is because even though multiple students are working on each "Round 2" issue, none of them will have been merged into the upstream <code>main</code> at this point. When introducing <xref ref="topic-resolving-a-merge-conflict" text="type-global-title"/> the instructor will merge a branch that creates conflicts with all of the student "Round2" PRs.
           </p>
         </li>
         <li>

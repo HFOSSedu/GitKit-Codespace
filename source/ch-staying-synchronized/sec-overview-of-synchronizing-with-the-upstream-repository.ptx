@@ -5,7 +5,7 @@
 
   <introduction>
     <p>
-      As you saw in <xref ref="topic-understanding-changes-to-the-upstream-repository" />, as changes from pull requests (yours and others) are merged into upstream <c>main</c>, the <c>main</c> branches in your local and origin repos will get <em>out of synch with the upstream</em>.
+      As you saw in <xref ref="topic-understanding-changes-to-the-upstream-repository" text="type-global-title"/>, as changes from pull requests (yours and others) are merged into upstream <c>main</c>, the <c>main</c> branches in your local and origin repos will get <em>out of synch with the upstream</em>.
     </p>
   </introduction>
 
@@ -22,8 +22,14 @@
     <figure xml:id="fig-synching-with-upstream" >
       <caption> Synchronizing the local and origin <c>main</c> branches with the upstream. </caption>
       <image source="images/ch-staying-synchronized/synching-with-upstream.png" width="75%">
-        <description>
+        <shortdescription>
           Cloud image showing how the <c>main</c> branches of the local and origin repository are synchronized with the upstream.
+        </shortdescription>
+        <description>
+          <p>Diagram showing that a pull from the upstream main branch has updated the local main branch.
+            And pushing the local main branch to origin has updated the origin main branch. Now all three
+            repositories (upsteam, origin, and local) all have the same sequence of commits.
+          </p>
         </description>
       </image>
     </figure>

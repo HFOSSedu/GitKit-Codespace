@@ -33,11 +33,14 @@
           When the development environment is ready you will see the message "Kit development environment is ready for use." and your browser window will look similar to the following: 
           
           <image source="images/shared-images/DevEnv-Kitty-Ready.png" width="75%">
-            <description>
-              The GitKit Development Environment.
-              The development environment is ready when you see the "Kit development environment is ready for use" message.
-            </description>
-            </image>
+          <shortdescription>
+            Image of the GitKit Development Environment showing the ready for use message.
+          </shortdescription>
+          <description>
+            The GitKit Development Environment.
+            The development environment is ready when you see the "Kit development environment is ready for use" message.
+          </description>
+        </image>
         </p>
       </exercise>
     </exercises>
@@ -345,7 +348,7 @@
 
     <introduction>
       <p>
-        As you saw in <xref ref="topic-understanding-remotes" /> your local repository contains an upstream remote that points to the upstream being used for your course.  This upstream was set automatically by the development environment when you opened your local repository.     
+        As you saw in <xref ref="topic-understanding-remotes" text="type-global-title"/> your local repository contains an upstream remote that points to the upstream being used for your course.  This upstream was set automatically by the development environment when you opened your local repository.     
       </p>
       <p>
         Not all development environments are able to automatically set the upstream remote when you open your local repository.  The exercises in this section will walk you through how you can manually set the upstream remote if you need to.
