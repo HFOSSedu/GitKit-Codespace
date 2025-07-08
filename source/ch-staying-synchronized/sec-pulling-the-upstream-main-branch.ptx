@@ -185,7 +185,7 @@
 
       <hint>
         <p>
-          Refer back to the section in the previous chapter, <xref ref="topic-switching-branches"/>, on switching branches.
+          Refer back to the section in the previous chapter, <xref ref="topic-switching-branches" text="type-global-title"/>, on switching branches.
         </p>
       </hint>
     </task>
@@ -251,7 +251,7 @@
     </statement>
 
 
-    <choices randomized="yes">
+    <choices randomize="yes">
       <choice correct="yes">
         <statement>
           <p>

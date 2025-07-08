@@ -241,7 +241,7 @@
             </statement>
             <feedback>
               <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                The blue cylinder at the top left represents the origin remote repository.
               </p>
             </feedback>
           </choice>
@@ -253,14 +253,14 @@
             </statement>
             <feedback>
               <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                The blue cylinder at the top right represents the upstream remote repository.
               </p>
             </feedback>
           </choice>
         </choices>
         <hint>
           <p>
-            Look at the diagram again. The origin Git remote will be associated with your local repo and will indicate where the origin repository is located.
+            Look at the diagram again. The origin Git remote will be associated with your local repository and will indicate where the origin repository is located.
           </p>
         </hint>
       </task>
@@ -316,7 +316,7 @@
             </statement>
             <feedback>
               <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                The blue cylinder at the top left represents the origin remote repository.
               </p>
             </feedback>
           </choice>
@@ -328,7 +328,7 @@
             </statement>
             <feedback>
               <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                The blue cylinder at the top right represents the upstream remote repository.
               </p>
             </feedback>
           </choice>
