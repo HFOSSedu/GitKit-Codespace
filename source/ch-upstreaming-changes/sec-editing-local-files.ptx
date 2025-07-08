@@ -155,7 +155,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="no">
         <choice>
           <statement>
             <p>
@@ -230,7 +230,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="no">
         <choice correct="yes">
           <statement>
             <p>

@@ -247,18 +247,24 @@
         <p>
           Now use the <c>git status</c> command again.
           Compare your output to the output in <xref ref="ex-staging-changes-b"/>.
-          What two changes have occurred that reflect that your changes have been staged?
+          <!--What two changes have occurred that reflect that your changes have been staged?-->
+          How does the output reflect that your changes have been staged?
         </p>
       </statement>
 
-
-      <choices>
+      <choices randomize="no">
         <choice>
           <statement>
             <p>
               No files appear listed as modified in red (meaning they are unstaged).
             </p>
           </statement>
+
+          <feedback>
+            <p>
+              At this point, all files are staged.
+            </p>
+          </feedback>
         </choice>
 
         <choice>
@@ -267,6 +273,12 @@
               No files appear listed as modified in green (meaning they are staged).
             </p>
           </statement>
+
+          <feedback>
+            <p>
+              At this point, all files are staged and committed.
+            </p>
+          </feedback>
         </choice>
 
         <choice>
@@ -275,6 +287,12 @@
               The output states "nothing to commit".
             </p>
           </statement>
+
+          <feedback>
+            <p>
+              It is true that there is nothing to commit, but you need to look again at the other options.
+            </p>
+          </feedback>
         </choice>
 
         <choice correct="yes">
@@ -283,6 +301,12 @@
               All of the above.
             </p>
           </statement>
+
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
         </choice>
       </choices>
     <hint>
@@ -299,7 +323,7 @@
         </p>
       </statement>
 
-      <choices>
+      <choices randomized="yes">
         <choice correct="yes">
           <statement>
             <p>
@@ -350,7 +374,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="yes">
         <choice correct="yes">
           <statement>
             <p>
@@ -389,7 +413,7 @@
 
           <feedback>
             <p>
-              Feedback 3
+              Your change has been committed and should appear in the log.
             </p>
           </feedback>
         </choice>
@@ -397,7 +421,7 @@
 
       <hint>
         <p>
-          The log shows the latest commits first.
+          Look carefully at the dates of the commits shown in the log.
         </p>
       </hint>
     </task>
@@ -406,7 +430,7 @@
     <task xml:id="ex-committing-changes-e" label="ex-committing-changes-e">
       <statement>
         <p>
-          Switch to your <c>main</c> branch.
+          Make <c>main</c> your active branch.
           What command did you use?
         </p>
       </statement>
@@ -472,7 +496,7 @@
 
       <hint>
         <p>
-          To change the active branch you need to switch to it.
+          You want to change from the current branch back to the <c>main</c> branch. 
         </p>
       </hint>
     </task>
@@ -481,7 +505,10 @@
     <task xml:id="ex-committing-changes-f" label="ex-committing-changes-f">
       <statement correct="no">
         <p>
-          The output of the <c>git log</c> command now shows the information about the commit you made.
+          Issue the <c>git log</c> command again now that you are on the <c>main</c> branch.
+        </p>
+        <p>
+          The output now shows information about the commit you made.
         </p>
       </statement>
 
@@ -501,7 +528,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="yes">
         <choice correct="yes">
           <statement>
             <p>

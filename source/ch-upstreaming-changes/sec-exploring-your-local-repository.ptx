@@ -282,7 +282,7 @@
       </statement>
 
 
-      <choices randomize="yes">
+      <choices randomize="no">
         <choice>
           <statement>
             <p>
@@ -297,19 +297,6 @@
           </feedback>
         </choice>
 
-        <choice correct="yes">
-          <statement>
-            <p>
-              None of those listed.
-            </p>
-          </statement>
-
-          <feedback>
-            <p>
-              Correct!
-            </p>
-          </feedback>
-        </choice>
 
         <choice>
           <statement>
@@ -335,6 +322,20 @@
           <feedback>
             <p>
               There is a more recent commit.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              None of those listed.
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Correct!
             </p>
           </feedback>
         </choice>
