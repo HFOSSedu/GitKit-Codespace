@@ -334,7 +334,7 @@
 
                         <feedback>
                             <p>
-                                The <c>git status</c> command causes <c>git</c> to display the status of the working tree.
+                                Correct!
                             </p>
                         </feedback>
                     </choice>
@@ -536,11 +536,6 @@
                         </p>
                     </statement>
 
-                    <feedback>
-                        <p>
-                            <c>user.name</c> should be set to the name you used above.
-                        </p>
-                    </feedback>
                 </choice>
 
                 <choice correct="yes">
@@ -550,11 +545,6 @@
                         </p>
                     </statement>
 
-                    <feedback>
-                        <p>
-                            <c>user.email</c> should be set to the email you used above.
-                        </p>
-                    </feedback>
                 </choice>
 
                 <choice correct="yes">
@@ -564,11 +554,6 @@
                         </p>
                     </statement>
 
-                    <feedback>
-                        <p>
-                            <c>core.editor</c> should be set to the nano editor.
-                        </p>
-                    </feedback>
                 </choice>
 
                 <choice>
@@ -578,11 +563,6 @@
                         </p>
                     </statement>
 
-                    <feedback>
-                        <p>
-                            <c>git.user</c> is not a setting.
-                        </p>
-                    </feedback>
                 </choice>
 
                 <choice>
@@ -592,11 +572,6 @@
                         </p>
                     </statement>
 
-                    <feedback>
-                        <p>
-                            <c>gitkit.class</c> is not a setting.
-                        </p>
-                    </feedback>
                 </choice>
             </choices>
         </exercise>

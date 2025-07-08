@@ -228,6 +228,12 @@
                 forked from
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
           </choice>
           <choice>
             <statement>
@@ -235,6 +241,12 @@
                 The Octokitty (GitHub) logo
               </p>
             </statement>
+                        
+            <feedback>
+              <p>
+                The text is next to the link to the upstream repository.
+              </p>
+            </feedback>
           </choice>
           <choice>
             <statement>
@@ -242,6 +254,12 @@
                 Fork your own copy of (in the Fork drop-down)
               </p>
             </statement>
+                        
+            <feedback>
+              <p>
+                The text is next to the link to the upstream repository.
+              </p>
+            </feedback>
           </choice>
         </choices>
         <hint>
@@ -267,6 +285,12 @@
                 Pull request
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
           </choice>
           <choice>
             <statement>
@@ -274,6 +298,12 @@
                 Fork
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                When forking you need to specify the location of your remote copy.
+              </p>
+              </feedback>
           </choice>
           <choice>
             <statement>
@@ -281,6 +311,12 @@
                 Clone
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Cloning requires you to specify only your remote repository.
+              </p>
+              </feedback>
           </choice>
           <choice>
             <statement>
@@ -288,6 +324,12 @@
                 Edit
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Editing affects only the local repository.
+              </p>
+              </feedback>
           </choice>
           <choice>
             <statement>
@@ -295,11 +337,17 @@
                 Push
               </p>
             </statement>
+
+            <feedback>
+              <p>
+                Pushing requires access to only one remote repository.
+              </p>
+              </feedback>
           </choice>
         </choices>
         <hint>
           <p>
-            Think about which step of the basic FOSS workflow needs to send information back to the main project.
+            Think about which step of the basic FOSS workflow needs to send information back to the upstream repository.
           </p>
         </hint>
       </task>
