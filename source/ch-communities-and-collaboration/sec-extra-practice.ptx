@@ -1,69 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section
-  xml:id="topic-extra-practice-communities"
-  xmlns:xi="http://www.w3.org/2001/XInclude"
-  >
+<section xml:id="topic-extra-practice-communities" xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Extra Practice</title>
 
   <introduction>
     <p>
-      There are literally millions of FOSS projects with repositories on GitHub that you can fork and clone and contribute to.  The exercises in this section will provide you with a little extra practice forking and cloning repositories.
+      There are literally millions of FOSS projects with repositories on GitHub that you can fork and clone and contribute to.
+      The exercises in this section will provide you with a little extra practice forking and cloning repositories.
     </p>
+
     <p>
       Choose one of the projects in <xref ref="table-foss-projects" /> or search <url href="https://github.com">GitHub</url> for one that sounds interesting to you and then complete the exercises below.
     </p>
+
     <p>
-      <table
-        xml:id="table-foss-projects">
-        <title>
-          Some FOSS Projects that can be used for extra practice with forking and cloning repositories.
-        </title>
+      <table xml:id="table-foss-projects">
+        <title> Some FOSS Projects that can be used for extra practice with forking and cloning repositories. </title>
+
         <tabular halign="left">
-          <col width="20%" />
-          <col />
+          <col width="20%" /> <col />
           <row header="yes" bottom="minor" >
             <cell>Project</cell>
             <cell>Community Mission</cell>
           </row>
+
           <row bottom="minor">
+            <cell> <url href="https://github.com/openmrs/openmrs-distro-referenceapplication">OpenMRS</url> </cell>
             <cell>
-              <url href="https://github.com/openmrs/openmrs-distro-referenceapplication">OpenMRS</url>
-            </cell>
-            <cell>
-              <p>
-                Aims to "Improve healthcare delivery in resource-constrained environments by coordinating a global community that creates and sustains a robust, scalable, user-driven and open-source medical record platform."
-              </p>
+            <p>
+              Aims to "Improve healthcare delivery in resource-constrained environments by coordinating a global community that creates and sustains a robust, scalable, user-driven and open-source medical record platform."
+            </p>
             </cell>
           </row>
+
           <row bottom="minor">
+            <cell> <url href="https://github.com/apache/fineract">Fineract</url> </cell>
             <cell>
-              <url href="https://github.com/apache/fineract">Fineract</url>
-            </cell>
-            <cell>
-              <p>
-                Aims to provide "a reliable, robust, and affordable core banking solution for financial institutions offering services to the world’s 3 billion underbanked and unbanked."
-              </p>
+            <p>
+              Aims to provide "a reliable, robust, and affordable core banking solution for financial institutions offering services to the world’s 3 billion underbanked and unbanked."
+            </p>
             </cell>
           </row>
+
           <row bottom="minor">
+            <cell> <url href="https://github.com/sahana/eden">Sahana Eden</url> </cell>
             <cell>
-              <url href="https://github.com/sahana/eden">Sahana Eden</url>
-            </cell>
-            <cell>
-              <p>
-                Aims to provide an "Open Source Humanitarian Platform which can be used to provide solutions for Disaster Management, Development, and Environmental Management sectors."
-              </p>
+            <p>
+              Aims to provide an "Open Source Humanitarian Platform which can be used to provide solutions for Disaster Management, Development, and Environmental Management sectors."
+            </p>
             </cell>
           </row>
+
           <row bottom="minor">
+            <cell> <url href="https://github.com/oppia/oppia">Oppia</url> </cell>
             <cell>
-              <url href="https://github.com/oppia/oppia">Oppia</url>
-            </cell>
-            <cell>
-              <p>
-                Aims to provide "A free, online learning platform to make quality education accessible for all."
-              </p>
+            <p>
+              Aims to provide "A free, online learning platform to make quality education accessible for all."
+            </p>
             </cell>
           </row>
         </tabular>
@@ -72,173 +65,146 @@
   </introduction>
 
   <exercises>
-    <title />
+  <title />
+  <exercise xml:id="ex-extra-practice-fork" label="ex-extra-practice-fork">
+    <statement>
+      <p>
+        Fork the repository for the project into your GitHub space.
+        Give the full URL of your fork.
+      </p>
 
-    <exercise
-      xml:id="ex-extra-practice-fork"
-      label="ex-extra-practice-fork">
-      <statement>
-        <p>
-          Fork the repository for the project into your GitHub space.  Give the full URL of your fork.
-        </p>
-        <p>
-          <var width="55" />
-        </p>
-      </statement>
-      <setup>
-        <var>
-          <condition string="^https://github\.com/(?!(openmrs/openmrs-distro-referenceapplication|apache/fineract|sahana/eden|oppia/oppia)).*$">
-            <feedback>
-              <p>
-                Thank you.
-              </p>
-            </feedback>
-          </condition>
-          <condition string=".*">
-            <feedback>
-              <p>
-                Please give the full URL of your fork on GitHub.
-              </p>
-            </feedback>
-          </condition>
-        </var>
-      </setup>
-      <hint>
-        <p>
-          Make sure you are giving the URL for your fork, not the project's upstream URL. Review <xref ref="topic-forking-the-upstream" text="type-global-title"/> for information on how to fork a repository on GitHub.
-        </p>
-      </hint>
-    </exercise>
+      <p>
+        <var width="55" />
+      </p>
+    </statement>
+    <setup> <var> <condition string="^https://github\.com/(?!(openmrs/openmrs-distro-referenceapplication|apache/fineract|sahana/eden|oppia/oppia)).*$">
+    <feedback>
+      <p>
+        Thank you.
+      </p>
+    </feedback>
+    </condition> <condition string=".*">
 
-    <exercise
-      xml:id="ex-extra-practice-clone"
-      label="ex-extra-practice-clone">
-           <statement>
-        <p>
-           Pick and order the commands to change to your home directory, clone your fork of the project you chose and check its remotes.        
-        </p>
-      </statement>
-      <blocks>
-        <block order="1">
-          <c>cd ~</c>
-        </block>
-        <block order="2">
-          <c>git clone &lt;URL&gt;</c>
-        </block>
-        <block order="3">
-          <c>cd &lt;dir&gt;</c>
-        </block>
-        <block order="4">
-          <c>git remote -v</c>
-        </block>
-        <block correct="no">
-          <c>ls</c>
-        </block>
-        <block correct="no">
-          <c>git config</c>
-        </block>
-        <block correct="no">
-          <c>copy &lt;URL&gt;</c>
-        </block>
-      </blocks>
-      <hint>
-        <p>
-          Review <xref ref="topic-cloning-your-origin" text="type-global-title"/> for information about how to clone your origin repository.
-        </p>
-      </hint>
-    </exercise>
+    <feedback>
+      <p>
+        Please give the full URL of your fork on GitHub.
+      </p>
+    </feedback>
+    </condition> </var> </setup>
 
-    <exercise
-      xml:id="ex-extra-practice-remotes"
-      label="ex-extra-practice-remotes">
-          <statement>
-            <p>
-              In your terminal enter the commands from <xref ref="ex-extra-practice-clone" />.
-            </p>
-            <p>
-              Which of the following do you see in the output of the <c>git remote -v</c> command?
-            </p>
-          </statement>
+    <hint>
+      <p>
+        Make sure you are giving the URL for your fork, not the project's upstream URL.
+        Review <xref ref="topic-forking-the-upstream" text="type-global-title"/> for information on how to fork a repository on GitHub.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise xml:id="ex-extra-practice-clone" label="ex-extra-practice-clone">
+    <statement>
+      <p>
+        Pick and order the commands to change to your home directory, clone your fork of the project you chose and check its remotes.
+      </p>
+    </statement>
+    <blocks> <block order="1"> <c>cd ~</c> </block> <block order="2"> <c>git clone &lt;URL&gt;</c> </block> <block order="3"> <c>cd &lt;dir&gt;</c> </block> <block order="4"> <c>git remote -v</c> </block> <block correct="no"> <c>ls</c> </block> <block correct="no"> <c>git config</c> </block> <block correct="no"> <c>copy &lt;URL&gt;</c> </block> </blocks>
+    <hint>
+      <p>
+        Review <xref ref="topic-cloning-your-origin" text="type-global-title"/> for information about how to clone your origin repository.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise xml:id="ex-extra-practice-remotes" label="ex-extra-practice-remotes">
+    <statement>
+      <p>
+        In your terminal enter the commands from <xref ref="ex-extra-practice-clone" />.
+      </p>
+
+      <p>
+        Which of the following do you see in the output of the <c>git remote -v</c> command?
+      </p>
+    </statement>
 
 
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              <c>origin</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
-            </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <c>origin</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
+        </statement>
 
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
-          </choice>
+        <feedback>
+          <p>
+            Correct!
+          </p>
+        </feedback>
+      </choice>
 
-          <choice correct="no">
-            <statement>
-              <c>origin</c> followed by the URL in <xref ref="table-foss-projects" />
-             </statement>
-                         
-            <feedback>
-              <p>
-                There are no named URLs in the table.
-              </p>
-            </feedback>
-          </choice>
+      <choice correct="no">
+        <statement>
+          <c>origin</c> followed by the URL in <xref ref="table-foss-projects" />
+        </statement>
 
-          <choice correct="no">
-            <statement>
-              <c>upstream</c> followed by the URL in <xref ref="table-foss-projects" />
-            </statement>
-                                     
-            <feedback>
-              <p>
-                There is no URL associated with "upstream".
-              </p>
-            </feedback>
-          </choice>
+        <feedback>
+          <p>
+            There are no named URLs in the table.
+          </p>
+        </feedback>
+      </choice>
 
-          <choice correct="no">
-            <statement>
-              <c>upstream</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
-            </statement>
-                                     
-            <feedback>
-              <p>
-                There is no URL associated with "upstream".
-              </p>
-            </feedback>
-          </choice>
+      <choice correct="no">
+        <statement>
+          <c>upstream</c> followed by the URL in <xref ref="table-foss-projects" />
+        </statement>
 
-         <choice correct="no">
-            <statement>
-              <c>fork</c> followed by the URL in <xref ref="table-foss-projects" />
-            </statement>
-                                     
-            <feedback>
-              <p>
-                There is no URL associated with "fork".
-              </p>
-            </feedback>
-          </choice>
+        <feedback>
+          <p>
+            There is no URL associated with "upstream".
+          </p>
+        </feedback>
+      </choice>
 
-          <choice correct="no">
-            <statement>
-              <c>fork</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
-            </statement>
-                                     
-            <feedback>
-              <p>
-                There is no URL associated with "fork".
-              </p>
-            </feedback>
-          </choice>
-          </choices>
-  <hint>
-    <p>
-      The origin URL should be the one from your git clone command.
-    </p>
-  </hint>
-</exercise>
+      <choice correct="no">
+        <statement>
+          <c>upstream</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
+        </statement>
+
+        <feedback>
+          <p>
+            There is no URL associated with "upstream".
+          </p>
+        </feedback>
+      </choice>
+
+      <choice correct="no">
+        <statement>
+          <c>fork</c> followed by the URL in <xref ref="table-foss-projects" />
+        </statement>
+
+        <feedback>
+          <p>
+            There is no URL associated with "fork".
+          </p>
+        </feedback>
+      </choice>
+
+      <choice correct="no">
+        <statement>
+          <c>fork</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
+        </statement>
+
+        <feedback>
+          <p>
+            There is no URL associated with "fork".
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+
+    <hint>
+      <p>
+        The origin URL should be the one from your git clone command.
+      </p>
+    </hint>
+  </exercise>
   </exercises>
 </section>

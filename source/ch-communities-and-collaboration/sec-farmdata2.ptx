@@ -64,6 +64,7 @@
         </p>
       </statement>
 
+
       <choices multiple-correct="yes" randomize="yes">
         <choice correct="yes">
           <statement>
@@ -112,6 +113,7 @@
           What type of farms does FarmData2 aim to support?
         </p>
       </statement>
+
 
       <choices randomize="yes">
         <choice correct="yes">
@@ -186,6 +188,7 @@
         </p>
       </statement>
 
+
       <choices randomize="yes">
         <choice correct="yes">
           <statement>
@@ -251,12 +254,14 @@
       </hint>
     </task>
 
+
     <task xml:id="ex-farmdata2-operations" label="ex-farmdata2-operations">
       <statement>
         <p>
           For which of the following types of operations does FarmData2 maintain records?
         </p>
       </statement>
+
 
       <choices multiple-correct="yes" randomize="yes">
         <choice correct="yes">
@@ -305,7 +310,6 @@
           Review the <em>Description</em> section of the <c>README.md</c>.
         </p>
       </hint>
-
     </task>
   </exercise>
   </exercises>
@@ -313,6 +317,7 @@
   <p>
     Note that the GitKit was created from an early version of FarmData2 and thus the code in this repository does not have all of the features described.
   </p>
+
   <p>
     Current development of FarmData2 is occurring in the <url href='https://github.com/FarmData2'>FarmData2 organization on GitHub</url>.
   </p>
