@@ -273,7 +273,7 @@
   <exercise xml:id="ex-pull-request-files" label="ex-pull-request-files">
     <statement>
       <p>
-        On your pull request page there will be “Files Changed” tab:
+        On your pull request page there will be a “Files Changed” tab:
       </p>
 
       <p>
@@ -286,7 +286,7 @@
 
       <p>
         Open that tab.
-        At the bottom of that page will be a diff that shows the changes that you have made.
+        At the bottom of that page will be a diff that shows the changes you have made.
         This diff shows both the upstream version of the code and your version of the code.
         It also indicates the changes you have made.
         The project maintainers will often use this diff to see the details of what you have changed.

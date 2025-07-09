@@ -79,17 +79,23 @@
     </feedback>
     </condition> </var> </setup>
   </exercise>
+
   <exercise xml:id="ex-locate-claimed-issue-b" label="ex-locate-claimed-issue-b">
     <statement>
       <p>
         Use a text editor to modify the file you identified in <xref ref="ex-locate-claimed-issue" /> so that the issue you claimed has been fixed.
       </p>
+
       <p>
-        Find the file in the <em>Explorer</em> pane to the left. This should show you the list of all the files and folders in the project. If you do not see the list of files and folders, click on the icon that looks like one sheet of paper on top of another.
+        Find the file in the <em>Explorer</em> pane to the left.
+        This should show you the list of all the files and folders in the project.
+        If you do not see the list of files and folders, click on the icon that looks like one sheet of paper on top of another.
       </p>
+
       <p>
         Open the file in the editor and make the changes in the issue you claimed.
       </p>
+
       <p>
         Your changes should be automatically saved.
       </p>
@@ -107,8 +113,10 @@
         <shortdescription>
           Editing local files on a feature branch.
         </shortdescription>
+
         <description>
-          <p>Diagram showing that the feature branch is the active branch while editing local files.
+          <p>
+            Diagram showing that the feature branch is the active branch while editing local files.
           </p>
         </description>
       </image>
@@ -147,7 +155,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="no">
         <choice>
           <statement>
             <p>
@@ -222,7 +230,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="no">
         <choice correct="yes">
           <statement>
             <p>

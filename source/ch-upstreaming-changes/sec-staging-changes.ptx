@@ -20,9 +20,10 @@
         <shortdescription>
           Staging Changes.
         </shortdescription>
+
         <description>
-          <p>Diagram showing that the git stage command results in change to the local
-            files being represented in the staging area in preparation for being committed.
+          <p>
+            Diagram showing that the git stage command results in change to the local files being represented in the staging area in preparation for being committed.
           </p>
         </description>
       </image>
@@ -33,218 +34,216 @@
   <title/>
   <introduction>
     <p>
-    The exercises in this section will walk you through staging the changes you made to your <em>Local Files</em>.
+      The exercises in this section will walk you through staging the changes you made to your <em>Local Files</em>.
     </p>
-      
+
     <p>
-    The <c>git stage &lt;file&gt;</c> command adds the indicated file to the stage, preparing it to become a part of the next commit.
+      The <c>git stage &lt;file&gt;</c> command adds the indicated file to the stage, preparing it to become a part of the next commit.
     </p>
   </introduction>
 
   <exercise xml:id="ex-staging-changes" label="ex-staging-changes">
     <statement>
-            <p>
+      <p>
         Write a <c>git stage &lt;file&gt;</c> command to stage the file that you edited.
       </p>
-              <p>
-          Enter the command you wrote below.
-        </p>
-        <p>
-          <var width="55" />
-        </p>
+
+      <p>
+        Enter the command you wrote below.
+      </p>
+
+      <p>
+        <var width="55" />
+      </p>
+    </statement>
+    <setup> <var> <condition string="^git stage (CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
+    <feedback>
+      <p>
+        Thank you.
+      </p>
+    </feedback>
+    </condition> <condition string="^git stage (?!(CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)).*">
+
+    <feedback>
+      <p>
+        Are you sure that is the file that the issue asked you to edit?
+      </p>
+    </feedback>
+    </condition> <condition string=".*">
+
+    <feedback>
+      <p>
+        Check the format of your <c>git stage</c> command.
+      </p>
+    </feedback>
+    </condition> </var> </setup>
+
+    <hint>
+      <p>
+        Check your issue again to see which file you should have edited.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise xml:id="ex-staging-changes-b" label="ex-staging-changes-b">
+    <statement>
+      <p>
+        Now run the <c>git status</c> command again.
+        Paste the output of the <c>git status</c> command below.
+      </p>
+    </statement>
+    <response />
+  </exercise>
+
+  <exercise xml:id="ex-staging-changes-c" label="ex-staging-changes-c">
+    <statement>
+      <p>
+        Compare your output in <xref ref="ex-staging-changes-b" /> to the output in <xref ref="ex-verify-changes-new-a" />.
+      </p>
+
+      <p>
+        How many files are not staged?
+      </p>
+    </statement>
+
+
+    <choices randomize="no">
+      <choice correct="yes">
+        <statement>
+          <p>
+            0
+          </p>
         </statement>
-          <setup>
-        <var>
-          <condition string="^git stage (CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
-            <feedback>
-              <p>
-                Thank you.
-              </p>
-            </feedback>
-          </condition>
-          <condition string="^git stage (?!(CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)).*">
-            <feedback>
-              <p>
-                Are you sure that is the file that the issue asked you to edit?
-              </p>
-            </feedback>
-          </condition>
-          <condition string=".*">
-            <feedback>
-              <p>
-                Check the format of your <c>git stage</c> command.
-              </p>
-            </feedback>
-          </condition>
-        </var>
-      </setup>
-      <hint>
-        <p>
-          Check your issue again to see which file you should have edited.
-        </p>
-      </hint>
-    </exercise>
 
-    <exercise xml:id="ex-staging-changes-b" label="ex-staging-changes-b">
-      <statement>
-        <p>
-          Now run the <c>git status</c> command again.
-          Paste the output of the <c>git status</c> command below.
-        </p>
-      </statement>
-      <response />
-    </exercise>
+        <feedback>
+          <p>
+            Correct! After issuing the <c>git stage</c> command the file will be staged.
+          </p>
+        </feedback>
+      </choice>
 
-    <exercise xml:id="ex-staging-changes-c" label="ex-staging-changes-c">
-      <statement>
-        <p>
-          Compare your output in <xref ref="ex-staging-changes-b" /> to the output in <xref ref="ex-verify-changes-new-a" />.
-        </p>
+      <choice>
+        <statement>
+          <p>
+            1
+          </p>
+        </statement>
 
-        <p>
-          How many files are not staged?
-        </p>
-      </statement>
+        <feedback>
+          <p>
+            Did you change more than 1 file by accident? Verify that you only changed the file specified in your issue.
+          </p>
+        </feedback>
+      </choice>
 
+      <choice>
+        <statement>
+          <p>
+            2
+          </p>
+        </statement>
 
-      <choices>
-        <choice correct="yes">
-          <statement>
-            <p>
-              0
-            </p>
-          </statement>
+        <feedback>
+          <p>
+            Did you change more than 1 file by accident? Verify that you only changed the file specified in your issue.
+          </p>
+        </feedback>
+      </choice>
 
-          <feedback>
-            <p>
-              Correct! After issuing the <c>git stage</c> command the file will be staged.
-            </p>
-          </feedback>
-        </choice>
+      <choice>
+        <statement>
+          <p>
+            Cannot be determined from the output provided by the <c>git status</c> command.
+          </p>
+        </statement>
 
-        <choice>
-          <statement>
-            <p>
-              1
-            </p>
-          </statement>
+        <feedback>
+          <p>
+            The <c>git status</c> command will show you all unstaged and staged files.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
 
-          <feedback>
-            <p>
-              Did you change more than 1 file by accident? Verify that you only changed the file specified in your issue.
-            </p>
-          </feedback>
-        </choice>
+    <hint>
+      <p>
+        Staged means a file has been modified and will be added to the commit.
+      </p>
+    </hint>
+  </exercise>
 
-        <choice>
-          <statement>
-            <p>
-              2
-            </p>
-          </statement>
-
-          <feedback>
-            <p>
-              Did you change more than 1 file by accident? Verify that you only changed the file specified in your issue.
-            </p>
-          </feedback>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              Cannot be determined from the output provided by the <c>git status</c> command.
-            </p>
-          </statement>
-
-          <feedback>
-            <p>
-              The <c>git status</c> command will show you all unstaged and staged files.
-            </p>
-          </feedback>
-        </choice>
-      </choices>
-
-      <hint>
-        <p>
-          Staged means a file has been modified and will be added to the commit.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise xml:id="ex-staging-changes-d" label="ex-staging-changes-d">
-      <statement>
-        <p>
-          How many files are listed as ready to be committed?
-        </p>
-      </statement>
+  <exercise xml:id="ex-staging-changes-d" label="ex-staging-changes-d">
+    <statement>
+      <p>
+        How many files are listed as ready to be committed?
+      </p>
+    </statement>
 
 
-      <choices>
-        <choice>
-          <statement>
-            <p>
-              0
-            </p>
-          </statement>
+    <choices randomize="no">
+      <choice>
+        <statement>
+          <p>
+            0
+          </p>
+        </statement>
 
-          <feedback>
-            <p>
-              If you issued the <c>git stage</c> command properly the file you changed should appear as ready to be committed.
-            </p>
-          </feedback>
-        </choice>
+        <feedback>
+          <p>
+            If you issued the <c>git stage</c> command properly the file you changed should appear as ready to be committed.
+          </p>
+        </feedback>
+      </choice>
 
-        <choice correct="yes">
-          <statement>
-            <p>
-              1
-            </p>
-          </statement>
+      <choice correct="yes">
+        <statement>
+          <p>
+            1
+          </p>
+        </statement>
 
-          <feedback>
-            <p>
-              Correct! After issuing the <c>git stage</c> (or <c>git add</c>) command the file will be staged.
-            </p>
-          </feedback>
-        </choice>
+        <feedback>
+          <p>
+            Correct! After issuing the <c>git stage</c> (or <c>git add</c>) command the file will be staged.
+          </p>
+        </feedback>
+      </choice>
 
-        <choice>
-          <statement>
-            <p>
-              2
-            </p>
-          </statement>
+      <choice>
+        <statement>
+          <p>
+            2
+          </p>
+        </statement>
 
-          <feedback>
-            <p>
-              Did you change more than 1 file by accident? Verify that you only changed the file specified in your issue.
-            </p>
-          </feedback>
-        </choice>
+        <feedback>
+          <p>
+            Did you change more than 1 file by accident? Verify that you only changed the file specified in your issue.
+          </p>
+        </feedback>
+      </choice>
 
-        <choice>
-          <statement>
-            <p>
-              Cannot be determined from the output provided by the <c>git status</c> command.
-            </p>
-          </statement>
+      <choice>
+        <statement>
+          <p>
+            Cannot be determined from the output provided by the <c>git status</c> command.
+          </p>
+        </statement>
 
-          <feedback>
-            <p>
-              The <c>git status</c> command will show you all unstaged and staged files.
-            </p>
-          </feedback>
-        </choice>
-      </choices>
+        <feedback>
+          <p>
+            The <c>git status</c> command will show you all unstaged and staged files.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
 
-      <hint>
-        <p>
-          Staged means a file has been modified and will be added to the commit.
-        </p>
-      </hint>
-    </exercise>
-
+    <hint>
+      <p>
+        Staged means a file has been modified and will be added to the commit.
+      </p>
+    </hint>
+  </exercise>
 
   <exercise xml:id="ex-staging-changes-diff" label="ex-staging-changes-diff">
     <statement>
@@ -255,7 +254,7 @@
     </statement>
 
 
-    <choices>
+    <choices randomize="yes">
       <choice correct="yes">
         <statement>
           <p>
