@@ -130,7 +130,7 @@
 
       <hint>
         <p>
-          Look at which commits are in upstream <c>main</c> branch that are not in the contributors' <c>main</c> branches.
+          Look at which commits are in the upstream <c>main</c> branch that are not in the contributors' <c>main</c> branches.
         </p>
       </hint>
     </task>
@@ -219,7 +219,7 @@
 
       <hint>
         <p>
-          Look for a commit in your local repository that might contain changes that could conflict with the changes in the dark blue commit.
+          Look for a commit in your local repository that contains changes that will conflict with the changes in the dark blue commit.
         </p>
       </hint>
     </task>
@@ -367,7 +367,7 @@
     </block> <block name="merge" depends="branch">
 
     <p>
-      Changes were merged into upstream main.
+      The maintainer merged changes into upstream main.
     </p>
     </block> <block name="fix" depends="branch">
 

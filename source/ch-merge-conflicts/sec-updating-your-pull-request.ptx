@@ -307,7 +307,7 @@
 
       <hint>
         <p>
-          Make sure you have fixed the conflict, pushed your updated branch, and the pull request has been updated.
+          Make sure you have fixed the conflict, pushed your updated branch, and that the pull request has been updated.
         </p>
       </hint>
     </task>
