@@ -1,580 +1,577 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="topic-development-environment" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <title>Your Development Environment</title>
+  <title>Your Development Environment</title>
 
-    <introduction xml:id="topic-dev-env-intro">
-        <p>
-            You have been assigned an <term>issue</term> to work on and you have created a <term>fork</term> of the <term>upstream</term> GitKit FarmData2 repository into your GitHub space.
-        </p>
+  <introduction xml:id="topic-dev-env-intro">
+    <p>
+      You have been assigned an <term>issue</term> to work on and you have created a <term>fork</term> of the <term>upstream</term> GitKit FarmData2 repository into your GitHub space.
+    </p>
 
-        <p>
-            To work on your issue you will need to setup a <term>development environment</term>.
-            The development environment is where you will create your <term>clone</term> of the repository, where you will edit files, and where you will use Git commands to add your changes to your clone and <term>push</term> those changes to your <term>origin</term>.
-        </p>
+    <p>
+      To work on your issue you will need to setup a <term>development environment</term>.
+      The development environment is where you will create your <term>clone</term> of the repository, where you will edit files, and where you will use Git commands to add your changes to your clone and <term>push</term> those changes to your <term>origin</term>.
+    </p>
 
-        <p>
-            Many FOSS contributors will setup the development environment on their personal machines.
-            However, because student machines vary greatly the GitKit provides a browser-based development environment that you will access using your web browser.
-            This development environment is guaranteed to be the same for everyone that uses it.
-            It includes a code editor, development tools, and a few features designed specifically to help you stay on track when completing the GitKit's hands-on exercises.
-        </p>
+    <p>
+      Many FOSS contributors will setup the development environment on their personal machines.
+      However, because student machines vary greatly the GitKit provides a browser-based development environment that you will access using your web browser.
+      This development environment is guaranteed to be the same for everyone that uses it.
+      It includes a code editor, development tools, and a few features designed specifically to help you stay on track when completing the GitKit's hands-on exercises.
+    </p>
 
-        <p>
-            In this section you will create a new development environment, learn how to stop and restart the development environment, and do some necessary configuration of Git.
-        </p>
+    <p>
+      In this section you will create a new development environment, learn how to stop and restart the development environment, and do some necessary configuration of Git.
+    </p>
+  </introduction>
+
+
+  <subsection xml:id="topic-create-devenv" label="topic-create-devenv">
+    <title>Creating the Development Environment</title>
+
+    <introduction>
+      <p>
+        The development environment will run in the cloud using a service called <term>GitHub Codespaces</term>, and you will access it using your web browser.
+      </p>
     </introduction>
 
+    <exercises>
+    <exercise xml:id="ex-create-devenv" label="ex-create-devenv">
+      <introduction>
+        <p>
+          The following tasks will guide you through the process of creating the development environment.
+        </p>
+      </introduction>
 
-    <subsection xml:id="topic-create-devenv" label="topic-create-devenv">
-        <title>Creating the Development Environment</title>
 
-        <introduction>
-            <p>
-                The development environment will run in the cloud using a service called <term>GitHub Codespaces</term>, and you will access it using your web browser.
-            </p>
-        </introduction>
+      <task xml:id="ex-github-login" label="ex-github-login">
+        <statement>
+          <p>
+            Ensure that you are logged into the GitHub account that you listed in <xref ref="ex-github-account-url" />.
+          </p>
+        </statement>
+      </task>
 
-        <exercises>
-        <exercise xml:id="ex-create-devenv" label="ex-create-devenv">
-            <introduction>
+
+      <task xml:id="ex-create-codespace" label="ex-create-codespace">
+        <statement>
+          <p>
+            Click this link to <url href="https://codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1" visual="codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1">create the Development Environment</url>.
+          </p>
+        </statement>
+      </task>
+
+
+      <task xml:id="ex-create-codespace-button" label="ex-create-codespace-button">
+        <statement>
+          <p>
+            Click the "Create new codespace" button on the page that appears.
+          </p>
+        </statement>
+      </task>
+
+
+      <task xml:id="ex-paste-pat-prompt" label="ex-paste-pat-prompt">
+        <statement>
+          <p>
+            Wait for the development environment to be created.
+            Your browser window will refresh and change a few times during the creation process.
+            Please be patient as this can take a few minutes.
+          </p>
+
+          <p>
+            After a few minutes, your browser window will look similar to <xref ref="fig-devenv-pat-prompt" /> including the prompt asking you to paste your GitHub Personal Access Token (PAT).
+          </p>
+
+          <figure xml:id="fig-devenv-pat-prompt"               label="fig-devenv-pat-prompt">
+            <caption> The GitKit development environment prompting for a GitHub PAT during creation. </caption>
+            <image source="images/ch-communities-and-collaboration/DevEnv-Request-PAT.png" width="75%">
+              <shortdescription>
+                The GitKit Development Environment prompting for a GitHub PAT during creation.
+              </shortdescription>
+            </image>
+          </figure>
+
+          <p>
+            If you do not see the prompt asking you to paste your PAT after a few minutes try:
+            <ul>
+              <li>
                 <p>
-                    The following tasks will guide you through the process of creating the development environment.
+                  Reloading your browser tab.
                 </p>
-            </introduction>
+              </li>
 
-
-            <task xml:id="ex-github-login" label="ex-github-login">
-                <statement>
-                    <p>
-                        Ensure that you are logged into the GitHub account that you listed in <xref ref="ex-github-account-url" />.
-                    </p>
-                </statement>
-            </task>
-
-
-            <task xml:id="ex-create-codespace" label="ex-create-codespace">
-                <statement>
-                    <p>
-                        Click this link to <url href="https://codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1" visual="codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1">create the Development Environment</url>.
-                    </p>
-                </statement>
-            </task>
-
-
-            <task xml:id="ex-create-codespace-button" label="ex-create-codespace-button">
-                <statement>
-                    <p>
-                        Click the "Create new codespace" button on the page that appears.
-                    </p>
-                </statement>
-            </task>
-
-
-            <task xml:id="ex-paste-pat-prompt" label="ex-paste-pat-prompt">
-                <statement>
-                    <p>
-                        Wait for the development environment to be created.
-                        Your browser window will refresh and change a few times during the creation process.
-                        Please be patient as this can take a few minutes.
-                    </p>
-
-                    <p>
-                        After a few minutes, your browser window will look similar to <xref ref="fig-devenv-pat-prompt" /> including the prompt asking you to paste your GitHub Personal Access Token (PAT).
-                    </p>
-
-                    <figure xml:id="fig-devenv-pat-prompt"               label="fig-devenv-pat-prompt">
-                        <caption> The GitKit development environment prompting for a GitHub PAT during creation. </caption>
-                        <image source="images/ch-communities-and-collaboration/DevEnv-Request-PAT.png" width="75%">
-                            <shortdescription>
-                                The GitKit Development Environment prompting for a GitHub PAT during creation.
-                            </shortdescription>
-                        </image>
-                    </figure>
-
-                    <p>
-                        If you do not see the prompt asking you to paste your PAT after a few minutes try:
-                        <ul>
-                            <li>
-                                <p>
-                                    Reloading your browser tab.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p>
-                                    Clearing your browser cache and reloading your browser tab.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p>
-                                    Checking that your browser is <url href="https://docs.github.com/en/get-started/using-github/supported-browsers">fully supported by Codespaces</url>.
-                                </p>
-                            </li>
-                        </ul>
-                    </p>
-                </statement>
-            </task>
-
-
-            <task xml:id="ex-paste-pat" label="ex-paste-pat">
-                <statement>
-                    <p>
-                        Paste the PAT that you created in <xref ref="topic-github-pat" text="type-global-title"/> and press enter.
-                        Note, for security reasons your PAT is not displayed when it is pasted.
-                    </p>
-
-                    <p>
-                        If you have lost or did not save your PAT, revisit <xref ref="topic-github-pat" text="type-global-title"/> and create a new one.
-                    </p>
-                </statement>
-            </task>
-
-
-            <task xml:id="ex-devenv-ready" label="ex-devenv-ready">
-                <statement>
-                    <p>
-                        After pasting your PAT, the development environment will finish being created.
-                        When the development environment is fully created your browser window will look similar to <xref ref="fig-devenv-ready-blank" /> including the "Kit development environment is ready for use" message.
-                    </p>
-
-                    <figure xml:id="fig-devenv-ready-blank"               label="fig-devenv-ready-blank">
-                        <caption> The GitKit development environment with the "Kit development environment is ready for use" message. </caption>
-                        <image source="images/ch-communities-and-collaboration/DevEnv-Blank-Ready.png" width="75%">
-                            <shortdescription>
-                                The GitKit Development Environment with the "Kit development environment is ready for use" message.
-                            </shortdescription>
-                            <description>
-                                The GitKit Development Environment.
-                                The development environment is ready when you see the "Kit development environment is ready for use" message.
-                            </description>
-                        </image>
-                    </figure>
-                </statement>
-            </task>
-        </exercise>
-        </exercises>
-    </subsection>
-
-
-    <subsection>
-        <title>Stopping the Development Environment</title>
-
-        <introduction>
-            <p>
-                At some point you will complete an assignment or want to take a break and do other things.
-                When you do so, you should stop the development environment.
-                This will ensure that you do not consume more of your free Codespaces time than necessary.
-            </p>
-        </introduction>
-
-        <exercises>
-        <title />
-        <exercise xml:id="ex-stopping-devenv" label="ex-stopping-devenv">
-            <introduction>
+              <li>
                 <p>
-                    Use the following steps to practice stopping the development environment.
+                  Clearing your browser cache and reloading your browser tab.
                 </p>
-            </introduction>
+              </li>
 
-
-            <task xml:id="ex-stopping-devenv-a" label="ex-stopping-devenv-a">
-                <statement>
-                    <p>
-                        Click on the word "Codespaces" in the bottom left of the browser window.
-                    </p>
-                </statement>
-            </task>
-
-
-            <task xml:id="ex-stopping-devenv-b" label="ex-stopping-devenv-b">
-                <statement>
-                    <p>
-                        Select "Stop Current Codespace" from the  menu that appears in the top center of the browser window.
-                    </p>
-                </statement>
-            </task>
-
-
-            <task xml:id="ex-stopping-devenv-c" label="ex-stopping-devenv-c">
-                <statement>
-                    <p>
-                        Close the browser tab containing the development environment.
-                    </p>
-                </statement>
-            </task>
-        </exercise>
-        </exercises>
-    </subsection>
-
-
-    <subsection xml:id="topic-restarting-dev-env">
-        <title>Re-starting the Development Environment</title>
-
-        <introduction>
-            <p>
-                When you return to work after stopping the development environment, you will need to restart it.
-            </p>
-        </introduction>
-
-        <exercises>
-        <title />
-        <exercise xml:id="ex-restarting-devenv" label="ex-restarting-devenv">
-            <introduction>
+              <li>
                 <p>
-                    Use the following steps to restart the development environment.
+                  Checking that your browser is <url href="https://docs.github.com/en/get-started/using-github/supported-browsers">fully supported by Codespaces</url>.
                 </p>
-            </introduction>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </task>
 
 
-            <task xml:id="ex-restart-devenv-link" label="ex-restart-devenv-link">
-                <statement>
-                    <p>
-                        Click here to <url href="https://codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1" visual="codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1">open your development environment</url>.
-                    </p>
-                </statement>
-            </task>
+      <task xml:id="ex-paste-pat" label="ex-paste-pat">
+        <statement>
+          <p>
+            Paste the PAT that you created in <xref ref="topic-github-pat" text="type-global-title"/> and press enter.
+            Note, for security reasons your PAT is not displayed when it is pasted.
+          </p>
+
+          <p>
+            If you have lost or did not save your PAT, revisit <xref ref="topic-github-pat" text="type-global-title"/> and create a new one.
+          </p>
+        </statement>
+      </task>
 
 
-            <task xml:id="ex-resume-codespace" label="ex-resume-codespace">
-                <statement>
-                    <p>
-                        Click the "Resume this codespace" button.
-                    </p>
+      <task xml:id="ex-devenv-ready" label="ex-devenv-ready">
+        <statement>
+          <p>
+            After pasting your PAT, the development environment will finish being created.
+            When the development environment is fully created your browser window will look similar to <xref ref="fig-devenv-ready-blank" /> including the "Kit development environment is ready for use" message.
+          </p>
 
-                    <p>
-                        Do not click the "Create a new one" button because a new development environment will not contain any of your prior work.
-                    </p>
-                </statement>
-            </task>
+          <figure xml:id="fig-devenv-ready-blank"               label="fig-devenv-ready-blank">
+            <caption> The GitKit development environment with the "Kit development environment is ready for use" message. </caption>
+            <image source="images/ch-communities-and-collaboration/DevEnv-Blank-Ready.png" width="75%">
+              <shortdescription>
+                The GitKit Development Environment with the "Kit development environment is ready for use" message.
+              </shortdescription>
 
-
-            <task xml:id="ex-wait-for-codespace" label="ex-wait-for-codespace">
-                <statement>
-                    <p>
-                        Please be patient as this can take a few minutes.
-                        When the development environment is ready you will see the message "Kit development environment is ready for use" and your browser window will look similar to <xref ref="fig-devenv-blank-ready" />.
-                    </p>
-
-                    <figure xml:id="fig-devenv-blank-ready"               label="fig-devenv-blank-ready">
-                        <caption> The GitKit Development Environment. The development environment is ready when you see the "Kit development environment is ready for use" message. </caption>
-                        <image source="images/ch-communities-and-collaboration/DevEnv-Blank-Ready.png" width="75%">
-                            <shortdescription>
-                                GitKit Development Environment showing the "Kit development environment is ready for use" message.
-                            </shortdescription>
-                            <description>
-                                The GitKit Development Environment.
-                                The development environment is ready when you see the "Kit development environment is ready for use" message.
-                            </description>
-                        </image>
-                    </figure>
-                </statement>
-            </task>
-        </exercise>
-        </exercises>
-    </subsection>
+              <description>
+                The GitKit Development Environment.
+                The development environment is ready when you see the "Kit development environment is ready for use" message.
+              </description>
+            </image>
+          </figure>
+        </statement>
+      </task>
+    </exercise>
+    </exercises>
+  </subsection>
 
 
-    <subsection xml:id="topic-git-client" label="topic-git-client">
-        <title>The Git Client</title>
+  <subsection>
+    <title>Stopping the Development Environment</title>
 
-        <introduction>
-            <p>
-                Your development environment includes a <term>Git client</term>.
-                The Git client is the tool that you will use to interact with Git repositories, such as the GitKit FarmData2 repository.
-            </p>
+    <introduction>
+      <p>
+        At some point you will complete an assignment or want to take a break and do other things.
+        When you do so, you should stop the development environment.
+        This will ensure that you do not consume more of your free Codespaces time than necessary.
+      </p>
+    </introduction>
 
-            <p>
-                There are lots of different Git clients.
-                Some are graphical and some use a text interface.
-                These exercises, introduce you to Git using the text-based Git <term>command line interface (CLI)</term>.
-                This is the most general way to interact with Git and will provide a conceptual foundation for using any other Git client that you might encounter.
-            </p>
-        </introduction>
-
-        <exercises>
-        <title />
-        <exercise xml:id="ex-git-version" label="ex-git-version">
-            <introduction>
-                <p>
-                    The Git CLI is accessed by using the <c>git</c> command in the terminal.
-                </p>
-            </introduction>
+    <exercises>
+    <title />
+    <exercise xml:id="ex-stopping-devenv" label="ex-stopping-devenv">
+      <introduction>
+        <p>
+          Use the following steps to practice stopping the development environment.
+        </p>
+      </introduction>
 
 
-            <task xml:id="ex-git-version-a" label="ex-git-version-a">
-                <statement>
-                    <p>
-                        Using the <c>git</c> command without any additional arguments displays information about how to use <c>git</c>.
-                    </p>
-
-                    <p>
-                        Enter the command <c>git</c> into the terminal in the development environment and press enter.
-                    </p>
-                </statement>
-            </task>
+      <task xml:id="ex-stopping-devenv-a" label="ex-stopping-devenv-a">
+        <statement>
+          <p>
+            Click on the word "Codespaces" in the bottom left of the browser window.
+          </p>
+        </statement>
+      </task>
 
 
-            <task xml:id="ex-git-version-b" label="ex-git-version-b">
-                <statement>
-                    <p>
-                        Use the output from the <c>git</c> command in <xref ref="ex-git-version-a" /> to determine which of the following commands will cause, <c>git</c> to "Show the working tree status."
-                    </p>
-                </statement>
+      <task xml:id="ex-stopping-devenv-b" label="ex-stopping-devenv-b">
+        <statement>
+          <p>
+            Select "Stop Current Codespace" from the  menu that appears in the top center of the browser window.
+          </p>
+        </statement>
+      </task>
 
 
-                <choices randomize="yes">
-                    <choice correct="yes">
-                        <statement>
-                            <p>
-                                <c>git status</c>
-                            </p>
-                        </statement>
-
-                        <feedback>
-                            <p>
-                                Correct!
-                            </p>
-                        </feedback>
-                    </choice>
-
-                    <choice>
-                        <statement>
-                            <p>
-                                <c>git tree</c>
-                            </p>
-                        </statement>
-
-                        <feedback>
-                            <p>
-                                Check the output of the <c>git</c> command.
-                            </p>
-                        </feedback>
-                    </choice>
-
-                    <choice>
-                        <statement>
-                            <p>
-                                <c>git working-tree</c>
-                            </p>
-                        </statement>
-
-                        <feedback>
-                            <p>
-                                Check the output of the <c>git</c> command.
-                            </p>
-                        </feedback>
-                    </choice>
-
-                    <choice>
-                        <statement>
-                            <p>
-                                <c>git show</c>
-                            </p>
-                        </statement>
-
-                        <feedback>
-                            <p>
-                                Check the output of the <c>git</c> command.
-                            </p>
-                        </feedback>
-                    </choice>
-                </choices>
-
-                <hint>
-                    <p>
-                        Check the output of the <c>git</c> command for the command that will "Show the working tree status."
-                    </p>
-                </hint>
-            </task>
-        </exercise>
-        </exercises>
-    </subsection>
+      <task xml:id="ex-stopping-devenv-c" label="ex-stopping-devenv-c">
+        <statement>
+          <p>
+            Close the browser tab containing the development environment.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+    </exercises>
+  </subsection>
 
 
-    <subsection xml:id="topic-git-configuration" label="topic-git-configuration">
-        <title>Configuring the Git Client</title>
+  <subsection xml:id="topic-restarting-dev-env">
+    <title>Re-starting the Development Environment</title>
 
-        <introduction>
-            <p>
-                Git repositories maintain a complete history of all changes, including who made each change.
-                To do this, Git needs to know a little bit of information about you.
-            </p>
+    <introduction>
+      <p>
+        When you return to work after stopping the development environment, you will need to restart it.
+      </p>
+    </introduction>
 
-            <p>
-                Git identifies the author of each change using two pieces of information: A <term>name</term> and an <term>email</term>.
-                For name, you might decide to use your full name, or a nickname, or your GitHub username.
-                Just keep in mind that whatever name you use will be associated with all of the changes you make.
-                For email, you can use any valid e-mail associated with you.
-            </p>
+    <exercises>
+    <title />
+    <exercise xml:id="ex-restarting-devenv" label="ex-restarting-devenv">
+      <introduction>
+        <p>
+          Use the following steps to restart the development environment.
+        </p>
+      </introduction>
 
-            <p>
-                The exercises in this section will guide you through the process of configuring your name and email in the Git client in the development environment.
-            </p>
-        </introduction>
 
-        <exercises>
-        <title/>
-        <exercise xml:id="ex-git-config-name" label="ex-git-config-name">
+      <task xml:id="ex-restart-devenv-link" label="ex-restart-devenv-link">
+        <statement>
+          <p>
+            Click here to <url href="https://codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1" visual="codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1">open your development environment</url>.
+          </p>
+        </statement>
+      </task>
+
+
+      <task xml:id="ex-resume-codespace" label="ex-resume-codespace">
+        <statement>
+          <p>
+            Click the "Resume this codespace" button.
+          </p>
+
+          <p>
+            Do not click the "Create a new one" button because a new development environment will not contain any of your prior work.
+          </p>
+        </statement>
+      </task>
+
+
+      <task xml:id="ex-wait-for-codespace" label="ex-wait-for-codespace">
+        <statement>
+          <p>
+            Please be patient as this can take a few minutes.
+            When the development environment is ready you will see the message "Kit development environment is ready for use" and your browser window will look similar to <xref ref="fig-devenv-blank-ready" />.
+          </p>
+
+          <figure xml:id="fig-devenv-blank-ready"               label="fig-devenv-blank-ready">
+            <caption> The GitKit Development Environment. The development environment is ready when you see the "Kit development environment is ready for use" message. </caption>
+            <image source="images/ch-communities-and-collaboration/DevEnv-Blank-Ready.png" width="75%">
+              <shortdescription>
+                GitKit Development Environment showing the "Kit development environment is ready for use" message.
+              </shortdescription>
+
+              <description>
+                The GitKit Development Environment.
+                The development environment is ready when you see the "Kit development environment is ready for use" message.
+              </description>
+            </image>
+          </figure>
+        </statement>
+      </task>
+    </exercise>
+    </exercises>
+  </subsection>
+
+
+  <subsection xml:id="topic-git-client" label="topic-git-client">
+    <title>The Git Client</title>
+
+    <introduction>
+      <p>
+        Your development environment includes a <term>Git client</term>.
+        The Git client is the tool that you will use to interact with Git repositories, such as the GitKit FarmData2 repository.
+      </p>
+
+      <p>
+        There are lots of different Git clients.
+        Some are graphical and some use a text interface.
+        These exercises, introduce you to Git using the text-based Git <term>command line interface (CLI)</term>.
+        This is the most general way to interact with Git and will provide a conceptual foundation for using any other Git client that you might encounter.
+      </p>
+    </introduction>
+
+    <exercises>
+    <title />
+    <exercise xml:id="ex-git-version" label="ex-git-version">
+      <introduction>
+        <p>
+          The Git CLI is accessed by using the <c>git</c> command in the terminal.
+        </p>
+      </introduction>
+
+
+      <task xml:id="ex-git-version-a" label="ex-git-version-a">
+        <statement>
+          <p>
+            Using the <c>git</c> command without any additional arguments displays information about how to use <c>git</c>.
+          </p>
+
+          <p>
+            Enter the command <c>git</c> into the terminal in the development environment and press enter.
+          </p>
+        </statement>
+      </task>
+
+
+      <task xml:id="ex-git-version-b" label="ex-git-version-b">
+        <statement>
+          <p>
+            Use the output from the <c>git</c> command in <xref ref="ex-git-version-a" /> to determine which of the following commands will cause, <c>git</c> to "Show the working tree status."
+          </p>
+        </statement>
+
+
+        <choices randomize="yes">
+          <choice correct="yes">
             <statement>
-                <p>
-                    The <c>git config --global user.name "&lt;name&gt;"</c> command sets the name that Git will associate with your changes.
-                    Throughout this book, &lt; &gt; will be used to indicate a part of a git command that you must enter.
-                    For example, if you want your name to appear as Jane D.
-                    the command would be <c>git config --global user.name "Jane D."</c>.
-                </p>
-
-                <p>
-                    Give a command that will set the name you want to have associated with your changes by replacing <c>&lt;name&gt;</c> with the name you wish to use.
-                </p>
-
-                <p>
-                    <var width="50" />
-                </p>
-            </statement>
-            <setup> <var> <condition string='^git config --global user\.name "[^&lt;].+[^&gt;]"$'>
-            <feedback>
-                <p>
-                    This command will set the name associated with your changes in git.
-                </p>
-            </feedback>
-            </condition> <condition string='^git config --global user\.name ["]*&lt;.+&gt;["]*$'>
-
-            <feedback>
-                <p>
-                    You should not include the &lt; and &gt; in your command.
-                </p>
-            </feedback>
-            </condition> <condition string='^git config --global user\.name [^"].+[^"]$'>
-
-            <feedback>
-                <p>
-                    Be sure to use quotation marks around your name.
-                </p>
-            </feedback>
-            </condition> <condition string=".*">
-
-            <feedback>
-                <p>
-                    Reread the question and check the format of your command.
-                </p>
-            </feedback>
-            </condition> </var> </setup>
-        </exercise>
-
-        <exercise xml:id="ex-git-config-email" label="ex-git-config-email">
-            <statement>
-                <p>
-                    The <c>git config --global user.email "&lt;email&gt;"</c> command sets the email address that Git will associate with your changes.
-                    For example, if your email is janed@gmail.com the command would be <c>git config --global user.email "janed@gmail.com"</c>.
-                </p>
-
-                <p>
-                    Give a command that will set the email you want to have associated with your changes by replacing <c>&lt;email&gt;</c> with the email address you wish to use.
-                </p>
-
-                <p>
-                    <var width="50" />
-                </p>
-            </statement>
-            <setup> <var> <condition string='^git config --global user\.email "[^&lt;].+@.+[^&gt;]"$'>
-            <feedback>
-                <p>
-                    This command will set the email associated with your changes in git.
-                </p>
-            </feedback>
-            </condition> <condition string='^git config --global user\.email "[^&lt;][^@]+[^&gt;]"$'>
-
-            <feedback>
-                <p>
-                    Be sure you have entered a valid email address.
-                </p>
-            </feedback>
-            </condition> <condition string='^git config --global user\.email ["]*&lt;.+&gt;["]*$'>
-
-            <feedback>
-                <p>
-                    You should not include the &lt; and &gt; in your command.
-                </p>
-            </feedback>
-            </condition> <condition string='^git config --global user\.email [^"].+[^"]$'>
-
-            <feedback>
-                <p>
-                    Be sure to use quotation marks around your email.
-                </p>
-            </feedback>
-            </condition> <condition string=".*">
-
-            <feedback>
-                <p>
-                    Reread the question and check the format of your command.
-                </p>
-            </feedback>
-            </condition> </var> </setup>
-        </exercise>
-
-        <exercise xml:id="ex-configure-git" label="ex-configure-git">
-            <statement>
-                <p>
-                    Enter your commands from <xref ref="ex-git-config-name" /> and <xref ref="ex-git-config-email" /> into the Terminal.
-                </p>
-
-                <p>
-                    Then use the command <c>git config --global --list</c> to display the Git configuration.
-                    Examine the output and select all of the Git configuration keys that have values assigned to them.
-                </p>
+              <p>
+                <c>git status</c>
+              </p>
             </statement>
 
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice>
 
-            <choices randomize="yes">
-                <choice correct="yes">
-                    <statement>
-                        <p>
-                            <c>user.name</c>
-                        </p>
-                    </statement>
+          <choice>
+            <statement>
+              <p>
+                <c>git tree</c>
+              </p>
+            </statement>
 
-                </choice>
+            <feedback>
+              <p>
+                Check the output of the <c>git</c> command.
+              </p>
+            </feedback>
+          </choice>
 
-                <choice correct="yes">
-                    <statement>
-                        <p>
-                            <c>user.email</c>
-                        </p>
-                    </statement>
+          <choice>
+            <statement>
+              <p>
+                <c>git working-tree</c>
+              </p>
+            </statement>
 
-                </choice>
+            <feedback>
+              <p>
+                Check the output of the <c>git</c> command.
+              </p>
+            </feedback>
+          </choice>
 
-                <choice correct="yes">
-                    <statement>
-                        <p>
-                            <c>core.editor</c>
-                        </p>
-                    </statement>
+          <choice>
+            <statement>
+              <p>
+                <c>git show</c>
+              </p>
+            </statement>
 
-                </choice>
+            <feedback>
+              <p>
+                Check the output of the <c>git</c> command.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
 
-                <choice>
-                    <statement>
-                        <p>
-                            <c>git.user</c>
-                        </p>
-                    </statement>
+        <hint>
+          <p>
+            Check the output of the <c>git</c> command for the command that will "Show the working tree status."
+          </p>
+        </hint>
+      </task>
+    </exercise>
+    </exercises>
+  </subsection>
 
-                </choice>
 
-                <choice>
-                    <statement>
-                        <p>
-                            <c>gitkit.class</c>
-                        </p>
-                    </statement>
+  <subsection xml:id="topic-git-configuration" label="topic-git-configuration">
+    <title>Configuring the Git Client</title>
 
-                </choice>
-            </choices>
-        </exercise>
-        </exercises>
-    </subsection>
+    <introduction>
+      <p>
+        Git repositories maintain a complete history of all changes, including who made each change.
+        To do this, Git needs to know a little bit of information about you.
+      </p>
+
+      <p>
+        Git identifies the author of each change using two pieces of information: A <term>name</term> and an <term>email</term>.
+        For name, you might decide to use your full name, or a nickname, or your GitHub username.
+        Just keep in mind that whatever name you use will be associated with all of the changes you make.
+        For email, you can use any valid e-mail associated with you.
+      </p>
+
+      <p>
+        The exercises in this section will guide you through the process of configuring your name and email in the Git client in the development environment.
+      </p>
+    </introduction>
+
+    <exercises>
+    <title/>
+    <exercise xml:id="ex-git-config-name" label="ex-git-config-name">
+      <statement>
+        <p>
+          The <c>git config --global user.name "&lt;name&gt;"</c> command sets the name that Git will associate with your changes.
+          Throughout this book, &lt; &gt; will be used to indicate a part of a git command that you must enter.
+          For example, if you want your name to appear as Jane D.
+          the command would be <c>git config --global user.name "Jane D."</c>.
+        </p>
+
+        <p>
+          Give a command that will set the name you want to have associated with your changes by replacing <c>&lt;name&gt;</c> with the name you wish to use.
+        </p>
+
+        <p>
+          <var width="50" />
+        </p>
+      </statement>
+      <setup> <var> <condition string='^git config --global user\.name "[^&lt;].+[^&gt;]"$'>
+      <feedback>
+        <p>
+          This command will set the name associated with your changes in git.
+        </p>
+      </feedback>
+      </condition> <condition string='^git config --global user\.name ["]*&lt;.+&gt;["]*$'>
+
+      <feedback>
+        <p>
+          You should not include the &lt; and &gt; in your command.
+        </p>
+      </feedback>
+      </condition> <condition string='^git config --global user\.name [^"].+[^"]$'>
+
+      <feedback>
+        <p>
+          Be sure to use quotation marks around your name.
+        </p>
+      </feedback>
+      </condition> <condition string=".*">
+
+      <feedback>
+        <p>
+          Reread the question and check the format of your command.
+        </p>
+      </feedback>
+      </condition> </var> </setup>
+    </exercise>
+
+    <exercise xml:id="ex-git-config-email" label="ex-git-config-email">
+      <statement>
+        <p>
+          The <c>git config --global user.email "&lt;email&gt;"</c> command sets the email address that Git will associate with your changes.
+          For example, if your email is janed@gmail.com the command would be <c>git config --global user.email "janed@gmail.com"</c>.
+        </p>
+
+        <p>
+          Give a command that will set the email you want to have associated with your changes by replacing <c>&lt;email&gt;</c> with the email address you wish to use.
+        </p>
+
+        <p>
+          <var width="50" />
+        </p>
+      </statement>
+      <setup> <var> <condition string='^git config --global user\.email "[^&lt;].+@.+[^&gt;]"$'>
+      <feedback>
+        <p>
+          This command will set the email associated with your changes in git.
+        </p>
+      </feedback>
+      </condition> <condition string='^git config --global user\.email "[^&lt;][^@]+[^&gt;]"$'>
+
+      <feedback>
+        <p>
+          Be sure you have entered a valid email address.
+        </p>
+      </feedback>
+      </condition> <condition string='^git config --global user\.email ["]*&lt;.+&gt;["]*$'>
+
+      <feedback>
+        <p>
+          You should not include the &lt; and &gt; in your command.
+        </p>
+      </feedback>
+      </condition> <condition string='^git config --global user\.email [^"].+[^"]$'>
+
+      <feedback>
+        <p>
+          Be sure to use quotation marks around your email.
+        </p>
+      </feedback>
+      </condition> <condition string=".*">
+
+      <feedback>
+        <p>
+          Reread the question and check the format of your command.
+        </p>
+      </feedback>
+      </condition> </var> </setup>
+    </exercise>
+
+    <exercise xml:id="ex-configure-git" label="ex-configure-git">
+      <statement>
+        <p>
+          Enter your commands from <xref ref="ex-git-config-name" /> and <xref ref="ex-git-config-email" /> into the Terminal.
+        </p>
+
+        <p>
+          Then use the command <c>git config --global --list</c> to display the Git configuration.
+          Examine the output and select all of the Git configuration keys that have values assigned to them.
+        </p>
+      </statement>
+
+
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              <c>user.name</c>
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              <c>user.email</c>
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              <c>core.editor</c>
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              <c>git.user</c>
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              <c>gitkit.class</c>
+            </p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
+    </exercises>
+  </subsection>
 </section>
