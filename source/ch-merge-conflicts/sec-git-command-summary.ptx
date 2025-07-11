@@ -48,7 +48,7 @@
         <matches> 
           <match>
             <premise><c>git merge &lt;source&gt; </c></premise> 
-            <response>Add changes to source branch into the active branch</response> 
+            <response>Add changes from source branch into the active branch</response> 
           </match> 
           <match>
             <premise><c>git stage &lt;file&gt;</c></premise> 

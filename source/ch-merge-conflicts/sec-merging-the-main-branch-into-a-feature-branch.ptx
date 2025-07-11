@@ -285,22 +285,7 @@
         </statement>
 
 
-        <choices>
-          <choice correct="yes">
-            <statement>
-              <p>
-                The terminal displays a message indicating "Automatic merge failed; fix conflicts and then commit the result."
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                Correct! Because there is a merge conflict between the <c>main</c> branch and your feature branch, this is what we expect.
-                Continue to the next exercise.
-              </p>
-            </feedback>
-          </choice>
-
+        <choices randomize="no">
           <choice>
             <statement>
               <p>
@@ -329,6 +314,21 @@
                     Then try your <c>merge</c> command again.
                   </li>
                 </ol>
+              </p>
+            </feedback>
+          </choice>
+
+          <choice correct="yes">
+            <statement>
+              <p>
+                The terminal displays a message indicating "Automatic merge failed; fix conflicts and then commit the result."
+              </p>
+            </statement>
+
+            <feedback>
+              <p>
+                Correct! Because there is a merge conflict between the <c>main</c> branch and your feature branch, this is what we expect.
+                Continue to the next exercise.
               </p>
             </feedback>
           </choice>
@@ -364,7 +364,7 @@
         </statement>
 
 
-        <choices>
+        <choices randomize="yes">
           <choice correct="yes">
             <statement>
               <p>

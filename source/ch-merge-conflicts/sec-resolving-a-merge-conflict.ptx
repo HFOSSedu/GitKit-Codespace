@@ -149,7 +149,7 @@
         </p>
 
         <p>
-          Choose the description below that best describes what happened?
+          Choose the description below that best describes what happened.
         </p>
       </statement>
 
@@ -179,7 +179,7 @@
           <feedback>
             <p>
               If only the changes from the <c>main</c> branch remain you chose the wrong option.
-              If you clicked "Accept Current Change" double check the editor contents.
+              <!--If you clicked "Accept Current Change" double check the editor contents.-->
             </p>
           </feedback>
         </choice>
@@ -381,7 +381,7 @@
 
             <feedback>
               <p>
-                Close.
+                You are close.
                 Check the output again.
                 What does the --undo flag do?
               </p>
