@@ -69,9 +69,9 @@
   <subsection xml:id="topic-github-pat">
     <title>GitHub Personal Access Token</title>
 
-        <p>
-            When starting your development environment for the first time (in <xref ref="topic-development-environment" text="type-global-title"/>) you will be asked to enter a <term>Personal Access Token (PAT)</term> from GitHub.
-        </p>
+    <p>
+      When starting your development environment for the first time (in <xref ref="topic-development-environment" text="type-global-title"/>) you will be asked to enter a <term>Personal Access Token (PAT)</term> from GitHub.
+    </p>
 
     <p>
       A PAT is like a password but has some security benefits.
@@ -103,7 +103,7 @@
         </statement>
 
 
-        <choices>
+        <choices randomize="no">
           <choice correct="yes">
             <statement>
               <p>
@@ -141,6 +141,7 @@
             What are the first 4 characters of your GitHub PAT?
           </p>
         </statement>
+
 
         <choices randomize="yes">
           <choice>
@@ -187,9 +188,11 @@
             </feedback>
           </choice>
         </choices>
+
         <hint>
           <p>
-            Be sure you selected "classic" token both times when prompted. If necessary create a new PAT.
+            Be sure you selected "classic" token both times when prompted.
+            If necessary create a new PAT.
           </p>
         </hint>
       </task>

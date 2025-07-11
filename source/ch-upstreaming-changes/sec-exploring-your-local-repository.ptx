@@ -27,10 +27,11 @@
           <shortdescription>
             Cloud image of fork, clone, and local files.
           </shortdescription>
+
           <description>
-            <p>Diagram showing that the main branch in the upstream, fork, local repositories
-              all have the same sequence of commits. The local main branch is active and the
-              local files match the most recent commit on the main branch.
+            <p>
+              Diagram showing that the main branch in the upstream, fork, local repositories all have the same sequence of commits.
+              The local main branch is active and the local files match the most recent commit on the main branch.
             </p>
           </description>
         </image>
@@ -53,14 +54,14 @@
       <p>
         Click here to <url href="https://codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1" visual="codespaces.new/HFOSSedu/KitClient-Codespace?quickstart=1">open your development environment</url>.
         Please be patient as this can take a few minutes.
-        When the development environment is ready you will see the message "Kit development environment is ready for use." and your browser window will look similar to the following: 
-        <image source="images/shared-images/DevEnv-Kitty-Ready.png" width="75%">
-          <shortdescription>
-            Image of the GitKit Development Environment showing the ready for use message.
-          </shortdescription>
-          <description>
-            The GitKit Development Environment.
-            The development environment is ready when you see the "Kit development environment is ready for use" message.
+        When the development environment is ready you will see the message "Kit development environment is ready for use." and your browser window will look similar to the following: <image source="images/shared-images/DevEnv-Kitty-Ready.png" width="75%">
+        <shortdescription>
+          Image of the GitKit Development Environment showing the ready for use message.
+        </shortdescription>
+
+        <description>
+          The GitKit Development Environment.
+          The development environment is ready when you see the "Kit development environment is ready for use" message.
         </description>
       </image>
     </p>
@@ -281,7 +282,7 @@
       </statement>
 
 
-      <choices randomize="yes">
+      <choices randomize="no">
         <choice>
           <statement>
             <p>
@@ -296,19 +297,6 @@
           </feedback>
         </choice>
 
-        <choice correct="yes">
-          <statement>
-            <p>
-              None of those listed.
-            </p>
-          </statement>
-
-          <feedback>
-            <p>
-              Correct! The most recent commit is always shown first in the list.
-            </p>
-          </feedback>
-        </choice>
 
         <choice>
           <statement>
@@ -334,6 +322,20 @@
           <feedback>
             <p>
               There is a more recent commit.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              None of those listed.
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -365,7 +367,7 @@
 
           <feedback>
             <p>
-              Correct! Bates2001 authored a commit on October 11, 2021.
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -426,6 +428,7 @@
         <p>
           What is the purpose of the most recent commit by Elad Sheskin?
         </p>
+
         <p>
           (You may need to use <c>git log</c> again to show more commits than you did in <xref ref="ex-understanding-project-history-new-aa" />)
         </p>
@@ -442,7 +445,7 @@
 
           <feedback>
             <p>
-              Correct! shes-dev made this commit on October 5, 2021.
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -546,7 +549,7 @@
 
           <feedback>
             <p>
-              Correct! The first line specifies the current branch.
+              Correct!
             </p>
           </feedback>
         </choice>

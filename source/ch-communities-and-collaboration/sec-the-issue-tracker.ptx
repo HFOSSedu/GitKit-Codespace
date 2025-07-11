@@ -138,7 +138,6 @@
         </hint>
       </task>
 
-
       <task xml:id="ex-explore-the-issue-tracker-b" label="ex-explore-the-issue-tracker-b" >
         <statement>
           <p>
@@ -237,6 +236,7 @@
             <statement>
               ONBOARDING.md
             </statement>
+
             <feedback>
               <p>
                 Correct!
@@ -260,7 +260,7 @@
             <statement>
               CONTRIBUTING.md
             </statement>
-                        
+
             <feedback>
               <p>
                 Be sure you are looking at issue #11.
@@ -272,7 +272,7 @@
             <statement>
               LICENSE.md
             </statement>
-                        
+
             <feedback>
               <p>
                 Be sure you are looking at issue #11.
@@ -287,7 +287,6 @@
           </p>
         </hint>
       </task>
-
 
       <task xml:id="ex-explore-the-issue-tracker-d" label="ex-explore-the-issue-tracker-d" >
         <statement>
@@ -344,7 +343,8 @@
 
         <hint>
           <p>
-            Find the sort drop-down (which will be headed either "Newest" or "Oldest" depending on how it was last set) in the issue tracker and see what sort by options are available. Answers are not an exact match.
+            Find the sort drop-down (which will be headed either "Newest" or "Oldest" depending on how it was last set) in the issue tracker and see what sort by options are available.
+            Answers are not an exact match.
           </p>
         </hint>
       </task>
@@ -416,10 +416,11 @@
           <statement>
             The issue no longer appears in the issue tracker.
           </statement>
-                    
+
           <feedback>
             <p>
-              A list of issues should appear. Be sure you are looking at the issue tracker for FarmData2.
+              A list of issues should appear.
+              Be sure you are looking at the issue tracker for FarmData2.
             </p>
           </feedback>
         </choice>
@@ -428,7 +429,7 @@
           <statement>
             The username of the assigned user appears next to the issue title.
           </statement>
-                    
+
           <feedback>
             <p>
               The username does not appear next to the title.
@@ -440,10 +441,11 @@
           <statement>
             The issue is moved to a separate list of assigned issues.
           </statement>
-                    
+
           <feedback>
             <p>
-              There is no separate list. Make sure there are no filters set.
+              There is no separate list.
+              Make sure there are no filters set.
             </p>
           </feedback>
         </choice>
@@ -452,7 +454,7 @@
           <statement>
             The issue tracker does not show any indication that an issue has been assigned.
           </statement>
-                    
+
           <feedback>
             <p>
               Make sure you are looking to the right of the title.
@@ -597,7 +599,6 @@
         </p>
       </feedback>
 
-
       <choices randomize="yes">
         <choice correct="yes">
           <statement>
@@ -605,7 +606,6 @@
               To prevent wasting effort by having two developers work on the same issue.
             </p>
           </statement>
-
         </choice>
 
         <choice>
@@ -614,7 +614,6 @@
               Allow a developer to "hold on" to an issue, even if they are not currently working on it.
             </p>
           </statement>
-
         </choice>
 
         <choice correct="yes">
@@ -623,7 +622,6 @@
               To plan in advance who will be working each issue.
             </p>
           </statement>
-
         </choice>
       </choices>
 

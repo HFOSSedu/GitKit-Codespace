@@ -45,7 +45,7 @@
     </statement>
 
 
-    <choices>
+    <choices randomize="no">
       <choice>
         <statement>
           <p>
@@ -63,7 +63,7 @@
       <choice>
         <statement>
           <p>
-            1 - <em>feature branch</em> that you created in <xref ref="ex-creating-a-branch-b"/>
+            1 - the <em>feature branch</em> that you created in <xref ref="ex-creating-a-branch-b"/>
           </p>
         </statement>
 
@@ -77,13 +77,13 @@
       <choice correct="yes">
         <statement>
           <p>
-            2 - <c>main</c> and <em>feature branch</em> that you created in <xref ref="ex-creating-a-branch-b"/>
+            2 - <c>main</c> and the <em>feature branch</em> that you created in <xref ref="ex-creating-a-branch-b"/>
           </p>
         </statement>
 
         <feedback>
           <p>
-            Correct! Your local repository will have both the <c>main</c> branch and your <em>feature branch</em>.
+            Correct!
           </p>
         </feedback>
       </choice>
@@ -126,7 +126,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="no">
         <choice correct="yes">
           <statement>
             <p>
@@ -136,7 +136,7 @@
 
           <feedback>
             <p>
-              Correct! There is only 1 branch, <c>main</c> in your origin repository on GitHub.
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -144,7 +144,7 @@
         <choice>
           <statement>
             <p>
-              1 - <em>feature branch</em> that you created in <xref ref="ex-creating-a-branch-b"/>
+              1 - the <em>feature branch</em> that you created in <xref ref="ex-creating-a-branch-b"/>
             </p>
           </statement>
 
@@ -158,7 +158,7 @@
         <choice>
           <statement>
             <p>
-              2 - <c>main</c> and <em>feature branch</em> that you created in <xref ref="ex-creating-a-branch-b"/>
+              2 - <c>main</c> and the <em>feature branch</em> that you created in <xref ref="ex-creating-a-branch-b"/>
             </p>
           </statement>
 
@@ -202,7 +202,7 @@
       </statement>
 
 
-      <choices>
+      <choices randomize="yes">
         <choice correct="yes">
           <statement>
             <p>
@@ -226,7 +226,7 @@
 
           <feedback>
             <p>
-              Your branch is in your local repository, not the origin repository.
+              Your branch is in your local repository.
             </p>
           </feedback>
         </choice>
@@ -299,7 +299,7 @@
     </statement>
 
 
-    <choices>
+    <choices randomize="yes">
       <choice correct="yes">
         <statement>
           <p>
@@ -309,7 +309,7 @@
 
         <feedback>
           <p>
-            Correct!
+            <!--Correct!-->
           </p>
         </feedback>
       </choice>
@@ -323,7 +323,7 @@
 
         <feedback>
           <p>
-            Correct!
+            <!--Correct!-->
           </p>
         </feedback>
       </choice>
@@ -337,7 +337,7 @@
 
         <feedback>
           <p>
-            Your local repository does not have a URL, it is on your local machine.
+            <!--Your local repository does not have a URL, it is on your local machine.-->
           </p>
         </feedback>
       </choice>
@@ -351,7 +351,7 @@
 
         <feedback>
           <p>
-            This shows the name of the branch, not a URL.
+            <!--This shows the name of the branch, not a URL.-->
           </p>
         </feedback>
       </choice>
@@ -361,7 +361,7 @@
       <p>
         There are several lines of output that mention deltas.
         Ignore these.
-        Make sure you are looking at the last two lines - the first of which begin with <em>To</em> and the second of which begins with a hexademical code.
+        Make sure you are looking at the last two lines - the first of which begins with <em>To</em> and the second of which begins with a hexademical code.
       </p>
     </hint>
   </exercise>
@@ -378,7 +378,7 @@
     </statement>
 
 
-    <choices>
+    <choices randomize="yes">
       <choice correct="yes">
         <statement>
           <p>
@@ -388,7 +388,7 @@
 
         <feedback>
           <p>
-            Correct! The number of branches should have increased.
+            <!--Correct! The number of branches should have increased.-->
           </p>
         </feedback>
       </choice>
@@ -402,7 +402,7 @@
 
         <feedback>
           <p>
-            Correct! You should be able to see both branches on this page.
+            <!--Correct! You should be able to see both branches on this page.-->
           </p>
         </feedback>
       </choice>
@@ -416,7 +416,7 @@
 
         <feedback>
           <p>
-            Pushing a branch will not create an issues.
+            <!--Pushing a branch will not create an issues.-->
           </p>
         </feedback>
       </choice>
@@ -430,7 +430,7 @@
 
         <feedback>
           <p>
-            Pushing a branch will not create a pull request.
+            <!--Pushing a branch will not create a pull request.-->
           </p>
         </feedback>
       </choice>

@@ -20,8 +20,11 @@
           <shortdescription>
             Cloud image of origin, upstream, and local branches, with a new local branch.
           </shortdescription>
+
           <description>
-            <p>The new local branch is created from the active local branch. The new branch is not made active.
+            <p>
+              The new local branch is created from the active local branch.
+              The new branch is not made active.
             </p>
           </description>
         </image>
@@ -49,7 +52,6 @@
           If you want to create a new feature branch named <em>fixTypoInReadme</em>, which command should you use?
         </p>
       </statement>
-
 
       <choices randomize="yes">
         <choice correct="yes">
@@ -169,7 +171,7 @@
           <feedback>
             <p>
               Your branch was not created.
-              Make sure your branch name does not contain spaces and &lt; &gt;
+              Make sure your branch name does not contain spaces and that you did not include &lt; &gt;.
             </p>
           </feedback>
         </choice>
@@ -209,11 +211,8 @@
       <statement>
         <p>
           Type <c>git branch</c> and look at the output produced.
-          Assuming the branch you created was named <em>fixTypoInReadme</em>,
-          which of the following do you see listed? 
+          Assuming the branch you created was named <em>fixTypoInReadme</em>, which of the following do you see listed?
         </p>
-
-          
       </statement>
 
 
@@ -224,12 +223,13 @@
               <c>* main</c>
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               Correct!
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice correct="yes">
@@ -238,12 +238,13 @@
               <c>fixTypoInReadme</c>
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               Correct!
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice>
@@ -252,12 +253,13 @@
               <c>git</c>
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               <c>git</c> is a command and should not be your branch name
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice>
@@ -266,12 +268,13 @@
               <c>&lt;fixTypoInReadme&gt;</c>
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               The branch name should not have &lt; &gt;.
             </p>
           </feedback>
+          -->
         </choice>
       </choices>
 
@@ -299,12 +302,13 @@
               It will have an * before the branch name.
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               Correct!
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice correct="yes">
@@ -313,12 +317,13 @@
               The branch name will appear in green.
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               Correct!
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice>
@@ -327,12 +332,13 @@
               The branch name will appear in italics.
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               Look at the output provided in the terminal window again.
             </p>
           </feedback>
+          -->
         </choice>
 
         <choice>
@@ -341,12 +347,13 @@
               The branch name will appear in bold.
             </p>
           </statement>
-
+          <!--
           <feedback>
             <p>
               Look at the output provided in the terminal window again.
             </p>
           </feedback>
+          -->
         </choice>
       </choices>
 
