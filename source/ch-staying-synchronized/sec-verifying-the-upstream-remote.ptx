@@ -107,7 +107,7 @@
               </statement>
               <feedback>
                 <p>
-                  Correct! The origin is your fork that is contained in your GitHub space.
+                  Correct!
                 </p>
               </feedback>
             </choice>
@@ -146,7 +146,7 @@
               </statement>
               <feedback>
                 <p>
-                  The repository that your instructor create is serving as the upstream repository.
+                  Correct!
                 </p>
               </feedback>
             </choice>
@@ -158,7 +158,7 @@
               </statement>
               <feedback>
                 <p>
-                  Correct! The origin is your fork that is contained in your GitHub space.
+                  The origin is your fork that is contained in your GitHub space.
                 </p>
               </feedback>
             </choice>
@@ -205,7 +205,7 @@
             </statement>
             <feedback>
               <p>
-                Correct.
+                Correct!
               </p>
             </feedback>
           </choice>
@@ -241,7 +241,7 @@
             </statement>
             <feedback>
               <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                The blue cylinder at the top left represents the origin remote repository.
               </p>
             </feedback>
           </choice>
@@ -253,14 +253,14 @@
             </statement>
             <feedback>
               <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                The blue cylinder at the top right represents the upstream remote repository.
               </p>
             </feedback>
           </choice>
         </choices>
         <hint>
           <p>
-            Look at the diagram again. The origin Git remote will be associated with your local repo and will indicate where the origin repository is located.
+            Look at the diagram again. The origin Git remote will be associated with your local repository and will indicate where the origin repository is located.
           </p>
         </hint>
       </task>
@@ -268,7 +268,7 @@
       <task xml:id="ex-upstream-in-figure" label="ex-upstream-in-figure">
         <statement>
           <p>
-            How is the upstream Git remote represented associated with your local repo represented in the figure?
+            How is the upstream Git remote that is associated with your local repo represented in the figure?
           </p>
         </statement>
         <choices randomize="yes">
@@ -280,7 +280,7 @@
             </statement>
             <feedback>
               <p>
-                Correct.
+                Correct!
               </p>
             </feedback>
           </choice>
@@ -316,7 +316,7 @@
             </statement>
             <feedback>
               <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                The blue cylinder at the top left represents the origin remote repository.
               </p>
             </feedback>
           </choice>
@@ -328,7 +328,7 @@
             </statement>
             <feedback>
               <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                The blue cylinder at the top right represents the upstream remote repository.
               </p>
             </feedback>
           </choice>

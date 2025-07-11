@@ -280,7 +280,6 @@
       </p>
     </statement>
 
-
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
@@ -359,64 +358,6 @@
       </p>
     </hint>
   </task>
-  <!--
-  <task xml:id="ex-upstream-ref-from-origin-c" label="ex-upstream-ref-from-origin-c" >
-    <statement>
-      <p>
-        Why does your origin repository keep track of the location of the upstream repository from which it was forked?
-      </p>
-    </statement>
-
-
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>
-            So that you can make a pull request back to the original project.
-          </p>
-        </statement>
-      </choice>
-
-      <choice correct="yes">
-        <statement>
-          <p>
-            So that you can get back to the original project to access the issue tracker.
-          </p>
-        </statement>
-      </choice>
-
-      <choice>
-        <statement>
-          <p>
-            So that you can clone the project again.
-          </p>
-        </statement>
-      </choice>
-
-      <choice correct ="yes">
-        <statement>
-          <p>
-            So that you can pull changes provided by other contributors.
-          </p>
-        </statement>
-      </choice>
-
-      <choice>
-        <statement>
-          <p>
-            So that you can push changes back to the original project.
-          </p>
-        </statement>
-      </choice>
-    </choices>
-
-    <hint>
-      <p>
-        Think about which steps of the basic FOSS workflow need access back to the main project.
-      </p>
-    </hint>
-  </task>
-  -->
 </exercise>
 
 <exercise xml:id="ex-no-issue-tracker-in-fork" label="ex-no-issue-tracker-in-fork">

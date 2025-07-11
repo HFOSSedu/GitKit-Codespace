@@ -110,6 +110,7 @@
                   <c>main</c> an * next to it.
                 </p>
               </statement>
+
             </choice>
             <choice correct="yes">
               <statement>
@@ -117,6 +118,7 @@
                   <c>main</c> appears in green.
                 </p>
               </statement>
+
             </choice>
             <choice>
               <statement>
@@ -379,7 +381,7 @@
             <choice correct="yes">
               <statement>
                 <p>
-                  [deleted]   &lt;branch&gt;
+                  [deleted] &lt;branch&gt;
                 </p>
               </statement>
               <feedback>

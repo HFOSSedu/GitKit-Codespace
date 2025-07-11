@@ -138,7 +138,6 @@
         </hint>
       </task>
 
-
       <task xml:id="ex-explore-the-issue-tracker-b" label="ex-explore-the-issue-tracker-b" >
         <statement>
           <p>
@@ -157,6 +156,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="yes">
@@ -167,6 +167,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="yes">
@@ -177,6 +178,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="no">
@@ -187,6 +189,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="no">
@@ -197,6 +200,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
 
           <choice correct="no">
@@ -207,6 +211,7 @@
                 </shortdescription>
               </image>
             </statement>
+
           </choice>
         </choices>
 
@@ -283,7 +288,6 @@
         </hint>
       </task>
 
-
       <task xml:id="ex-explore-the-issue-tracker-d" label="ex-explore-the-issue-tracker-d" >
         <statement>
           <p>
@@ -297,37 +301,44 @@
             <statement>
               Newest
             </statement>
+
           </choice>
 
           <choice correct="yes">
             <statement>
               Oldest
             </statement>
+
           </choice>
 
           <choice correct="yes">
             <statement>
               Most recently updated
             </statement>
+
           </choice>
 
           <choice correct="yes">
             <statement>
               Has the greatest number of comments
             </statement>
+
           </choice>
 
           <choice correct="no">
             <statement>
               Most difficult
             </statement>
+
           </choice>
 
           <choice correct="no">
             <statement>
               Highest priority
             </statement>
+
           </choice>
+
         </choices>
 
         <hint>
@@ -587,7 +598,6 @@
           You can do it! Try again!
         </p>
       </feedback>
-
 
       <choices randomize="yes">
         <choice correct="yes">

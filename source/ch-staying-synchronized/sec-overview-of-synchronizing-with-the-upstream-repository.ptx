@@ -95,7 +95,7 @@
           </statement>
           <feedback>
             <p>
-              Correct. Pulling from the upstream copies the changes that have been merged into upstream into your local repository.
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -135,7 +135,7 @@
 
           <feedback>
             <p>
-              Correct. Pushing to your origin will copy changes from your local repository to your origin repository.
+              Correct!
             </p>
           </feedback>
         </choice>
@@ -171,7 +171,7 @@
           </statement>
           <feedback>
             <p>
-              Correct. Pulling from the upstream copies changes that have been merged into the upstream to your local repository.
+              Pulling from the upstream copies changes that have been merged into the upstream to your local repository.
             </p>
           </feedback>
         </choice>
