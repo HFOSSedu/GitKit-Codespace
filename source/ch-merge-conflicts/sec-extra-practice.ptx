@@ -289,7 +289,7 @@
 
 
       <choices randomize="no">
-        <choice correct="yes">
+        <choice>
           <statement>
             <p>
               1
@@ -298,12 +298,12 @@
 
           <feedback>
             <p>
-              Correct!
+               Check the hint.
             </p>
           </feedback>
         </choice>
 
-        <choice>
+        <choice correct="yes">
           <statement>
             <p>
               2
@@ -312,7 +312,7 @@
 
           <feedback>
             <p>
-              Check the hint.
+              Correct!
             </p>
           </feedback>
         </choice>
