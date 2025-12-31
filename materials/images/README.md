@@ -6,12 +6,22 @@ Images are created and edited using [draw.io](https://www.drawio.com/).
 
 ## Structure
 
-The source (draw.io) images are stored in subdirectorys of "materials/images".  
-- There is a subdirectory for each chapter in "materials/images".
-- Each chapter's subdirectory contains a "text" and a "slides" subdirectory.
-  - The images that appear in the text are contained in the "text" subdirectory.
-  - The images that appear in the slides are contained in the "slides" subdirectory.
+The source (draw.io) images are stored in subdirectorys of "`materials/images`".  
+- There is a subdirectory for each chapter in "`materials/images`".
+- Each chapter's subdirectory contains a "`text`" and a "`slides`" subdirectory.
+  - The images that appear in the text are contained in the "`text`" subdirectory.
+  - The images that appear in the slides are contained in the "`slides`" subdirectory.
   - Images that appear in both are stored in both locations.
+
+## The `BaseDiagram`
+
+The "`materails/images` subdirectory contains the `BaseDiagram.drwawio` file.
+  - This file contains an image with all or nearly all of the elements necessary to produce all fo the Git/GitHub diagrams.
+    - Additional diagrams are created by removing, editing, adapting elements of this diagram.
+  - This diagram is sized to match the size of the current images in the slides and text.
+    - The size is set by placing a small invisible sqaure element in each corner of the diagram.
+    - This enusres that when the images are exported they retain the proper size.
+    - It may be necessary to adapt this size for some diagrams that are smaller or larger.
 
 ## Creating or Updating an Image
 
@@ -22,7 +32,7 @@ The source (draw.io) images are stored in subdirectorys of "materials/images".
 5. Choose "HFOSSedu/GitKit-Codespace".
 6. Select your feature branch.
 7. Navigate to "materials/images".
-8. Choose the "BlankDiagram.drawio" file or the "drawio" file for another image from which to start.
+8. Choose the "BaseDiagram.drawio" file or the "drawio" file for another image from which to start.
 9. "File" -> "Make a Copy..."
 10. "File" -> "Rename..."
     - Rename the image to match the filename of the image being replaced or a new name if the image is being added.
