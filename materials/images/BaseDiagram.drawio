@@ -118,7 +118,7 @@
             <mxPoint x="101.06" y="78" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-_NuGTelflz1eXvzzFvX-58" connectable="0" parent="1" style="group" value="" vertex="1">
+        <mxCell id="-_NuGTelflz1eXvzzFvX-58" connectable="0" parent="1" style="group;fontSize=7;" value="" vertex="1">
           <mxGeometry height="115" width="220" x="320" y="40" as="geometry" />
         </mxCell>
         <mxCell id="-_NuGTelflz1eXvzzFvX-59" parent="-_NuGTelflz1eXvzzFvX-58" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=default;fillColor=#b1ddf0;strokeColor=#10739e;strokeWidth=2;" value="" vertex="1">
@@ -218,6 +218,13 @@
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="77.06" y="78" as="sourcePoint" />
             <mxPoint x="101.06" y="78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_NuGTelflz1eXvzzFvX-107" edge="1" parent="-_NuGTelflz1eXvzzFvX-58" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#3399FF;width=42;endSize=12.33;endWidth=30;fontSize=14;labelBackgroundColor=light-dark(#3298ff, #ededed);fontColor=light-dark(#fefb00, #ededed);fontStyle=1;labelBorderColor=none;strokeWidth=3;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" value="&lt;div&gt;pull&amp;nbsp;&lt;/div&gt;&lt;div&gt;request&lt;/div&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0972" y="3" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <mxPoint x="-90" y="50" as="sourcePoint" />
+            <mxPoint y="50" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="-_NuGTelflz1eXvzzFvX-82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" value="" vertex="1">
