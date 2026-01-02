@@ -15,7 +15,7 @@ The source (draw.io) images are stored in subdirectorys of "`materials/images`".
 
 ## The `BaseDiagram`
 
-The "`materails/images` subdirectory contains the `BaseDiagram.drwawio` file.
+The "`materails/images` subdirectory contains the `BaseDiagram.svg` file.
   - This file contains an image with all or nearly all of the elements necessary to produce all fo the Git/GitHub diagrams.
     - Additional diagrams are created by removing, editing, adapting elements of this diagram.
   - This diagram is sized to match the size of the current images in the slides and text.
@@ -31,11 +31,12 @@ The "`materails/images` subdirectory contains the `BaseDiagram.drwawio` file.
 4. "File" -> "Open from" -> "GitHub".
 5. Choose "HFOSSedu/GitKit-Codespace".
 6. Select your feature branch.
-7. Navigate to "materials/images".
-8. Choose the "BaseDiagram.drawio" file or the "drawio" file for another image from which to start.
+7. Navigate to "materials/images" or an appropriate subdirectory.
+8. Choose the "BaseDiagram.svg" file or the other "svg" files for another image from which to start.
 9. "File" -> "Make a Copy..."
 10. "File" -> "Rename..."
     - Rename the image to match the filename of the image being replaced or a new name if the image is being added.
+    - Use the `.svg` extension for all files.
     - Existing image names can be found in the "source/<chapter>/images" directory.
 11. "File" -> "Save as..."
 12. Check the filename in the "Save as" box.
@@ -45,15 +46,11 @@ The "`materails/images` subdirectory contains the `BaseDiagram.drwawio` file.
 
 ## Updating an Image in the Text
 
-1. Open the image to be updated in [Draw.io application](https://app.diagrams.net/).
-2. "File" -> "Export as..." -> "PNG..."
-3. Check "Transparent Background".
-4. Uncheck "Include a copy of my diagram".
-5. Click "Export..."
-6. Check the that the filename in "Save as:" is correct.
-7. Click the "Where" drop down and select "GitHub pick a folder" 
-    - Choose the "source/<chapter>/images" direcotry for the image.
-8. Click "Save".
+1. _copy the image to the appropraite `source/<chapter>/images` subdirectory or the `source/shared-images` directory._
+2. _stage and commit_
+_(Can possibly script this? Run a script any time an image changes and it moves them)._
 
 ## Updating an Image in the Slides
+
+1. _download the image, paste into slide, save slides, stage & commit, PR for .pptx file._
 
