@@ -44,6 +44,8 @@ The "`materails/images` subdirectory contains the `BaseDiagram.svg` file.
     - Choose the appropriate "images/<chapter>/" subdirectory.
 14. Click "Save"
 
+Note: When working on an image and saving on-going changes, draw.io often reports an "Error saving file" due to a "Timeout".  Saving again will resolve the issue but you will be propted to "Merge" or "Overwrite" the existing file.  The "Overwrite" option will commit the current version of the file.
+
 ## Updating an Image in the Text
 
 1. _copy the image to the appropraite `source/<chapter>/images` subdirectory or the `source/shared-images` directory._
