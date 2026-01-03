@@ -36,7 +36,6 @@ These are some helpful PreTeXt references:
 ## Overall Repository Structure
 
 The files and folders in `source` include:
-
 - `main.ptx`
   - This file contains the outline for the whole book by importing other `.ptx` files.
 - `ch-abc-def` folders
@@ -53,6 +52,15 @@ The files and folders in `source` include:
       - Others are symbolic links to files in `materials/images/<chapter>/text`.
         - See `materials/images/README.md` for more details.
       - The `assets/images/<chapter>` file is also a link to the `images` folder. 
+
+The files and folders in the `materials` directory include:
+- `images` - a directory containing sub-directories for each chapter.
+  - `<chapter>` - a sub-directory for each chapter in the text.
+    - `text` - a sub-directory that contain many of the source images that appear in the chapter.
+      - These images are symlinked into the `source/<chapter>/images` directory.
+    - `slides` - a sub-directory taht contains many of the source images that appear in the slides.
+      - These images are manually incorporated into the slides.
+- `slides` - a directory containing the PowerPoint slide decks.
 
 ## Terminology
 
