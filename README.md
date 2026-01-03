@@ -42,11 +42,17 @@ The files and folders in `source` include:
 - `ch-abc-def` folders
   - Each chapter is contained in a folder.
   - The file in the folder with the same name and the `.ptx` file is an outline of the chapter. 
-  - This file gives some introductory text and then includes the `.ptx` files for the sections of the chapter.
-- `sec-ghi-jkl.ptx`
-  - This file contains the markup and text for the section, subsections, exercises, etc.
-  - Section titles should be Title Case
-  - Use an “ing” word for sections that are actions tied to concepts (e.g. Forking the Upstream).
+    - This file gives some introductory text and then includes the `.ptx` files for the sections of the chapter.
+  - `sec-ghi-jkl.ptx`
+    - This file contains the markup and text for the section, subsections, exercises, etc.
+    - Section titles should be Title Case
+    - Use an “ing” word for sections that are actions tied to concepts (e.g. Forking the Upstream).
+  - `images`
+    - The `images` folder contains the images that appear in the chapter.
+      - Some images are stored directly in this folder.
+      - Others are symbolic links to files in `materials/images/<chapter>/text`.
+        - See `materials/images/README.md` for more details.
+      - The `assets/images/<chapter>` file is also a link to the `images` folder. 
 
 ## Terminology
 
