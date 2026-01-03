@@ -67,7 +67,7 @@ Images that appear in the text are linked from their location in `GitKit-Codespa
 1. Open a codespace on [GitKit-Codespaces](https://github.com/HFOSSedu/GitKit-Codespace/tree/main) or your fork of it where you have your feature branch.
 2. Ensure that you are on your feature branch.
 3. In a terminal, check for an existing link to the image's `.svg` file in the `materials/images` directory in the appropraite `source/` subdirectory.
-   - If no such link exists, create one:
+   - If no such link exists, create one by adapting the following commands:
      ```
      cd ~/GitKit-Codespace
      ln --symbolic --force \
