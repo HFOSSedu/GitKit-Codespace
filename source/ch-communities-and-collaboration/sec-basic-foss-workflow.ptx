@@ -44,7 +44,7 @@
       </p>
     </statement>
 
-    <matches> <match> <premise>Upstream</premise> <response>Main project repository</response> </match> <match> <premise>Origin</premise> <response>Your Remote Copy</response> </match> <match> <premise>Local Clone</premise> <response>Local Copy of Your Remote Copy</response> </match> </matches>
+    <matches> <match> <premise>Upstream</premise> <response>The main project repository</response> </match> <match> <premise>Origin or Fork</premise> <response>Your remote copy of the main project repository.</response> </match> <match> <premise>Local or Clone</premise> <response>Your local copy of your remote copy.</response> </match> </matches>
     <hint>
       <p>
         Review the diagrams of the basic FOSS workflow from the in the class materials.
