@@ -11,7 +11,8 @@ The `materials/` directory contains:
 - `images/<chapter>`: A directory for each chapter of the text containing the images that appear in the slides for that chapter.
 - `BaseDiagram.svg`: An image with all or nearly all of the elements necessary to produce all fo the Git/GitHub diagrams.
 - `BlankDiagram.svg`: A blank image that is the same size as the `BaseDiagram.svg`.
-The `GitKit-Codespace/source/<chapter>/images` directories contain the images that appear in the corresponding `<chapter>` of the text.
+
+The `source/<chapter>/images` directories contain the images that appear in the corresponding `<chapter>` of the text.
 
 ## The `BaseDiagram.svg` Image
 
@@ -29,7 +30,7 @@ The `BaseDiagram.svg` file contains an image with all or nearly all of the eleme
 2. Visit `HFOSSEdu/GitKit-Codespace` or your fork of it on GitHub.
 3. Synchronize the `main` branch or the feature branch to which you are contributing with the upstream.
 4. Browse the repository to identify the name and location of the image that you wish to start from:
-   - If creating a new image you will use the `materials/BaseDiagram.svg`](./BaseDiagram.svg) or the [materials/BlankDiagram.svg`](./BlankDiagram.svg).
+   - If creating a new image you will use the [`materials/BaseDiagram.svg`](./BaseDiagram.svg) or the [materials/BlankDiagram.svg`](./BlankDiagram.svg).
    - If updating an existing image find its source:
      - For images in the text look in the `<chapter>/images` sub-directories of [`source`](../source).
      - For images in the slides look in the `<chapter>` sub-directories of [`materials/images`](./images).
@@ -71,7 +72,7 @@ Note: When working on an image and saving on-going changes, Draw.io often report
 6. Rebuild text and verify that the image and any new captions/text/exercises appear correctly.
    - If a `.png` image was replaced by a `.svg` image delete the `.png` image file from the `source/<chapter>/images` directory.
 7. Stage and commit the changes.
-8. Create a pull request to the upstream [GitKit-Codespace](https://github.com/HFOSSedu/GitKit-Codespace) repository.
+8. Create a pull request to the upstream repository.
    - If you are working on a specific issue in the issue tracker, check its description to see if the PR should be made to the main branch or to a feature branch that is being used to collect a number of related changes before being merged into main.
 
 ## Updating an Image in the Slides
@@ -82,5 +83,5 @@ Note: When working on an image and saving on-going changes, Draw.io often report
 4. Replace the image in the slides with the SVG image.
 5. Save the slide deck.
 6. Stage and commit the changes.
-7. Create a pull request to the upstream [GitKit-Codespace](https://github.com/HFOSSedu/GitKit-Codespace) repository.
+7. Create a pull request to the upstream repository.
    - If you are working on a specific issue in the issue tracker, check its description to see if the PR should be made to the main branch or to a feature branch that is being used to collect a number of related changes before being merged into main.
