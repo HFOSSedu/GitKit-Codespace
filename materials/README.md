@@ -51,6 +51,9 @@ The `BaseDiagram.svg` file contains an image with all or nearly all of the eleme
    b. Rename the copy of the image:
       - "File" -> "Rename..."
         - If you are replacing an existing `.png` image rename the new image to match the filename of the image being replaced but using the extension `.svg` instead of `.png`.
+        - If you are creating an image sequence for the slide animations:
+          - Name the final image containing all elements `*.full.svg` where `*` is a descriptive name.
+          - Name the first image in the sequence `*.1.svg`, the second `*.2.svg`, and so forth.
     c. Save the renamed image:
        - "File" -> "Save as..."
        - Verify the filename in the "Save as" box.
@@ -78,7 +81,7 @@ Note: When working on an image and saving on-going changes, Draw.io often report
 8. Create a pull request to the upstream repository.
    - If you are working on a specific issue in the issue tracker, check its description to see if the PR should be made to the main branch or to a feature branch that is being used to collect a number of related changes before being merged into main.
 
-## Updating an Image in the Slides
+## Updating an Image or Image Sequence in the Slides
 
 1. Clone the `GitKit-Codespace` repo containing your feature branch to your local machine.
 2. Ensure that you are on your feature branch.
