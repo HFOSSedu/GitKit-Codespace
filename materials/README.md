@@ -30,7 +30,10 @@ The `BaseDiagram.svg` file contains an image with all or nearly all of the eleme
 2. Visit `HFOSSEdu/GitKit-Codespace` or your fork of it on GitHub.
 3. Synchronize the `main` branch or the feature branch to which you are contributing with the upstream.
 4. Browse the repository to identify the name and location of the image that you wish to start from:
-   - If creating a new image you will use the [`materials/BaseDiagram.svg`](./BaseDiagram.svg) or the [materials/BlankDiagram.svg`](./BlankDiagram.svg).
+   - If creating a new image you might start from:
+     - The [`materials/BaseDiagram.svg`](./BaseDiagram.svg) or the [materials/BlankDiagram.svg`](./BlankDiagram.svg).
+     - An existing image in the text from the `<chapter>/images` sub-directories of [`source`](../source).
+     - An existing image in the slides from the `<chapter>` sub-directories of [`materials/images`](./images).
    - If updating an existing image find its source:
      - For images in the text look in the `<chapter>/images` sub-directories of [`source`](../source).
      - For images in the slides look in the `<chapter>` sub-directories of [`materials/images`](./images).
@@ -68,7 +71,7 @@ Note: When working on an image and saving on-going changes, Draw.io often report
 2. Ensure that you are on your feature branch.
 3. Open the PreTeXT source file that references the image from the `source/<chapter>` directory.
 4. Change the reference to the image to point to the linked `.svg` file instead of to the `.png` file.
-5. Update any captions, text or exercises that refernce the diagram as necessary.
+5. Update any captions, text or exercises that reference the diagram as necessary.
 6. Rebuild text and verify that the image and any new captions/text/exercises appear correctly.
    - If a `.png` image was replaced by a `.svg` image delete the `.png` image file from the `source/<chapter>/images` directory.
 7. Stage and commit the changes.
