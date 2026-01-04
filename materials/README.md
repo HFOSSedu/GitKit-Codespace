@@ -83,11 +83,15 @@ Note: When working on an image and saving on-going changes, Draw.io often report
 
 ## Updating an Image or Image Sequence in the Slides
 
-1. Clone the `GitKit-Codespace` repo containing your feature branch to your local machine.
-2. Ensure that you are on your feature branch.
-3. Open the slide deck to be updated.
-4. Replace the image in the slides with the SVG image.
-5. Save the slide deck.
-6. Stage and commit the changes.
-7. Create a pull request to the upstream repository.
+1. Ensure that:
+   - All open PR's for changes to the same slide deck have been merged into the `draw.io-images` branch.
+   - No one else is currently working on a PR for the same slide deck.
+3. Clone the `GitKit-Codespace` repo containing your feature branch to your local machine.
+   - Or update with `git pull upstream draw.io-images`
+4. Ensure that you are on your feature branch.
+5. Open the slide deck to be updated.
+6. Replace the image(s) in the slides with the SVG image(s).
+7. Save the slide deck.
+8. Stage and commit the changes.
+9. Create a pull request to the upstream repository.
    - If you are working on a specific issue in the issue tracker, check its description to see if the PR should be made to the main branch or to a feature branch that is being used to collect a number of related changes before being merged into main.
