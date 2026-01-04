@@ -28,9 +28,9 @@ The `materials/images` subdirectory contains the `BaseDiagram.svg` file.
 
 1. Log into GitHub with a user that has R/W permission to HFOSSedu.
 2. Visit `HFOSSEdu/GitKit-Codespace` or your fork of it on GitHub.
-3. Synchronize the `main` branch with the upstream if necessary.
-4. Browse the repository to identify the name and location of the image that you wish to start from:
-   - If creating a new image you will use the `GitKit-Codespace/materials/BaseDiagram.svg`](https://github.com/HFOSSedu/GitKit-Codespace/blob/draw.io-images/materials/images/BaseDiagram.svg) or the [`GitKit-Codespace/materials/BlankDiagram.svg`](https://github.com/HFOSSedu/GitKit-Codespace/blob/draw.io-images/materials/images/BlankDiagram.svg)
+3. Synchronize the `main` branch or the feature branch to which you are contributing with the upstream.
+4. Browse the [`GitKit-Codespace/materials/images/materials/images`] directory to identify the name and location of the image that you wish to start from:
+   - If creating a new image you will use the `GitKit-Codespace/materials/images/BaseDiagram.svg`](https://github.com/HFOSSedu/GitKit-Codespace/blob/draw.io-images/materials/images/BaseDiagram.svg) or the [`GitKit-Codespace/materials/images/BlankDiagram.svg`](https://github.com/HFOSSedu/GitKit-Codespace/blob/draw.io-images/materials/images/BlankDiagram.svg)
    - If updating an existing image find its source in one of the sub-directories of [`GitKit-Codespace/materials/images`](https://github.com/HFOSSedu/GitKit-Codespace/blob/draw.io-images/materials/images/).
 5. Create a new feature branch from `main` for the image you are creating/updating.
 6. Open the [Draw.io application](https://app.diagrams.net/).
@@ -39,7 +39,7 @@ The `materials/images` subdirectory contains the `BaseDiagram.svg` file.
    - Choose the `HFOSSedu/GitKit-Codespace` or your fork of it.
    - Select the feature branch that you created.
    - Navigate to the image within `GitKit-Codesace/materials/images`.
-   - Choose the `.svg` for the image to identified.    
+   - Choose the `.svg` for the image that you identified.    
 8. If you are making a new image or replacing an existing image:
    a. Make a copy of the image:
       - "File" -> "Make a Copy..."
