@@ -39,22 +39,86 @@
 
           <p />
           </statement>
-          <areas>
-          <tabular top="minor" bottom="minor" left="minor" right="minor">
-            <row>
-              <cell><area correct="no">shared values</area></cell>
-              <cell><area correct="yes">collaboration</area></cell>
-              <cell><area correct="no">transparency</area></cell>
-            </row>
 
-            <row>
-              <cell><area correct="no">inclusivity</area></cell>
-              <cell><area correct="no">meritocracy</area></cell>
-              <cell><area correct="no">release early and often</area></cell>
-            </row>
-          </tabular>
+           <choices randomize="yes">
+             <choice>
+               <statement>
+                 <p>
+                 Shared values
+                 </p>
+               </statement>
+               <feedback>
+                 <p>
+                 It's not shared values.
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Collaboration
+                 </p>
+               </statement>
 
-          <p /> </areas>
+               <feedback>
+                 <p>
+                 It's collaboration.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Transparency
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not transparency
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Inclusivity
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not inclusivity
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Meritocracy
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not meritocracy
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Release early and often.
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not release early and often.
+                 </p>
+               </feedback>
+             </choice>
+          </choices>
           </task>
 
 
@@ -66,24 +130,86 @@
 
               <p />
               </statement>
-              <areas>
-              <tabular top="minor" bottom="minor" left="minor" right="minor">
-                <row>
-                  <cell><area correct="no">shared values</area></cell>
-                  <cell><area correct="no">collaboration</area></cell>
-                  <cell><area correct="yes">transparency</area></cell>
-                </row>
+           <choices randomize="yes">
+             <choice>
+               <statement>
+                 <p>
+                 Shared values
+                 </p>
+               </statement>
+               <feedback>
+                 <p>
+                 It's not shared values.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Collaboration
+                 </p>
+               </statement>
 
-                <row>
-                  <cell><area correct="yes">inclusivity</area></cell>
-                  <cell><area correct="no">meritocracy</area></cell>
-                  <cell><area correct="no">release early and often</area></cell>
-                </row>
-              </tabular>
+               <feedback>
+                 <p>
+                 It's not collaboration.
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Transparency
+                 </p>
+               </statement>
 
-              <p /> </areas>
+               <feedback>
+                 <p>
+                 It's transparency
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Inclusivity
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's inclusivity
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Meritocracy
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's meritocracy
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Release early and often.
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not release early and often.
+                 </p>
+               </feedback>
+             </choice>
+          </choices>
               </task>
-
 
               <task xml:id="ex-community-principles-c" label="ex-community-principles-c" >
                 <statement>
@@ -93,24 +219,87 @@
 
                   <p />
                   </statement>
-                  <areas>
-                  <tabular top="minor" bottom="minor" left="minor" right="minor">
-                    <row>
-                      <cell><area correct="yes">shared values</area></cell>
-                      <cell><area correct="yes">collaboration</area></cell>
-                      <cell><area correct="no">transparency</area></cell>
-                    </row>
+           <choices randomize="yes">
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Shared values
+                 </p>
+               </statement>
+               <feedback>
+                 <p>
+                 It's shared values.
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Collaboration
+                 </p>
+               </statement>
 
-                    <row>
-                      <cell><area correct="no">inclusivity</area></cell>
-                      <cell><area correct="no">meritocracy</area></cell>
-                      <cell><area correct="no">release early and often</area></cell>
-                    </row>
-                  </tabular>
+               <feedback>
+                 <p>
+                 It's collaboration.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Transparency
+                 </p>
+               </statement>
 
-                  <p /> </areas>
+               <feedback>
+                 <p>
+                 It's not transparency
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Inclusivity
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not inclusivity
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Meritocracy
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's meritocracy
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Release early and often.
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not release early and often.
+                 </p>
+               </feedback>
+             </choice>
+          </choices>
+
                   </task>
-
 
                   <task xml:id="ex-community-principles-d" label="ex-community-principles-d" >
                     <statement>
@@ -120,22 +309,87 @@
 
                       <p />
                       </statement>
-                      <areas>
-                      <tabular top="minor" bottom="minor" left="minor" right="minor">
-                        <row>
-                          <cell><area correct="no">shared values</area></cell>
-                          <cell><area correct="no">collaboration</area></cell>
-                          <cell><area correct="no">transparency</area></cell>
-                        </row>
+           <choices randomize="yes">
+             <choice>
+               <statement>
+                 <p>
+                 Shared values
+                 </p>
+               </statement>
+               <feedback>
+                 <p>
+                 It's not shared values.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Collaboration
+                 </p>
+               </statement>
 
-                        <row>
-                          <cell><area correct="yes">inclusivity</area></cell>
-                          <cell><area correct="yes">meritocracy</area></cell>
-                          <cell><area correct="no">release early and often</area></cell>
-                        </row>
-                      </tabular>
+               <feedback>
+                 <p>
+                 It's not collaboration.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Transparency
+                 </p>
+               </statement>
 
-                      <p /> </areas>
+               <feedback>
+                 <p>
+                 It's not transparency
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Inclusivity
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's inclusivity
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Meritocracy
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's meritocracy
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Release early and often.
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not release early and often.
+                 </p>
+               </feedback>
+             </choice>
+          </choices>
+
+
                       </task>
 
 
@@ -147,22 +401,87 @@
 
                           <p />
                           </statement>
-                          <areas>
-                          <tabular top="minor" bottom="minor" left="minor" right="minor">
-                            <row>
-                              <cell><area correct="no">shared values</area></cell>
-                              <cell><area correct="no">collaboration</area></cell>
-                              <cell><area correct="no">transparency</area></cell>
-                            </row>
+           <choices randomize="yes">
+             <choice>
+               <statement>
+                 <p>
+                 Shared values
+                 </p>
+               </statement>
+               <feedback>
+                 <p>
+                 It's not shared values.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Collaboration
+                 </p>
+               </statement>
 
-                            <row>
-                              <cell><area correct="no">inclusivity</area></cell>
-                              <cell><area correct="no">meritocracy</area></cell>
-                              <cell><area correct="yes">release early and often</area></cell>
-                            </row>
-                          </tabular>
+               <feedback>
+                 <p>
+                 It's not collaboration.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Transparency
+                 </p>
+               </statement>
 
-                          <p /> </areas>
+               <feedback>
+                 <p>
+                 It's not transparency
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Inclusivity
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not inclusivity
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Meritocracy
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not meritocracy
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Release early and often.
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's release early and often.
+                 </p>
+               </feedback>
+             </choice>
+          </choices>
+
+
                           </task>
 
 
@@ -174,22 +493,87 @@
 
                               <p />
                               </statement>
-                              <areas>
-                              <tabular top="minor" bottom="minor" left="minor" right="minor">
-                                <row>
-                                  <cell><area correct="no">shared values</area></cell>
-                                  <cell><area correct="yes">collaboration</area></cell>
-                                  <cell><area correct="no">transparency</area></cell>
-                                </row>
+           <choices randomize="yes">
+             <choice>
+               <statement>
+                 <p>
+                 Shared values
+                 </p>
+               </statement>
+               <feedback>
+                 <p>
+                 It's not shared values.
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Collaboration
+                 </p>
+               </statement>
 
-                                <row>
-                                  <cell><area correct="no">inclusivity</area></cell>
-                                  <cell><area correct="no">meritocracy</area></cell>
-                                  <cell><area correct="no">release early and often</area></cell>
-                                </row>
-                              </tabular>
+               <feedback>
+                 <p>
+                 It's collaboration.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Transparency
+                 </p>
+               </statement>
 
-                              <p /> </areas>
+               <feedback>
+                 <p>
+                 It's not transparency
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Inclusivity
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not inclusivity
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Meritocracy
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not meritocracy
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Release early and often.
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not release early and often.
+                 </p>
+               </feedback>
+             </choice>
+          </choices>
+
+
                               </task>
 
 
@@ -201,22 +585,87 @@
 
                                   <p />
                                   </statement>
-                                  <areas>
-                                  <tabular top="minor" bottom="minor" left="minor" right="minor">
-                                    <row>
-                                      <cell><area correct="no">shared values</area></cell>
-                                      <cell><area correct="no">collaboration</area></cell>
-                                      <cell><area correct="no">transparency</area></cell>
-                                    </row>
+           <choices randomize="yes">
+             <choice>
+               <statement>
+                 <p>
+                 Shared values
+                 </p>
+               </statement>
+               <feedback>
+                 <p>
+                 It's not shared values.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Collaboration
+                 </p>
+               </statement>
 
-                                    <row>
-                                      <cell><area correct="yes">inclusivity</area></cell>
-                                      <cell><area correct="no">meritocracy</area></cell>
-                                      <cell><area correct="no">release early and often</area></cell>
-                                    </row>
-                                  </tabular>
+               <feedback>
+                 <p>
+                 It's not collaboration.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Transparency
+                 </p>
+               </statement>
 
-                                  <p /> </areas>
+               <feedback>
+                 <p>
+                 It's not transparency
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Inclusivity
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's inclusivity
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Meritocracy
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not meritocracy
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Release early and often.
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not release early and often.
+                 </p>
+               </feedback>
+             </choice>
+          </choices>
+
+
                                   </task>
 
 
@@ -226,24 +675,88 @@
                                         All community members have access to the information necessary to do their best work.
                                       </p>
 
-                                      <p />
                                       </statement>
-                                      <areas>
-                                      <tabular top="minor" bottom="minor" left="minor" right="minor">
-                                        <row>
-                                          <cell><area correct="no">shared values</area></cell>
-                                          <cell><area correct="no">collaboration</area></cell>
-                                          <cell><area correct="yes">transparency</area></cell>
-                                        </row>
+           <choices randomize="yes">
+             <choice>
+               <statement>
+                 <p>
+                 Shared values
+                 </p>
+               </statement>
+               <feedback>
+                 <p>
+                 It's not shared values.
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Collaboration
+                 </p>
+               </statement>
 
-                                        <row>
-                                          <cell><area correct="no">inclusivity</area></cell>
-                                          <cell><area correct="no">meritocracy</area></cell>
-                                          <cell><area correct="no">release early and often</area></cell>
-                                        </row>
-                                      </tabular>
+               <feedback>
+                 <p>
+                 It's not collaboration.
+                 </p>
+               </feedback>
+             </choice>
+             <choice correct="yes">
+               <statement>
+                 <p>
+                 Transparency
+                 </p>
+               </statement>
 
-                                      <p /> </areas>
+               <feedback>
+                 <p>
+                 It's transparency
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Inclusivity
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not inclusivity
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Meritocracy
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not meritocracy
+                 </p>
+               </feedback>
+             </choice>
+             <choice>
+               <statement>
+                 <p>
+                 Release early and often.
+                 </p>
+               </statement>
+
+               <feedback>
+                 <p>
+                 It's not release early and often.
+                 </p>
+               </feedback>
+             </choice>
+          </choices>
+
+
                                       </task>
                                     </exercise>
                                     </exercises>
