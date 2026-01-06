@@ -228,7 +228,7 @@
       <p>
         Please give the full <c>git pull</c> command using the format indicated in the question.
         Also, be sure that you have replaced <c>&lt; remote &gt;</c> and <c>&lt; branch &gt;</c> with the appropriate names
-        and and that you have removed the &lt; and &gt; symbols.
+        and that you have removed the &lt; and &gt; symbols.
       </p>
     </feedback>
     </condition> </var> </setup>
