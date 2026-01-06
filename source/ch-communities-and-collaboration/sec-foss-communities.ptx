@@ -17,7 +17,9 @@
     <introduction>
       <p>
         Some of the key principles that guide FOSS communities are <term>shared values</term>, <term>collaboration</term>, <term>transparency</term>, <term>inclusivity</term>, <term>meritocracy</term> and <term>release early and often</term>.
-        If you would like you can review a discussion of some of these principles at <url href="https://opensource.com/open-source-way" visual="opensource.com/open-source-way">The Open Source Way</url>
+      </p>
+      <p>
+      If you would like you can review a discussion of these principles in the speaker notes in <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx">the slides for this chapter</url> or in <url href="https://opensource.com/open-source-way" visual="opensource.com/open-source-way">The Open Source Way</url>
       </p>
     </introduction>
 
