@@ -19,7 +19,7 @@
         Some of the key principles that guide FOSS communities are <term>shared values</term>, <term>collaboration</term>, <term>transparency</term>, <term>inclusivity</term>, <term>meritocracy</term> and <term>release early and often</term>.
       </p>
       <p>
-      If you would like you can review a discussion of these principles in the speaker notes in <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx">the slides for this chapter</url> or in <url href="https://opensource.com/open-source-way" visual="opensource.com/open-source-way">The Open Source Way</url>
+      If you would like you can review a discussion of these principles in the speaker notes in <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx">the slides for this chapter</url> or in <url href="https://opensource.com/open-source-way" visual="opensource.com/open-source-way">The Open Source Way.</url>
       </p>
     </introduction>
 
@@ -257,9 +257,10 @@
 
                                     <introduction>
                                       <p>
-                                        There are a number of roles that tend to exist in FOSS communities.
-                                        Some of these include <term>Users</term>, <term>Requestors</term>, <term>Contributors</term>, <term>Maintainers</term> and <term>Leaders</term>.
-                                        Not all communities will have all of these roles and often community members will take on multiple roles simultaneously or move between roles over time.
+                                        One way of understanding FOSS communites is to consider the different roles that people take on in these communities. Some of these roles include <term>Users</term>, <term>Requestors</term>, <term>Contributors</term>, <term>Maintainers</term> and <term>Leaders</term>.These roles are prototypical and not every one of them roles will exist exactly as described in every FOSS community. Some communities will have slightly different roles, or multiple roles may be combined, etc. In addition, a given individual might simultaneously, or at different times take on multiple roles. So even though they are not exact or universal, understanding these prototypical roles can be helpful in understanding how work happens in FOSS communities.
+                                      </p>
+                                      <p>
+                                      If you would like you can review a discussion of these roles in the speaker notes in <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx">the slides for this chapter.</url>
                                       </p>
                                     </introduction>
 
