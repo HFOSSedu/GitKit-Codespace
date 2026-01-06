@@ -179,8 +179,8 @@
               <feedback>
                 <p>
                   Please be sure that you are giving the full <c>git branch</c> command using the format indicated in the question,
-                  Also, be sure that you have rreplaced the <c>&lt;branch&gt;</c> branch with your feature branch name and
-                  that you did not leave in the &lt; and &gt; symbols.
+                  Also, be sure that you have replaced <c>&lt; branch &gt;</c> with your feature branch name
+                  and that you have removed the &lt; and &gt; symbols.
                 </p>
               </feedback>
             </condition> 
