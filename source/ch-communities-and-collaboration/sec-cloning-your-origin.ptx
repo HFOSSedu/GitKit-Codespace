@@ -132,7 +132,7 @@
   <title><c>git clone</c></title>
 
   <p>
-    The <c>git clone</c> command will make a local copy of your fork on GitHub into your development environment.
+    The <c>git clone</c> command will make a local copy of your fork on GitHub in your development environment.
     Refer to <xref ref="fig-basic-workflow-clone">Figure</xref>.
   </p>
 
