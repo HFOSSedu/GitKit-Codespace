@@ -53,11 +53,11 @@
     <title>Overview</title>
     <introduction>
       <p>
-        The GitKit introduces students to fundamental git and GitHub skills and concepts and the <url href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">forking workflow</url> within the context of an authentic Free and Open Source Software (FOSS) project. 
+        The GitKit introduces students to fundamental Git and GitHub skills and concepts and the <url href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">forking workflow</url> within the context of an authentic Free and Open Source Software (FOSS) project. 
       </p>
 
       <p>
-        The GitKit is designed to be used as a module within a course where students are first introduced to git and GitHub, but has been adapted for use in other settings. A nominal use of the GitKit requires four 75-minute class periods where the instructor introduces each chapter and four 2-3 hour homework assignments where concepts are reinforced and students gain hands-on experience.  
+        The GitKit is designed to be used as a module within a course where students are first introduced to Git and GitHub, but has been adapted for use in other settings. A nominal use of the GitKit requires four 75-minute class periods where the instructor introduces each chapter and four 2-3 hour homework assignments where concepts are reinforced and students gain hands-on experience.  
       </p>
       
       <p>
@@ -75,7 +75,7 @@
           </li>
           <li>
             <p>
-              Chapters that guide students through exercises that reinforce concepts from class and give them hands-on experience with git and GitHub.
+              Chapters that guide students through exercises that reinforce concepts from class and give them hands-on experience with Git and GitHub.
             </p>
           </li>
           <li>

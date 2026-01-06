@@ -572,7 +572,7 @@
         <choice>
           <statement>
             <p>
-              The branch name is not displayed in the output from this git command.
+              The branch name is not displayed in the output from this Git command.
             </p>
           </statement>
 

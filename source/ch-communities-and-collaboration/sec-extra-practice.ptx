@@ -166,7 +166,7 @@
 
     <hint>
       <p>
-        The origin URL should be the one from your git clone command.
+        The origin URL should be the one from your Git clone command.
       </p>
     </hint>
   </exercise>

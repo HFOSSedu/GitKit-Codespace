@@ -292,7 +292,7 @@
             </statement>
             <feedback>
               <p>
-                The arrow on the left represents a git remote associated with your local repository, but it is not the upstream.
+                The arrow on the left represents a Git remote associated with your local repository, but it is not the upstream.
               </p>
             </feedback>
           </choice>

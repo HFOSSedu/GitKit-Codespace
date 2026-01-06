@@ -327,7 +327,7 @@
     </p>
 
     <p>
-      Note that git also has a <c>git add</c> command that is equivalent to <c>git stage</c>.
+      Note that Git also has a <c>git add</c> command that is equivalent to <c>git stage</c>.
       So, you can add files to the stage using either <c>git stage</c> or <c>git add</c>.
       These activities will use <c>git stage</c> because it seems more descriptive of what is happening.
       However, you are likely to see <c>git add</c> used in other resources, so it is worth knowing that they are equivalent.

@@ -397,7 +397,7 @@
 
             <feedback>
               <p>
-                <c>git undo</c> is not a git command
+                <c>git undo</c> is not a Git command
               </p>
             </feedback>
           </choice>

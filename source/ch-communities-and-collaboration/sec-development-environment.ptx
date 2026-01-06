@@ -422,7 +422,7 @@
       <statement>
         <p>
           The <c>git config --global user.name "&lt;name&gt;"</c> command sets the name that Git will associate with your changes.
-          Throughout this book, &lt; &gt; will be used to indicate a part of a git command that you must enter.
+          Throughout this book, &lt; &gt; will be used to indicate a part of a Git command that you must enter.
           For example, if you want your name to appear as Jane D.
           the command would be <c>git config --global user.name "Jane D."</c>.
         </p>
@@ -438,7 +438,7 @@
       <setup> <var> <condition string='^git config --global user\.name "[^&lt;].+[^&gt;]"$'>
       <feedback>
         <p>
-          This command will set the name associated with your changes in git.
+          This command will set the name associated with your changes in Git.
         </p>
       </feedback>
       </condition> <condition string='^git config --global user\.name ["]*&lt;.+&gt;["]*$'>
@@ -483,7 +483,7 @@
       <setup> <var> <condition string='^git config --global user\.email "[^&lt;].+@.+[^&gt;]"$'>
       <feedback>
         <p>
-          This command will set the email associated with your changes in git.
+          This command will set the email associated with your changes in Git.
         </p>
       </feedback>
       </condition> <condition string='^git config --global user\.email "[^&lt;][^@]+[^&gt;]"$'>
