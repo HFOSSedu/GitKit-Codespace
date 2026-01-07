@@ -119,6 +119,9 @@
                </feedback>
              </choice>
           </choices>
+          <hint>
+          Principles are related, but select the principle(s) that most closely align with the given statement.
+          </hint>
           </task>
 
 
@@ -209,6 +212,9 @@
                </feedback>
              </choice>
           </choices>
+          <hint>
+          Principles are related, but select the principle(s) that most closely align with the given statement.
+          </hint>
               </task>
 
               <task xml:id="ex-community-principles-c" label="ex-community-principles-c" >
@@ -280,7 +286,7 @@
 
                <feedback>
                  <p>
-                 It's meritocracy
+                 It's not meritocracy
                  </p>
                </feedback>
              </choice>
@@ -298,6 +304,9 @@
                </feedback>
              </choice>
           </choices>
+          <hint>
+          Principles are related, but select the principle(s) that most closely align with the given statement.
+          </hint>
 
                   </task>
 
@@ -388,6 +397,9 @@
                </feedback>
              </choice>
           </choices>
+          <hint>
+          Principles are related, but select the principle(s) that most closely align with the given statement.
+          </hint>
 
 
                       </task>
@@ -480,7 +492,9 @@
                </feedback>
              </choice>
           </choices>
-
+          <hint>
+          Principles are related, but select the principle(s) that most closely align with the given statement.
+          </hint>
 
                           </task>
 
@@ -572,7 +586,9 @@
                </feedback>
              </choice>
           </choices>
-
+          <hint>
+          Principles are related, but select the principle(s) that most closely align with the given statement.
+          </hint>
 
                               </task>
 
@@ -664,6 +680,9 @@
                </feedback>
              </choice>
           </choices>
+          <hint>
+          Principles are related, but select the principle(s) that most closely align with the given statement.
+          </hint>
 
 
                                   </task>
@@ -755,6 +774,9 @@
                </feedback>
              </choice>
           </choices>
+          <hint>
+          Principles are related, but select the principle(s) that most closely align with the given statement.
+          </hint>
 
 
                                       </task>
@@ -857,6 +879,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                          </task>
 
                                           <task xml:id="ex-community-roles-b" label="ex-community-roles-b" >
@@ -932,6 +957,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                               </task>
 
 
@@ -1009,6 +1037,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                                   </task>
 
                                                   <task xml:id="ex-community-roles-d" label="ex-community-roles-d" >
@@ -1085,6 +1116,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
 
                                                       </task>
 
@@ -1163,6 +1197,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                                      </task>
                                                           <task xml:id="ex-community-roles-f" label="ex-community-roles-f" >
                                                             <statement>
@@ -1238,6 +1275,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                                               </task>
 
 
@@ -1315,6 +1355,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                                                   </task>
 
 
@@ -1392,6 +1435,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                                                       </task>
 
 
@@ -1469,6 +1515,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                                                           </task>
 
                                                                           <task xml:id="ex-community-roles-j" label="ex-community-roles-j" >
