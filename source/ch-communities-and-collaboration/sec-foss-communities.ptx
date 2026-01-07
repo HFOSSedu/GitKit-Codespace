@@ -1594,6 +1594,9 @@
                                                 </feedback>
                                               </choice>
                                           </choices>
+                                          <hint>
+                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
+                                          </hint>
                                                                               </task>
                                                                             </exercise>
                                                                             </exercises>
