@@ -26,7 +26,6 @@
 
   <subsection>
     <title>Exploring the Issue Tracker</title>
-
     <exercises>
     <title />
     <exercise xml:id="ex-find-the-issue-tracker" label="ex-find-the-issue-tracker" >
@@ -55,7 +54,6 @@
         </statement>
       </task>
     </exercise>
-
     <exercise xml:id="ex-explore-the-issue-tracker" label="ex-explore-the-issue-tracker" >
       <introduction>
         <p>
@@ -349,7 +347,6 @@
         </hint>
       </task>
 
-
       <task xml:id="ex-explore-the-issue-tracker-e" label="ex-explore-the-issue-tracker-e" >
         <statement>
           <p>
@@ -363,7 +360,20 @@
           </p>
         </feedback>
 
-        <matches> <match> <premise>Created on</premise> <response>Find issues you have not seen before</response> </match> <match> <premise>Last updated</premise> <response>Check if any issues you have been assigned to have had their requirements changed</response> </match> <match> <premise>Total comments</premise> <response>Find which issues are being most actively worked on</response> </match> </matches>
+        <cardsort> 
+          <match> 
+            <premise>Created on</premise> 
+            <response>Find issues you have not seen before</response> 
+          </match> 
+          <match> 
+            <premise>Last updated</premise> 
+            <response>Check if any issues you have been assigned to have had their requirements changed</response> 
+          </match> 
+          <match> 
+            <premise>Total comments</premise> 
+            <response>Find which issues are being most actively worked on</response> 
+          </match> 
+        </cardsort>
         <hint>
           <p>
             Choose the best match.
@@ -557,7 +567,7 @@
           <var width="60" />
         </p>
       </statement>
-      <setup> <var> <condition string="^https://github\.com/(?!(my-class|FarmData2/FarmData2|DickinsonCollege/FarmData2)).+/issues/[0-9]+$">
+      <setup> <var> <condition string="^https://github\.com/(?!(my-class|FarmData2/FarmData2|DickinsonCollege/FarmData2)).+/issues/[1-9][0-9]*$">
       <feedback>
         <p>
           Thank you.

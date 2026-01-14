@@ -87,14 +87,14 @@
 
     <feedback>
       <p>
-        Please give the full URL of your fork on GitHub.
+        Make sure you are giving the URL for your fork, not the project's upstream URL.
+        This URL should contain your GitHub username.
       </p>
     </feedback>
     </condition> </var> </setup>
 
     <hint>
       <p>
-        Make sure you are giving the URL for your fork, not the project's upstream URL.
         Review <xref ref="topic-forking-the-upstream" text="type-global-title"/> for information on how to fork a repository on GitHub.
       </p>
     </hint>

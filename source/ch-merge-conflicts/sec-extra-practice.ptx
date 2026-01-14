@@ -398,7 +398,7 @@
         <var width="55" />
       </p>
     </statement>
-    <setup> <var> <condition string="^https://github\.com/(?!(FarmData2|DickinsonCollege/FarmData2)).+/pull/[0-9]+$">
+    <setup> <var> <condition string="^https://github\.com/(?!(FarmData2|DickinsonCollege/FarmData2))(.+/.+)./pull/[1-9][0-9]*$">
     <feedback>
       <p>
         Thank you.
@@ -409,7 +409,7 @@
     <feedback>
       <p>
         Be sure that your URL is from your pull request to the upstream repository for your course.
-        It should have the format <c>https://github.com/yourCourse/repoName/pulls/xx</c>, where <c>xx</c> is a number.
+        It should have the format <c>https://github.com/yourCourse/repoName/pull/xx</c>, where <c>yourCourse</c>, <c>repoName</c> and <c>xx</c> are replaced with appropriate values for your course and pull request.
       </p>
     </feedback>
     </condition> </var> </setup>

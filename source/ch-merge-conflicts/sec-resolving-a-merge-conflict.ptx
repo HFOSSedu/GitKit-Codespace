@@ -68,7 +68,20 @@
           </p>
         </statement>
 
-        <matches> <match> <premise>Feature branch contents</premise> <response> Appears with a green highlight at the top of the conflict information. </response> </match> <match> <premise>Best common ancestor</premise> <response> Appears with a gray highlight in the middle of the conflict information. </response> </match> <match> <premise><c>main</c> branch contents</premise> <response> Appears with a blue highlight at the bottom of the conflict information. </response> </match> </matches>
+        <cardsort> 
+          <match> 
+            <premise>Feature branch contents</premise> 
+            <response> Appears with a green highlight at the top of the conflict information. </response> 
+          </match> 
+          <match> 
+            <premise>Best common ancestor</premise> 
+            <response> Appears with a gray highlight in the middle of the conflict information. </response> 
+          </match> 
+          <match> 
+            <premise><c>main</c> branch contents</premise> 
+            <response> Appears with a blue highlight at the bottom of the conflict information. </response> 
+          </match> 
+        </cardsort>
       </task>
 
 
@@ -79,7 +92,24 @@
           </p>
         </statement>
 
-        <matches> <match> <premise> Left Chevrons <c>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</c> </premise> <response> Indicate the start of the merge conflict information. </response> </match> <match> <premise> Vertical Bars <c>|||||||</c> </premise> <response> Separate the feature branch content from the best common ancestor. </response> </match> <match> <premise>Equal Signs <c>=======</c></premise> <response> Separate the best common ancestor from the <c>main</c> branch content. </response> </match> <match> <premise> Right Chevrons <c>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</c> </premise> <response> Indicate the end of the merge conflict information. </response> </match> </matches>
+        <cardsort> 
+          <match> 
+            <premise> Left Chevrons <c>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</c> </premise> 
+            <response> Indicate the start of the merge conflict information. </response> 
+          </match> 
+          <match> 
+            <premise> Vertical Bars <c>|||||||</c> </premise> 
+            <response> Separate the feature branch content from the best common ancestor. </response> 
+          </match> 
+          <match> 
+            <premise>Equal Signs <c>=======</c></premise> 
+            <response> Separate the best common ancestor from the <c>main</c> branch content. </response> 
+          </match> 
+          <match> 
+            <premise> Right Chevrons <c>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</c> </premise> 
+            <response> Indicate the end of the merge conflict information. </response> 
+          </match> 
+        </cardsort>
       </task>
     </exercise>
     </exercises>
@@ -134,7 +164,16 @@
         </p>
       </statement>
 
-      <matches> <match> <premise> Accept Current Change </premise> <response> Accept the changes in your feature branch. </response> </match> <match> <premise> Accept Incoming Change </premise> <response> Accept the changes in the <c>main</c> branch. </response> </match> </matches>
+      <cardsort> 
+        <match> 
+          <premise> Accept Current Change </premise> 
+          <response> Accept the changes in your feature branch. </response> 
+        </match> 
+        <match> 
+          <premise> Accept Incoming Change </premise> 
+          <response> Accept the changes in the <c>main</c> branch. </response> 
+        </match> 
+      </cardsort>
       <hint>
         <p>
           Compare the terms used in the merge tool options to the information displayed in the first and last lines of the merge conflict information.
