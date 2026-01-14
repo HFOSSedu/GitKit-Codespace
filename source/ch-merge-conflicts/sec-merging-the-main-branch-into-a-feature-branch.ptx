@@ -53,7 +53,18 @@
         </p>
       </statement>
 
-      <matches> <match order="1"> <premise><c>main</c></premise> <response>Source Branch</response> </match> <match order="2"> <premise>feature branch (<c>hadPig</c>)</premise> <response>Target Branch</response> </match> </matches>
+        <cardsort>
+          <match>
+            <premise order="1">
+              <c>main</c>
+            </premise>
+            <response>Source Branch</response>
+          </match>
+          <match>
+            <premise order="2">feature branch (<c>hadPig</c>)</premise>
+            <response>Target Branch</response>
+          </match>
+        </cardsort>
       <hint>
         <p>
           Read the introduction to this section.

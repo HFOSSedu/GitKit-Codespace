@@ -23,7 +23,7 @@
           Refer back to the sections in this chapter to see what each command does.
         </p>
       </feedback>
-      <matches> 
+      <cardsort> 
         <match>
           <premise>
             <c>git remote -v</c>
@@ -72,7 +72,7 @@
             Delete a feature branch from your origin
           </response> 
         </match> 
-      </matches>
+      </cardsort>
       <hint>
         <p>
           Note that the tasks listed are in approximately the same order as they appear in the sections of this chapter.
