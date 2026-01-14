@@ -112,7 +112,7 @@
 
   <feedback>
     <p>
-      The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.
+      The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c> where <c>yourGithubUsername</c> and <c>theRepoName</c> are adapted for your origin.
     </p>
   </feedback>
   </condition> </var> </setup>
@@ -120,7 +120,7 @@
   <hint>
     <p>
       Be sure you are using your GitHub origin repository (see <xref ref="ex-fork-url" />).
-      This clone URL should contain your GitHub username and end in <c>.git</c>.
+      This URL should contain your GitHub username and end in <c>.git</c>.
     </p>
   </hint>
 </exercise>
@@ -132,7 +132,7 @@
   <title><c>git clone</c></title>
 
   <p>
-    The <c>git clone</c> command will make a copy of your fork on GitHub and make the Local Copy on your computer (in your development environment).
+    The <c>git clone</c> command will make a local copy of your fork on GitHub in your development environment.
     Refer to <xref ref="fig-basic-workflow-clone">Figure</xref>.
   </p>
 
@@ -167,15 +167,15 @@
 
     <feedback>
       <p>
-        It looks like you might be trying to clone the upstream repository instead of your origin.
+        It looks like you might be trying to clone the upstream repository instead of your fork/orign.  Be sure you are using the URL of your origin repository.
       </p>
     </feedback>
     </condition> <condition string=".*">
 
     <feedback>
       <p>
-        Be sure to replace the URL with the clone URL you found in <xref ref="ex-clone-url" />.
-        The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.
+        Be sure to replace the URL with the URL of your fork/origin that you found in <xref ref="ex-clone-url" />.
+        This URL should contain your GitHub username and end in <c>.git</c>.
       </p>
     </feedback>
     </condition> </var> </setup>
