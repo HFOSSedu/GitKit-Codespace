@@ -17,7 +17,7 @@
     <exercise xml:id="ex-git-commands-summary-merging" label="ex-git-commands-summary-merging">
       <introduction>
         <p>
-          Match the tasks on the right with the appropriate git command listed on the left. The &lt;...&gt; notation indicates parameters that are needed to customize each use.
+          Match the tasks on the right with the appropriate Git command listed on the left. The &lt;...&gt; notation indicates parameters that are needed to customize each use.
         </p>
       </introduction>
       <task xml:id="ex-git-commands-summary-merging-pt1" label="ex-git-commands-summary-merging-pt1"> 

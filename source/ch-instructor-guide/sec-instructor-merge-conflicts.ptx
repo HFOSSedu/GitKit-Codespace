@@ -10,7 +10,7 @@
       At the start of this chapter students will have made pull requests for the "Round 2" issues. Initially GitHub will report that these PRs can be merged automatically. However, the instructor will begin this topic by introducing changes to the upstream <c>main</c> that create merge conflicts with the fixes to each of the "Round 2" issues.  Students will then observe that their PRs go from being able to be merged automatically to containing conflicts.
     </p>
     <p>
-      This chapter then focuses on the resolution of merge conflicts.  The concepts of merge commits, common ancestors, best common ancestor, and non-conflicting and conflicting changes are introduced. The topic then covers the process of merging main into a feature branch, git's raw conflict information and the use of a basic merge tool.  The hands-on activity concludes with the students having resolved the merge conflict in their "Round 2" pull request.  Note that these PRs are never merged into the upstream as part of the GitKit activities.    
+      This chapter then focuses on the resolution of merge conflicts.  The concepts of merge commits, common ancestors, best common ancestor, and non-conflicting and conflicting changes are introduced. The topic then covers the process of merging main into a feature branch, Git's raw conflict information and the use of a basic merge tool.  The hands-on activity concludes with the students having resolved the merge conflict in their "Round 2" pull request.  Note that these PRs are never merged into the upstream as part of the GitKit activities.    
     </p>
     <p>
       The exercises in this chapter have the students perform the following major tasks:
@@ -89,7 +89,7 @@
             Uses a text based example to introduce the concepts of <term>common ancestors</term> and <term>best common ancestor</term>, and then uses those to identify <term>conflicting changes</term> and <term>non-conflicting changes</term>.  One way to identify these changes is first to compare the feature branch to the best common ancestor and highlight all changes in the feature branch.  Then repeat, but compare the <code>main</code> branch to the best common ancestor and highlight all differences in the <code>main</code> branch.  Then any lines that are highlighted in both the feature branch and the <code>main</code> branch are conflicting changes. All other highlighted lines are non-conflicting changes.
           </p>
           <p>
-            Note that in these examples the identification of conflicting changes is simplified to be <em>line based</em>.  That is, if a change is found, the entire line is marked as containing a change.  Similarly, if a line is changed in both the feature branch and the <code>main</code> branch, the entire line is marked as a conflict.  The algorithm used by git is more complex than this simplified approach, but the concept is sufficiently the same for the purposes of these activities.
+            Note that in these examples the identification of conflicting changes is simplified to be <em>line based</em>.  That is, if a change is found, the entire line is marked as containing a change.  Similarly, if a line is changed in both the feature branch and the <code>main</code> branch, the entire line is marked as a conflict.  The algorithm used by Git is more complex than this simplified approach, but the concept is sufficiently the same for the purposes of these activities.
           </p>
         </li>
         <li>
@@ -132,7 +132,7 @@
             Slide 20
           </title>
           <p>
-            Shows the <code>raw merge conflict</code> information that is produced by git when a merge creates a conflict.  This information can be edited manually in any text editor.  However, it is often difficult to identify exactly what changes exist.  This is good motivation for the use of a <term>graphical merge tool</term> that makes it easier to see what changes have been made and where the conflicts exist.
+            Shows the <code>raw merge conflict</code> information that is produced by Git when a merge creates a conflict.  This information can be edited manually in any text editor.  However, it is often difficult to identify exactly what changes exist.  This is good motivation for the use of a <term>graphical merge tool</term> that makes it easier to see what changes have been made and where the conflicts exist.
           </p>
         </li>
         <li>

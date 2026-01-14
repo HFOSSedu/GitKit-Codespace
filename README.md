@@ -224,6 +224,9 @@ Use text styling consistently throughout the document as follows:
   - The first use of a new term.
 - `"..."` (quotations)
   - GitHub / VSCode / Linux UI elements (buttons / menus / text in output / etc)
+- Git vs `git`
+  - Use `git` only when writing a command (e.g. `git status`).
+  - Use Git in all other instances.
 
 #### Escaping Characters
 

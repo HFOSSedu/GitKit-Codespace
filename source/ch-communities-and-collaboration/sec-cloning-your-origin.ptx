@@ -421,11 +421,11 @@
   </p>
 
   <p>
-    The command <c>git remote</c> on its own will show you the <em>names</em> of the remotes that git knows about, but not their URLS.
+    The command <c>git remote</c> on its own will show you the <em>names</em> of the remotes that Git knows about, but not their URLS.
   </p>
 
   <p>
-    If you want to have git display the URLs of the remotes as well, you will need to add the <c>-v</c> or <c>--verbose</c> flag: <c>git remote -v</c>
+    If you want to have Git display the URLs of the remotes as well, you will need to add the <c>-v</c> or <c>--verbose</c> flag: <c>git remote -v</c>
   </p>
 
   <exercises>
@@ -433,7 +433,7 @@
   <exercise xml:id="ex-check-remotes-a" label="ex-check-remotes-a">
     <statement>
       <p>
-        Which command will show you the URL(s) of the remote(s) that git knows about?
+        Which command will show you the URL(s) of the remote(s) that Git knows about?
       </p>
     </statement>
 
@@ -490,7 +490,7 @@
 
         <feedback>
           <p>
-            <c>git url</c> is not a git command.
+            <c>git url</c> is not a Git command.
           </p>
         </feedback>
       </choice>

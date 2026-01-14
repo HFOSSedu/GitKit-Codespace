@@ -59,7 +59,7 @@
         <li>
           <title>Slide 2</title>
           <p>
-            Reviews the main git/GitHub concepts and vocabulary from Chapter 2.  The terms <term>upstream repository</term>, <term>origin repository</term>, <term>local repository</term>, <term>local</term>, <term>remote</term>, <term>fork</term>, and <term>clone</term> should be reviewed so that they begin to be part of the student's working vocabulary.
+            Reviews the main Git/GitHub concepts and vocabulary from Chapter 2.  The terms <term>upstream repository</term>, <term>origin repository</term>, <term>local repository</term>, <term>local</term>, <term>remote</term>, <term>fork</term>, and <term>clone</term> should be reviewed so that they begin to be part of the student's working vocabulary.
           </p>
         </li>
         <li>
@@ -73,7 +73,7 @@
           <p>
             Introduces branches and commits. In the diagrams on these slides, and throughout the remainder of the GitKit, different colors are used as the unique identifier for each commit (e.g. we can talk about the "red" or the "yellow" commit).
     
-            This slide introduces a conceptual simplification to think of a commit as a complete "snapshot" of all files in the project repository at that point in time, along with some meta data. Depending on the level of the course being taught, it may be worth a moment here to to explore the idea that storing a complete copy of the files for each commit would be very inefficient and discuss that it does not work that way in practice. Git commits do not actually contain full copies of every file in the repo. Instead, for each file that is changed by the commit, the "snapshot" contains a full (compressed) copy of the file. For each file that is not changed by the commit, the "snapshot" contains only a link (like a shortcut) to that file.  This link points to the file in the most recent commit in which it was changed. Depending on the level of the course being taught, this can also provide an opportunity to distinguish git from other <em>delta-based</em> version control systems (cvs, svn) where commits record changes to files rather than complete copies of the changed files.
+            This slide introduces a conceptual simplification to think of a commit as a complete "snapshot" of all files in the project repository at that point in time, along with some meta data. Depending on the level of the course being taught, it may be worth a moment here to to explore the idea that storing a complete copy of the files for each commit would be very inefficient and discuss that it does not work that way in practice. Git commits do not actually contain full copies of every file in the repo. Instead, for each file that is changed by the commit, the "snapshot" contains a full (compressed) copy of the file. For each file that is not changed by the commit, the "snapshot" contains only a link (like a shortcut) to that file.  This link points to the file in the most recent commit in which it was changed. Depending on the level of the course being taught, this can also provide an opportunity to distinguish Git from other <em>delta-based</em> version control systems (cvs, svn) where commits record changes to files rather than complete copies of the changed files.
           </p>
         </li>
         <li>
@@ -85,7 +85,7 @@
         <li>
           <title>Slides 6-7</title>
           <p>
-            The diagrams used by the GitKit to illustrate git and GitHub concepts are extended to include branches and commits. The convention of using colors as the unique identifier for each commit is also used in these diagrams. In doing so, it is important to emphasize the distinction between the final commit in the <term>active branch</term> and the <term>local files</term>. Before any changes are made, the local files can be thought of as a copy of the final commit in the active branch.  This is illustrated by initially having the "dot" in the local files be green, the same color as the final commit in the <code>main</code> branch.
+            The diagrams used by the GitKit to illustrate Git and GitHub concepts are extended to include branches and commits. The convention of using colors as the unique identifier for each commit is also used in these diagrams. In doing so, it is important to emphasize the distinction between the final commit in the <term>active branch</term> and the <term>local files</term>. Before any changes are made, the local files can be thought of as a copy of the final commit in the active branch.  This is illustrated by initially having the "dot" in the local files be green, the same color as the final commit in the <code>main</code> branch.
           </p>
         </li>
         <li>

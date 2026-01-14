@@ -13,14 +13,13 @@
   </introduction>
 
   <exercises>
-    <title />
-    <exercise xml:id="ex-git-commands-summary-communities"
-      label="ex-git-commands-summary-communities">
-      <statement>
-        <p>
-          Match the tasks on the right with the appropriate git command listed on the left.
-        </p>
-      </statement>
+  <title />
+  <exercise xml:id="ex-git-commands-summary-communities" label="ex-git-commands-summary-communities">
+    <statement>
+      <p>
+        Match the tasks on the right with the appropriate Git command listed on the left.
+      </p>
+    </statement>
 
       <cardsort>
         <match>
