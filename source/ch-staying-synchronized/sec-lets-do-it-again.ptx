@@ -221,7 +221,7 @@
               Match the Git commands will you use for each of the tasks indicated below.
             </p>
           </statement>
-          <matches> 
+          <cardsort> 
           <match>
             <premise>
               <c>git branch &lt;branch&gt;</c>
@@ -262,7 +262,7 @@
               Push your feature branch to your origin.
             </response> 
           </match> 
-          </matches>
+        </cardsort>
           <hint>
             <p>
               The command reference that you created in <xref ref="topic-git-command-summary-upstreaming" text="type-global-title" /> may come in handy here.

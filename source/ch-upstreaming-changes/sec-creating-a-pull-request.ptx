@@ -107,11 +107,16 @@
             Match the right hand column with either head repository or base repository to indicate which term refers to your origin and which refers to the upstream.
           </p>
         </statement>
-        <matches> <match>
-        <premise>
-        <c>head repository</c></premise> <response>your origin repository</response> </match> <match>
-        <premise>
-        <c>base repository</c></premise> <response>the upstream</response> </match>  </matches>
+        <cardsort> 
+          <match>
+            <premise><c>head repository</c></premise> 
+            <response>your origin repository</response> 
+          </match> 
+          <match>
+            <premise><c>base repository</c></premise> 
+            <response>the upstream</response> 
+          </match>  
+        </cardsort>
         <hint>
           <p>
             The base is where you want your changes merged into/the repository you created your fork from.
@@ -129,11 +134,16 @@
             Match the right hand column with either base branch or compare branch to indicate which is “pulled from” or “merged into”.
           </p>
         </statement>
-        <matches> <match>
-        <premise>
-        <c>base branch</c></premise> <response>merged into</response> </match> <match>
-        <premise>
-        <c>compare branch</c></premise> <response>pulled from</response> </match>  </matches>
+        <cardsort> 
+          <match>
+            <premise><c>base branch</c></premise> 
+            <response>merged into</response> 
+          </match> 
+          <match>
+            <premise><c>compare branch</c></premise> 
+            <response>pulled from</response> 
+          </match>  
+        </cardsort>
         <hint>
           <p>
             The base is where you want your changes merged into.

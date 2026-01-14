@@ -22,7 +22,7 @@
       </introduction>
       <task xml:id="ex-git-commands-summary-merging-pt1" label="ex-git-commands-summary-merging-pt1"> 
         <statement></statement>
-        <matches> 
+        <cardsort> 
           <match>
             <premise><c>git switch &lt;branch&gt; </c></premise> 
             <response>Change the active branch.</response> 
@@ -35,7 +35,7 @@
             <premise><c>git push origin main </c></premise> 
             <response>Synchronize the origin <c>main</c> branch with the local <c>main</c> branch.</response> 
           </match> 
-        </matches>      
+        </cardsort>      
         <hint>
           <p>
             Note that the tasks listed are in approximately the same order as they appear in the sections of this chapter.
@@ -45,7 +45,7 @@
 
       <task xml:id="ex-git-commands-summary-merging-pt2" label="ex-git-commands-summary-merging-pt2">
         <statement></statement>
-        <matches> 
+        <cardsort> 
           <match>
             <premise><c>git merge &lt;source&gt; </c></premise> 
             <response>Add changes from source branch into the active branch</response> 
@@ -62,7 +62,7 @@
             <premise><c>git push origin &lt;branch&gt;</c></premise> 
             <response>Copy the named branch to your origin repository.</response> 
           </match> 
-        </matches>      
+        </cardsort>      
         <hint>
           <p>
             Note that the tasks listed are in approximately the same order as they appear in the sections of this chapter.
