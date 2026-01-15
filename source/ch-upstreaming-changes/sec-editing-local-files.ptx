@@ -64,7 +64,7 @@
         <var width="55" />
       </p>
     </statement>
-    <setup> <var> <condition string="^ONBOARDING.md|CONTRIBUTING.md|INSTALL.md|README.md$">
+    <setup> <var> <condition string="^ONBOARDING.md|CONTRIBUTING.md|INSTALL.md|README.md|LICENSE.md$">
     <feedback>
       <p>
         Thank you.
