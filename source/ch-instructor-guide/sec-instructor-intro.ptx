@@ -649,7 +649,7 @@
 									<xref ref="topic-synchronizing-exercise-notes" text="custom">Exercise Notes</xref>
 									]
 								</p>
-							</li><url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch5-MergeConflicts.pptx">Download Slides</url>
+							</li>
 						</ul>
 					</p>
 				</li>
@@ -659,7 +659,7 @@
 						<ul>
 							<li>
 								<p>
-									[  |
+									[ <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch5-MergeConflicts.pptx">Download Slides</url> |
 									<xref ref="topic-merge-conflicts-slide-notes" text="custom">Slide Notes</xref> |
 									<xref ref="topic-merge-conflicts-todo" text="custom">To-Do</xref> |
 									<xref ref="topic-merge-conflicts-exercise-notes" text="custom">Exercise Notes</xref>
