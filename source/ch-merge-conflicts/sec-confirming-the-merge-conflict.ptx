@@ -20,7 +20,7 @@
 
           <description>
             <p>
-              Diagram showing how merging the feature branch from one of the other forks' feature branches into the upstream main branch results in a sequnce of commits that could conflict with the sequence of commits in your fork's feature branch.
+              Diagram showing how merging the feature branch from one of the other forks' feature branches into the upstream main branch results in a sequence of commits that could conflict with the sequence of commits in your fork's feature branch.
             </p>
           </description>
         </image>
@@ -47,7 +47,7 @@
     </introduction>
 
 
-    <task>
+    <task xml:id="ex-identifying-upstream-commits" label="ex-identifying-upstream-commits">
       <statement>
         <p>
           Which of the following commits (i.e.
@@ -136,7 +136,7 @@
     </task>
 
 
-    <task>
+    <task xml:id="ex-identifying-your-commits" label="ex-identifying-your-commits">
       <statement>
         <p>
           Which of the following commits (i.e.
@@ -281,7 +281,7 @@
 
               <description>
                 <p>
-                  Image of a dialog with a green checkmark and the message "This branch has no conflicts with the base branch.
+                  Image of a dialog with a green check mark and the message "This branch has no conflicts with the base branch.
                   Merging can be performed automatically."
                 </p>
               </description>
