@@ -148,66 +148,78 @@
         <choices randomize="yes">
           <choice correct="yes">
             <statement>
-              <image source="images/ch-communities-and-collaboration/documentation-tag.png">
+              <p>
+              <image source="images/ch-communities-and-collaboration/documentation-tag.png" width="25%">
                 <shortdescription>
                   Image of the Documentation label.
                 </shortdescription>
               </image>
+              </p>
             </statement>
 
           </choice>
 
           <choice correct="yes">
             <statement>
-              <image source="images/ch-communities-and-collaboration/round1-tag.png">
+             <p>
+              <image source="images/ch-communities-and-collaboration/round1-tag.png" width="15%">
                 <shortdescription>
                   Image of the Round1 label.
                 </shortdescription>
               </image>
+              </p>
             </statement>
 
           </choice>
 
           <choice correct="yes">
             <statement>
-              <image source="images/ch-communities-and-collaboration/enhancement-tag.png">
+             <p>
+              <image source="images/ch-communities-and-collaboration/enhancement-tag.png" width="25%">
                 <shortdescription>
                   Image of the Enhancement label.
                 </shortdescription>
               </image>
+             </p>
             </statement>
 
           </choice>
 
           <choice correct="no">
             <statement>
-              <image source="images/ch-communities-and-collaboration/typos-tag.png">
+             <p>
+              <image source="images/ch-communities-and-collaboration/typos-tag.png" width="10%">
                 <shortdescription>
                   Image of the Typos label.
                 </shortdescription>
               </image>
+             </p>
             </statement>
 
           </choice>
 
           <choice correct="no">
             <statement>
-              <image source="images/ch-communities-and-collaboration/bug-tag.png">
+             <p>
+              <image source="images/ch-communities-and-collaboration/bug-tag.png" width="10%">
                 <shortdescription>
                   Image of the Bug label.
                 </shortdescription>
               </image>
+              </p>
             </statement>
 
           </choice>
 
           <choice correct="no">
             <statement>
-              <image source="images/ch-communities-and-collaboration/uiux-tag.png">
+             <p>
+              <image source="images/ch-communities-and-collaboration/uiux-tag.png" width="15%">
                 <shortdescription>
                   Image of the UI/UX label.
                 </shortdescription>
               </image>
+             </p>
             </statement>
 
           </choice>
