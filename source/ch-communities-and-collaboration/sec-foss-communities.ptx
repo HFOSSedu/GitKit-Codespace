@@ -1,1681 +1,1942 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="topic-foss-communities" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<section xml:id="topic-foss-communities" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>FOSS Communities</title>
 
   <introduction>
     <p>
-      During class time you will have learned about the principles that guide FOSS Communities and the roles that are performed by FOSS community members.
+      During class time you will have learned about the principles that guide
+      FOSS Communities and the roles that are performed by FOSS community
+      members.
       The exercises in this section ask about those principles and roles.
     </p>
   </introduction>
-
 
   <subsection>
     <title>FOSS Community Principles</title>
 
     <introduction>
       <p>
-        Some of the key principles that guide FOSS communities are <term>shared values</term>, <term>collaboration</term>, <term>transparency</term>, <term>inclusivity</term>, <term>meritocracy</term> and <term>release early and often</term>.
+        Some of the key principles that guide FOSS communities are
+        <term>shared values</term>, <term>collaboration</term>,
+        <term>transparency</term>, <term>inclusivity</term>,
+        <term>meritocracy</term> and <term>release early and often</term>.
       </p>
+
       <p>
-      If you would like you can review a discussion of these principles in the speaker notes in <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx">the slides for this chapter</url> or in <url href="https://opensource.com/open-source-way" visual="opensource.com/open-source-way">The Open Source Way.</url>
+        If you would like you can review a discussion of these principles in the
+        speaker notes in
+        <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx">the slides for this chapter</url>
+        or in
+        <url href="https://opensource.com/open-source-way" visual="opensource.com/open-source-way">The Open Source Way.</url>
+      </p>
+    </introduction>
+    
+    <exercises>
+      <title />
+      <exercise xml:id="ex-community-principles" label="ex-community-principles">
+        <introduction>
+          <p>
+            Consider each of the following statements about the operation of a
+            FOSS community and choose the principle (or principles if multiple
+            apply equally) with which it most closely aligns.
+          </p>
+        </introduction>
+
+        <task xml:id="ex-community-principles-a" label="ex-community-principles-a">
+          <statement>
+            <p>
+              By building on each other's work the community can solve problems
+              that no one could solve alone.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Shared values
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not shared values.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Collaboration
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Working together to solve problems is at the heart of
+                  collaboration.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Transparency
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not transparency.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Inclusivity
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not inclusivity.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Meritocracy
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not meritocracy.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Release early and often.
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not release early and often.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Principles are related, but select the principle(s) that most closely align with the given statement.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-principles-b" label="ex-community-principles-b">
+          <statement>
+            <p>
+              Decisions and the rationale for them are available to the
+              community.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Shared values
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not shared values.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Collaboration
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not collaboration.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Transparency
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Sharing decisions and rationale with the community allows
+                  everyone to know how and why decisions are reached.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Inclusivity
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Sharing decisions and rationale allows everyone in the
+                  community to feel included.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Meritocracy
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not meritocracy.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Release early and often.
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not release early and often.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Principles are related, but select the principle(s) that most closely align with the given statement.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-principles-c" label="ex-community-principles-c">
+          <statement>
+            <p>
+              The mission and goals of the community are more important than
+              individual agendas.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Shared values
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  The goals are shared if they take precedence over individual
+                  agendas.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Collaboration
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Shared goals of the community invite collaboration.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Transparency
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not transparency.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Inclusivity
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not inclusivity.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Meritocracy
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not meritocracy.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Release early and often.
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not release early and often.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Principles are related, but select the principle(s) that most closely align with the given statement.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-principles-d" label="ex-community-principles-d">
+          <statement>
+            <p>
+              The best ideas should win, regardless of where they come from.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Shared values
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not shared values.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Collaboration
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not collaboration.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Transparency
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not transparency.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Inclusivity
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Individuals feel included if their contributions are assessed
+                  on merit, not their own identity.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Meritocracy
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Ideas and contributions should be assessed solely on merit.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Release early and often.
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not release early and often.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Principles are related, but select the principle(s) that most closely align with the given statement.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-principles-e" label="ex-community-principles-e">
+          <statement>
+            <p>
+              Incorporating new changes and features quickly generates feedback
+              and leads to rapid improvement.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Shared values
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not shared values.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Collaboration
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not collaboration.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Transparency
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not transparency.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Inclusivity
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not inclusivity.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Meritocracy
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not meritocracy.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Release early and often.
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Releasing early and often allows the project to respond to
+                  needs quickly by gathering feedback.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Principles are related, but select the principle(s) that most closely align with the given statement.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-principles-f" label="ex-community-principles-f">
+          <statement>
+            <p>
+              Community members enhance and extend what others contribute in
+              unanticipated ways.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Shared values
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not shared values.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Collaboration
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  When we can modify what others have shared, we unlock new
+                  possibilities.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Transparency
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not transparency.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Inclusivity
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not inclusivity.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Meritocracy
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not meritocracy.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Release early and often.
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not release early and often.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Principles are related, but select the principle(s) that most closely align with the given statement.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-principles-g" label="ex-community-principles-g">
+          <statement>
+            <p>
+              Decision makers continually seek diverse perspectives.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Shared values
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not shared values.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Collaboration
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not collaboration.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Transparency
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not transparency.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Inclusivity
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Good ideas can come from anywhere.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Meritocracy
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not meritocracy.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Release early and often.
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not release early and often.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Principles are related, but select the principle(s) that most closely align with the given statement.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-principles-h" label="ex-community-principles-h">
+          <statement>
+            <p>
+              All community members have access to the information necessary to
+              do their best work.
+            </p>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Shared values
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not shared values.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Collaboration
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not collaboration.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Transparency
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  When we have access to the information and materials to do our
+                  best work, we can build on each other's work.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Inclusivity
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not inclusivity Another principle is more closely
+                  related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Meritocracy
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not meritocracy.
+                  Another principle is more closely related.
+                  Review the principles in The Open Source Way.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Release early and often.
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not release early and often.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Principles are related, but select the principle(s) that most closely align with the given statement.</p>
+          </hint>
+        </task>
+      </exercise>
+    </exercises>
+  </subsection>
+
+  <subsection>
+    <title>FOSS Community Roles</title>
+
+    <introduction>
+      <p>
+        One way of understanding FOSS communities is to consider the different
+        roles that people take on in these communities.
+        Some of these roles include <term>Users</term>, <term>Requestors</term>,
+        <term>Contributors</term>, <term>Maintainers</term> and
+        <term>Leaders</term>.
+        These roles are prototypical and not every one of them roles will exist
+        exactly in every FOSS community.
+        Some communities will have slightly different roles, or multiple roles
+        may be combined, etc.
+        In addition, a given individual might simultaneously, or at different
+        times take on multiple roles.
+        So even though they are not exact or universal, understanding these
+        prototypical roles can be helpful in understanding how work happens in
+        FOSS communities.
+      </p>
+
+      <p>
+        If you would like you can review a discussion of these roles in the
+        speaker notes in
+        <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx">the slides for this chapter.</url>
       </p>
     </introduction>
 
     <exercises>
-    <title />
-    <exercise xml:id="ex-community-principles" label="ex-community-principles">
-      <introduction>
-        <p>
-          Consider each of the following statements about the operation of a FOSS community and choose the principle (or principles if multiple apply equally) with which it most closely aligns.
-        </p>
-      </introduction>
-
-
-      <task xml:id="ex-community-principles-a" label="ex-community-principles-a" >
-        <statement>
+      <title />
+      <exercise xml:id="ex-community-roles" label="ex-community-roles">
+        <introduction>
           <p>
-            By building on each other's work the community can solve problems that no one could solve alone.
+            Consider each of the actions described below.
+            For each action, select the role (or roles) of the individual(s)
+            that would most likely be responsible for the action.
           </p>
+        </introduction>
 
-          <p />
+        <task xml:id="ex-community-roles-a" label="ex-community-roles-a">
+          <statement>
+            <p>
+              Choosing the license under which the project will be released.
+            </p>
           </statement>
 
-           <choices randomize="yes">
-             <choice>
-               <statement>
-                 <p>
-                 Shared values
-                 </p>
-               </statement>
-               <feedback>
-                 <p>
-                 It's not shared values.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Collaboration
-                 </p>
-               </statement>
-
-               <feedback>
-                 <p>
-                 Working together to solve problems is at the heart of collaboration.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Transparency
-                 </p>
-               </statement>
-
-               <feedback>
-                 <p>
-                 It's not transparency.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Inclusivity
-                 </p>
-               </statement>
-
-               <feedback>
-                 <p>
-                 It's not inclusivity.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Meritocracy
-                 </p>
-               </statement>
-
-               <feedback>
-                 <p>
-                 It's not meritocracy.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Release early and often.
-                 </p>
-               </statement>
-
-               <feedback>
-                 <p>
-                 It's not release early and often.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-          </choices>
-          <hint>
-          Principles are related, but select the principle(s) that most closely align with the given statement.
-          </hint>
-          </task>
-
-
-          <task xml:id="ex-community-principles-b" label="ex-community-principles-b" >
-            <statement>
-              <p>
-                Decisions and the rationale for them are available to the community.
-              </p>
-
-              <p />
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Users
+                </p>
               </statement>
-           <choices randomize="yes">
-             <choice>
-               <statement>
-                 <p>
-                 Shared values
-                 </p>
-               </statement>
-               <feedback>
-                 <p>
-                 It's not shared values.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Collaboration
-                 </p>
-               </statement>
 
-               <feedback>
-                 <p>
-                 It's not collaboration.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Transparency
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 Sharing decisions and rationale with the community allows everyone to know how and why decisions are reached.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Inclusivity
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 Sharing decisions and rationale allows everyone in the community to feel included.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Meritocracy
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  It's not requestors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not meritocracy.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Release early and often.
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not release early and often.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
+              <feedback>
+                <p>
+                  It's not contributors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not maintainers.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Leaders determine how a project will be licensed.
+                </p>
+              </feedback>
+            </choice>
           </choices>
+
           <hint>
-          Principles are related, but select the principle(s) that most closely align with the given statement.
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
           </hint>
-              </task>
+        </task>
 
-              <task xml:id="ex-community-principles-c" label="ex-community-principles-c" >
-                <statement>
-                  <p>
-                    The mission and goals of the community are more important than individual agendas.
-                  </p>
+        <task xml:id="ex-community-roles-b" label="ex-community-roles-b">
+          <statement>
+            <p>
+              Using the software in a new, unanticipated or creative way.
+            </p>
+          </statement>
 
-                  <p />
-                  </statement>
-           <choices randomize="yes">
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Shared values
-                 </p>
-               </statement>
-               <feedback>
-                 <p>
-                 The goals are shared if they take precedence over individual agendas.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Collaboration
-                 </p>
-               </statement>
+          <choices randomize="yes">
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 Shared goals of the community invite collaboration.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Transparency
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Users have the freedom to choose how to use software.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not transparency.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Inclusivity
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not inclusivity.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Meritocracy
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  It's not requestors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not meritocracy.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Release early and often.
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not release early and often.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
+              <feedback>
+                <p>
+                  It's not contributors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not maintainers.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not leaders.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
           </choices>
+
           <hint>
-          Principles are related, but select the principle(s) that most closely align with the given statement.
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
           </hint>
+        </task>
 
-                  </task>
+        <task xml:id="ex-community-roles-c" label="ex-community-roles-c">
+          <statement>
+            <p>
+              Asking that a useful new feature be added to the software.
+            </p>
 
-                  <task xml:id="ex-community-principles-d" label="ex-community-principles-d" >
-                    <statement>
-                      <p>
-                        The best ideas should win, regardless of where they come from.
-                      </p>
+            <p/>
+          </statement>
 
-                      <p />
-                      </statement>
-           <choices randomize="yes">
-             <choice>
-               <statement>
-                 <p>
-                 Shared values
-                 </p>
-               </statement>
-               <feedback>
-                 <p>
-                 It's not shared values.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Collaboration
-                 </p>
-               </statement>
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not collaboration.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Transparency
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Users only use the software as is.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not transparency.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Inclusivity
-                 </p>
-               </statement>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 Individuals feel included if their contributions are assessed on merit, not their own identity.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Meritocracy
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Requestors request new features.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 Ideas and contributions should be assessed solely on merit.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Release early and often.
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not release early and often.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
+              <feedback>
+                <p>
+                  It's not contributors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not maintainers.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not leaders.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
           </choices>
+
           <hint>
-          Principles are related, but select the principle(s) that most closely align with the given statement.
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
           </hint>
+        </task>
 
+        <task xml:id="ex-community-roles-d" label="ex-community-roles-d">
+          <statement>
+            <p>
+              Discovering a bug in the software.
+            </p>
 
-                      </task>
+            <p/>
+          </statement>
 
+          <choices randomize="yes">
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
 
-                      <task xml:id="ex-community-principles-e" label="ex-community-principles-e" >
-                        <statement>
-                          <p>
-                            Incorporating new changes and features quickly generates feedback and leads to rapid improvement.
-                          </p>
+              <feedback>
+                <p>
+                  Users detect bugs and report them.
+                </p>
+              </feedback>
+            </choice>
 
-                          <p />
-                          </statement>
-           <choices randomize="yes">
-             <choice>
-               <statement>
-                 <p>
-                 Shared values
-                 </p>
-               </statement>
-               <feedback>
-                 <p>
-                 It's not shared values.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Collaboration
-                 </p>
-               </statement>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not collaboration.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Transparency
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Requestors detect bugs and report them.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not transparency.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Inclusivity
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not inclusivity.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Meritocracy
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  It's not contributors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not meritocracy.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Release early and often.
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 Releasing early and often allows the project to respond to needs quickly by gathering feedback.
-                 </p>
-               </feedback>
-             </choice>
+              <feedback>
+                <p>
+                  It's not maintainers.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not leaders.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
           </choices>
+
           <hint>
-          Principles are related, but select the principle(s) that most closely align with the given statement.
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
           </hint>
+        </task>
 
-                          </task>
+        <task xml:id="ex-community-roles-e" label="ex-community-roles-e">
+          <statement>
+            <p>
+              Providing a code patch that fixes a bug in the software.
+            </p>
 
+            <p/>
+          </statement>
 
-                          <task xml:id="ex-community-principles-f" label="ex-community-principles-f" >
-                            <statement>
-                              <p>
-                                Community members enhance and extend what others contribute in unanticipated ways.
-                              </p>
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
 
-                              <p />
-                              </statement>
-           <choices randomize="yes">
-             <choice>
-               <statement>
-                 <p>
-                 Shared values
-                 </p>
-               </statement>
-               <feedback>
-                 <p>
-                 It's not shared values.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Collaboration
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  It's not users.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 When we can modify what others have shared, we unlock new possibilities.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Transparency
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not transparency.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Inclusivity
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  It's not requestors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not inclusivity.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
 
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Meritocracy
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Contributors patch the code.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not meritocracy.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Release early and often.
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not release early and often.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
+              <feedback>
+                <p>
+                  It's not maintainers.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not leaders.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
           </choices>
+
           <hint>
-          Principles are related, but select the principle(s) that most closely align with the given statement.
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
           </hint>
+        </task>
 
-                              </task>
+        <task xml:id="ex-community-roles-f" label="ex-community-roles-f">
+          <statement>
+            <p>
+              Submitting an improved set of installation instructions.
+            </p>
 
+            <p/>
+          </statement>
 
-                              <task xml:id="ex-community-principles-g" label="ex-community-principles-g" >
-                                <statement>
-                                  <p>
-                                    Decision makers continually seek diverse perspectives.
-                                  </p>
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
 
-                                  <p />
-                                  </statement>
-           <choices randomize="yes">
-             <choice>
-               <statement>
-                 <p>
-                 Shared values
-                 </p>
-               </statement>
-               <feedback>
-                 <p>
-                 It's not shared values.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Collaboration
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  It's not users.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not collaboration.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Transparency
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not transparency.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Inclusivity
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  It's not requestors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 Good ideas can come from anywhere.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Meritocracy
-                 </p>
-               </statement>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not meritocracy.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Release early and often.
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Contributors contribute more than just code, such as
+                  installation instructions.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not release early and often.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
+            <choice>
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not maintainers.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not leaders.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
           </choices>
+
           <hint>
-          Principles are related, but select the principle(s) that most closely align with the given statement.
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
           </hint>
+        </task>
 
+        <task xml:id="ex-community-roles-g" label="ex-community-roles-g">
+          <statement>
+            <p>
+              Documenting a bug in the issue tracker so others can fix it.
+            </p>
 
-                                  </task>
+            <p/>
+          </statement>
 
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
 
-                                  <task xml:id="ex-community-principles-h" label="ex-community-principles-h" >
-                                    <statement>
-                                      <p>
-                                        All community members have access to the information necessary to do their best work.
-                                      </p>
+              <feedback>
+                <p>
+                  It's not users.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
 
-                                      </statement>
-           <choices randomize="yes">
-             <choice>
-               <statement>
-                 <p>
-                 Shared values
-                 </p>
-               </statement>
-               <feedback>
-                 <p>
-                 It's not shared values.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Collaboration
-                 </p>
-               </statement>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not collaboration.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice correct="yes">
-               <statement>
-                 <p>
-                 Transparency
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Requestors can do bug documenting.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 When we have access to the information and materials to do our best work, we can build on each other's work.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Inclusivity
-                 </p>
-               </statement>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not inclusivity
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Meritocracy
-                 </p>
-               </statement>
+              <feedback>
+                <p>
+                  Contributors contribute more than just code, such as bug
+                  documenting.
+                </p>
+              </feedback>
+            </choice>
 
-               <feedback>
-                 <p>
-                 It's not meritocracy.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </feedback>
-             </choice>
-             <choice>
-               <statement>
-                 <p>
-                 Release early and often.
-                 Another principle is more closely related. Review the principles in The Open Source Way.
-                 </p>
-               </statement>
+            <choice>
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
 
-               <feedback>
-                 <p>
-                 It's not release early and often.
-                 </p>
-               </feedback>
-             </choice>
+              <feedback>
+                <p>
+                  It's not maintainers.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not leaders.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
           </choices>
+
           <hint>
-          Principles are related, but select the principle(s) that most closely align with the given statement.
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
           </hint>
-
-
-                                      </task>
-                                    </exercise>
-                                    </exercises>
-                                  </subsection>
-
-
-                                  <subsection>
-                                    <title>FOSS Community Roles</title>
-
-                                    <introduction>
-                                      <p>
-                                        One way of understanding FOSS communites is to consider the different roles that people take on in these communities. Some of these roles include <term>Users</term>, <term>Requestors</term>, <term>Contributors</term>, <term>Maintainers</term> and <term>Leaders</term>. These roles are prototypical and not every one of them roles will exist exactly in every FOSS community. Some communities will have slightly different roles, or multiple roles may be combined, etc. In addition, a given individual might simultaneously, or at different times take on multiple roles. So even though they are not exact or universal, understanding these prototypical roles can be helpful in understanding how work happens in FOSS communities.
-                                      </p>
-                                      <p>
-                                      If you would like you can review a discussion of these roles in the speaker notes in <url href="https://github.com/HFOSSedu/GitKit-Codespace/raw/refs/heads/main/materials/slides/Ch2-CommunitiesAndCollaboration.pptx">the slides for this chapter.</url>
-                                      </p>
-                                    </introduction>
-
-                                    <exercises>
-                                    <title />
-                                    <exercise xml:id="ex-community-roles" label="ex-community-roles">
-                                      <introduction>
-                                        <p>
-                                          Consider each of the actions described below.
-                                          For each action, select the role (or roles) of the individual(s) that would most likely be responsible for the action.
-                                        </p>
-                                      </introduction>
-
-
-                                      <task xml:id="ex-community-roles-a" label="ex-community-roles-a" >
-                                        <statement>
-                                          <p>
-                                            Choosing the license under which the project will be released.
-                                          </p>
-                                        </statement>
-                                            <choices randomize="yes">
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not requestors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not contributors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not maintainers.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Leaders determine how a project will be licensed.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                         </task>
-
-                                          <task xml:id="ex-community-roles-b" label="ex-community-roles-b" >
-                                            <statement>
-                                              <p>
-                                                Using the software in a new, unanticipated or creative way.
-                                              </p>
-
-                                              </statement>
-                                            <choices randomize="yes">
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  Users have the freedom to choose how to use software.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not requestors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not contributors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not maintainers.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not leaders.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                              </task>
-
-
-                                              <task xml:id="ex-community-roles-c" label="ex-community-roles-c" >
-                                                <statement>
-                                                  <p>
-                                                    Asking that a useful new feature be added to the software.
-                                                  </p>
-
-                                                  <p />
-                                                  </statement>
-                                            <choices randomize="yes">
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  Users only use the software as is.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Requestors request new features.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not contributors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not maintainers.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not leaders.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                                  </task>
-
-                                                  <task xml:id="ex-community-roles-d" label="ex-community-roles-d" >
-                                                    <statement>
-                                                      <p>
-                                                        Discovering a bug in the software.
-                                                      </p>
-
-                                                      <p />
-                                                      </statement>
-                                            <choices randomize="yes">
-                                             <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  Users detect bugs and report them.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Requestors detect bugs and report them.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not contributors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not maintainers.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not leaders.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-
-                                                      </task>
-
-
-                                                      <task xml:id="ex-community-roles-e" label="ex-community-roles-e" >
-                                                        <statement>
-                                                          <p>
-                                                            Providing a code patch that fixes a bug in the software.
-                                                          </p>
-
-                                                          <p />
-                                                          </statement>
-                                            <choices randomize="yes">
-                                             <choice>
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  It's not users.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not requestors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Contributors patch the code.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not maintainers.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not leaders.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                                     </task>
-                                                          <task xml:id="ex-community-roles-f" label="ex-community-roles-f" >
-                                                            <statement>
-                                                              <p>
-                                                                Submitting an improved set of installation instructions.
-                                                              </p>
-
-                                                              <p />
-                                                              </statement>
-                                            <choices randomize="yes">
-                                             <choice>
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  It's not users.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not requestors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Contributors contribute more than just code, such as installation instructions.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not maintainers.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not leaders.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                                              </task>
-
-
-                                                              <task xml:id="ex-community-roles-g" label="ex-community-roles-g" >
-                                                                <statement>
-                                                                  <p>
-                                                                    Documenting a bug in the issue tracker so others can fix it.
-                                                                  </p>
-
-                                                                  <p />
-                                                                  </statement>
-                                            <choices randomize="yes">
-                                             <choice>
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  It's not users.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Requestors can do bug documenting.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Contributors contribute more than just code, such as bug documenting.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not maintainers.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not leaders.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                                                  </task>
-
-
-                                                                  <task xml:id="ex-community-roles-h" label="ex-community-roles-h" >
-                                                                    <statement>
-                                                                      <p>
-                                                                        Defining the goals for the next year of work on the project.
-                                                                      </p>
-
-                                                                      <p />
-                                                                      </statement>
-                                            <choices randomize="yes">
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  It's not users.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not requestors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not contributors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not maintainers.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Leaders determine the goals for a project.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                                                      </task>
-
-
-                                                                      <task xml:id="ex-community-roles-i" label="ex-community-roles-i" >
-                                                                        <statement>
-                                                                          <p>
-                                                                            Incorporating a contributed bug fix into the main branch.
-                                                                          </p>
-
-                                                                          <p />
-                                                                          </statement>
-                                            <choices randomize="yes">
-                                             <choice>
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  It's not users.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not requestors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not contributors
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Maintainers are responsible for the code, including accepting bug fixes.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not leaders.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                                                          </task>
-
-                                                                          <task xml:id="ex-community-roles-j" label="ex-community-roles-j" >
-                                                                            <statement>
-                                                                              <p>
-                                                                                Redesigning a software module in the system.
-                                                                              </p>
-
-                                                                              <p />
-                                                                              </statement>
-                                            <choices randomize="yes">
-                                             <choice>
-                                                <statement>
-                                                  <p>
-                                                    Users
-                                                  </p>
-                                                </statement>
-                                                <feedback>
-                                                  <p>
-                                                  It's not users.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Requestors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not requestors.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Contributors
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Contributors contribute to design.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice correct="yes">
-                                                <statement>
-                                                  <p>
-                                                  Maintainers
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  Maintainers are responsible for the code, including designing.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                              <choice>
-                                                <statement>
-                                                  <p>
-                                                  Leaders
-                                                  </p>
-                                                </statement>
-
-                                                <feedback>
-                                                  <p>
-                                                  It's not leaders.
-                                                  Another role (or roles) is most likely to be responsible for this activity. Review the roles in the chapter slides.
-                                                  </p>
-                                                </feedback>
-                                              </choice>
-                                          </choices>
-                                          <hint>
-                                          Roles are prototypical and can overlap, but choose the role that typically performs this task.
-                                          </hint>
-                                                                              </task>
-                                                                            </exercise>
-                                                                            </exercises>
-                                                                          </subsection>
-                                                                        </section>
+        </task>
+
+        <task xml:id="ex-community-roles-h" label="ex-community-roles-h">
+          <statement>
+            <p>
+              Defining the goals for the next year of work on the project.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not users.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not requestors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not contributors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not maintainers.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Leaders determine the goals for a project.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-roles-i" label="ex-community-roles-i">
+          <statement>
+            <p>
+              Incorporating a contributed bug fix into the main branch.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not users.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not requestors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not contributors Another role (or roles) is most likely
+                  to be responsible for this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Maintainers are responsible for the code, including accepting
+                  bug fixes.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not leaders.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-community-roles-j" label="ex-community-roles-j">
+          <statement>
+            <p>
+              Redesigning a software module in the system.
+            </p>
+
+            <p/>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  Users
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not users.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Requestors
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not requestors.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Contributors
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Contributors contribute to design.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Maintainers
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  Maintainers are responsible for the code, including designing.
+                </p>
+              </feedback>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>
+                  Leaders
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  It's not leaders.
+                  Another role (or roles) is most likely to be responsible for
+                  this activity.
+                  Review the roles in the chapter slides.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+
+          <hint>
+            <p>Roles are prototypical and can overlap, but choose the role(s) that typically performs this task.</p>
+          </hint>
+        </task>
+      </exercise>
+    </exercises>
+  </subsection>
+</section>
