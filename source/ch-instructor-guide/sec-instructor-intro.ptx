@@ -303,7 +303,7 @@
 			</p>
 
 			<p>
-				<alert>Note:</alert> If you are familiar with GitHub Codespaces, you will find that the interface familiar.  However, the KitClient works slightly differently than a standard Codespace. In particular, when students open the KitClient no repository will be opened. Instead they are given a blank development environment into which they <c>git clone</c> the repository they will be using for the GitKit.  This makes explicit the important concept of a clone, which Codespaces hide.
+				<alert>Note:</alert> If you are familiar with GitHub Codespaces, you will find the interface familiar.  However, the KitClient works slightly differently than a standard Codespace. In particular, when students open the KitClient no repository will be opened. Instead they are given a blank development environment into which they <c>git clone</c> the repository they will be using for the GitKit.  This makes explicit the important concept of a clone, which Codespaces hides.
 			</p>
 		</introduction>
 
@@ -347,7 +347,7 @@
 		<subsubsection xml:id="topic-community-automations">
 			<title>Community Automations</title>
 			<p>
-				Community automations perform actions and comment on tickets in the issue tracker and on pull requests. These actions and comments are designed to simulate some common types of interaction with project maintainers and other FOSS community at appropriate points in the learning activities.
+				Community automations perform actions and comment on tickets in the issue tracker and on pull requests. These actions and comments are designed to simulate some common types of interaction with project maintainers and FOSS community members at appropriate points in the learning activities.
 			</p>
 			<p>
 				For example:
@@ -400,7 +400,7 @@
 						<term>gitkit</term> base course into your course. 
 					</p>
 					<p>
-						The course pack includes a <term>reading assignment</term> and a <term>problem assignment</term> for each of the chapters of the GitKit text (except <xref ref="topic-instructor-guide" text="type-global-title" />). The provided reading assignment for each chapter includes all sections of the chapter and is auto-graded based on student interaction with each of the chapter's sections. The provided problem assignment for each chapter includes every interactive exercise in the chapter. Exercises are auto-graded graded using <term>% Correct</term> and the students <term>last answer</term>. 
+						The course pack includes a <term>reading assignment</term> and a <term>problem assignment</term> for each of the chapters of the GitKit text (except <xref ref="topic-instructor-guide" text="type-global-title" />). The provided reading assignment for each chapter includes all sections of the chapter and is auto-graded based on student interaction with each of the chapter's sections. The provided problem assignment for each chapter includes every interactive exercise in the chapter. Exercises are auto-graded graded using <term>% Correct</term> and the student's <term>last answer</term>. 
 					</p>
 					<p>
 						If you adopt the course pack you can modify the sections and questions that are included in the assignments, how they are graded and also add your own questions. See the <url href="https://guide.runestone.academy/working-with-assignments-chap.html">Working with Assignments</url> section of the <url href="https://guide.runestone.academy/InstructorGuide-3.html">Using eBooks with Runestone Academy</url> guide for more details.
@@ -454,7 +454,7 @@
 				</li>
 				<li>
 					<p>
-						For each Chapter in the text, find the section of <xref ref="topic-instructor-materials" text="type-global-title" /> for that chapter:
+						For each Chapter in the text, follow the link in <xref ref="topic-instructor-materials" text="type-global-title" /> to find the materials for that chapter:
 						<ol>
 							<li>
 								<p>
@@ -559,7 +559,7 @@
 				</li>
 				<li>
 					<p>
-						When the deployer completes it will generate output similar <xref ref="fig-deployer-done" />, which shows the URL of your deployed GitKit FarmData2 repository.
+						When the deployer completes it will generate output similar to <xref ref="fig-deployer-done" />, which shows the URL of your deployed GitKit FarmData2 repository.
 
 						<figure xml:id="fig-deployer-done">
 							<caption>
