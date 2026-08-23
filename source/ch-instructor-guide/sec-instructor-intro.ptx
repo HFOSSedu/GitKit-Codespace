@@ -347,7 +347,7 @@
 		<subsubsection xml:id="topic-community-automations">
 			<title>Community Automations</title>
 			<p>
-				Community automations perform actions and comment on tickets in the issue tracker and on pull requests. These actions and comments are designed to simulate some common types members at appropriate points in the learning activities.
+				Community automations perform actions and comment on tickets in the issue tracker and on pull requests. These actions and comments are designed to simulate some common types of interaction with project maintainers and FOSS community members at appropriate points in the learning activities.
 			</p>
 			<p>
 				For example:
